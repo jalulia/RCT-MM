@@ -1,0 +1,54 @@
+{
+  "designRevision": "0.10",
+  "artRevision": "0.9",
+  "checks": [
+    {
+      "name": "previews",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "name": "archive",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "name": "catalogue",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "name": "references",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "name": "previews",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "name": "archive",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "name": "catalogue",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "name": "references",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    }
+  ]
+}

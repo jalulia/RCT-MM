@@ -3,7 +3,7 @@ const discoveries=[
  {kind:'car',title:'Chrysler circuit',site:'Johnson',file:'johnson-mezzanine.jpg',seen:'A full-sized white Chrysler occupies the office floor.',change:'Park it as a display or run an invented miniature circuit.',credit:'Matt Fry portfolio · photo credit not established'},
  {kind:'inflatable',title:'Temporary fairground',site:'Johnson',file:'johnson-inflatable.jpg',seen:'An inflatable castle, shark balloon and bunting in the hall.',change:'Swap the courtyard’s booths for an event layout.',credit:'Matt Fry portfolio · photo credit not established'},
  {kind:'stag',title:'Antler display',site:'Porter',file:'porter-hall.jpg',seen:'Black stag sculpture with reflective antlers among the desks.',change:'Enlarge its silhouette into a small park landmark.',credit:'Photography: Zach Pontz'},
- {kind:'supernova',title:'Supernova pavilion',site:'Porter',file:'porter-supernova.jpg',seen:'SUPERNOVA names a glazed room with amber curtains.',change:'The name becomes an orbital sign over a meeting pavilion.',credit:'Photography: Zach Pontz'},
+ {kind:'supernova',title:'Supernova pavilion',site:'Porter',file:'porter-supernova.jpg',seen:'SUPERNOVA names a glazed room with amber curtains.',change:'The name becomes a black-and-silver roadside pavilion with a chrome canopy and orbital sign.',credit:'Photography: Zach Pontz'},
  {kind:'cat',title:'Office cat',site:'Johnson',file:'johnson-cat.jpg',seen:'Tabby, purple collar, a patch of sunlight by the stair.',change:'A quiet inhabitant beside the workshop, with a small tail motion.',credit:'Matt Fry portfolio · photo credit not established'}
 ];
 export const parkFigures={

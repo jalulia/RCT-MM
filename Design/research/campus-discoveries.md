@@ -1,6 +1,6 @@
 # Campus discoveries — objects with evidence
 
-Research checked against design 0.10 / art 0.9, 16 September 2026. Sources: inspected photographs in Matt Fry’s locally archived public portfolio, checked against the public project pages and PSF Projects’ project page. These are visual references, not facts about the case. Each entry separates the observed object, its current game interpretation and any further proposed interaction.
+Research checked against design 0.11 / art 0.9, 16 September 2026. Sources: inspected photographs in Matt Fry’s locally archived public portfolio, checked against the public project pages and PSF Projects’ project page. These are visual references, not facts about the case. Each entry separates the observed object, its current game interpretation and any further proposed interaction.
 
 The sculpted reception desk, indoor Chrysler and tree under the skylight supply three different silhouettes and spatial conditions: arrival, an obstruction people gather around, and a shared clearing. The park makes the car a circuit attraction and the room name Supernova an orbital pavilion. The inflatable/shark kit changes the courtyard arrangement. Small objects can reward attention through their shape and placement without requiring a dialogue box each.
 
@@ -96,7 +96,7 @@ The sculpted reception desk, indoor Chrysler and tree under the skylight supply 
 
 **Reported.** Porter separately contains an indoor garden that PSF calls the Solarium, beside the kitchen and eating area. That is a different site and should not be used to name Johnson’s tree. [PSF Projects](https://www.psfprojects.com/workplace/madwell-creative-agency).
 
-**Current study.** Johnson’s cutaway contains a tree in a white planter; Porter’s Solarium becomes a separate invented glass pavilion. These source associations remain distinct. **Next steps:** test an airy indoor canopy, the aligned roof opening and floor light together; a pause point or meeting use remains a proposed operating behavior. The current park tree component is an interpretation, not a reconstruction of Johnson's species or planting arrangement.
+**Current study.** Johnson’s cutaway contains a tree in a white planter; Porter’s Solarium becomes a separate invented glass pavilion. These source associations remain distinct. **Next steps:** test an airy indoor canopy, the aligned roof opening and floor light together; a pause point or meeting use remains a proposed operating behavior. The current Johnson interior uses a white birch, following supplied project context. The photographic observation alone does not identify the species or establish the exact planting arrangement.
 
 **Credit.** Johnson photographs: Matt Fry portfolio; photographer not established. PSF source supplies Porter’s Solarium description, not Johnson’s tree identification.
 
@@ -132,6 +132,8 @@ The parked car and optional miniature circuit are both available; the circuit is
 
 ## Next steps: scene curation
 
+Use these checks where they support the [P2 ordinary-work proof](#production/current-focus). Extra objects and alternate layouts are optional studies, not prerequisites for that proof.
+
 - **Three major anchors:** sculpted counter at arrival, car/circuit, and tree/planter. Check that each remains legible with labels hidden; test the indoor car placement separately from the implemented outdoor attraction.
 - **One changing occupation:** inflatable/shark party kit or arcade gathering, not every observed event at once.
 - **Quiet discoveries:** retain the implemented tabby and stag; compare the proposed neon and mint typewriter before expanding the set.
@@ -143,6 +145,6 @@ Use original sprite interpretation of these observed forms. Photographs and depi
 
 ## Source and credit record
 
-1. [Matt Fry — 65 Porter](https://mattfryed.com/65porter): creator’s project page; design/fabrication-management account; architecture credited to PSF Projects Architecture DPC, construction to PBS Solutions, fabrication to Millwright. Local metadata: [65porter.json](https://mattfryed.com/65porter), including the original public URL for each archived image.
-2. [Matt Fry — 266 Johnson](https://mattfryed.com/266-johnson): creator’s design/construction account and office gallery; explicit Volleygon event caption. Local metadata: [266-johnson.json](https://mattfryed.com/65porter).
+1. [Matt Fry — 65 Porter](https://mattfryed.com/65porter): creator’s project page; design/fabrication-management account; architecture credited to PSF Projects Architecture DPC, construction to PBS Solutions, fabrication to Millwright. Published [reference manifest](../assets/office-references/manifest.json) retains the selected image mappings and hashes.
+2. [Matt Fry — 266 Johnson](https://mattfryed.com/266-johnson): creator’s design/construction account and office gallery; explicit Volleygon event caption. The same [reference manifest](../assets/office-references/manifest.json) retains selected Johnson image mappings and attribution limits.
 3. [PSF Projects — Madwell Creative Agency](https://www.psfprojects.com/workplace/madwell-creative-agency): architect’s description, project credits and gallery; names Zach Pontz as photographer. This credit is applied only to matching images, not extended to Matt’s entire archive.

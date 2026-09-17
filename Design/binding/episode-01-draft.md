@@ -81,7 +81,7 @@ A valid control must have the original debit, complete member list, allocation a
 1. **Original BofA statement pp.80/82 and the native return record**, including account, date definitions, reference bridge and return reason. Resolve the reconstruction's October 21/22 discrepancy explicitly.
 2. **BILL payment/bill IDs, funding association and audit history**, including the October 23 update, any retry/reissue and historical payout profile. Export status alone cannot date all transitions.
 3. **Original Chase statement and processor funding record** for October 23. Resolve the extraction-direction conflict before presenting a cash arrow.
-4. **One complete ordinary control**, from the ten-control schedule or the SiriusXM chain.
+4. **One complete ordinary control:** first inspect the $4,520 pooled-funding lead above; use the ten-control schedule or SiriusXM chain if that lead cannot meet the required source checks.
 5. **Original invoice, contract, acceptance and recipient remittance**, only to the extent needed for claims about service, obligation, delivery or receipt. The exported customer/description fields improve the lead; they do not establish operational consequences.
 
 Date of event, date represented in accounting, date of record update and date of observation remain separate. Access, receipt, reading and understanding also remain separate if a real person's knowledge enters the episode.

@@ -635,9 +635,11 @@
     "fixtureIDs": [
       "C-07",
       "O-19",
-      "P-04"
+      "P-04",
+      "S-08"
     ],
     "rule": "No invented schedules, amounts, capacity, dialogue or decisions may be copied into historical records."
   },
-  "sourceAvailability": "External source collection; files are not included in this design release. Relative source locators and hashes are retained."
+  "sourceAvailability": "External source collection; files are not included in this design release. Relative source locators and hashes are retained.",
+  "readinessDecision": "episode-01-draft.md#8-readiness-decision"
 }

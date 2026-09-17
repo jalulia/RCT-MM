@@ -1,6 +1,6 @@
 # Office architecture: source study and sprite translation
 
-Research checked against design 0.10 / art 0.9, 16 September 2026. The accepted pixel system now includes office-derived architectural shells, cutaways and furnishings. This brief records their source basis and remaining spatial tests. The companion Porter and Boerum studies are architectural studies; the catalogue and assembled park show the current reusable assets.
+Research checked against design 0.11 / art 0.9, 16 September 2026. The accepted pixel system now includes office-derived architectural shells, cutaways and furnishings. This brief records their source basis and remaining spatial tests. The companion Porter and Boerum studies are architectural studies; the catalogue and assembled park show the current reusable assets.
 
 ## Architectural direction
 
@@ -84,6 +84,8 @@ The renderer uses material-specific ramps and additional face shading. These are
 Use colour in large, meaningful objects: rail, booth, inset, door, divider. Do not tint whole buildings by department. Saturation can approach RCT’s clarity without turning every facade into a sweet shop.
 
 ## Next steps: spatial and recognition tests
+
+Use these checks where they support the [P2 ordinary-work proof](#production/current-focus). Extra objects and alternate layouts are optional studies, not prerequisites for that proof.
 
 1. **Shell recognition:** use the completed B-01, B-02 and B-03 sprites at native size with labels hidden. Check whether viewers distinguish the brick/glass frontage, dark hall and yellow-brick loading frontage.
 2. **Interior recognition:** compare each roof-on/off pair at the same camera and scale. Check that timber insert, workstations and Johnson’s mezzanine remain legible without their captions.

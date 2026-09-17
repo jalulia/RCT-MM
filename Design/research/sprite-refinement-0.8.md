@@ -24,7 +24,7 @@ Supernova keeps its pavilion and orbital ornament, with a black body, chrome can
 | Orange stair | Orange rails, open treads and elevated mezzanine | External overlook remains invented; risers increase toward the deck and rails follow the tread noses |
 | Buildings | Boerum’s three brick/glass frontages; Porter’s dark masonry, high curtain-backed windows and recessed entrance; Johnson’s yellow-brick loading frontage and white hall/orange mezzanine | Distinct facades and cutaways; unseen roof geometry remains a proposal |
 
-Photo sources: [Matt Fry / 65 Porter](https://mattfryed.com/65porter), [Matt Fry / 266 Johnson](https://mattfryed.com/266-johnson), [PSF Projects / Madwell](https://www.psfprojects.com/workplace/madwell-creative-agency), and the supplied Boerum street image. The exact photo mappings and attribution limits remain in [office architecture research](office-art-research.md) and [campus discoveries](campus-discoveries.md).
+Photo sources: [Matt Fry / 65 Porter](https://mattfryed.com/65porter), [Matt Fry / 266 Johnson](https://mattfryed.com/266-johnson), [PSF Projects / Madwell](https://www.psfprojects.com/workplace/madwell-creative-agency), and the supplied Boerum and 266 Johnson street images. The exact photo mappings and attribution limits remain in [office architecture research](office-art-research.md) and [campus discoveries](campus-discoveries.md).
 
 ## Craft references
 
@@ -41,5 +41,7 @@ Every previous object is compared with the retained 0.7 renderer. Every exported
 Recognition is a visual judgment, separate from these mechanical checks. The comparison sheet and live park were inspected against the photo references; 0.7 renderers are retained for review.
 
 ## Next steps
+
+Use these checks where they support the [P2 ordinary-work proof](#production/current-focus). Extra objects and alternate layouts are optional studies, not prerequisites for that proof.
 
 Test object recognition at native scene scale, selection in overlapping areas, and the roof-on/off relationship without labels. The next operating prototype must demonstrate consequences for work and resources separately from the existing scenic animation. New asset directions, additional camera views and a larger animation set remain uncommitted.

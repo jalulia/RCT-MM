@@ -1,0 +1,62 @@
+{
+  "source": "GDD.md#production-sequence",
+  "designRevision": "0.11",
+  "phases": [
+    {
+      "id": "P0",
+      "title": "Source orientation",
+      "status": "Complete at stated scope",
+      "output": "Corpus inventory, chapter coverage, technique routing and initial design",
+      "gate": "Corrections and inspection limits remain visible"
+    },
+    {
+      "id": "P1",
+      "title": "Source binding",
+      "status": "Active · parallel",
+      "output": "Original return linkage, same-object status observation and an ordinary control",
+      "gate": "The historical comparison meets the binding packet’s claim-specific gate"
+    },
+    {
+      "id": "P2",
+      "title": "Ordinary-work proof",
+      "status": "Next",
+      "output": "Three-minute job; two viable plans; one capacity conflict and handoff",
+      "gate": "Players can explain the tradeoff and want to try another plan"
+    },
+    {
+      "id": "P3",
+      "title": "Structure comparison",
+      "status": "Queued after P2",
+      "output": "Test operating-campus and reconstruction-park versions of the same payment conflict",
+      "gate": "Players choose and explain consequences without confusing fiction with history"
+    },
+    {
+      "id": "P4",
+      "title": "Thin playable episode",
+      "status": "Queued after P3",
+      "output": "12–15 minute loop with one conflict, one valid control and the historical comparison",
+      "gate": "State, identity and provenance stay clear; P1 covers the historical content used"
+    },
+    {
+      "id": "P5",
+      "title": "Campaign outline lock",
+      "status": "Queued after P4",
+      "output": "Sequence learning prerequisites, source anchors, permissions and endings",
+      "gate": "Each chapter adds a distinction and has adequate source coverage"
+    },
+    {
+      "id": "P6",
+      "title": "Game production",
+      "status": "Queued after P5",
+      "output": "Episodes, assets, software, saves, access and performance checks",
+      "gate": "Each scene passes source, semantic and gameplay review"
+    },
+    {
+      "id": "P7",
+      "title": "Game release preparation",
+      "status": "Queued after P6",
+      "output": "Audience edit, attribution, rights, packaging and distribution",
+      "gate": "Review findings resolved; version and source scope explicit"
+    }
+  ]
+}

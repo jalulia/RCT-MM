@@ -23,7 +23,7 @@ for directory,group in [('office-study','Architecture'),('art-system','Component
   with Image.open(f) as im:
    im.convert('RGB').quantize(colors=256,method=Image.Quantize.MEDIANCUT).save(target)
    size=list(im.size)
-  names={'creative':'Boerum frontage','production':'Porter hall','accounts':'266 Johnson','sprite-atlas':'Component overview','stage0':'Porter / structure','stage1':'Porter / floors','stage2':'Porter / fit-out','stage4':'Porter / roof','cutaway':'Porter / interior','car':'Chrysler / vehicle','stag':'Antler display','supernova':'Supernova pavilion','solarium':'Glass garden pavilion','overlook':'Orange stair overlook','reception':'Sculpted reception','cat':'Office cat','inflatable':'Inflatable castle','shark':'Shark balloon'}
+  names={'creative':'Boerum frontage','production':'Porter hall','accounts':'266 Johnson','sprite-atlas':'Component overview','stage0':'Porter / footprint','stage1':'Porter / shell','stage2':'Porter / contents','stage4':'Porter / roof','cutaway':'Porter / interior','car':'Chrysler / vehicle','stag':'Antler display','supernova':'Supernova pavilion','solarium':'Glass garden pavilion','overlook':'Orange stair overlook','reception':'Sculpted reception','cat':'Office cat','inflatable':'Inflatable castle','shark':'Shark balloon'}
   entries.append({'id':directory+'-'+f.stem,'title':names.get(f.stem,f.stem.replace('-',' ').capitalize()),'png':rel(f,preview),'gif':target.name,'kind':'still','group':group,'size':size,'route':'#art/architecture-study' if group=='Architecture' else '#art/component-kit','caption':'Current renderer output. Individual sprites and transparent GIFs are in the object catalogue.'})
 # Browser-rendered document specimens are retained previews; the live DOM reader is canonical.
 for f in sorted((preview/'documents').glob('*.png')):
@@ -45,7 +45,14 @@ for group in ['Scenes','Motion','Architecture','Components','Documents']:
 body+='<p class="foot">GIF palettes can reduce colour count. PNG remains the source image. Photographic references are outside the original sprite library. <a href="../archive/index.html">Previous studies and review captures →</a></p>'
 (preview/'index.html').write_text(shell('Preview library',body,preview))
 # Archive: chronological only where a revision is known from content or filename.
-archive=root/'archive';records=[]
+archive=root/'archive'
+# Generate preview formats before listing files so the first build has a complete inventory.
+for directory in (archive/'previews').glob('*'):
+ if directory.is_dir():
+  for f in directory.iterdir():
+   if f.suffix.lower() in ['.png','.jpg','.webp']:still_gif(f)
+for f in (archive/'superseded-art').glob('*-study.png'):still_gif(f)
+records=[]
 for f in sorted(archive.rglob('*')):
  if f.is_file() and f.name not in ['index.html','inventory.json']:
   records.append({'file':rel(f,archive),'bytes':f.stat().st_size,'classification':f.relative_to(archive).parts[0]})
@@ -58,7 +65,7 @@ for directory in sorted((archive/'previews').glob('*')):
  if not images:continue
  body+=f'<h3>{esc(directory.name if directory.name=="unversioned" else "Revision "+directory.name)}</h3><div class="grid small-grid">'
  for f in images:
-  gif=still_gif(f);name=f.stem.replace('-',' ')
+  gif=f.with_suffix('.gif');name=f.stem.replace('-',' ')
   body+=f'<figure class="card photo"><a class="image" href="{esc(rel(f,archive))}"><img src="{esc(rel(f,archive))}" alt="Archived review capture: {esc(name)}" loading="lazy"></a><figcaption class="copy"><span class="meta">ARCHIVED / {esc(directory.name)}</span><h3>{esc(name)}</h3><div class="links"><a href="{esc(rel(f,archive))}" download>PNG ↓</a><a href="{esc(rel(gif,archive))}" download>Still GIF ↓</a></div></figcaption></figure>'
  body+='</div>'
 for group,label,description in [('versions','Versioned source','Frozen documents and renderer baselines. Version 0.7 is retained by the sprite regression check.'),('superseded-art','Earlier art','The palette-only directions were superseded by the original component system.'),('legacy-explainer','Legacy explainer','Historical research artifact. Its withdrawn interpretations are identified in the current evidence map.'),('construction-scripts','Construction scripts','One-off patches and drawing fragments. Do not run these against current source.'),('reference-framework','Reference framework','An earlier structural reference, not the current reader implementation.'),('superseded-fonts','Superseded fonts','The current reader uses Geist and Geist Mono.'),('checks','Earlier checks','Recorded results from previous revisions; not a substitute for current QA.'),('quarantine','Quarantine','Unused third-party mod files and transient old export metadata. Not imported by the game or build.')]:
@@ -66,7 +73,7 @@ for group,label,description in [('versions','Versioned source','Frozen documents
  if group=='superseded-art':
   body+='<div class="grid small-grid">'
   for f in sorted((archive/group).glob('*-study.png')):
-   gif=still_gif(f);body+=f'<figure class="card"><a class="image" href="{rel(f,archive)}"><img src="{rel(f,archive)}" alt="Superseded {esc(f.stem)}" loading="lazy"></a><figcaption class="copy"><h3>{esc(f.stem.replace("-"," "))}</h3><div class="links"><a href="{rel(f,archive)}" download>PNG ↓</a><a href="{rel(gif,archive)}" download>Still GIF ↓</a></div></figcaption></figure>'
+   gif=f.with_suffix('.gif');body+=f'<figure class="card"><a class="image" href="{rel(f,archive)}"><img src="{rel(f,archive)}" alt="Superseded {esc(f.stem)}" loading="lazy"></a><figcaption class="copy"><h3>{esc(f.stem.replace("-"," "))}</h3><div class="links"><a href="{rel(f,archive)}" download>PNG ↓</a><a href="{rel(gif,archive)}" download>Still GIF ↓</a></div></figcaption></figure>'
   body+='</div>'
  body+='<details><summary>'+str(len(files))+' retained files</summary><div class="file-list">'+''.join(f'<a href="{esc(f["file"])}" download>{esc(f["file"])}<span>{f["bytes"]:,} bytes</span></a>' for f in files)+'</div></details>'
 body+='<p class="foot"><a href="inventory.json" download>Download archive inventory ↓</a> · <a href="../design-review.html#production/change-record">Current change record →</a></p>'

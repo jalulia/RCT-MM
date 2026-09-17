@@ -3,6 +3,16 @@
   "notCurrentSpecification": true,
   "files": [
     {
+      "file": "checks/0.10/library-browser-checks.json",
+      "bytes": 892,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.10/reader-browser-checks.json",
+      "bytes": 5510,
+      "classification": "checks"
+    },
+    {
       "file": "checks/0.3/review-checks-0.3.json",
       "bytes": 761,
       "classification": "checks"
@@ -236,6 +246,216 @@
       "file": "moves.json",
       "bytes": 14392,
       "classification": "moves.json"
+    },
+    {
+      "file": "previews/0.10/archive-1512.gif",
+      "bytes": 94042,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/archive-1512.png",
+      "bytes": 144879,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/archive-390.gif",
+      "bytes": 39417,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/archive-390.png",
+      "bytes": 63122,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/previews-1512.gif",
+      "bytes": 91874,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/previews-1512.png",
+      "bytes": 121919,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/previews-390.gif",
+      "bytes": 37209,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/previews-390.png",
+      "bytes": 62689,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-art.gif",
+      "bytes": 132322,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-art.png",
+      "bytes": 168033,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-binding-inventory.gif",
+      "bytes": 152242,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-binding-inventory.png",
+      "bytes": 249314,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-binding.gif",
+      "bytes": 170641,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-binding.png",
+      "bytes": 279476,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-contents.gif",
+      "bytes": 85297,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-contents.png",
+      "bytes": 154462,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-episode.gif",
+      "bytes": 126648,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-episode.png",
+      "bytes": 183518,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-evidence.gif",
+      "bytes": 212848,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-evidence.png",
+      "bytes": 357604,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-game.gif",
+      "bytes": 129782,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-game.png",
+      "bytes": 154853,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-interface.gif",
+      "bytes": 99058,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-interface.png",
+      "bytes": 153075,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-narrative.gif",
+      "bytes": 83134,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-narrative.png",
+      "bytes": 134813,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-objects.gif",
+      "bytes": 95170,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-objects.png",
+      "bytes": 142912,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-production.gif",
+      "bytes": 119172,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-production.png",
+      "bytes": 187599,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-discoveries.gif",
+      "bytes": 144229,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-discoveries.png",
+      "bytes": 232767,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-offices.gif",
+      "bytes": 104127,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-offices.png",
+      "bytes": 153252,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-park.gif",
+      "bytes": 123137,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-park.png",
+      "bytes": 191767,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-refinement.gif",
+      "bytes": 114129,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-refinement.png",
+      "bytes": 159459,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-systems.gif",
+      "bytes": 160787,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-systems.png",
+      "bytes": 256366,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-ux.gif",
+      "bytes": 163548,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/reader-research-ux.png",
+      "bytes": 254913,
+      "classification": "previews"
     },
     {
       "file": "previews/0.2/review-02-contents.gif",
@@ -1105,6 +1325,111 @@
     {
       "file": "versions/0.1/evidence-map-0.1.md",
       "bytes": 24713,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/ATTRIBUTION.md",
+      "bytes": 2087,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/GDD.md",
+      "bytes": 37523,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/RELEASE-REVIEW.md",
+      "bytes": 5933,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/binding/episode-01-draft.md",
+      "bytes": 16307,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/binding/episode-01.bindings.json",
+      "bytes": 19554,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/binding/native-inventory.md",
+      "bytes": 15874,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/evidence-map.md",
+      "bytes": 26715,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/project.json",
+      "bytes": 1086,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/research/campus-discoveries.md",
+      "bytes": 18302,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/research/office-art-research.md",
+      "bytes": 17303,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/research/park-logic-review.md",
+      "bytes": 10308,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/research/sprite-refinement-0.8.md",
+      "bytes": 5349,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/research/systems.md",
+      "bytes": 26796,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/research/ux.md",
+      "bytes": 23595,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/working/build-review.mjs",
+      "bytes": 12892,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/working/editorial-figures.mjs",
+      "bytes": 7819,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/working/figures.mjs",
+      "bytes": 13986,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/Design/working/park-figures.mjs",
+      "bytes": 2934,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/README.md",
+      "bytes": 305,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/design-review.html.txt",
+      "bytes": 614360,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.10/project-README.md",
+      "bytes": 4216,
       "classification": "versions"
     },
     {

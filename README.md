@@ -1,6 +1,6 @@
 # Mad Money Tycoon
 
-Design review **0.10** · original art library **0.9** · 16 September 2026.
+Design review **0.11** · original art library **0.9** · 16 September 2026.
 
 Start with the [design document](Design/design-review.html). It contains the current game proposal, narrative, object model, interface, art studies, source scope and build plan.
 
@@ -13,6 +13,8 @@ Start with the [design document](Design/design-review.html). It contains the cur
 ## Current status
 
 This is a working design system and interactive art proof. Site selection, cutaways, courtyard changes, landmark inspectors, document comparison and ambient motion are implemented. The proposed production economy and complete fifteen-minute episode are not implemented.
+
+**Next: [P2 ordinary-work proof](Design/design-review.html#production/current-focus).** A three-minute fictional job compares internal capacity with supplier S-08, using the existing art kit. The [P0–P7 sequence](Design/design-review.html#production/production-sequence) is maintained in the GDD and generates the reader’s phase diagram.
 
 Historical source binding remains at selected-export-field level. Original statements, identity links and recipient settlement remain open. Historical gameplay is disabled. The public design review does not publish or depend on the external validation corpus. Its inventory retains exact source filenames, hashes and locators.
 

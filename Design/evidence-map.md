@@ -1,6 +1,6 @@
 # Story and evidence map
 
-Reviewed for edition 0.10 · 16 September 2026 · source scope below
+Reviewed for edition 0.11 · 16 September 2026 · source scope below
 
 ## What has actually been read
 
@@ -38,7 +38,7 @@ The archival validation package's May 2026 README, derived conclusions and recor
 | REF-03 | `Refs/map.avif` | Visual map reference; no case geography inferred |
 | LIB-01 | Local technique-library snapshot and garden | Reusable methods, rendering studies and document structure; project content does not transfer |
 | BIND-01 | Selected exports from the located Madwell validation package; exact scope in linked inventory | Bind specific observed fields and conflicts; do not promote derived joins or package conclusions |
-| ARCH-01 | Matt Fry portfolio archive and public Matt / PSF / NYC office sources | Architectural reference only; photography is not proof of leases, authority or case transactions |
+| ARCH-01 | Matt Fry portfolio archive, public Matt / PSF / NYC office sources and supplied Boerum/Johnson Street View captures | Architectural reference only; photography is not proof of leases, authority or case transactions |
 | EXT | Public game, HCI, art-tool and tax-form documentation | Research specific design mechanisms; never corroborate private case claims by resemblance |
 
 The PDF's “controlling operation” and “non-regression” passages on pp.4, 41 and 57 are part of its argument, not constraints on the player’s conclusions. The source's strongest claims and its stated limits must both remain visible.
@@ -140,7 +140,7 @@ This register is deliberately wider than the proposed dramatic cast. A person ca
 | E-10 | 65 A/P–A/R pairs have bank support; 43 represented routes are disproved. | Ship controls beside adverse examples. A puzzle that flags every offset as fraudulent teaches a false rule. |
 | E-11 | Creative Peaks and Reddit have different lifecycle meanings (p.34). | Returned cash with Paid retained differs from one debit supporting two payment stories; neither automatically proves a second cash loss. |
 | E-12 | The subpoena chronology distinguishes documented process from target status, guilt and outcome (p.40). | No “FBI arrives, case solved” ending. Physical presence at closure is first-person testimony in the source, not independently closed there. |
-| E-13 | “No yappin,” 65 Porter, McKibbin, Boerum, 266 Johnson and Colorado began as research leads; this PDF does not supply their scene/property detail. | Porter and Johnson now have inspected architectural photography; Boerum has a supplied facade reference. Those support art, not tenancy, transaction or historical-scene claims. The message, other sites and property exhibits remain source tasks. |
+| E-13 | “No yappin,” 65 Porter, McKibbin, Boerum, 266 Johnson and Colorado began as research leads; this PDF does not supply their scene/property detail. | Porter and Johnson have inspected architectural photography; Boerum has a supplied facade reference; Johnson has supplied 2017/2019 Street View captures and project context identifying the white birch, former marble warehouse and neighbouring gallery. Those support art, not tenancy, transaction or historical-scene claims. The message, other sites and property exhibits remain source tasks. |
 | E-14 | Source R/S/LR registers identify packages that are not present in this project folder. | The first binding packet now records selected inspected export fields. Original statements and the remaining evidence families are still unverified; full-corpus verification is not claimed. |
 
 ## All 48 source techniques: design coverage

@@ -1,54 +1,54 @@
-# Release review · design 0.10 / art 0.9
+# Release review · design 0.11 / art 0.9
 
-Reviewed 16 September 2026. [Open the current design document](design-review.html).
+Reviewed 16 September 2026. [Open the current design document](design-review.html). The art assets remain at 0.9; this revision reconciles the specification, research, figures, navigation and production plan.
 
-## This revision
+## Current focus
 
-The contents index starts at the top of the main column. The left panel groups purpose, source-document preview and three visual shortcuts. Each building has paired exterior/interior previews, with Johnson’s interior initially exposed. The object inspector consistently shows a sprite, reference photograph and interpretation. Practice documents have a separate entry and preserve the park selection on return.
+[P2 — ordinary-work proof](design-review.html#production/current-focus): a three-minute fictional job with two viable production plans, one shared capacity conflict and one physical handoff. Use the existing art kit. Specify the invented operating values before building; the campaign budget is not starting cash.
 
-Supernova uses a black-and-silver diner vocabulary with its orbital ornament retained. Johnson’s frontage follows the supplied 2017/2019 Street View captures; the interior contains the orange mezzanine/stair, central white birch and cat. The map clears tall foreground planting and separates Supernova from the stag. Capture dates are not treated as office-occupation dates.
+P1 source binding proceeds alongside it. The [P0–P7 production sequence](design-review.html#production/production-sequence) now comes from the GDD’s phase table, including statuses and gates. Publishing the design review is complete; the eventual game release remains P7.
 
-## Editorial reconciliation
+## Reconciliation
 
-The complete GDD, evidence map, six research documents, two binding documents and their rendered figures were read together. Personal callouts, workshop assignments and hanging progress notes were removed from current content. Outstanding work is stated under proposed behaviour, next steps or production gates.
+The GDD, evidence map, six research documents, binding packet, source inventory, structured metadata and rendered figures were checked together. Source observations retain their existing limits; this was a consistency review, not a new validation of the case.
 
-| Issue | Current decision |
+| Inconsistency | Correction |
 |---|---|
-| Four-view research conflicted with the implemented interface | Proposed operational views: Work, Cash, Information, Control, People. The art explorer has separate architectural choices. |
-| Buildings were still described as departments | Sites, occupants, departments and legal entities remain separate |
-| Older content said no export fields had been inspected | Selected first-episode exports have been inspected; original statements and important joins remain unresolved |
-| Art proof and operating gameplay were conflated | Site selection, cutaways, document comparison and scenic motion are implemented; the management economy and complete episode remain proposed |
-| Supplier and invoice-party labels conflicted | S-08 is the fictional supplier; the practice agency is the contracting party; C-07 is a campaign |
-| Saved record dates did not change consistently | v1 is Scheduled / Monday; v2 is Paid / Tuesday; effective and recorded times remain distinct |
-| A candidate bank return looked settled in the binding figure | Candidate status and the missing identity join appear beside the event |
-| Source links depended on the local computer | Published links are relative within the project or point to the actual external source |
+| Production diagram and table used different phases and dependencies | One maintained P0–P7 table generates the diagram; P1 and P2 are visibly parallel |
+| Optional art studies read like immediate prerequisites | Existing assets support P2; extra attractions, cameras and pipelines are deferred unless the proof needs them |
+| Art explorer was described as having five inspector views | Six exterior/interior choices are implemented; the proposed five-view model has its own Interface study |
+| Document examples pointed to the retired inspector entry | GDD and both component captions point to the separate Practice documents tray |
+| Claim and record were combined in research | Separate objects, matching the GDD; supporting records do not become the claim itself |
+| Research learning order appeared to contradict the campaign | The short episode test and proposed campaign sequence are explicitly distinguished |
+| Small-sample success percentages looked like acceptance standards | Six-to-eight-participant sessions remain diagnostic; recurring misconceptions drive revisions |
+| Tuesday saved label was diagrammed as post-return persistence | The copy predates Wednesday’s return; a later observation is required for that proposed lesson |
+| Supplier wireframe used P-08 | S-08 throughout the fictional supplier path |
+| Inventory made every missing record a prerequisite for any comparison | Claim-specific gates distinguish bounded comparison, person attribution, recipient receipt and historical production |
+| Source and asset links led to the wrong destination | Johnson reference mapping corrected; inline source photographs open their actual images; sprites open their catalogue entries |
+| Assembly previews used different stage names | Footprint, shell, contents and roof match the assembly controls |
+| New Johnson context was absent from evidence/credit summaries | Street captures and supplied birch/warehouse/gallery context are included with their different provenance |
 
-## Showing the system
+No pending work is treated as implemented. The current next step is linked from the root README and relevant research sections. Old proposals remain in the versioned archive rather than competing with the active plan.
 
-Six contextual figures now connect the specification to current examples: the park, three payment documents, site/scenery/vehicle objects, the chapter sequence, current outputs and the original evidence page. Research images have captions and catalogue links. The contents page leads directly to the park, catalogue and preview library. Document examples retain selectable text and open the full interactive study.
+## Retained system
 
-The visual language remains Geist, white, ink, fresh green and carbon pink. Texture stays inside preview and document materials. Current screenshots are in [QA](qa/README.md).
+The home rail groups purpose, the actual source-document preview and three visual shortcuts. The architecture explorer starts with Johnson’s interior exposed. Building and landmark inspectors consistently show a sprite, reference photograph and interpretation. The separate practice desk returns to the same park selection and roof state.
 
-## Project organization
+Supernova retains its black-and-silver pavilion. Johnson retains the yellow-brick loading frontage, orange mezzanine/stair, central white birch and cat. Scene and object exports are unchanged in this revision.
 
-- [Current previews](previews/index.html): 50 scene, motion, architecture, component and document previews, each with a GIF download.
-- [Object catalogue](assets/sprite-catalogue/index.html): 44 objects, 121 frame slots and eight categories. Frame and sheet GIFs accompany the PNG originals. Gait loops, saved-pose sequences, state comparisons and orientation studies are labelled separately.
-- [Archive](archive/index.html): earlier source revisions, visual studies, review captures and quarantined construction files. Frozen HTML is retained as source text. Unknown-version captures remain unversioned.
-- [Project status](project.json): current versions, entry points, view model and implementation status.
-- [Root README](../README.md): viewing, rebuilding, file ownership and GitHub Pages setup.
-
-The complete sprite ZIP includes the catalogue, all registered frames and sheets, GIFs, manifest and font licence. Project navigation outside that ZIP is identified in its README.
+- [Previews](previews/index.html): 50 current scene, motion, architecture, component and document entries, each with a GIF download.
+- [Object catalogue](assets/sprite-catalogue/index.html): 44 objects, 121 frame slots and eight categories; PNGs, GIFs, sheets and labelled sequences.
+- [Archive](archive/index.html): design 0.10 retained with earlier versions; previous review captures and checks are identified by revision.
+- [Project status](project.json): current revisions, entry points, implementation status and next phase.
 
 ## Verification
 
-The release checker verifies local links and anchors, portable asset paths, object counts, renderer hashes, the original reconstruction hash, GIF presence and ZIP integrity. All 34 reader route/viewport checks and eight library/reference viewport checks pass at desktop and mobile widths. A browser GIF download was compared byte-for-byte with its source. Version switching, the separate form specimen, site/record return, roofs, courtyard changes and the Chrysler circuit were exercised. The original six-leg Boerum motion checks and all 121 atlas-frame comparisons pass.
+The release check covers authored and published links, anchors, version agreement, phase records, source hashes, all registered exports and byte-for-byte agreement between the 402 ZIP members and current files. It rejects the retired supplier ID and document entry point. The motion and atlas checks remain part of the project check command.
 
-External reference URLs were checked separately: 45 returned successful responses; Nexus Mods and the NYC PDF returned access-denied responses to automated requests. Their supplied links are retained, with no invented replacement. The locally retained NYC reference page remains available.
+All 34 reader route/viewport checks and eight library/reference checks passed. The new focus and phase layouts were inspected at desktop and phone widths. Visual captures and exact test scope are recorded in [QA](qa/README.md). Historical/source conclusions and participant comprehension are outside these implementation checks. External references retain the previous response audit; no new historical research was performed in this revision.
 
-Detailed results and their limits are recorded in [QA](qa/README.md). These checks establish implementation consistency, not historical truth or user comprehension.
+## Source work still open
 
-## Remaining work
+Historical interaction remains disabled. Creative Peaks return identity, original statements, the October 23 direction conflict, complete payment-status history and recipient settlement remain unresolved. The bounded historical comparison follows the [binding readiness decision](binding/episode-01-draft.md#8-readiness-decision). Attribution of personal actions, final receipt and historical production each require their own additional records.
 
-The next operating prototype must demonstrate allocation, a handoff and its consequences. Recognition, overlap selection and the roof/cutaway relationship still need participant testing. Additional camera views and a complete production animation set are not committed.
-
-Historical interaction remains disabled. Creative Peaks return identity, the October 23 direction conflict, continuous payment-status history and recipient settlement remain open. The external financial validation collection is not included in this repository; its inspected exports retain filenames, hashes and locators in the binding inventory. Publishing the design review does not close those source gaps.
+The external validation collection is not included in this repository. Its inspected exports retain source filenames, hashes and locators. Neither a working fictional prototype nor publication of this review closes those source gaps.

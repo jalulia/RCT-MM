@@ -1,6 +1,6 @@
 # Systems research and ontology
 
-Research checked against design 0.10 / art 0.9, 16 September 2026. This records the rationale for the current object model and the proposed operating game. The implemented park is an art and interaction study; it does not yet simulate the economy described here. Campaign structure and player authority remain open tests in the GDD.
+Research checked against design 0.11 / art 0.9, 16 September 2026. This records the rationale for the current object model and the proposed operating game. The implemented park is an art and interaction study; it does not yet simulate the economy described here. Campaign structure and player authority remain open tests in the GDD.
 
 ## The structural decision
 
@@ -44,7 +44,8 @@ Use stable identities with dated relationships. A person can be an employee, own
 | Obligation | Debtor, creditor, amount, currency, basis, due date | Persistent promise that can remain unresolved | Invoice image or Paid label |
 | Payment attempt / settlement | Funding, batch membership, method, returns, endpoint evidence | Payment workbench and lifecycle trace | Obligation itself |
 | Account / platform profile | System identity, versions, linked credentials and permissions | Desktop application and control inspector | Natural person at keyboard |
-| Record / version / claim | Source locator, authoring context, time, scope, contradiction, proof limit | Inspectable receipt, message, report, comparison | Ground truth |
+| Record / version | Source locator, authoring context, time and prior versions | Inspectable receipt, message, report or comparison | Ground truth or the claim made about it |
+| Claim | Proposition, scope, supporting/conflicting records and review state | Attributed finding or open question | A record or a proven endpoint |
 | Permission grant | Holder, target, action, start/end, delegator | Control overlay and blocked-action explanation | Job title or ownership percentage |
 
 Clients and suppliers may both appear as visitors in the scene, but they need different behaviors and economic relations. A freelancer can be a recurring character and still remain a supplier engagement. A payroll employee remains a person when their work is allocated to an affiliate.
@@ -108,9 +109,9 @@ The ordinary loop is **accept scope → reserve capacity → commit suppliers �
 
 The inquiry loop interrupts only when it changes a decision: **notice conflict → compare representations → name the missing evidence → request or inspect it → narrow the finding → revise an operating plan**. Do not require every bill to become a puzzle. Batch ordinary supported work and surface meaningful exceptions.
 
-The fictional test scenario gives Campaign C-07 a $100,000 budget, an internal team, and a fabrication supplier. A $12,000 obligation is marked Paid; the supplied bank events show a debit and an equal return; no subsequent settlement is supplied. A deadline approaches. Proposed operating choices are to reserve substitute capacity, protect another project's slot, request supplier confirmation, continue with contingency, or defer the handoff. These choices and their economic consequences are not implemented in the art study. A confirmation response may be pending or unavailable: incomplete observation does not establish nonpayment.
+The fictional test scenario gives Campaign C-07 a $100,000 budget, an internal team, and a fabrication supplier. A saved platform representation of the $12,000 obligation is marked Paid; the supplied bank events show a debit and an equal return; no subsequent settlement is supplied. A deadline approaches. Proposed operating choices are to reserve substitute capacity, protect another project's slot, request supplier confirmation, continue with contingency, or defer the handoff. These choices and their economic consequences are not implemented in the art study. A confirmation response may be pending or unavailable: incomplete observation does not establish nonpayment.
 
-The decision spends scarce capacity or cash to keep a promise while resolving uncertainty. A normal pooled-payment example must accompany the exception. The current [document workbench](#art/interface-materials) demonstrates the fictional invoice, saved payment versions and bank-event strip. The Creative Peaks comparison has a separate [export-level binding](../binding/native-inventory.md): its return date differs from the briefing, the Chase extraction conflicts with QBO on direction, and the final supplier endpoint remains unresolved.
+The decision spends scarce capacity or cash to keep a promise while resolving uncertainty. A normal pooled-payment example must accompany the exception. The current [document workbench](#art/interface-materials) demonstrates the fictional invoice, saved payment versions and bank-event strip. Its Tuesday v2 predates Wednesday’s return; a later status observation is still needed to implement the proposed persistence event. The Creative Peaks comparison has a separate [export-level binding](../binding/native-inventory.md): its return date differs from the briefing, the Chase extraction conflicts with QBO on direction, and the final supplier endpoint remains unresolved.
 
 ## Evidence-to-mechanic table
 
@@ -133,7 +134,7 @@ All historical descriptions below are briefing-reported. Candidate mechanics are
 
 ## Discovery order and views
 
-Introduce **one job**, then **one payment lifecycle**, then **multiple representations**, then **permissions**, then **affiliates and burden**, then **migration and afterlife**. This is a learning order, not a rewritten chronology. Each later case episode retains its actual dates. A 1990s desktop presentation is an interface convention; it must not move a later chat, bank product, or AI conversation into the 1990s.
+The first-episode test compresses **one job → one payment lifecycle → a comparison of records**. The proposed campaign separately builds **work → authority → reporting → payment → entities → handover → after closure**, as specified in the [chapter sequence](#narrative/chapter-sequence). Neither sequence rewrites chronology; historical episodes retain their actual dates. A 1990s desktop presentation is an interface convention; it must not move a later chat, bank product, or AI conversation into the 1990s.
 
 Use five coordinated views in this order: **Work** (capacity and dependencies), **Cash** (observed movements, attempts and unresolved endpoints), **Information** (versions, sources and claims), **Control** (dated permissions), and **People** (employment, engagements and workload). Rights and obligations remain in the inspector across views. Keep the selected project, person or obligation pinned while switching. An additional comparison can show the company as presented to a specified audience. “Reported sales” must name its report and period. The [five-view figure](#interface/five-views) uses one fictional obligation to demonstrate the distinction; the art explorer presents architecture and sources, with the practice-document desk accessed separately.
 
@@ -149,18 +150,18 @@ Plan separately for visual packs, fictional scenario packs, and rule experiments
 
 ## Next steps: prototype gates and failure tests
 
-These are proposed acceptance criteria, not measured results.
+Begin with the [P2 ordinary-work proof](#production/current-focus). The remaining checks belong to the later episode tests. Use six to eight participants diagnostically, as specified in the GDD; these are observation prompts, not measured results or statistical pass rates.
 
-1. **Ordinary-play test:** give six participants a three-minute production scenario without anomalies. At least four voluntarily try a second plan, and can explain its tradeoff. Failure means the management loop needs work before more lore.
-2. **Ontology test:** after the slice, at least five distinguish client, project, site, supplier, and entity without coaching. Any recurring conflation is a model or representation failure.
-3. **Settlement test:** present returned-payment, legitimate pooled-payment, and duplicate-Paid examples. At least five correctly separate observation from inference in all three. No UI state may assert a recipient without its required record.
+1. **Ordinary-play test:** give participants a three-minute production scenario without anomalies. Observe whether they voluntarily try a second plan and explain its tradeoff. Failure means the management loop needs work before more lore.
+2. **Ontology test:** after the slice, ask participants to distinguish client, project, site, supplier, and entity without coaching. Any recurring conflation is a model or representation failure.
+3. **Settlement test:** present returned-payment, legitimate pooled-payment, and duplicate-Paid examples. Record whether participants separate observation from inference in all three, and investigate recurring errors. No UI state may assert a recipient without its required record.
 4. **False-join test:** include the source's two same-date $25,000 transfers (p. 45). The model must retain two objects; amount/date matching alone must never merge them.
-5. **Control test:** ask who can view, initiate, approve, and administer one transaction at two dates. At least five answer from the control view without reading an organization chart.
+5. **Control test:** ask who can view, initiate, approve, and administer one transaction at two dates. Record whether they can answer from the control view without substituting an organization chart.
 6. **Agency test:** two different capacity plans must produce materially different delivery/cash consequences in fiction; neither may change documentary facts. If outcomes differ only in dialogue, the game is still a slideshow.
 7. **Nonadditivity test:** combine statement, bank, bill, and return views. The system must refuse a total across overlapping populations and explain the selected measure in plain language.
 8. **Attention test:** an eight-minute session allows at least three consequential operational actions before opening a long document. Essential facts remain recoverable without timed reading or mandatory pixel hunting.
 
-The unresolved design question is whether ordinary production planning remains enjoyable when the payment exception is removed. Test that and the evidence distinctions together before fixing the campaign structure. Completed art components can support the test without predetermining its answer.
+The unresolved design question is whether ordinary production planning remains enjoyable when the payment exception is removed. Test ordinary work first, then add the evidence distinctions before fixing the campaign structure. Completed art components can support the test without predetermining its answer.
 
 ## Research access and scope
 

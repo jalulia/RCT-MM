@@ -1,23 +1,23 @@
 # Current verification
 
-Design 0.10 / art 0.9. These results cover the current reader and export system. Earlier checks are in the archive.
+Design 0.11 / art 0.9. The reader, links, phase model, atlas integrity and motion checks were rerun for this revision. Unchanged component tests retain their actual test revision; they are not relabelled as new results. Earlier reader and library checks are archived under 0.10.
 
 | Record | What it checks |
 |---|---|
-| `release-checks.json` | Published internal links, anchors, assets, metadata, source hashes, catalogue counts and ZIP integrity |
+| `release-checks.json` | Published and authored links/anchors, version agreement, eight GDD-derived phases, source hashes, catalogue counts and all 402 ZIP members against current files |
 | `reader-browser-checks.json` | Contents plus 16 reader routes at 1512 × 1050 and 390 × 844; page width and image loading |
 | `library-browser-checks.json` | Previews, archive, catalogue and supplied references at desktop/mobile widths |
-| `interaction-checks.json` | Six exterior/interior choices, eight landmarks, scene controls, document return and source previews |
-| `sprite-gif-checks.json` | Decoded samples, dimensions and 36-second timing for both Boerum scene GIFs |
+| `interaction-checks.json` · design 0.10 / art 0.9, retained | Six exterior/interior choices, eight landmarks, scene controls, document return and source previews |
+| `sprite-gif-checks.json` · art 0.9, retained | Decoded samples, dimensions and 36-second timing for both Boerum scene GIFs |
 | `refinement-checks.json` | All 121 frames against atlas rectangles; previous-object changes; source hashes and local render timing |
-| `external-link-responses.json` | HTTP responses from 47 external references; access denial is not interpreted as a missing source |
-| `../assets/sprite-catalogue/gif-validation.json` | GIF decoding, dimensions, transparency, timing and palette/pixel checks |
+| `external-link-responses.json` · prior source-access audit, retained | HTTP responses from 47 external references; access denial is not interpreted as a missing source |
+| `../assets/sprite-catalogue/gif-validation.json` · art 0.9, retained | GIF decoding, dimensions, transparency, timing and palette/pixel checks |
 
-`reader-*.png` and the library captures are current review screenshots, not additional asset variants. `episode-documents.png` records the complete three-document layout.
+`reader-*.png`, production-plan captures and library captures record the current read-through. `episode-documents.png` and `park-explorer-*.png` retain the unchanged component appearance checked in design 0.10. These are review screenshots, not asset variants.
 
 ## Repeat checks
 
-Use the dependency and rebuild instructions in the root README. Run `npm run check` after rebuilding. The Boerum test verifies the six legs, travel direction versus facing, glide poses, endpoint holds, loop boundary and both script load orders. The sprite check uses the explicitly retained 0.7 renderer as its visual-change baseline.
+Use the dependency and rebuild instructions in the root README. Run `npm run check` after rebuilding. Production phases are authored once in the GDD’s marked table; the build generates the visual plan and `working/production-plan.json`. The release check compares that plan with the focus in `project.json`, verifies authored anchors and rejects stale ZIP contents. The Boerum test verifies the six legs, travel direction versus facing, glide poses, endpoint holds, loop boundary and both script load orders. The sprite check uses the explicitly retained 0.7 renderer as its visual-change baseline.
 
 For browser checks, open the rebuilt page in a fresh load. Changing only a URL fragment does not reload an already open document. Visit the contents and every route in `working/reader-map.json` at both viewport sizes. Load each visible page’s images before checking width and broken images. Scroll within intentionally bounded diagrams and tables rather than interpreting their internal scroll areas as page overflow.
 

@@ -1,6 +1,6 @@
 # Park interactions — current study and next tests
 
-Checked against design 0.10 / art 0.9, 16 September 2026. This separates implemented scenic interactions from proposed operating behavior. The original 0.5 review is archived. These observations concern architecture, objects and interface behavior, not the verification of financial claims.
+Checked against design 0.11 / art 0.9, 16 September 2026. This separates implemented scenic interactions from proposed operating behavior. The original 0.5 review is archived. These observations concern architecture, objects and interface behavior, not the verification of financial claims.
 
 **Make the campus an assembled industrial pleasure ground.** Three distinctive sites, a few improbable furnishings, visible human occupation and one clear circulation system will carry more character than additional lawn, identical trees or miniature signs. The attraction is getting close to the objects and seeing how the place works. Every landmark does not need to mint revenue.
 
@@ -77,6 +77,8 @@ Selecting Porter should not rename the inspector “Accounts.” Departments can
 5. **Reading has a return path.** Opening the practice documents pauses motion and replaces the explorer with the document desk. **Return to park** restores selection, exterior/interior state, courtyard, focus and scroll position. Motion stays paused. Production pins, bookmarks and saved games remain future work.
 
 ## Next steps: acceptance checks
+
+Use these checks where they support the [P2 ordinary-work proof](#production/current-focus). Extra objects and alternate layouts are optional studies, not prerequisites for that proof.
 
 * With labels hidden, can a viewer distinguish the street frontage, long hall and stair/tree volume?
 * Can they select a landmark and its associated site without repeatedly selecting the wrong object? Test workstation selection only after it exists.

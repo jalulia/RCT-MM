@@ -1,6 +1,6 @@
 # UX and information architecture
 
-Research checked against design 0.10 / art 0.9, 16 September 2026. Paired exterior/interior previews, a consistent source inspector, scenic controls and a separate practice-document desk are implemented. The five-view relationship demonstration remains in the Interface chapter. The three paths below specify the operating prototype still to test; they do not describe a completed game or settle the player’s role.
+Research checked against design 0.11 / art 0.9, 16 September 2026. Paired exterior/interior previews, a consistent source inspector, scenic controls and a separate practice-document desk are implemented. The five-view relationship demonstration remains in the Interface chapter. The three paths below specify the operating prototype still to test; they do not describe a completed game or settle the player’s role.
 
 ## 1. Start with work, then reveal what each system says about it
 
@@ -40,6 +40,7 @@ The supplied screenshot illustrates why this boundary matters. “Nonbillable ho
 | Obligation | Commitment attached to work and counterparties | Inspect terms; compare invoice, payment and settlement |
 | Payment attempt | Dated event with its own identity | Trace funding, return, void, reissue and settlement |
 | Record/version | Inspectable document or system object | Open, compare, cite, pin; inspect origin and changes |
+| Claim | Attributed finding or open question | Inspect supporting/conflicting records, scope and review state |
 | Permission grant | Time-bounded relationship to a system/action | Show who could view, approve, execute, edit, export or revoke |
 
 These categories may share artwork, but must not share identity. A freelancer can walk into the park like a visitor; economically they remain a supplier of work. A client representative is a visitor too, with a different relationship. “Guest” is therefore a presentation category, not the root of the financial model. A 1099 belongs to a tax-reporting relationship and period; it should not be a universal wearable accessory assigned from a character’s silhouette.
@@ -95,6 +96,8 @@ Pleasure comes from arranging a small working system and watching it function. A
 5. Choose an operational response: reserve alternative capacity for an option fee, defer the handoff, or revise the production sequence. Keep available cash, deadline and supplier commitment separately visible. Delays and tradeoffs belong to this practice model; they imply no historical opportunity to rescue the company.
 6. Encounter a legitimate pooled funding example. A correctly supported batch must remain ordinary even though several records share one bank debit. Reward the accurate distinction, not the number of suspicious items found.
 
+The current desk supplies a Tuesday saved label and Wednesday return, not a later platform observation. Path B’s proposed surviving-label event still needs that later dated state.
+
 The narrative path then requires a short documentary comparison; the longer dossier remains optional. The briefing’s Creative Peaks episode reports a $23,500 debit and return with PaidInFull retained (p. 34). Its [inspected exports](../binding/native-inventory.md) support specific fields but leave the October 21/22 return-date conflict, Chase-direction conflict, complete return linkage and final receipt unresolved. The Reddit example—$50,000 of payment stories around one $25,000 debit—remains a briefing claim in this design work. The cited corrections include ordinary pooled allocations and bank-supported pairs (pp. 45–46). A playable control needs its own binding; the export-level $4,520 pooled comparison has not yet met that gate.
 
 ### Path C — Same work, different record
@@ -112,7 +115,7 @@ This path gives research actions consequence: a better-supported explanation and
 
 ## 6. Low-fidelity screens
 
-These are planning wireframes for the proposed operating paths. The current [world and inspector](#art/world-and-interface) and [document specimens](#art/interface-materials) show the implemented art-study treatment. At desktop size the map and inspector are co-visible. The current document reader pauses motion and covers the map with a return control. The operating prototype still needs to test the comparison layout and narrower-screen reading path.
+These are planning wireframes for the proposed operating paths. The current [world and inspector](#art/world-and-interface) and [document specimens](#art/interface-materials) show the implemented art-study treatment. At desktop size the map and inspector are co-visible. The current document reader pauses motion and replaces the explorer with a separate desk; **Return to park** restores the selection and exterior/interior state. The operating prototype still needs to test the comparison layout and narrower-screen reading path.
 
 ```text
 WORKSPACE · Practice scenario                   [Pause] [Next interval]
@@ -136,7 +139,7 @@ PAYMENT WORKBENCH · O-19 · P-04            Practice / Week 3 / Paused
 ┌──────────────────────┬──────────────────────┬─────────────────────┐
 │ Obligation           │ Bank events          │ Platform record     │
 │ Fabrication $12,000   │ Debit   $12,000      │ Label: Paid         │
-│ Supplier P-08        │ Return  $12,000      │ Record version: v2  │
+│ Supplier S-08        │ Return  $12,000      │ Record version: v2  │
 │ Delivery incomplete  │ No later settlement  │ Actor: not supplied │
 │ [Terms] [Invoice]    │ in supplied records  │ [Versions]          │
 └──────────────────────┴──────────────────────┴─────────────────────┘
@@ -179,7 +182,7 @@ Density should unfold through dependency. Introduce a term when the player needs
 
 ## 9. Next steps: operating-prototype tests
 
-Build paper or clickable-screen tests of the three paths, using synthetic fixtures. Recruit six to eight participants spanning management-game familiarity and financial familiarity; use results diagnostically, not as a statistically representative verdict.
+Start with Path A as the [P2 ordinary-work proof](#production/current-focus). Test Paths B and C after the work is understandable, using synthetic fixtures while source binding continues. Recruit six to eight participants spanning management-game familiarity and financial familiarity; use results diagnostically, not as a statistically representative verdict.
 
 1. **State discrimination:** include paid-and-settled, paid-but-returned, legitimate pooled funding, duplicate records without duplicate cash, and unresolved endpoints. Can players explain each without inferring theft from a label? Any systematic error stops content production.
 2. **View continuity:** ask participants to follow one obligation across all five views, then return to the original project. Record lost selections, mistaken dates and mistaken object substitutions.
@@ -189,4 +192,4 @@ Build paper or clickable-screen tests of the three paths, using synthetic fixtur
 
 Provide keyboard operation and a nonspatial object list alongside the map. Reading and comparison pause simulation by default. Scale text independently of sprites; never force pixel fonts on long documents. Use labels/patterns as well as color, reduced motion, adjustable sound, visible focus and no hover-only evidence. The interface can look composed and particular without making accuracy depend on perfect vision, fast reading or a steady mouse.
 
-The immediate design gate is small: can someone run one piece of work, discover one record conflict, and choose a sensible response while maintaining those distinctions? Until that works, a larger park will mostly give the confusion somewhere to walk.
+The immediate gate is ordinary work: can someone run one job and explain why another production plan changes the outcome? The later episode gate adds the record conflict and a sensible operating response.

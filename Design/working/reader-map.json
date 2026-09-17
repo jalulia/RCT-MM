@@ -24,7 +24,8 @@
         "title": "Design decisions",
         "level": 2
       }
-    ]
+    ],
+    "file": "GDD.md"
   },
   {
     "id": "episode",
@@ -76,7 +77,8 @@
         "title": "The ordinary control is still open",
         "level": 3
       }
-    ]
+    ],
+    "file": "GDD.md"
   },
   {
     "id": "objects",
@@ -113,7 +115,8 @@
         "title": "Customization and outcomes",
         "level": 2
       }
-    ]
+    ],
+    "file": "GDD.md"
   },
   {
     "id": "narrative",
@@ -135,7 +138,8 @@
         "title": "Characters and voice",
         "level": 2
       }
-    ]
+    ],
+    "file": "GDD.md"
   },
   {
     "id": "interface",
@@ -172,7 +176,8 @@
         "title": "Accessibility",
         "level": 2
       }
-    ]
+    ],
+    "file": "GDD.md"
   },
   {
     "id": "art",
@@ -319,13 +324,19 @@
         "title": "Production and next proof",
         "level": 2
       }
-    ]
+    ],
+    "file": "GDD.md"
   },
   {
     "id": "production",
     "title": "Build & test",
     "number": "07",
     "headings": [
+      {
+        "id": "production/current-focus",
+        "title": "Current focus",
+        "level": 2
+      },
       {
         "id": "production/architecture",
         "title": "Architecture",
@@ -366,7 +377,8 @@
         "title": "Change record",
         "level": 2
       }
-    ]
+    ],
+    "file": "GDD.md"
   },
   {
     "id": "evidence",
@@ -423,7 +435,8 @@
         "title": "Claim record required before historical content ships",
         "level": 2
       }
-    ]
+    ],
+    "file": "evidence-map.md"
   },
   {
     "id": "research-systems",
@@ -490,7 +503,8 @@
         "title": "Research access and scope",
         "level": 2
       }
-    ]
+    ],
+    "file": "research/systems.md"
   },
   {
     "id": "research-ux",
@@ -557,7 +571,8 @@
         "title": "9. Next steps: operating-prototype tests",
         "level": 2
       }
-    ]
+    ],
+    "file": "research/ux.md"
   },
   {
     "id": "research-refinement",
@@ -589,7 +604,8 @@
         "title": "Next steps",
         "level": 2
       }
-    ]
+    ],
+    "file": "research/sprite-refinement-0.8.md"
   },
   {
     "id": "research-offices",
@@ -641,7 +657,8 @@
         "title": "Supporting inspected images and research record",
         "level": 2
       }
-    ]
+    ],
+    "file": "research/office-art-research.md"
   },
   {
     "id": "research-discoveries",
@@ -713,7 +730,8 @@
         "title": "Source and credit record",
         "level": 2
       }
-    ]
+    ],
+    "file": "research/campus-discoveries.md"
   },
   {
     "id": "research-park",
@@ -760,7 +778,8 @@
         "title": "Next steps: acceptance checks",
         "level": 2
       }
-    ]
+    ],
+    "file": "research/park-logic-review.md"
   },
   {
     "id": "binding",
@@ -807,7 +826,8 @@
         "title": "8. Readiness decision",
         "level": 2
       }
-    ]
+    ],
+    "file": "binding/episode-01-draft.md"
   },
   {
     "id": "binding-inventory",
@@ -839,6 +859,7 @@
         "title": "Missing originals and next binding requirements",
         "level": 2
       }
-    ]
+    ],
+    "file": "binding/native-inventory.md"
   }
 ]

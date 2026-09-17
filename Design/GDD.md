@@ -1,6 +1,6 @@
 # Mad Money Tycoon — game design document
 
-Revision 0.10 · 16 September 2026 · Design review edition
+Revision 0.11 · 16 September 2026 · Design review edition
 
 ## 01. Game
 
@@ -34,7 +34,7 @@ Every narrative chapter includes a short historical comparison. It identifies wh
 
 ### Design decisions
 
-| Proposed rule | Reason |
+| Design rule | Reason |
 |---|---|
 | Separate work, obligations, cash, records and permissions | The story depends on their differences |
 | Persistent staff departments; dated supplier engagements | Employment and external work create different commitments |
@@ -43,11 +43,13 @@ Every narrative chapter includes a short historical comparison. It identifies wh
 | Preserve selection and period across views | Players need to compare the same object |
 | Keep historical and simulated outcomes distinct | A player's choices cannot create evidence |
 
+These are the current design constraints. Their operating effects still need the [ordinary-work proof](#production/current-focus); the art study alone does not validate them.
+
 Open decisions: audience; player authority; real-name representation; final building aesthetics; game distribution. This design review is prepared for public GitHub Pages; publication of the eventual game remains a separate decision.
 
 ## 02. First episode
 
-A $100,000 campaign needs a $12,000 fabricated component. The bill says Paid, but the available bank record shows a debit followed by an equal return. The player must protect delivery while confirmation is pending.
+A $100,000 campaign needs a $12,000 fabricated component. A saved platform record says Paid, but the available bank record shows a debit followed by an equal return. The player must protect delivery while confirmation is pending.
 
 All amounts, schedules and choices in this prototype are invented.
 
@@ -136,7 +138,7 @@ Supported routine transactions are handled in batches. Inquiry starts with a con
 | Control | Inspect/request specific permissions | A supported action becomes available or remains blocked | Ownership and seniority do not grant root access |
 | Records | Preserve versions, compare sources, bind claims | Better explanation and retained lineage | Missing records do not become adverse facts by default |
 
-Start with one cash balance, five department capacities, one site and a few external commitments. Add a credit facility, currencies or legal entities when the test needs them. Hong Kong data requires explicit HKD/USD fields and sourced conversion rules.
+The first operating proof uses one cash balance, one shared production capacity, one site and supplier S-08. Expand to the five departments after that tradeoff works. Add a credit facility, currencies or legal entities when the test needs them. Hong Kong data requires explicit HKD/USD fields and sourced conversion rules.
 
 Compute money in integer minor units. Preserve original source precision and record display rounding separately. Aggregate by stated population and economic episode; a platform object and its bank member cannot become two expenses.
 
@@ -219,11 +221,11 @@ Rights and obligations stay in the inspector across views. Preserve the selected
 
 <!-- figure:desk-layouts -->
 
-Start with two pinned comparisons and one active inspector. Reading pauses the world and retains a return target. A full window manager is outside the first prototype.
+Start with one active document, one pinned comparison and the selected object’s context. Reading pauses the world and retains a return target. A full window manager is outside the first prototype.
 
 ### Document vocabulary
 
-The [interactive material study](#art/interface-materials) develops the invoice, saved record, bank-event strip, form reader, player note and record index as distinct objects. The same components open from the park inspector. White invoice stock carries obligations; pink carbon stock carries a version; the narrow strip carries dated events. Shape and printed labels carry the distinction as well as colour.
+The [interactive material study](#art/interface-materials) develops the invoice, saved record, bank-event strip, form reader, player note and record index as distinct objects. The same components open from the separate **Practice documents** tray beside the park. White invoice stock carries obligations; pink carbon stock carries a version; the narrow strip carries dated events. Shape and printed labels carry the distinction as well as colour.
 
 ### Payment workbench
 
@@ -287,7 +289,7 @@ The world is drawn on an integer pixel grid. Text, controls and source documents
 
 The kit separates ground, props, people, signs and building parts. It can be extended without repainting a whole scene. Boerum, Porter and Johnson supply distinct site forms. Their placement together is a fictional park composition; no department, entity or historical chronology is inferred from a building style.
 
-The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registered objects and 121 transparent frames, with labelled overviews, per-object sheets and a frame manifest. The Boerum previews show the full 36-second cycle. Catalogue exports rebuild from the same render functions as the park. The full refinement redrew 43 earlier objects and added the complete Chrysler attraction assembly. The latest pass refines Supernova and corrects Johnson’s frontage and interior. Its car has 16 orientations. [Compare the previous and refined sprites](assets/sprite-catalogue/sheets/refinement-comparison.png).
+The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registered objects and 121 transparent frames, with labelled overviews, per-object sheets and a frame manifest. The Boerum previews show the full 36-second cycle. Catalogue exports rebuild from the same render functions as the park. The full refinement redrew 43 earlier objects and added the complete Chrysler attraction assembly. The latest pass refines Supernova and corrects Johnson’s frontage and interior. The Chrysler has 16 orientations. [Compare the previous and refined sprites](assets/sprite-catalogue/sheets/refinement-comparison.png).
 
 ### Assembly
 
@@ -322,18 +324,19 @@ The invoice and bank extract are not interchangeable receipts. A platform label 
 
 Geist remains the navigation face. Geist Mono handles IDs, narrow records and tabular figures. Sprocket holes, perforations and dense dot patterns stay at the edge of the reading surface. No texture, random ink loss or simulated screen flicker crosses a number. Pink identifies a record copy, green identifies an active control; neither is a verdict.
 
-The populated specimens use the fictional C-07 / O-19 / P-04 fixture. The added v1 label and its times are invented interaction values. T-01 is a separate, unbound form-layout study, not an IRS form or a record connected to C-07. The 2024 IRS Form 941-X is linked only as a visual reference for field and part structure. Player notes persist across document changes but reset on page reload.
+The populated specimens use the fictional C-07 / O-19 / P-04 fixture. The version labels and times are invented interaction values. V2 was recorded on Tuesday, before Wednesday’s bank return; reopening it does not establish a post-return platform status. A later status observation is required before the playable episode can teach label persistence. T-01 is a separate, unbound form-layout study, not an IRS form or a record connected to C-07. The 2024 IRS Form 941-X is linked only as a visual reference for field and part structure. Player notes persist across document changes but reset on page reload.
 
 ### Production and next proof
 
-| Built in this study | Next production proof |
+| Implemented | Next use in the operating proof |
 |---|---|
-| Original raster primitives, one projection, named material ramps | Compare a model-to-sprite export against this kit at the same size |
-| Three office-derived buildings with removable roofs, mixed occupancy and shared furnishings | Walk a person behind a wall, through a doorway and past furniture without overlap errors |
-| Ground, paths, landscape, signage, props and people reused in the scene | Add twenty objects without changing camera, light or pixel scale |
-| Five inspector views preserve the selected building | Test whether readers distinguish place, obligation, attempt and record |
-| Separate readable record pane and bank-event strip | Bind one historical scene to inspected native exhibits |
-| Object catalogue, individual PNG/GIF exports, atlases, anchors and orientation metadata | Add occlusion masks and approve a complete production animation set |
+| Original pixel renderer, three office-derived buildings, removable roofs | Use one existing site; make room for a visible production handoff |
+| 44 registered objects, paths, furnishings, staff and scenery | Reuse the kit for the two production plans; assess recognition at scene scale |
+| Six exterior/interior choices and a consistent source inspector | Retain place and selection while inspecting the work assigned there |
+| Separate practice-document desk with version and bank comparison | Introduce the payment exception after ordinary work is understandable |
+| PNG/GIF exports, atlases, anchors and orientation metadata | Export only the states needed by the proof from the same renderer |
+
+The [current focus](#production/current-focus) defines that proof. Model-to-sprite comparisons, new camera angles, extra attractions and a full animation set are later production options. Occlusion and handoff poses become immediate tasks only where the chosen scene needs them.
 
 This pass demonstrates a visual system and its interactions. It does not establish a complete animation set, a running economy or an approved production engine. The current procedural drawings are an editable art proof; modelled source assets can replace them only if they preserve the resulting image.
 
@@ -343,9 +346,22 @@ Source images and third-party game art stay in the reference board. Supplied PZ 
 
 ## 07. Build & test
 
-Choose the campaign and engine after one complete episode has passed source and play tests.
+Next: make one ordinary job playable with the existing kit. Source binding runs in parallel. Choose the campaign and engine after the episode has passed its relevant source and play tests.
 
 <!-- figure:current-deliverables -->
+
+### Current focus
+
+**P2 · Ordinary-work proof — next.** One fictional site, campaign C-07, one shared production-capacity conflict and one physical handoff. The player plans, runs an interval and revises the plan. Both in-house production and supplier S-08 must be viable.
+
+<!-- figure:ordinary-work-proof -->
+
+Before implementation, specify the invented starting cash, internal work time and cost, supplier lead time, approvals, due date and competing capacity reservation. C-07’s $100,000 budget is a ceiling, not a cash balance; O-19’s $12,000 fabrication amount already belongs to the external plan. No new historical values are needed.
+
+The output is a three-minute playable or clickable test with a visible consequence for delivery, capacity and cash commitments. Observe whether uncoached players can explain the tradeoff and choose to try the other plan. Revise the management loop if the decisions only change a final explanation. Use the [diagnostic test protocol](#production/acceptance-tests), not a numerical pass rate from a small sample.
+
+**P1 · Source binding — parallel.** Retrieve the original return chain, establish the later observation of the same payment object and bind an ordinary control. Its [release gate](binding/episode-01-draft.md#8-readiness-decision) applies to the historical comparison; it does not block this fictional proof. Additional art studies enter the immediate work only when they solve a demonstrated recognition or interaction problem.
+
 
 ### Architecture
 
@@ -373,16 +389,20 @@ Each historical scene needs source/financial, gameplay-comprehension and interfa
 
 <!-- figure:production-plan -->
 
-| Phase | Work and concrete output | Proceed only when | Work that can run alongside it |
+<!-- production:table -->
+| Phase | Status | Work and concrete output | Proceed only when |
 |---|---|---|---|
-| 0. Source orientation — complete at stated scope | Corpus inventory, full chapter coverage, 48-technique routing, corrections, draft GDD, research and style options | Assumptions, corrections and inspection limits are visible | Reference research and art refinement |
-| 1. Source binding — active | First episode packet, exact export locators and conflicts recorded; retrieve originals and close the identity links | No unresolved numeric/identity claim is needed by that episode | Synthetic capacity prototype; sprite readability study |
-| 2. Ontology workshop | Map a contract, site, entity, employee, supplier, obligation, payment and record through one complete job | Same object can survive all views without changing meaning | Two competing player-role storyboards |
-| 3. Paper/clickable playtest | Test operating-campus and reconstruction-park versions of one episode | Players can choose and explain consequences; ordinary play has appeal | Art style tiles and document legibility tests |
-| 4. Thin playable slice | 12–15 minute loop, limited placeable objects, one conflict and one valid control | No systematic confusion about money/state/provenance; players voluntarily try a second plan | Source work on next chapter; pipeline cost benchmark |
-| 5. Campaign outline lock | Sequence learning prerequisites, historical anchors, permissions, events and ending | Each chapter earns a new distinction and has source coverage | Additional art and sound studies only for approved objects |
-| 6. Production | Author episodes, assets and software against the chosen model | Each scene passes semantic and source review | Accessibility, saves, performance, mod boundary |
-| 7. Release preparation | Audience-specific editing, attribution, rights, packaging and distribution checks | Known review findings resolved; version and source scope explicit | Optional read-only infographic export |
+| P0 · Source orientation | Complete at stated scope | Corpus inventory, chapter coverage, technique routing and initial design | Corrections and inspection limits remain visible |
+| P1 · Source binding | Active · parallel | Original return linkage, same-object status observation and an ordinary control | The historical comparison meets the binding packet’s claim-specific gate |
+| P2 · Ordinary-work proof | Next | Three-minute job; two viable plans; one capacity conflict and handoff | Players can explain the tradeoff and want to try another plan |
+| P3 · Structure comparison | Queued after P2 | Test operating-campus and reconstruction-park versions of the same payment conflict | Players choose and explain consequences without confusing fiction with history |
+| P4 · Thin playable episode | Queued after P3 | 12–15 minute loop with one conflict, one valid control and the historical comparison | State, identity and provenance stay clear; P1 covers the historical content used |
+| P5 · Campaign outline lock | Queued after P4 | Sequence learning prerequisites, source anchors, permissions and endings | Each chapter adds a distinction and has adequate source coverage |
+| P6 · Game production | Queued after P5 | Episodes, assets, software, saves, access and performance checks | Each scene passes source, semantic and gameplay review |
+| P7 · Game release preparation | Queued after P6 | Audience edit, attribution, rights, packaging and distribution | Review findings resolved; version and source scope explicit |
+<!-- /production:table -->
+
+P1 continues alongside P2–P3. Structure tests can use synthetic records; the historical portion of P4 requires P1’s gate. Publishing this design review is complete and is separate from the eventual game release in P7.
 
 Estimate after the first source-bound slice using verified scenes, unique transitions, assets and review effort. The located validation package is an archival collection; full campaign coverage has not been assessed.
 
@@ -417,19 +437,22 @@ Start with six to eight participants with different management-game and financia
 
 ### Open decisions and next steps
 
-1. First audience and the understanding they should leave with.
-2. Whether agency means fictional operations, historical discovery or explicit alternative history.
-3. Obtain the current source-release manifest and the original statements and identity links listed in the binding packet.
-4. Three objects whose ordinary operation should be enjoyable.
-5. Legitimate transaction paired with the first adverse example.
-6. Refine building aesthetics within the accepted pixel system; test recognition at native size.
+| Decision or dependency | When it matters | Next action |
+|---|---|---|
+| Audience and player authority | P2 test setup; P3 structure choice | State the provisional operations role and participant mix before testing |
+| Operating campus or reconstruction park | P3 | Compare the two structures using the same conflict; retain fixed historical outcomes |
+| Ordinary work | P2, immediate | Specify and test C-07’s internal-capacity plan against S-08’s supplier plan |
+| Historical comparison and legitimate control | P1, alongside P2–P3 | Follow the binding packet; start with the $4,520 pooled-funding lead, subject to its unresolved checks |
+| Art refinements | As required by P2 recognition or interaction | Test the existing kit before adding objects or camera views |
+| Real-name treatment, campaign and game distribution | Before P5/P7 respectively | Resolve against audience, source coverage and review findings |
 
-Audience and player authority remain open design decisions. Binding now uses CASE-01 as the narrative reference and the located validation package as an archival source collection; neither overrides conflicting records. Synthetic interaction and office-art studies can continue alongside that review.
+CASE-01 is the narrative reference; the validation package is an archival source collection. Neither overrides conflicting records. The [current focus](#production/current-focus) is the working priority; research-page proposals support it rather than creating separate production queues.
 
 ### Change record
 
 | Revision | Change | Status |
 |---|---|---|
+| 0.11 | Cross-reference and dependency audit; one P0–P7 phase sequence; explicit P2 ordinary-work proof; corrected document entry points, taxonomy, source gates and preview labels | Design 0.11 / art 0.9; source binding remains parallel and historical interaction inactive |
 | 0.10 | Exterior/interior preview choices, consistent source inspector, separate practice desk, compact home navigation; Johnson frontage and interior correction; black-and-silver Supernova | Design 0.10 / art 0.9; historical interaction remains inactive |
 | 0.9 | Full editorial reconciliation; inline visual examples; current preview library; GIF exports and versioned archive; portable Pages package | Design review release; historical interaction remains inactive |
 | 0.8 | Source-based refinement of every registered sprite; rounded reception sculpture, rebuilt booth/cat/stag/castle, corrected stairs and stepped shadows, 16-direction Chrysler and complete attraction assembly | Art study; photographs remain references and attraction behaviour remains invented |

@@ -29,3 +29,31 @@
 .index-notes .reader-preview-links img{height:76px;padding:0;background:#f5f6f3;image-rendering:pixelated}.index-notes .reader-preview-links span{padding:0;border:0;font:12px/1.4 var(--mono)}
 .index-notes .scope-note{font-size:12px}.contents-main>.index-label{margin-top:0}
 @media(max-width:740px){.index-notes .reader-preview-links{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.index-notes .reader-preview-links a{display:flex;flex-direction:column;align-items:stretch;gap:9px}.index-notes .reader-preview-links img{width:100%;height:70px}.index-notes .reader-preview-links span{font-size:10px}.index-notes .source-document{max-width:340px}}
+
+/* The production plan is a parallel source track beside the next playable proof. */
+.production-tracks{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+.phase-card{min-width:0;background:#fff;border:1px solid var(--rule);padding:20px}
+.phase-label{display:flex;justify-content:space-between;gap:12px;font:10px/1.5 var(--mono);margin-bottom:16px}
+.phase-label>span{color:var(--ink)}.phase-label>b{font-weight:400}
+.phase-card h4{font:500 21px/1.15 var(--sans);letter-spacing:-.035em;margin:0 0 12px}
+.phase-card p{font-size:13px;line-height:1.5;margin:0 0 17px}
+.phase-gate{border-top:1px solid var(--rule);padding-top:12px;font-size:12px;line-height:1.5}
+.phase-gate>span{display:block;font:9px var(--mono);margin-bottom:6px}
+.phase-next{border-color:var(--ink)}.phase-next .phase-label>b{background:var(--fresh);padding:2px 6px}
+.phase-parallel .phase-label>b{background:#f3bfd4;padding:2px 6px}
+.phase-complete .phase-card{display:grid;grid-template-columns:1fr 1.5fr;gap:4px 28px}
+.phase-complete .phase-label{grid-column:1/-1;margin-bottom:8px}
+.phase-complete h4{font-size:17px;margin:0}.phase-complete p{margin:0}
+.phase-complete .phase-gate{grid-column:2;border:0;padding:0;color:var(--muted)}.phase-complete .phase-gate>span{display:inline;margin-right:8px}
+.phase-convergence{font:10px/1.6 var(--mono);margin:20px 0!important}
+.phase-queue{display:grid;border-top:1px solid var(--ink)}
+.phase-queue .phase-card{display:grid;grid-template-columns:minmax(130px,.8fr) 1fr 1fr;gap:10px 20px;border:0;border-bottom:1px solid var(--rule);padding:20px 0;background:transparent}
+.phase-queue .phase-label{grid-column:1/-1;margin:0}.phase-queue h4{font-size:18px;margin:0}.phase-queue p{margin:0}.phase-queue .phase-gate{border:0;border-left:1px solid var(--rule);padding:0 0 0 16px}
+.work-proof{background:#fff;border:1px solid var(--ink)}.work-proof-job{padding:20px;border-bottom:1px solid var(--ink)}
+.work-proof-job b{display:block;font:500 21px/1.3 var(--sans);letter-spacing:-.03em}.work-proof-job span{display:block;font-size:12px;margin-top:8px}
+.work-proof-options{display:grid;grid-template-columns:1fr 1fr}.work-proof-options>div{padding:22px}.work-proof-options>div+div{border-left:1px solid var(--rule)}
+.work-proof-option{font:10px var(--mono)}.work-proof-options h4{font-size:22px;font-weight:500;margin:12px 0 20px;letter-spacing:-.035em}
+.work-proof-options ol{list-style:none;margin:0;padding:0}.work-proof-options li{font-size:13px;padding:10px 0;border-top:1px solid var(--rule);margin:0}.work-proof-options li+li:before{content:'↓';display:inline-block;width:20px}
+.work-proof-options p{font-size:12px;line-height:1.5;margin:16px 0 0;color:var(--muted)}
+.work-proof-result{border-top:1px solid var(--ink);padding:15px 20px;display:flex;gap:12px 22px;flex-wrap:wrap;font:11px/1.4 var(--mono)}.work-proof-result b{font-weight:500}.work-proof-result span{border-bottom:2px solid #f3bfd4}
+@media(max-width:780px){.production-tracks,.work-proof-options{grid-template-columns:1fr}.work-proof-options>div+div{border-left:0;border-top:1px solid var(--rule)}.phase-complete .phase-card,.phase-queue .phase-card{display:block}.phase-complete .phase-label,.phase-queue .phase-label{margin-bottom:12px}.phase-complete h4,.phase-queue h4{margin-bottom:10px}.phase-complete .phase-gate,.phase-queue .phase-gate{border:0;padding:0;margin-top:12px}.phase-card{padding:16px}}

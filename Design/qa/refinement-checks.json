@@ -52,8 +52,8 @@
   "atlasFramesExact": true,
   "sourceHashesMatch": true,
   "sceneTimingMs": {
-    "median": 42.019624999999905,
-    "max": 54.062832999999955
+    "median": 40.557166999999936,
+    "max": 54.97974999999997
   },
   "scope": "Raster integrity, animation semantics and local render time; source recognition separately inspected visually."
 }
