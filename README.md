@@ -1,6 +1,6 @@
 # Mad Money Tycoon
 
-Design review **0.9** · original art library **0.8** · 16 September 2026.
+Design review **0.10** · original art library **0.9** · 16 September 2026.
 
 Start with the [design document](Design/design-review.html). It contains the current game proposal, narrative, object model, interface, art studies, source scope and build plan.
 

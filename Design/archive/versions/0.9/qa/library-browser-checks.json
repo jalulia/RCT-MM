@@ -1,0 +1,58 @@
+[
+  {
+    "page": "previews",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "images": 50,
+    "broken": []
+  },
+  {
+    "page": "previews",
+    "width": 390,
+    "scrollWidth": 390,
+    "images": 50,
+    "broken": []
+  },
+  {
+    "page": "archive",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "images": 71,
+    "broken": []
+  },
+  {
+    "page": "archive",
+    "width": 390,
+    "scrollWidth": 390,
+    "images": 71,
+    "broken": []
+  },
+  {
+    "page": "catalogue",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "images": 167,
+    "broken": []
+  },
+  {
+    "page": "catalogue",
+    "width": 390,
+    "scrollWidth": 390,
+    "images": 167,
+    "broken": []
+  },
+  {
+    "page": "references",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "images": 24,
+    "broken": []
+  },
+  {
+    "page": "references",
+    "width": 390,
+    "scrollWidth": 390,
+    "images": 24,
+    "broken": []
+  }
+]

@@ -271,5 +271,5 @@ function icon(canvas,kind){
  if(kind==='People'){rect(3,2,3,4,ink);rect(4,3,2,2,paper);rect(10,3,3,4,ink);rect(11,4,1,2,paper);poly([[2,7],[6,7],[8,10],[8,14],[1,14],[1,10]],ink);rect(2,9,4,4,pink);rect(2,9,2,2,'#ffd3df');poly([[9,8],[13,8],[15,11],[15,14],[9,14]],ink);rect(10,10,3,3,blue);}
  if(kind==='Control'){rect(1,2,14,12,ink);rect(2,3,12,10,shade);for(const [x,y,c]of[[4,6,pink],[8,10,green],[12,7,blue]]){rect(x,4,1,8,edge);rect(x-1,y-1,3,3,ink);rect(x-1,y-1,2,2,c);}}
 }
-window.MMTArt={P,scene,specimen,buildings,icon,drawing:{withSurface,cacheDraw,refGroundShadow,pt,rect,line,poly,outline,plane,box,rnd,tile,tree,shrub,planter,lamp,bench,crate,desk,person,pixelText,sign,van,selection,setup}};
+window.MMTArt={P,scene,specimen,buildings,icon,drawing:{withSurface,cacheDraw,refGroundShadow,refSignText,pt,rect,line,poly,outline,plane,box,rnd,tile,tree,shrub,planter,lamp,bench,crate,desk,person,pixelText,sign,van,selection,setup}};
 })();

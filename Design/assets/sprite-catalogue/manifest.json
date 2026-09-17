@@ -1,15 +1,15 @@
 {
-  "revision": "0.8",
+  "revision": "0.9",
   "scope": "Original art study; one camera. Not a complete production animation set.",
   "coordinateSystem": "Atlas rectangles use top-left origin; sprite anchors are local pixel coordinates.",
   "sources": [
     {
       "file": "../../working/pixel-kit.js",
-      "sha256": "d05818dc96dc9e959964671559be7e86bc184aff5dca31ee3460189b2a8b0c44"
+      "sha256": "1ae3568ea8eee349179a35cca91ee413fad2c3d2ef95ba0dc861bbb50712e4a9"
     },
     {
       "file": "../../working/park-kit.js",
-      "sha256": "011351f0933c8b356eddde1009da6bda876bfeeef4ad99ef930e9a68238fa4cb"
+      "sha256": "d6af4c26367f0821bf4a71714dc2158bda240fa89a6a80fce47c32c3fe1aa39b"
     },
     {
       "file": "../../working/office-pixel-study.js",
@@ -17,7 +17,7 @@
     },
     {
       "file": "../../working/sprite-registry.cjs",
-      "sha256": "8dbd878381e2b7f4bd9a3ec6cb0cc43278ea2f1769a9d660d4d8725f970e9ab6"
+      "sha256": "1a3f970c0b90fd2bfb7637e7aa49b642ed46d402c06b87741c0fb4c066d1b04b"
     }
   ],
   "counts": {
@@ -300,7 +300,7 @@
     },
     {
       "id": "B-03",
-      "name": "Johnson workshop",
+      "name": "266 Johnson",
       "group": "Buildings",
       "description": "Actual park geometry. Roof and cutaway share one footprint.",
       "variants": [
@@ -322,7 +322,7 @@
           },
           "gif": {
             "file": "objects/B-03/roof-on.gif",
-            "label": "Johnson workshop / Roof on — still",
+            "label": "266 Johnson / Roof on — still",
             "kind": "still",
             "width": 192,
             "height": 160,
@@ -333,7 +333,7 @@
             "sourcePngs": [
               "objects/B-03/roof-on.png"
             ],
-            "sha256": "b5c36226af89d8a8b0268de7b83ab82235cb744b1dd074d28132f0afe928dc99"
+            "sha256": "f40d95f73426e04ae479423615f6599ca93e0e8853ef8b53623407ee9632e231"
           }
         },
         {
@@ -354,7 +354,7 @@
           },
           "gif": {
             "file": "objects/B-03/roof-off.gif",
-            "label": "Johnson workshop / Roof off — still",
+            "label": "266 Johnson / Roof off — still",
             "kind": "still",
             "width": 192,
             "height": 160,
@@ -365,7 +365,7 @@
             "sourcePngs": [
               "objects/B-03/roof-off.png"
             ],
-            "sha256": "96e216acd04719dbe7733bc797734278cae870a8864b134a688c105c14ff11e3"
+            "sha256": "2650c01fa99a166b4b9e5c12cd0ced227f67693aaad5650d1fa8af6685c09f2d"
           }
         }
       ],
@@ -390,7 +390,7 @@
         "rows": 1,
         "gif": {
           "file": "objects/B-03/sprite-sheet.gif",
-          "label": "Johnson workshop / all frames — still sheet",
+          "label": "266 Johnson / all frames — still sheet",
           "kind": "still",
           "width": 384,
           "height": 160,
@@ -401,7 +401,7 @@
           "sourcePngs": [
             "objects/B-03/sprite-sheet.png"
           ],
-          "sha256": "d63a8ae8d158261e53008e5624739fc8ec39c7c019ebb8e025f6fe7a287f45c4"
+          "sha256": "c14389970cab290a5d5d7641729a56ef8270b52274370343c9d8d5b464008452"
         }
       },
       "gifSequences": [
@@ -419,7 +419,7 @@
             "objects/B-03/roof-on.png",
             "objects/B-03/roof-off.png"
           ],
-          "sha256": "659c8b05a230383ae00061e79f94e11ada645fb91869486b6b6dd1277e774430",
+          "sha256": "2af525ac6f03d7616a473ebae0d003f324b74f27ef63bdf31b882641a87864e4",
           "durationsMs": [
             1000,
             1000
@@ -1231,10 +1231,10 @@
           "label": "Default",
           "file": "objects/L-03/default.png",
           "bounds": {
-            "x": 53,
-            "y": 61,
-            "width": 83,
-            "height": 80
+            "x": 54,
+            "y": 56,
+            "width": 84,
+            "height": 77
           },
           "sheetRect": {
             "x": 0,
@@ -1251,11 +1251,11 @@
             "frames": 1,
             "transparent": true,
             "paletteReduced": false,
-            "alpha": "threshold at 128",
+            "alpha": "original binary alpha",
             "sourcePngs": [
               "objects/L-03/default.png"
             ],
-            "sha256": "2077fb8b26cc2297d5fb8c06fb2e6619c372ce0e250694d7d0a54b5fb5e84dad"
+            "sha256": "580c041d24bae76b0541ac778e50f7a2898d56e6af54333cacceec7c98fcb0e6"
           }
         }
       ],
@@ -1283,11 +1283,11 @@
           "frames": 1,
           "transparent": true,
           "paletteReduced": false,
-          "alpha": "threshold at 128",
+          "alpha": "original binary alpha",
           "sourcePngs": [
             "objects/L-03/sprite-sheet.png"
           ],
-          "sha256": "1b18851d9adea6e1f1b0582ec6ac6346872a005a067b51a6280d82bbe47eaa96"
+          "sha256": "343a2037825cd0e1070fcd500b40164292cb5b48351578b3effaee555ad10699"
         }
       },
       "gifSequences": []
@@ -3961,10 +3961,10 @@
           "label": "Default",
           "file": "objects/S-06/default.png",
           "bounds": {
-            "x": 86,
-            "y": 79,
-            "width": 49,
-            "height": 50
+            "x": 74,
+            "y": 83,
+            "width": 45,
+            "height": 32
           },
           "sheetRect": {
             "x": 0,
@@ -3981,11 +3981,11 @@
             "frames": 1,
             "transparent": true,
             "paletteReduced": false,
-            "alpha": "threshold at 128",
+            "alpha": "original binary alpha",
             "sourcePngs": [
               "objects/S-06/default.png"
             ],
-            "sha256": "e8fbce3cdcf702eed2fb5e854e7350da0efa12aaefd764690f549f25648ac883"
+            "sha256": "9aecc94b048d131f6663f2d1d810e3824087d25ef44a22c87fdc4bfb91ddccbf"
           }
         }
       ],
@@ -4012,11 +4012,11 @@
           "frames": 1,
           "transparent": true,
           "paletteReduced": false,
-          "alpha": "threshold at 128",
+          "alpha": "original binary alpha",
           "sourcePngs": [
             "objects/S-06/sprite-sheet.png"
           ],
-          "sha256": "2c206e724308797d9af3787e8ce31590b37eeb8a4d1b383fce4d3da21090cb26"
+          "sha256": "16189788955e6c69ccf64b9abff2facd119e850f2f410d0cc2f75877916880bf"
         }
       },
       "gifSequences": []
@@ -6777,7 +6777,7 @@
         "sourcePngs": [
           "sheets/buildings.png"
         ],
-        "sha256": "9923b3452ca5fed1923b57c04d55f44af5dcb2f9453f6fb3b17d56453a5a8c85"
+        "sha256": "f5e09f46f3713992546516b4d6270603c0e58c79c4cd7fdb3d7522e83a393499"
       },
       "previewGif": {
         "file": "sheets/buildings-overview.gif",
@@ -6792,7 +6792,7 @@
         "sourcePngs": [
           "sheets/buildings-overview.png"
         ],
-        "sha256": "63af1364667afdfdc56e6770b12cde6da9c99b4e4fa2929d477bae2470864d71"
+        "sha256": "e944f91b9d7a9e5ad85052487a3cd79454fb6bbb378eade25ba0dc299b533122"
       }
     },
     {
@@ -7236,11 +7236,11 @@
         "frames": 1,
         "transparent": true,
         "paletteReduced": false,
-        "alpha": "threshold at 128",
+        "alpha": "original binary alpha",
         "sourcePngs": [
           "sheets/landmarks.png"
         ],
-        "sha256": "1e07df85837ae566569f86954e16152d904f4c3d900dadd5c16ed8be4914adb3"
+        "sha256": "e63521545f3f876b34849595108c07d1dd122a653a245df1e6f978dd181ac1a3"
       },
       "previewGif": {
         "file": "sheets/landmarks-overview.gif",
@@ -7255,7 +7255,7 @@
         "sourcePngs": [
           "sheets/landmarks-overview.png"
         ],
-        "sha256": "b3f3394f20e040fad2383324dfbee1e950bcac2ab9107cfbe8c00f39fa4f93ae"
+        "sha256": "ffad56c1ad7919a8335dd282838cc363bb897f9cdaaee758d11a2c68f301b883"
       }
     },
     {
@@ -7346,7 +7346,7 @@
         "sourcePngs": [
           "sheets/building-parts-overview.png"
         ],
-        "sha256": "b1929eb6c1521c65f330a7d5d07f2cf5b1f393741abc48a09c500575c134be51"
+        "sha256": "59192b8ca9eb5174e878724279e7a6f61815a30be4da6b9900470b772ce728fd"
       }
     },
     {
@@ -7485,7 +7485,7 @@
         "sourcePngs": [
           "sheets/street-service-overview.png"
         ],
-        "sha256": "f6e15682639ac12a8c1029b7571634c82c093f2428070be3efe6cb929d016071"
+        "sha256": "4e42d2539f446e31f0514490727f72d2b9a1b82844566cb8eea777913c3a42be"
       }
     },
     {
@@ -7660,7 +7660,7 @@
         "sourcePngs": [
           "sheets/ground-planting-overview.png"
         ],
-        "sha256": "8d7193675b1a226efcac5416495920fb3ee860a9d577bfe3184b766e14c4b4c4"
+        "sha256": "8a1b905a89bde4f7148c9bd99a9e849d4f5f529ea3c638fd4e68a1031d4991df"
       }
     },
     {
@@ -7760,7 +7760,7 @@
         "sourcePngs": [
           "sheets/signs.png"
         ],
-        "sha256": "e725a1299ccd2b0007c2d27bf13aa94c0937402883dac60b8c0d57889913c4d5"
+        "sha256": "9bb4ee44f5c474f47c612652ddbc4a034a18970674ba569ed341a8c2b3875e78"
       },
       "previewGif": {
         "file": "sheets/signs-overview.gif",
@@ -7775,7 +7775,7 @@
         "sourcePngs": [
           "sheets/signs-overview.png"
         ],
-        "sha256": "0aa6583f3a9d5c6591b9cc434ff3248d0a4befc091c5f673636f4c44f9951ea5"
+        "sha256": "5761dc5b8dbd74de6dc02b22cc09c6a1e6834594bfdc19579d892b080f76ce68"
       }
     },
     {
@@ -8370,7 +8370,7 @@
         "sourcePngs": [
           "sheets/people-overview.png"
         ],
-        "sha256": "fa0334d697461ab6d7268a2d2efb125e4878f9ce718bc8aacd28ac4bbda62a10"
+        "sha256": "05d8bfdfcb857b3ce2e6f5c8368ac39e3b081354e7039eadd80f685650350dad"
       }
     },
     {
@@ -8458,7 +8458,7 @@
         "sourcePngs": [
           "sheets/interface-icons-overview.png"
         ],
-        "sha256": "41e02d73ca51b997f7a42a46e0cc679cb410b414d230601d9470304fbe07d7d8"
+        "sha256": "29bb4e59bac89b0eabf10a3049bfcb9b8332599ec118dec3be84788b53af729a"
       }
     }
   ],
@@ -8671,7 +8671,7 @@
       },
       {
         "file": "objects/B-03/roof-on.gif",
-        "label": "Johnson workshop / Roof on — still",
+        "label": "266 Johnson / Roof on — still",
         "kind": "still",
         "width": 192,
         "height": 160,
@@ -8682,11 +8682,11 @@
         "sourcePngs": [
           "objects/B-03/roof-on.png"
         ],
-        "sha256": "b5c36226af89d8a8b0268de7b83ab82235cb744b1dd074d28132f0afe928dc99"
+        "sha256": "f40d95f73426e04ae479423615f6599ca93e0e8853ef8b53623407ee9632e231"
       },
       {
         "file": "objects/B-03/roof-off.gif",
-        "label": "Johnson workshop / Roof off — still",
+        "label": "266 Johnson / Roof off — still",
         "kind": "still",
         "width": 192,
         "height": 160,
@@ -8697,11 +8697,11 @@
         "sourcePngs": [
           "objects/B-03/roof-off.png"
         ],
-        "sha256": "96e216acd04719dbe7733bc797734278cae870a8864b134a688c105c14ff11e3"
+        "sha256": "2650c01fa99a166b4b9e5c12cd0ced227f67693aaad5650d1fa8af6685c09f2d"
       },
       {
         "file": "objects/B-03/sprite-sheet.gif",
-        "label": "Johnson workshop / all frames — still sheet",
+        "label": "266 Johnson / all frames — still sheet",
         "kind": "still",
         "width": 384,
         "height": 160,
@@ -8712,7 +8712,7 @@
         "sourcePngs": [
           "objects/B-03/sprite-sheet.png"
         ],
-        "sha256": "d63a8ae8d158261e53008e5624739fc8ec39c7c019ebb8e025f6fe7a287f45c4"
+        "sha256": "c14389970cab290a5d5d7641729a56ef8270b52274370343c9d8d5b464008452"
       },
       {
         "file": "objects/B-03/sequences/state-comparison.gif",
@@ -8728,7 +8728,7 @@
           "objects/B-03/roof-on.png",
           "objects/B-03/roof-off.png"
         ],
-        "sha256": "659c8b05a230383ae00061e79f94e11ada645fb91869486b6b6dd1277e774430",
+        "sha256": "2af525ac6f03d7616a473ebae0d003f324b74f27ef63bdf31b882641a87864e4",
         "durationsMs": [
           1000,
           1000
@@ -9134,11 +9134,11 @@
         "frames": 1,
         "transparent": true,
         "paletteReduced": false,
-        "alpha": "threshold at 128",
+        "alpha": "original binary alpha",
         "sourcePngs": [
           "objects/L-03/default.png"
         ],
-        "sha256": "2077fb8b26cc2297d5fb8c06fb2e6619c372ce0e250694d7d0a54b5fb5e84dad"
+        "sha256": "580c041d24bae76b0541ac778e50f7a2898d56e6af54333cacceec7c98fcb0e6"
       },
       {
         "file": "objects/L-03/sprite-sheet.gif",
@@ -9149,11 +9149,11 @@
         "frames": 1,
         "transparent": true,
         "paletteReduced": false,
-        "alpha": "threshold at 128",
+        "alpha": "original binary alpha",
         "sourcePngs": [
           "objects/L-03/sprite-sheet.png"
         ],
-        "sha256": "1b18851d9adea6e1f1b0582ec6ac6346872a005a067b51a6280d82bbe47eaa96"
+        "sha256": "343a2037825cd0e1070fcd500b40164292cb5b48351578b3effaee555ad10699"
       },
       {
         "file": "objects/L-04/default.gif",
@@ -10440,11 +10440,11 @@
         "frames": 1,
         "transparent": true,
         "paletteReduced": false,
-        "alpha": "threshold at 128",
+        "alpha": "original binary alpha",
         "sourcePngs": [
           "objects/S-06/default.png"
         ],
-        "sha256": "e8fbce3cdcf702eed2fb5e854e7350da0efa12aaefd764690f549f25648ac883"
+        "sha256": "9aecc94b048d131f6663f2d1d810e3824087d25ef44a22c87fdc4bfb91ddccbf"
       },
       {
         "file": "objects/S-06/sprite-sheet.gif",
@@ -10455,11 +10455,11 @@
         "frames": 1,
         "transparent": true,
         "paletteReduced": false,
-        "alpha": "threshold at 128",
+        "alpha": "original binary alpha",
         "sourcePngs": [
           "objects/S-06/sprite-sheet.png"
         ],
-        "sha256": "2c206e724308797d9af3787e8ce31590b37eeb8a4d1b383fce4d3da21090cb26"
+        "sha256": "16189788955e6c69ccf64b9abff2facd119e850f2f410d0cc2f75877916880bf"
       },
       {
         "file": "objects/A-01/walk-left-0.gif",
@@ -11737,7 +11737,7 @@
         "sourcePngs": [
           "sheets/buildings.png"
         ],
-        "sha256": "9923b3452ca5fed1923b57c04d55f44af5dcb2f9453f6fb3b17d56453a5a8c85"
+        "sha256": "f5e09f46f3713992546516b4d6270603c0e58c79c4cd7fdb3d7522e83a393499"
       },
       {
         "file": "sheets/buildings-overview.gif",
@@ -11752,7 +11752,7 @@
         "sourcePngs": [
           "sheets/buildings-overview.png"
         ],
-        "sha256": "63af1364667afdfdc56e6770b12cde6da9c99b4e4fa2929d477bae2470864d71"
+        "sha256": "e944f91b9d7a9e5ad85052487a3cd79454fb6bbb378eade25ba0dc299b533122"
       },
       {
         "file": "sheets/landmarks.gif",
@@ -11763,11 +11763,11 @@
         "frames": 1,
         "transparent": true,
         "paletteReduced": false,
-        "alpha": "threshold at 128",
+        "alpha": "original binary alpha",
         "sourcePngs": [
           "sheets/landmarks.png"
         ],
-        "sha256": "1e07df85837ae566569f86954e16152d904f4c3d900dadd5c16ed8be4914adb3"
+        "sha256": "e63521545f3f876b34849595108c07d1dd122a653a245df1e6f978dd181ac1a3"
       },
       {
         "file": "sheets/landmarks-overview.gif",
@@ -11782,7 +11782,7 @@
         "sourcePngs": [
           "sheets/landmarks-overview.png"
         ],
-        "sha256": "b3f3394f20e040fad2383324dfbee1e950bcac2ab9107cfbe8c00f39fa4f93ae"
+        "sha256": "ffad56c1ad7919a8335dd282838cc363bb897f9cdaaee758d11a2c68f301b883"
       },
       {
         "file": "sheets/building-parts.gif",
@@ -11812,7 +11812,7 @@
         "sourcePngs": [
           "sheets/building-parts-overview.png"
         ],
-        "sha256": "b1929eb6c1521c65f330a7d5d07f2cf5b1f393741abc48a09c500575c134be51"
+        "sha256": "59192b8ca9eb5174e878724279e7a6f61815a30be4da6b9900470b772ce728fd"
       },
       {
         "file": "sheets/street-service.gif",
@@ -11842,7 +11842,7 @@
         "sourcePngs": [
           "sheets/street-service-overview.png"
         ],
-        "sha256": "f6e15682639ac12a8c1029b7571634c82c093f2428070be3efe6cb929d016071"
+        "sha256": "4e42d2539f446e31f0514490727f72d2b9a1b82844566cb8eea777913c3a42be"
       },
       {
         "file": "sheets/ground-planting.gif",
@@ -11872,7 +11872,7 @@
         "sourcePngs": [
           "sheets/ground-planting-overview.png"
         ],
-        "sha256": "8d7193675b1a226efcac5416495920fb3ee860a9d577bfe3184b766e14c4b4c4"
+        "sha256": "8a1b905a89bde4f7148c9bd99a9e849d4f5f529ea3c638fd4e68a1031d4991df"
       },
       {
         "file": "sheets/signs.gif",
@@ -11887,7 +11887,7 @@
         "sourcePngs": [
           "sheets/signs.png"
         ],
-        "sha256": "e725a1299ccd2b0007c2d27bf13aa94c0937402883dac60b8c0d57889913c4d5"
+        "sha256": "9bb4ee44f5c474f47c612652ddbc4a034a18970674ba569ed341a8c2b3875e78"
       },
       {
         "file": "sheets/signs-overview.gif",
@@ -11902,7 +11902,7 @@
         "sourcePngs": [
           "sheets/signs-overview.png"
         ],
-        "sha256": "0aa6583f3a9d5c6591b9cc434ff3248d0a4befc091c5f673636f4c44f9951ea5"
+        "sha256": "5761dc5b8dbd74de6dc02b22cc09c6a1e6834594bfdc19579d892b080f76ce68"
       },
       {
         "file": "sheets/people.gif",
@@ -11932,7 +11932,7 @@
         "sourcePngs": [
           "sheets/people-overview.png"
         ],
-        "sha256": "fa0334d697461ab6d7268a2d2efb125e4878f9ce718bc8aacd28ac4bbda62a10"
+        "sha256": "05d8bfdfcb857b3ce2e6f5c8368ac39e3b081354e7039eadd80f685650350dad"
       },
       {
         "file": "sheets/interface-icons.gif",
@@ -11962,7 +11962,7 @@
         "sourcePngs": [
           "sheets/interface-icons-overview.png"
         ],
-        "sha256": "41e02d73ca51b997f7a42a46e0cc679cb410b414d230601d9470304fbe07d7d8"
+        "sha256": "29bb4e59bac89b0eabf10a3049bfcb9b8332599ec118dec3be84788b53af729a"
       },
       {
         "file": "previews/boerum-street-poster.gif",
@@ -12007,14 +12007,14 @@
         "sourcePngs": [
           "sheets/catalogue-overview.png"
         ],
-        "sha256": "09f7e484ceeaecdca2e926db2fbeb0400ee5c6684dd48b1bf02b8357273f0a52"
+        "sha256": "3f40f25330880f917db02830cb91085b634188e5d302d9f541e17bc11a7dfb77"
       },
       {
         "file": "sheets/refinement-comparison.gif",
         "label": "Before / after — still comparison sheet",
         "kind": "still",
         "width": 880,
-        "height": 3640,
+        "height": 3890,
         "frames": 1,
         "transparent": false,
         "paletteReduced": true,
@@ -12022,7 +12022,7 @@
         "sourcePngs": [
           "sheets/refinement-comparison.png"
         ],
-        "sha256": "4fe8e3b04e1c636d03a71503b5adb63307cba48fe052b63ec9d64bf511cd3158"
+        "sha256": "c0a965e3460d29bbd47f4bc05a1bf5604d507a2e6be351ebf000831a1385f214"
       },
       {
         "file": "sheets/boerum-animation-labelled.gif",
@@ -12054,14 +12054,14 @@
         "sourcePngs": [
           "sheets/catalogue-overview.png"
         ],
-        "sha256": "09f7e484ceeaecdca2e926db2fbeb0400ee5c6684dd48b1bf02b8357273f0a52"
+        "sha256": "3f40f25330880f917db02830cb91085b634188e5d302d9f541e17bc11a7dfb77"
       },
       {
         "file": "sheets/refinement-comparison.gif",
         "label": "Before / after — still comparison sheet",
         "kind": "still",
         "width": 880,
-        "height": 3640,
+        "height": 3890,
         "frames": 1,
         "transparent": false,
         "paletteReduced": true,
@@ -12069,7 +12069,7 @@
         "sourcePngs": [
           "sheets/refinement-comparison.png"
         ],
-        "sha256": "4fe8e3b04e1c636d03a71503b5adb63307cba48fe052b63ec9d64bf511cd3158"
+        "sha256": "c0a965e3460d29bbd47f4bc05a1bf5604d507a2e6be351ebf000831a1385f214"
       },
       {
         "file": "sheets/boerum-animation-labelled.gif",

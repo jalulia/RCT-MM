@@ -1,5 +1,5 @@
 {
-  "artRevision": "0.8",
+  "artRevision": "0.9",
   "entries": [
     {
       "id": "park-party",
@@ -200,7 +200,7 @@
     },
     {
       "id": "art-system-accounts",
-      "title": "Johnson workshop",
+      "title": "266 Johnson",
       "png": "../assets/art-system/accounts.png",
       "gif": "art-system-accounts.gif",
       "kind": "still",

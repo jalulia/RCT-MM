@@ -1,6 +1,6 @@
 # UX and information architecture
 
-Research checked against revision 0.8, 16 September 2026. Selection, roof removal, scenic controls, view-specific inspectors and document comparison are implemented in the art study. The three paths below specify the operating prototype still to test; they do not describe a completed game or settle the player’s role.
+Research checked against design 0.10 / art 0.9, 16 September 2026. Paired exterior/interior previews, a consistent source inspector, scenic controls and a separate practice-document desk are implemented. The five-view relationship demonstration remains in the Interface chapter. The three paths below specify the operating prototype still to test; they do not describe a completed game or settle the player’s role.
 
 ## 1. Start with work, then reveal what each system says about it
 

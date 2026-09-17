@@ -1,67 +1,136 @@
 {
-  "catalogue": {
-    "buildingIDs": [
-      "B-01",
-      "B-02",
-      "B-03"
-    ],
-    "searchChrysler": [
-      "L-01",
-      "L-10",
-      "S-05"
-    ],
-    "emptyState": true,
-    "gifPlaying": true,
-    "gifStopped": true,
-    "actualGifDownload": {
-      "filename": "boerum-street-loop.gif",
-      "matchesSource": true
-    }
-  },
-  "documents": {
-    "v1": {
-      "status": "Scheduled",
-      "effective": "W3 Mon / 16:00",
-      "recorded": "W3 Mon / 16:04",
-      "index-recorded": "Recorded W3 Mon",
-      "index-version": "v1 · Scheduled"
+  "design": "0.10",
+  "art": "0.9",
+  "selections": [
+    {
+      "selected": "B-01",
+      "roof": true,
+      "name": "Boerum frontage",
+      "pressed": 1,
+      "photo": "assets/office-references/boerum-user-street-view.png"
     },
-    "v2": {
-      "status": "Paid",
-      "effective": "W3 Tue / 10:00",
-      "recorded": "W3 Tue / 10:02",
-      "index-recorded": "Recorded W3 Tue",
-      "index-version": "v2 · Paid"
+    {
+      "selected": "B-01",
+      "roof": false,
+      "name": "Boerum frontage",
+      "pressed": 1,
+      "photo": "assets/office-references/boerum-user-street-view.png"
     },
-    "tax": {
-      "path": "FORM STUDY / T-01",
-      "bankHidden": true,
-      "indexHidden": true,
-      "pinDisabled": true
-    },
-    "note": {
-      "editable": true,
-      "content": "Is there a later payment attempt linked to O-19?"
-    }
-  },
-  "park": {
-    "roofRemoved": true,
-    "cashRetainsSelection": {
+    {
       "selected": "B-02",
-      "view": "Cash",
-      "body": "FICTIONAL PRACTICE / C-07 / O-19\nP-04 / BANK EVENTS / USD\nDebit\n−12,000.00\nReturn\n+12,000.00\nLATER SETTLEMENT · NOT SUPPLIED\nPLATFORM COPY / v2\nPaid\nOpen document comparison ↗"
+      "roof": true,
+      "name": "Porter hall",
+      "pressed": 1,
+      "photo": "assets/office-references/porter-hall.jpg"
     },
-    "recordOpened": true,
-    "recordReturn": {
-      "closed": true,
-      "interactive": true,
+    {
       "selected": "B-02",
-      "focus": true
+      "roof": false,
+      "name": "Porter hall",
+      "pressed": 1,
+      "photo": "assets/office-references/porter-hall.jpg"
     },
-    "garden": true,
-    "circuitRunning": true,
-    "boerumUnbound": true,
-    "scenerySeparate": true
+    {
+      "selected": "B-03",
+      "roof": true,
+      "name": "266 Johnson",
+      "pressed": 1,
+      "photo": "assets/office-references/johnson-street-2017.png"
+    },
+    {
+      "selected": "B-03",
+      "roof": false,
+      "name": "266 Johnson",
+      "pressed": 1,
+      "photo": "assets/office-references/johnson-mezzanine.jpg"
+    },
+    {
+      "landmark": "L-01",
+      "sprite": "assets/sprite-catalogue/objects/L-01/heading-0.png",
+      "fields": [
+        "Source",
+        "Park interpretation"
+      ]
+    },
+    {
+      "landmark": "L-02",
+      "sprite": "assets/sprite-catalogue/objects/L-02/default.png",
+      "fields": [
+        "Source",
+        "Park interpretation"
+      ]
+    },
+    {
+      "landmark": "L-03",
+      "sprite": "assets/sprite-catalogue/objects/L-03/default.png",
+      "fields": [
+        "Source",
+        "Park interpretation"
+      ]
+    },
+    {
+      "landmark": "L-04",
+      "sprite": "assets/sprite-catalogue/objects/L-04/default.png",
+      "fields": [
+        "Source",
+        "Park interpretation"
+      ]
+    },
+    {
+      "landmark": "L-05",
+      "sprite": "assets/sprite-catalogue/objects/L-05/default.png",
+      "fields": [
+        "Source",
+        "Park interpretation"
+      ]
+    },
+    {
+      "landmark": "L-06",
+      "sprite": "assets/sprite-catalogue/objects/L-06/tail-0.png",
+      "fields": [
+        "Source",
+        "Park interpretation"
+      ]
+    },
+    {
+      "landmark": "L-07",
+      "sprite": "assets/sprite-catalogue/objects/L-07/default.png",
+      "fields": [
+        "Source",
+        "Park interpretation"
+      ]
+    },
+    {
+      "landmark": "L-08",
+      "sprite": "assets/sprite-catalogue/objects/L-08/default.png",
+      "fields": [
+        "Source",
+        "Park interpretation"
+      ]
+    }
+  ],
+  "garden": {
+    "court": "garden",
+    "landmark": null
   },
-  "rootEntryPreservesHash": true
+  "restored": "party",
+  "reading": {
+    "record": true,
+    "motion": false,
+    "explorerHidden": true,
+    "deskVisible": true
+  },
+  "returned": {
+    "selected": "B-03",
+    "roof": false,
+    "motion": false,
+    "record": false,
+    "court": "party",
+    "focus": true
+  },
+  "download": {
+    "file": "objects/B-03/sequences/state-comparison.gif",
+    "sha256": "2af525ac6f03d7616a473ebae0d003f324b74f27ef63bdf31b882641a87864e4",
+    "bytesMatch": true
+  }
 }

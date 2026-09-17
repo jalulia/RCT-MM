@@ -1,6 +1,6 @@
 # Mad Money Tycoon — sprite catalogue
 
-44 objects · 121 frames · 8 categories · art revision 0.8.
+44 objects · 121 frames · 8 categories · art revision 0.9.
 
 Open `index.html`. The catalogue works offline, with category filters, search, individual frame downloads, object sheets and GIF controls. Every registered frame and sheet also has a GIF download; available sequences distinguish gait loops, saved-pose samples, state comparisons and orientation studies. The Design document, Previews and Archive navigation links open the parent project and are not included in the standalone ZIP.
 

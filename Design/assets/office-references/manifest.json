@@ -47,7 +47,7 @@
     },
     {
       "file": "boerum-user-street-view.png",
-      "site": "Boerum — three adjoining frontages identified in supplied reference",
+      "site": "Boerum \u2014 three adjoining frontages identified in supplied reference",
       "provenance": "user-supplied screenshot of Google street imagery; site identification provided in conversation",
       "captureDate": null,
       "sha256": "391e1c4b160ba00ffa540f25b6c6bd958a2b83c14491e33941dd11eb3a083db0",
@@ -93,6 +93,28 @@
       "credit": "Photographer not established",
       "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
       "sourceFile": "266-johnson/07-joecarrotta-0004.jpg"
+    },
+    {
+      "file": "johnson-street-2017.png",
+      "site": "266-johnson",
+      "sourceFile": "codex-clipboard-aa853918-048f-4164-b9aa-a6e109d3952a.png",
+      "sourceType": "Supplied Google Street View screenshot",
+      "captureDateVisible": "September 2017",
+      "identification": "266 Johnson per address displayed and supplied identification",
+      "sha256": "15ff20e0b018ac8b60f68af661bdb18f7e227e94177cc431f18ce042d4850aa2",
+      "credit": "Google Street View; supplied screenshot",
+      "use": "Architectural reference only; not included in the original sprite ZIP."
+    },
+    {
+      "file": "johnson-street-2019.png",
+      "site": "266-johnson",
+      "sourceFile": "codex-clipboard-35950fb5-1615-4266-8330-57c584dbfaa6.png",
+      "sourceType": "Supplied Google Street View screenshot",
+      "captureDateVisible": "July 2019",
+      "identification": "266 Johnson per address displayed and supplied identification",
+      "sha256": "7ec3cb5aad236289b5c6f0cb0ee6785c11a7d660621f5dda047c12eaf29706eb",
+      "credit": "Google Street View; supplied screenshot",
+      "use": "Architectural reference only; not included in the original sprite ZIP."
     }
   ]
 }

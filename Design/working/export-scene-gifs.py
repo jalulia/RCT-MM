@@ -22,6 +22,6 @@ for e in spec['entries']:
         for n in range(gif.n_frames):gif.seek(n);gif.load();duration+=gif.info.get('duration',0)
         if e['kind']=='animation':assert duration==e['durationMs'];assert gif.info.get('loop')==0
         e['encodedFrames']=gif.n_frames
-(out/'manifest.json').write_text(json.dumps({'artRevision':'0.8','entries':spec['entries']},indent=2)+'\n')
+(out/'manifest.json').write_text(json.dumps({'artRevision':json.loads((root.parent/'project.json').read_text())['artRevision'],'entries':spec['entries']},indent=2)+'\n')
 shutil.rmtree(spec['temp']);(root/'scene-render-input.json').unlink()
 print(json.dumps({'sceneGifs':len(spec['entries']),'loopDurationMs':22400}))

@@ -1,6 +1,6 @@
 # Systems research and ontology
 
-Research checked against revision 0.8, 16 September 2026. This records the rationale for the current object model and the proposed operating game. The implemented park is an art and interaction study; it does not yet simulate the economy described here. Campaign structure and player authority remain open tests in the GDD.
+Research checked against design 0.10 / art 0.9, 16 September 2026. This records the rationale for the current object model and the proposed operating game. The implemented park is an art and interaction study; it does not yet simulate the economy described here. Campaign structure and player authority remain open tests in the GDD.
 
 ## The structural decision
 
@@ -135,7 +135,7 @@ All historical descriptions below are briefing-reported. Candidate mechanics are
 
 Introduce **one job**, then **one payment lifecycle**, then **multiple representations**, then **permissions**, then **affiliates and burden**, then **migration and afterlife**. This is a learning order, not a rewritten chronology. Each later case episode retains its actual dates. A 1990s desktop presentation is an interface convention; it must not move a later chat, bank product, or AI conversation into the 1990s.
 
-Use five coordinated views in this order: **Work** (capacity and dependencies), **Cash** (observed movements, attempts and unresolved endpoints), **Information** (versions, sources and claims), **Control** (dated permissions), and **People** (employment, engagements and workload). Rights and obligations remain in the inspector across views. Keep the selected project, person or obligation pinned while switching. An additional comparison can show the company as presented to a specified audience. “Reported sales” must name its report and period. The [five-view figure](#interface/five-views) uses one fictional obligation to demonstrate the distinction; the art study supplies static view-specific information rather than a running simulation.
+Use five coordinated views in this order: **Work** (capacity and dependencies), **Cash** (observed movements, attempts and unresolved endpoints), **Information** (versions, sources and claims), **Control** (dated permissions), and **People** (employment, engagements and workload). Rights and obligations remain in the inspector across views. Keep the selected project, person or obligation pinned while switching. An additional comparison can show the company as presented to a specified audience. “Reported sales” must name its report and period. The [five-view figure](#interface/five-views) uses one fictional obligation to demonstrate the distinction; the art explorer presents architecture and sources, with the practice-document desk accessed separately.
 
 Real named characters need source-based roles and documented acts. Use invented archetypes only in the fictional scenario: the producer protecting a deadline, the specialist waiting on a deposit, the account lead selling tomorrow's capacity. Their behaviors should have mundane operational causes. A named person's alleged culpability is not an NPC trait.
 

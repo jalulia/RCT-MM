@@ -1,0 +1,240 @@
+[
+  {
+    "page": "contents",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 1365
+  },
+  {
+    "page": "game",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 2912
+  },
+  {
+    "page": "episode",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 3197
+  },
+  {
+    "page": "objects",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 4534
+  },
+  {
+    "page": "narrative",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 2813
+  },
+  {
+    "page": "interface",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 2656
+  },
+  {
+    "page": "art",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 13970
+  },
+  {
+    "page": "production",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 5689
+  },
+  {
+    "page": "evidence",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 11741
+  },
+  {
+    "page": "research-systems",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 9147
+  },
+  {
+    "page": "research-ux",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 8390
+  },
+  {
+    "page": "research-refinement",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 2700
+  },
+  {
+    "page": "research-offices",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 6097
+  },
+  {
+    "page": "research-discoveries",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 7766
+  },
+  {
+    "page": "research-park",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 4721
+  },
+  {
+    "page": "binding",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 5608
+  },
+  {
+    "page": "binding-inventory",
+    "width": 1512,
+    "scrollWidth": 1512,
+    "broken": [],
+    "height": 5988
+  },
+  {
+    "page": "contents",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 1740
+  },
+  {
+    "page": "game",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 3414
+  },
+  {
+    "page": "episode",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 6246
+  },
+  {
+    "page": "objects",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 6629
+  },
+  {
+    "page": "narrative",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 4062
+  },
+  {
+    "page": "interface",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 4289
+  },
+  {
+    "page": "art",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 24186
+  },
+  {
+    "page": "production",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 8176
+  },
+  {
+    "page": "evidence",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 16934
+  },
+  {
+    "page": "research-systems",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 15512
+  },
+  {
+    "page": "research-ux",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 13423
+  },
+  {
+    "page": "research-refinement",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 3560
+  },
+  {
+    "page": "research-offices",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 9673
+  },
+  {
+    "page": "research-discoveries",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 12301
+  },
+  {
+    "page": "research-park",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 7705
+  },
+  {
+    "page": "binding",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 9443
+  },
+  {
+    "page": "binding-inventory",
+    "width": 390,
+    "scrollWidth": 390,
+    "broken": [],
+    "height": 9600
+  }
+]

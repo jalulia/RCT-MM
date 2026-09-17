@@ -1,240 +1,244 @@
-[
-  {
-    "page": "contents",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 1365
-  },
-  {
-    "page": "game",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 2912
-  },
-  {
-    "page": "episode",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 3197
-  },
-  {
-    "page": "objects",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 4534
-  },
-  {
-    "page": "narrative",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 2813
-  },
-  {
-    "page": "interface",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 2656
-  },
-  {
-    "page": "art",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 13970
-  },
-  {
-    "page": "production",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 5689
-  },
-  {
-    "page": "evidence",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 11741
-  },
-  {
-    "page": "research-systems",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 9147
-  },
-  {
-    "page": "research-ux",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 8390
-  },
-  {
-    "page": "research-refinement",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 2700
-  },
-  {
-    "page": "research-offices",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 6097
-  },
-  {
-    "page": "research-discoveries",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 7766
-  },
-  {
-    "page": "research-park",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 4721
-  },
-  {
-    "page": "binding",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 5608
-  },
-  {
-    "page": "binding-inventory",
-    "width": 1512,
-    "scrollWidth": 1512,
-    "broken": [],
-    "height": 5988
-  },
-  {
-    "page": "contents",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 1740
-  },
-  {
-    "page": "game",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 3414
-  },
-  {
-    "page": "episode",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 6246
-  },
-  {
-    "page": "objects",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 6629
-  },
-  {
-    "page": "narrative",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 4062
-  },
-  {
-    "page": "interface",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 4289
-  },
-  {
-    "page": "art",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 24186
-  },
-  {
-    "page": "production",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 8176
-  },
-  {
-    "page": "evidence",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 16934
-  },
-  {
-    "page": "research-systems",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 15512
-  },
-  {
-    "page": "research-ux",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 13423
-  },
-  {
-    "page": "research-refinement",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 3560
-  },
-  {
-    "page": "research-offices",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 9673
-  },
-  {
-    "page": "research-discoveries",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 12301
-  },
-  {
-    "page": "research-park",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 7705
-  },
-  {
-    "page": "binding",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 9443
-  },
-  {
-    "page": "binding-inventory",
-    "width": 390,
-    "scrollWidth": 390,
-    "broken": [],
-    "height": 9600
-  }
-]
+{
+  "designRevision": "0.10",
+  "artRevision": "0.9",
+  "checks": [
+    {
+      "route": "contents",
+      "title": "Contents — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "game",
+      "title": "Game — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "episode",
+      "title": "First episode — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "objects",
+      "title": "Objects & systems — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "narrative",
+      "title": "Narrative — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "interface",
+      "title": "Interface — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "art",
+      "title": "Art & sound — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "production",
+      "title": "Build & test — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "evidence",
+      "title": "Evidence — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-systems",
+      "title": "Game systems research — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-ux",
+      "title": "Interface research — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-refinement",
+      "title": "Sprite refinement — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-offices",
+      "title": "Office architecture — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-discoveries",
+      "title": "Office discoveries — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-park",
+      "title": "Park interaction study — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "binding",
+      "title": "Episode 01 binding — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "binding-inventory",
+      "title": "Source inventory — Mad Money Tycoon",
+      "viewport": 1512,
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "contents",
+      "title": "Contents — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "game",
+      "title": "Game — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "episode",
+      "title": "First episode — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "objects",
+      "title": "Objects & systems — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "narrative",
+      "title": "Narrative — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "interface",
+      "title": "Interface — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "art",
+      "title": "Art & sound — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "production",
+      "title": "Build & test — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "evidence",
+      "title": "Evidence — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-systems",
+      "title": "Game systems research — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-ux",
+      "title": "Interface research — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-refinement",
+      "title": "Sprite refinement — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-offices",
+      "title": "Office architecture — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-discoveries",
+      "title": "Office discoveries — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-park",
+      "title": "Park interaction study — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "binding",
+      "title": "Episode 01 binding — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "binding-inventory",
+      "title": "Source inventory — Mad Money Tycoon",
+      "viewport": 390,
+      "width": 390,
+      "broken": []
+    }
+  ]
+}

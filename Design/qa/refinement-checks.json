@@ -1,5 +1,5 @@
 {
-  "revision": "0.8",
+  "revision": "0.9",
   "priorObjectsRefined": 43,
   "changedIDs": [
     "B-01",
@@ -52,8 +52,8 @@
   "atlasFramesExact": true,
   "sourceHashesMatch": true,
   "sceneTimingMs": {
-    "median": 41.01550000000009,
-    "max": 57.13875000000007
+    "median": 42.019624999999905,
+    "max": 54.062832999999955
   },
   "scope": "Raster integrity, animation semantics and local render time; source recognition separately inspected visually."
 }

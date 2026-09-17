@@ -698,6 +698,46 @@
       "classification": "previews"
     },
     {
+      "file": "previews/0.9/art-system-campus.gif",
+      "bytes": 38478,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.9/art-system-campus.png",
+      "bytes": 59542,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.9/sprite-catalogue-objects-B-03-roof-off.gif",
+      "bytes": 3285,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.9/sprite-catalogue-objects-B-03-roof-off.png",
+      "bytes": 5167,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.9/sprite-catalogue-objects-B-03-roof-on.gif",
+      "bytes": 4047,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.9/sprite-catalogue-objects-B-03-roof-on.png",
+      "bytes": 5777,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.9/sprite-catalogue-objects-L-03-default.gif",
+      "bytes": 1999,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.9/sprite-catalogue-objects-L-03-default.png",
+      "bytes": 3224,
+      "classification": "previews"
+    },
+    {
       "file": "previews/unversioned/art-final-overview.gif",
       "bytes": 95479,
       "classification": "previews"
@@ -1240,6 +1280,246 @@
     {
       "file": "versions/0.8/working/review.js",
       "bytes": 8443,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/GDD.md",
+      "bytes": 36993,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/RELEASE-REVIEW.md",
+      "bytes": 5052,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/design-review.html.txt",
+      "bytes": 603464,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/project.json",
+      "bytes": 1021,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/README.md",
+      "bytes": 3734,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/archive-1512.png",
+      "bytes": 144879,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/archive-390.png",
+      "bytes": 63122,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/catalogue-1512.png",
+      "bytes": 97650,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/catalogue-390.png",
+      "bytes": 52363,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/episode-documents.png",
+      "bytes": 202203,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/external-link-responses.json",
+      "bytes": 11473,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/external-links.json",
+      "bytes": 4187,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/interaction-checks.json",
+      "bytes": 1630,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/library-browser-checks.json",
+      "bytes": 896,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/previews-1512.png",
+      "bytes": 122806,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/previews-390.png",
+      "bytes": 63017,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-art.png",
+      "bytes": 169671,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-binding-inventory.png",
+      "bytes": 249131,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-binding.png",
+      "bytes": 279251,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-browser-checks.json",
+      "bytes": 3947,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-contents.png",
+      "bytes": 238435,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-episode.png",
+      "bytes": 183008,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-evidence.png",
+      "bytes": 357472,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-game.png",
+      "bytes": 156441,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-interface.png",
+      "bytes": 152877,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-narrative.png",
+      "bytes": 134609,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-objects.png",
+      "bytes": 142680,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-production.png",
+      "bytes": 185972,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-research-discoveries.png",
+      "bytes": 232364,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-research-offices.png",
+      "bytes": 150346,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-research-park.png",
+      "bytes": 190618,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-research-refinement.png",
+      "bytes": 147723,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-research-systems.png",
+      "bytes": 255687,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/reader-research-ux.png",
+      "bytes": 249450,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/references-1512.png",
+      "bytes": 688009,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/references-390.png",
+      "bytes": 109733,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/refinement-checks.json",
+      "bytes": 930,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/release-checks.json",
+      "bytes": 361,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/qa/sprite-gif-checks.json",
+      "bytes": 514,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/research/office-art-research.md",
+      "bytes": 16205,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/research/park-logic-review.md",
+      "bytes": 10183,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/research/sprite-refinement-0.8.md",
+      "bytes": 4893,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/working/art-figures.mjs",
+      "bytes": 13274,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/working/art-system.js",
+      "bytes": 12068,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/working/park-kit.js",
+      "bytes": 52699,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/working/park-system.css",
+      "bytes": 3165,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/working/pixel-kit.js",
+      "bytes": 27026,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.9/working/sprite-registry.cjs",
+      "bytes": 6901,
       "classification": "versions"
     }
   ]

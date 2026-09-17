@@ -1,6 +1,6 @@
 # Park interactions — current study and next tests
 
-Checked against revision 0.8, 16 September 2026. This separates implemented scenic interactions from proposed operating behavior. The original 0.5 review is archived. These observations concern architecture, objects and interface behavior, not the verification of financial claims.
+Checked against design 0.10 / art 0.9, 16 September 2026. This separates implemented scenic interactions from proposed operating behavior. The original 0.5 review is archived. These observations concern architecture, objects and interface behavior, not the verification of financial claims.
 
 **Make the campus an assembled industrial pleasure ground.** Three distinctive sites, a few improbable furnishings, visible human occupation and one clear circulation system will carry more character than additional lawn, identical trees or miniature signs. The attraction is getting close to the objects and seeing how the place works. Every landmark does not need to mint revenue.
 
@@ -34,9 +34,9 @@ The long white car occupies an invented paved circuit with a planted island and 
 
 ### 3. Orange stair and tree: an overlook that reveals the assembly
 
-The current orange overlook is a separate park landmark derived from Johnson’s stair and mezzanine. Johnson’s cutaway also contains an orange mezzanine and a tree/planter. Porter’s Solarium is a different source association and a separate invented glass pavilion. These objects do not establish one historical room or shared floor plan.
+The current orange overlook is a separate park landmark derived from Johnson’s stair and mezzanine. Johnson’s cutaway contains a connected orange stair and mezzanine, a central white birch and the office cat. Porter’s Solarium is a different source association and a separate invented glass pavilion. These objects do not establish one historical room or shared floor plan.
 
-**Implemented:** select the overlook and use **Inspect Johnson interior** to select Johnson and remove its roof. Building controls retain the site selection while showing or hiding the shell. The separate assembly demonstration exposes construction stages. **Next steps:** test a unified shell/occupation/structure control if it adds useful information; individual workstations and interior trees are not independently selectable, and no object collection cabinet or return bookmark exists yet.
+**Implemented:** every building has paired **Exterior / Interior** preview buttons above the scene. Johnson’s interior is exposed initially. The overlook also provides **Open Johnson interior**. Both paths preserve the building footprint and use the same renderer as the catalogue. The assembly demonstration exposes construction stages. **Next steps:** test independent workstation inspection and a durable return bookmark; those controls are not implemented.
 
 **Why it earns its space:** the player learns the place by taking it apart and putting it back together. The exaggerated overlook can feel like an observation attraction without pretending to be an actual ride. It also demonstrates the modular art system rather than hiding it under a finished roof.
 
@@ -44,7 +44,7 @@ The current orange overlook is a separate park landmark derived from Johnson’s
 
 ## Current arrangement and a layout alternative to test
 
-The current campus has three named site modules, independent department-occupancy text, selectable landmarks, paved aprons, a circulation grid and planted areas. Boerum, Porter and Johnson use different architectural forms; the old creative/production/accounts aliases survive only as internal specimen keys. They are not the displayed site taxonomy.
+The current campus has three named site modules, selectable landmarks, paved aprons, a circulation grid and planted areas. Johnson sits forward with an open sightline; its sign is on the forecourt, and tall foreground trees have been removed. Supernova sits apart from the stag so both silhouettes remain visible. Boerum, Porter and Johnson use different architectural forms; the old creative/production/accounts aliases survive only as internal specimen keys. They are not the displayed site taxonomy.
 
 The remaining alternative is a denser street-and-court arrangement:
 
@@ -70,11 +70,11 @@ Selecting Porter should not rename the inspector “Accounts.” Departments can
 
 ## Current behavior and remaining gaps
 
-1. **Building and landmark selection exist.** Buildings use polygon hit regions; landmarks use proximity regions with priority over buildings. The keyboard-accessible lists cover all three sites and seven landmarks. Inflatable L-08 is scene-selectable in its layout but has no equivalent landmark-list button; the shark, workstations and interior tree are not separately selectable. Dense overlap still needs a selection test.
-2. **The financial fixture is scoped to Porter.** Only B-02 opens C-07/O-19. Boerum and Johnson give site information; landmarks give photograph/interpretation information. The site remains selected when a landmark is inspected.
-3. **Sites and departments are separated.** Building controls and signs use Boerum, Porter and Johnson. Occupancy text may name several teams; no allocation editor is implemented. Shirt colour remains insufficient to establish employment status.
-4. **Animation demonstrates occupation and spectacle.** Walking, the circuit and shark motion do not advance work, cash, queues or records. The five views—Work, Cash, Information, Control and People—show static fixture distinctions.
-5. **Reading has a return path.** The practice document pane pauses motion, disables the covered scene controls and returns focus/scroll context on close. It does not automatically resume motion. A production prototype still needs durable pins, bookmarks and save behavior.
+1. **Building and landmark selection exist.** Six visible exterior/interior choices cover three sites. The landmark list covers all eight selectable scenic objects; selecting the inflatable restores its courtyard layout. Buildings use polygon hit regions and landmarks use proximity regions. Individual workstations, the shark and the interior birch are not separately selectable.
+2. **The inspector keeps one structure.** Every selection shows its sprite, source photograph, observed source features and park interpretation. The financial fixture has a separate, persistent **Practice documents** entry. It is not assigned to a real office.
+3. **Sites and departments are separated.** Building controls and signs identify Boerum, Porter and 266 Johnson. No allocation editor is implemented. Shirt colour does not establish employment status.
+4. **Animation demonstrates occupation and spectacle.** Walking, the circuit and shark motion do not advance work, cash, queues or records. The separate Interface chapter demonstrates the proposed five-view model.
+5. **Reading has a return path.** Opening the practice documents pauses motion and replaces the explorer with the document desk. **Return to park** restores selection, exterior/interior state, courtyard, focus and scroll position. Motion stays paused. Production pins, bookmarks and saved games remain future work.
 
 ## Next steps: acceptance checks
 

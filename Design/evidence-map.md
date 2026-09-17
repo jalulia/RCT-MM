@@ -1,6 +1,6 @@
 # Story and evidence map
 
-Reviewed for edition 0.9 · 16 September 2026 · source scope below
+Reviewed for edition 0.10 · 16 September 2026 · source scope below
 
 ## What has actually been read
 

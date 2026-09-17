@@ -48,12 +48,12 @@ const white=['#758b89','#a4b5b2','#d5dfd9','#f7faf0'],charcoal=['#202b31','#3744
 const buildings=[
  {id:'B-01',name:'Boerum frontage',type:'boerum',x:1.3,y:2.5,w:4.7,d:2.2,h:48,occupants:'Creative · accounts · shared work',source:'#art/boerum-street-study'},
  {id:'B-02',name:'Porter hall',type:'porter',x:8.5,y:1.35,w:5.7,d:3.65,h:30,occupants:'Creative · production · shared rooms',source:'#art/office-architecture'},
- {id:'B-03',name:'Johnson workshop',type:'johnson',x:10.1,y:10.2,w:4.6,d:3.5,h:29,occupants:'Production · fabrication · shared work',source:'#art/office-architecture'}
+ {id:'B-03',name:'266 Johnson',type:'johnson',x:11.1,y:10.9,w:4.6,d:3.5,h:29,occupants:'Production · fabrication · shared work',source:'#art/office-architecture'}
 ];
 const landmarks=[
  {id:'L-01',name:'Chrysler circuit',x:3.7,y:12.4,w:4.1,d:3.5,at:[4.05,12.25,9],site:'B-03',photo:'assets/office-references/johnson-mezzanine.jpg',observed:'The white Chrysler parked inside Johnson, beside the workstations.',invented:'A miniature oval circuit and boarding platform. The photographed car is stationary.',source:'https://mattfryed.com/266-johnson'},
- {id:'L-02',name:'Antler display',x:6.0,y:8.55,w:.9,d:.8,at:[6.3,8.9,18],site:'B-02',photo:'assets/office-references/porter-hall.jpg',observed:'A black stag sculpture with reflective antlers among Porter’s workstations.',invented:'A larger silhouette on a park plinth. No artist or symbolic meaning is assigned.',source:'https://www.psfprojects.com/workplace/madwell-creative-agency'},
- {id:'L-03',name:'Supernova pavilion',x:2.3,y:7.3,w:2.7,d:2.25,at:[3.65,8.5,20],site:'B-02',photo:'assets/office-references/porter-supernova.jpg',observed:'SUPERNOVA appears on a conference room at Porter.',invented:'The room becomes a small planetarium-like pavilion with an orbital roof sign.',source:'https://mattfryed.com/65porter'},
+ {id:'L-02',name:'Antler display',x:6.7,y:8.2,w:.9,d:.8,at:[7,8.55,18],site:'B-02',photo:'assets/office-references/porter-hall.jpg',observed:'A black stag sculpture with reflective antlers among Porter’s workstations.',invented:'A larger silhouette on a park plinth. No artist or symbolic meaning is assigned.',source:'https://www.psfprojects.com/workplace/madwell-creative-agency'},
+ {id:'L-03',name:'Supernova pavilion',x:1.3,y:8.1,w:2.7,d:2.25,at:[2.65,9.3,20],site:'B-02',photo:'assets/office-references/porter-supernova.jpg',observed:'SUPERNOVA appears on a conference room at Porter.',invented:'The room becomes a black-and-silver roadside pavilion with a chrome canopy and orbital roof sign.',source:'https://mattfryed.com/65porter'},
  {id:'L-04',name:'Solarium',x:13.25,y:6.2,w:2.4,d:2.4,at:[14.45,7.4,24],site:'B-02',photo:'assets/office-references/porter-gathering.jpg',observed:'Porter’s indoor garden sits beside its kitchen and gathering area.',invented:'A freestanding glass garden gives the park a tall, transparent landmark.',source:'https://www.psfprojects.com/workplace/madwell-creative-agency'},
  {id:'L-05',name:'Orange overlook',x:8.1,y:9.35,w:2.0,d:.8,at:[9.1,9.7,25],site:'B-03',photo:'assets/office-references/johnson-mezzanine.jpg',observed:'Johnson’s orange stair and mezzanine frame the open hall.',invented:'The circulation is pulled outside as a raised viewing platform.',source:'https://mattfryed.com/266-johnson'},
  {id:'L-06',name:'Office cat',x:10.25,y:14.3,w:.5,d:.3,at:[10.5,14.45,4],site:'B-03',photo:'assets/office-references/johnson-cat.jpg',observed:'A tabby with a purple collar, photographed in a sun patch by Johnson’s stair.',invented:'A small resting sprite beside the workshop. No name or schedule has been inferred.',source:'https://mattfryed.com/266-johnson'},
@@ -117,11 +117,34 @@ function archSideMasonry(x,y,d,h,z,ramp){
  for(let zz=2,row=0;zz<h;zz+=3,row++)for(let v=-(row%2)*.18;v<d;v+=.37){const a=Math.max(0,v),b=Math.min(d,v+.32);line(...pt(x+.012,y+a,z+zz),...pt(x+.012,y+b,z+zz),mortar);if(v>0)line(...pt(x+.014,y+v,z+zz),...pt(x+.014,y+v,z+zz+2),mortar);}
 }
 function archMezzanine(x,y,w,d){
- const mw=w*.4,md=Math.min(.8,d*.25);box(x+.12,y+.12,mw,md,15,2,white,false);for(const u of [.12,mw+.05])box(x+u,y+.15,.07,md,3,12,white,false);
- const railY=y+.12+md;line(...pt(x+.12,railY,24),...pt(x+.12+mw,railY,24),'#e75e31');
- for(let u=.14;u<mw+.12;u+=.17)line(...pt(x+u,railY,17),...pt(x+u,railY,24),'#bc4526');
- for(let i=0;i<6;i++)box(x+mw+.2+i*.11,y+.15,.11,.62,3+i*2,1.5,['#89361f','#b44125','#e2703d','#f3a471'],false);
- line(...pt(x+mw+.2,y+.79,10),...pt(x+mw+.86,y+.79,22),'#ec7142');
+ const mw=w*.45,md=Math.min(.94,d*.29),sx=x+.14+mw,sy=y+.17,run=Math.min(1.3,w*.3),steps=8;
+ for(const u of [.14,mw+.07])box(x+u,sy,.07,md,3,15,white,false);
+ box(x+.14,sy,mw,md,18,1.8,white,false);
+ archFront(x+.14,sy+md+.015,19.8,mw,2.3,P.orange[2]);
+ const railY=sy+md;line(...pt(x+.14,railY,28),...pt(sx,railY,28),P.orange[2]);
+ for(let u=.15;u<=mw+.14;u+=.22){line(...pt(x+u,railY,20),...pt(x+u,railY,28),P.orange[1]);line(...pt(x+u+.02,railY,20),...pt(x+u+.02,railY,28),P.orange[3]);}
+ // The stair descends from the platform edge to the hall floor.
+ for(let i=0;i<steps;i++){const z=18-i*15/steps;box(sx+i*run/steps,sy,run/steps+.01,md,z-1.8,1.8,P.orange,false);plane(sx+i*run/steps+.02,sy+.05,run/steps-.025,md-.1,z,'#c9cfbd');}
+ for(const v of [.03,md-.03]){
+  line(...pt(sx,sy+v,19),...pt(sx+run,sy+v,3),P.orange[1]);
+  line(...pt(sx,sy+v,28),...pt(sx+run,sy+v,12),P.orange[2]);
+  for(let i=0;i<=4;i++){const u=run*i/4,z=19-16*i/4;line(...pt(sx+u,sy+v,z),...pt(sx+u,sy+v,z+9),P.orange[2]);}
+ }
+}
+function birch(x,y,z=3){
+ const [a,b]=pt(x,y,z),leaves=['#4d6637','#708547','#96a264','#b8bf87'];
+ plane(x-.2,y-.2,.4,.4,z,'#838e76');
+ box(x-.22,y-.22,.44,.44,z,2,white,false);
+ // A light, forked trunk remains visible through separated foliage clusters.
+ line(a+2,b-2,a+5,b-19,'#89988c');line(a+4,b-18,a+12,b-32,'#dbe1d3');
+ for(const [dx,dy,ex,ey] of [[0,-15,-10,-28],[1,-21,-4,-37],[2,-24,9,-40],[2,-29,3,-43]]){line(a+dx,b+dy,a+ex,b+ey,'#c0cbbb');line(a+dx-1,b+dy,a+ex-1,b+ey,'#f2f3e3');}
+ rect(a-1,b-27,3,25,'#dfe5d7');rect(a-1,b-26,1,24,'#fffdeb');rect(a+2,b-29,1,15,'#9daa99');
+ for(const [dx,dy] of [[-1,-5],[0,-11],[-1,-17],[0,-22],[2,-26]])rect(a+dx,b+dy,2,1,'#667266');
+ for(const [cx,cy,r] of [[-10,-29,6],[-5,-38,6],[7,-40,7],[14,-32,5],[2,-45,5]]){
+  poly([[a+cx-r,b+cy],[a+cx-r+2,b+cy-4],[a+cx+2,b+cy-r],[a+cx+r,b+cy-2],[a+cx+r-1,b+cy+3],[a+cx,b+cy+5]],leaves[0]);
+  poly([[a+cx-r+1,b+cy-2],[a+cx-1,b+cy-r+1],[a+cx+r-2,b+cy-2],[a+cx+1,b+cy+2],[a+cx-r+2,b+cy+2]],leaves[1]);
+  rect(a+cx-2,b+cy-4,4,2,leaves[2]);rect(a+cx-3,b+cy-2,3,2,leaves[3]);rect(a+cx+3,b+cy,2,1,leaves[2]);
+ }
 }
 
 function frontWindow(x,y,z,w,h,frame=charcoal){archGlass(x,y,z,w,h,frame,false);}
@@ -234,7 +257,8 @@ function building(b,roof=true,stage=4){
  if(!building.painting)return D.cacheDraw('building:'+b.type+':'+b.w+':'+b.d+':'+b.h+':'+roof+':'+stage,b.x,b.y,()=>{building.painting=true;try{building(b,roof,stage)}finally{building.painting=false}});
  const{x,y,w,d,h,type}=b;
  const brick=['#634d41','#8b6751','#b28d72','#d5b99b'],porter=['#343c3b','#495451','#606b64','#8a9386'],plaster=['#7c887c','#a6b0a1','#d1d4c3','#eee9d5'];
- const r=type==='porter'?porter:type==='boerum'?brick:plaster;
+ const yellowBrick=['#6c5d43','#97825b','#bea477','#d8c397'];
+ const r=type==='porter'?porter:type==='boerum'?brick:yellowBrick;
  plane(x+.17,y+.22,w+.12,d+.13,1,'#758570');box(x-.08,y-.08,w+.16,d+.16,0,3,['#747e73','#9da595','#c2c7b5','#e1dfcd'],false);if(stage===0)return;
  plane(x+.06,y+.06,w-.12,d-.12,3,'#c4c7b9');plane(x+.12,y+.14,w-.24,d*.42,3.1,'#ced0c1');
  for(let u=.6;u<w;u+=.85)line(...pt(x+u,y+.1,3.2),...pt(x+u,y+d-.1,3.2),'#b9bdaf');
@@ -247,8 +271,11 @@ function building(b,roof=true,stage=4){
    timberPod(x+.17,y+.18,w*.32,d*.53);whiteDesk(x+w*.48,y+.35,Math.min(1.9,w*.43));whiteDesk(x+w*.48,y+d*.53,Math.min(1.9,w*.43));
    booth(x+.2,y+d-1.4);person(x+w*.7,y+d*.42,P.pink,0,false,3);
   }else if(type==='johnson'){
-   archMezzanine(x,y,w,d);whiteDesk(x+.28,y+d*.47,Math.min(2.2,w*.51));whiteDesk(x+w*.58,y+d*.57,Math.min(1.55,w*.35));
-   box(x+w-.85,y+.32,.64,.6,3,5,white,false);tree(x+w-.54,y+.64,.49,{z:8,receivers:[{x:x+w-.85,y:y+.32,w:.64,d:.6,z:8,risers:[{side:'x+',bottom:3},{side:'y+',bottom:3}]},{x:x+w-.21,y:y+.32,w:.13,d:.6,z:3},{x:x+w-.85,y:y+.92,w:.77,d:.65,z:3}]});person(x+w*.46,y+d*.48,P.blue,1,false,3);
+   archMezzanine(x,y,w,d);
+   whiteDesk(x+.26,y+d*.55,Math.min(1.2,w*.27));whiteDesk(x+w*.68,y+d*.52,Math.min(1.2,w*.27));
+   birch(x+w*.5,y+d*.53,3);person(x+w*.77,y+d*.82,P.blue,1,false,3);
+   cat(x+w*.52,y+d*.84,0);
+
   }else{
    whiteDesk(x+.22,y+.26,Math.min(1.65,w*.36));whiteDesk(x+w*.57,y+.26,Math.min(1.65,w*.36));timberPod(x+w*.43,y+.13,.6,.68);person(x+w*.24,y+d*.68,P.pink,0,false,3);
   }
@@ -284,10 +311,20 @@ function building(b,roof=true,stage=4){
    sideWindow(sx+.025,y+d*.25,h-3,d*.5,h*.64,charcoal);
    archFront(x+.22,fy+.055,8,.23,3,'#364039');for(let i=0;i<2;i++)line(...pt(x+.24,fy+.06,6+i),...pt(x+.43,fy+.06,6+i),'#929889');
   }else{
-   masonry(x,fy,w,h,3,plaster);archSideMasonry(sx,y,d,h,3,plaster);
-   frontWindow(x+.18,fy+.03,h-3,w*.42,h*.57,charcoal);frontWindow(x+w*.64,fy+.03,h-3,w*.25,h*.57,charcoal);
-   archFront(x+w*.48,fy+.035,18,w*.13,15,'#4a5b55');frontWindow(x+w*.49,fy+.05,17,w*.11,13,charcoal);
-   for(let v=.25;v<d-.6;v+=1.1)sideWindow(sx+.03,y+v,h-3,.68,h*.55,charcoal);
+   masonry(x,fy,w,h,3,yellowBrick);archSideMasonry(sx,y,d,h,3,yellowBrick);
+   // Supplied Johnson street frontage: broad dark fascia over one loading door.
+   const doorX=x+w*.28,doorW=w*.45,top=h-6;
+   archFront(x+.025,fy+.04,h+2,w-.05,7,'#4b4842');
+   line(...pt(x+.04,fy+.05,h+2),...pt(x+w-.04,fy+.05,h+2),'#777163');
+   archFront(doorX-.05,fy+.045,top+.8,doorW+.1,top-2,'#c4c3ad');
+   archFrontTone(doorX,fy+.065,top,doorW,top-3,'#607273','#344d52');
+   for(let z=4;z<=top;z+=4)archFront(doorX,fy+.08,z,doorW,1,'#1f292b');
+   for(let u=0;u<=1.001;u+=.25)line(...pt(doorX+doorW*u,fy+.085,3),...pt(doorX+doorW*u,fy+.085,top),'#263332');
+   line(...pt(doorX+.045,fy+.09,top-1),...pt(doorX+doorW-.045,fy+.09,top-1),'#819395');
+   for(const u of [.06,.84]){archFront(x+w*u,fy+.04,13,w*.09,10,'#686c60');line(...pt(x+w*u+w*.07,fy+.06,7),...pt(x+w*u+w*.07,fy+.06,9),'#262f2c');}
+   archFront(x+.08,fy+.03,h-8,w*.19,1.5,'#665c45');archFront(x+w*.74,fy+.03,h-8,w*.23,1.5,'#665c45');
+   line(...pt(sx+.05,y+.25,h),...pt(sx+.05,y+.25,5),'#655e4c');
+
   }
   // Visible sill and corner receive different values; a black outline would flatten the mass.
   line(...pt(x,fy+.06,3),...pt(x+w,fy+.06,3),r[0]);line(...pt(sx+.04,y+d,4),...pt(sx+.04,y+d,h+2),archMix(r[1],r[2],.2));
@@ -418,37 +455,42 @@ function stag(x,y){
   branches.forEach((q,i)=>lmPath(p(q),silver[i%2?1:3]));
  }
 }
+function supernovaSign(x,y,z=27,w=2.7){
+ archFront(x,y,z,w,9,'#151e23');
+ line(...pt(x,y,z),...pt(x+w,y,z),'#eef4ee');
+ line(...pt(x,y,z-9),...pt(x+w,y,z-9),'#829699');
+ D.refSignText('SUPERNOVA',x+.2,y+.02,z-1.5,'#ecf1df');
+}
 function supernova(x,y){
  if(!supernova.painting)return D.cacheDraw('supernova',x,y,()=>{supernova.painting=true;try{supernova(x,y)}finally{supernova.painting=false}});
- const w=2.7,d=2.25,roof=['#5b6257','#8d9382','#b5bba5','#d8d9bf'];
- box(x,y,w,d,0,3.5,white,false);box(x+.1,y+.1,w-.2,d-.2,3.5,21,['#343f3c','#65736a','#959c86','#c5c9ae'],false);
- archCurtain(x+.17,y+d-.08,22,w-.34,17.5);
- // A dark-framed, warm conference-room pavilion. The flat canopy remains a park adaptation.
- const bays=4;for(let j=0;j<bays;j++){
-  const xx=x+.15+j*(w-.3)/bays;archFrontTone(xx+.045,y+d-.053,21.5,(w-.3)/bays-.1,16.5,'#b8b697','#8c9988');
-  archCurtain(xx+.085,y+d-.035,21,(w-.3)/bays-.18,14.5);
-  line(...pt(xx,y+d-.02,23),...pt(xx,y+d-.02,4),'#344340');
- }
- line(...pt(x+w-.15,y+d-.02,23),...pt(x+w-.15,y+d-.02,4),'#344340');
- sideWindow(x+w-.08,y+.18,22,d-.36,17,charcoal);
- archFront(x+.17,y+d-.004,24,w-.34,2,'#36433d');archFront(x+.17,y+d-.004,4.5,w-.34,1,'#6a7768');
- const door=x+1.35;line(...pt(door,y+d+.012,7),...pt(door,y+d+.012,15),'#273a33');
- box(x+.035,y+.035,w-.07,d-.07,24.5,2.2,roof,false);plane(x+.15,y+.15,w-.3,d-.3,26.7,'#b1b6a0');
- skylight(x+.56,y+.38,1.5,.68,26.8);
- // The invented planetarium sign is a mounted copper orbit, with a luminous
- // shaded sphere. Its rear / centre / front draw order gives the armature depth.
- const a=pt(x+1.38,y+1.19,44),base=pt(x+1.38,y+1.19,27),tilt=-.32;
- plane(x+1.24,y+1.06,.29,.26,27.1,'#726c50');
- line(base[0],base[1],a[0],a[1]+3,'#816443');line(base[0]+1,base[1]-1,a[0]+1,a[1]+4,'#c19d65');
- const orbit=t=>{const u=16*Math.cos(t),v=6.5*Math.sin(t);return[a[0]+u*Math.cos(tilt)-v*Math.sin(tilt),a[1]+u*Math.sin(tilt)+v*Math.cos(tilt)];};
- const arc=(from,to,front)=>{for(let i=from;i<to;i++){const t=i*Math.PI/36,hi=front&&i<18;line(...orbit(t),...orbit(t+Math.PI/36),hi?'#e8bf81':front?'#b77e4c':'#876344');}};
+ const w=2.7,d=2.25,chrome=['#43555f','#7e9298','#c5d2d1','#f5f8ee'],black=['#101c23','#243138','#394c52','#6e8388'];
+ box(x-.07,y-.07,w+.14,d+.14,0,3,chrome,false);
+ box(x+.07,y+.06,w-.14,d-.12,3,22,black,false);
+ // Reflective lower panels, a lit booth window and a separate glazed entrance.
+ archFrontTone(x+.1,y+d-.05,13,w-.2,10,'#8fa3a5','#4f626a');
+ for(let z=5;z<13;z+=2){line(...pt(x+.1,y+d-.035,z),...pt(x+w-.1,y+d-.035,z),'#bdccca');}
+ archFront(x+.14,y+d-.028,23,1.55,10,'#142c33');
+ archFrontTone(x+.2,y+d-.014,22,1.43,8,'#9bab9d','#5e7777');
+ archFront(x+.25,y+d+.002,16,1.3,3,'#c27043');
+ archFront(x+.68,y+d+.005,17,.45,1.4,'#f7e6b6');
+ for(const u of [.14,.89,1.69])line(...pt(x+u,y+d+.025,13),...pt(x+u,y+d+.025,23),'#d6e0d9');
+ archFront(x+1.82,y+d-.01,23,.67,20,'#17272f');
+ archFrontTone(x+1.88,y+d+.005,22,.54,16,'#6b929b','#344f5d');
+ line(...pt(x+2.03,y+d+.04,10),...pt(x+2.03,y+d+.04,16),'#e5e9d7');
+ archSideTone(x+w-.06,y+.08,24,d-.16,21,'#33434b','#1b2930');
+ for(let z=5;z<=12;z+=2)line(...pt(x+w-.045,y+.1,z),...pt(x+w-.045,y+d-.08,z),'#758c92');
+ sideWindow(x+w-.03,y+.27,23,d-.6,9,chrome);
+ box(x-.04,y-.04,w+.08,d+.08,25,3.5,chrome,false);
+ plane(x+.06,y+.06,w-.12,d-.12,28.5,'#31414a');
+ line(...pt(x+.04,y+.04,29),...pt(x+w-.04,y+.04,29),'#dfe9e1');
+ supernovaSign(x-.01,y+d+.055,29,w+.02);
+ const a=pt(x+1.2,y+.82,45),base=pt(x+1.2,y+.82,29),tilt=-.32;
+ line(base[0],base[1],a[0],a[1]+3,'#6f858d');line(base[0]+1,base[1],a[0]+1,a[1]+3,'#d6e2dc');
+ const orbit=t=>{const u=14*Math.cos(t),v=5.5*Math.sin(t);return[a[0]+u*Math.cos(tilt)-v*Math.sin(tilt),a[1]+u*Math.sin(tilt)+v*Math.cos(tilt)];};
+ const arc=(from,to,front)=>{for(let i=from;i<to;i++){const t=i*Math.PI/36;line(...orbit(t),...orbit(t+Math.PI/36),front?(i<18?'#f8f9eb':'#93a9ae'):'#5c7882');}};
  arc(36,72,false);
- poly([[a[0]-2,a[1]-5],[a[0]+2,a[1]-5],[a[0]+5,a[1]-2],[a[0]+5,a[1]+2],[a[0]+2,a[1]+5],[a[0]-2,a[1]+5],[a[0]-5,a[1]+2],[a[0]-5,a[1]-2]],'#c78d48');
- poly([[a[0]-2,a[1]-4],[a[0]+2,a[1]-4],[a[0]+4,a[1]-1],[a[0]+3,a[1]+2],[a[0],a[1]+4],[a[0]-3,a[1]+3],[a[0]-4,a[1]]],'#eed393');
- poly([[a[0]-2,a[1]-4],[a[0]+1,a[1]-4],[a[0]+2,a[1]-2],[a[0],a[1]+1],[a[0]-3,a[1]]],'#fff4c9');
- rect(a[0]-2,a[1]-3,2,2,'#fffdec');
- arc(0,36,true);
- sign(x+.1,y+2.4,'SUPERNOVA',P.pink);
+ poly([[a[0]-2,a[1]-5],[a[0]+2,a[1]-5],[a[0]+5,a[1]-2],[a[0]+5,a[1]+2],[a[0]+2,a[1]+5],[a[0]-2,a[1]+5],[a[0]-5,a[1]+2],[a[0]-5,a[1]-2]],'#b88048');
+ poly([[a[0]-2,a[1]-4],[a[0]+2,a[1]-4],[a[0]+4,a[1]-1],[a[0]+2,a[1]+3],[a[0]-3,a[1]+3],[a[0]-4,a[1]]],'#f0d39b');rect(a[0]-2,a[1]-3,3,3,'#fff3cd');arc(0,36,true);
 }
 function solarium(x,y){
  if(!solarium.painting)return D.cacheDraw('solarium',x,y,()=>{solarium.painting=true;try{solarium(x,y)}finally{solarium.painting=false}});
@@ -639,17 +681,17 @@ function scene(canvas,{roof=true,selected='B-02',time=0,layer=5,landmark=null,co
  setup(canvas,canvas.width/2,52);rect(0,0,canvas.width,canvas.height,'#cae0ba');const n=17;box(0,0,n,n,-6,6,P.soil);
  for(let s=0;s<34;s++)for(let x=0;x<n;x++){const y=s-x;if(y<0||y>=n)continue;const paved=x===6||x===7||y===6||y===7||(y===5&&x>0&&x<15)||(y===14&&x>8&&x<16)||(x===12&&y>5&&y<10);tile(x,y,paved?'pave':'grass');if(paved&&((x===6&&y>6)||(y===6&&x<6)))plane(x+.05,y+.05,.12,.9,.2,P.brick[2]);}
  // Concrete service yards keep industry distinct from the planted park paths.
- plane(8.3,1.2,6.2,4.8,.3,'#aeb9ae');plane(9.9,10,5,4.2,.3,'#bec8ba');plane(1.1,2.3,5.1,3.4,.3,'#b9c5b9');
+ plane(8.3,1.2,6.2,4.8,.3,'#aeb9ae');plane(10.9,10.7,5,4.2,.3,'#bec8ba');plane(1.1,2.3,5.1,3.4,.3,'#b9c5b9');
  if(layer===0)return[];let items=[],hits=[];const add=(x,y,fn)=>items.push({key:x+y,fn});
  buildings.forEach(b=>{add(b.x+b.w,b.y+b.d,()=>building(b,b.id===selected?roof:true));hits.push({id:b.id,kind:'building',p:pt(b.x+b.w/2,b.y+b.d/2,b.h/2),polygon:[pt(b.x,b.y,b.h+8),pt(b.x+b.w,b.y,b.h+8),pt(b.x+b.w,b.y+b.d),pt(b.x,b.y+b.d)]});});
- if(layer>=2){let ride=circuit(time,runCircuit);add(ride.x,ride.y,()=>car(ride.x,ride.y,ride.heading,4));add(2.9,8.4,()=>supernova(2.3,7.3));add(6.4,8.95,()=>stag(6.3,8.9));add(14.45,7.4,()=>solarium(13.25,6.2));add(9.4,9.8,()=>overlook(8.1,9.35));add(10.4,8.3,()=>court(courtKind));add(10.5,14.45,()=>cat(10.5,14.45,time));add(7.6,16.1,()=>reception(6.2,15.45));if(courtKind==='party')add(10.3,8.4,()=>shark(9.7,7.6,time));
- for(const [x,y,s] of [[.5,1.1,.9],[1.6,.65,.8],[5.8,.8,.95],[15.4,1.5,1.1],[15.5,4.4,.8],[.5,6.5,1.15],[.9,10.3,1],[8.4,15.4,.85],[14.7,15.4,1.1],[16,12.4,.85],[1,15.2,.8]])add(x,y,()=>tree(x,y,s));
- for(const [x,y] of [[6.05,1.2],[7.7,5.7],[12.25,8.8],[8.2,13.8],[1.3,6.2]])add(x,y,()=>lamp(x,y));for(const [x,y] of [[5.5,10.2],[12.9,14.5],[.9,9.2]])add(x,y,()=>bench(x,y));for(let i=0;i<4;i++){add(15.1,8+i*.5,()=>shrub(15.1,8+i*.5,.6));}add(15.1,4.6,()=>van(15.1,4.6));add(14.5,4.5,()=>crate(14.5,4.5));add(14.75,13.1,()=>crate(14.75,13.1));add(14.75,13.1,()=>crate(14.75,13.1,7));
+ if(layer>=2){let ride=circuit(time,runCircuit);add(ride.x,ride.y,()=>car(ride.x,ride.y,ride.heading,4));add(4,10.35,()=>supernova(1.3,8.1));add(7.1,8.6,()=>stag(7,8.55));add(14.45,7.4,()=>solarium(13.25,6.2));add(9.4,9.8,()=>overlook(8.1,9.35));add(10.4,8.3,()=>court(courtKind));add(10.5,14.45,()=>cat(10.5,14.45,time));add(7.6,16.1,()=>reception(6.2,15.45));if(courtKind==='party')add(10.3,8.4,()=>shark(9.7,7.6,time));
+ for(const [x,y,s] of [[.5,1.1,.9],[1.6,.65,.8],[5.8,.8,.95],[15.4,1.5,1.1],[15.5,4.4,.8],[.5,6.5,1.15],[.9,10.3,1],[16.2,8.8,.65],[1,15.2,.8]])add(x,y,()=>tree(x,y,s));
+ for(const [x,y] of [[6.05,1.2],[7.7,5.7],[12.25,8.8],[8.2,13.8],[1.3,6.2]])add(x,y,()=>lamp(x,y));for(const [x,y] of [[5.5,10.2],[12.9,14.5],[.9,9.2]])add(x,y,()=>bench(x,y));for(let i=0;i<4;i++){add(15.1,8+i*.5,()=>shrub(15.1,8+i*.5,.6));}add(15.1,4.6,()=>van(15.1,4.6));add(14.5,4.5,()=>crate(14.5,4.5));add(16.1,13.1,()=>crate(16.1,13.1));
  for(const [x,y,tone] of [[6.2,15.6,P.pink[2]],[7.7,15.6,P.orange[2]],[7.7,.5,P.pink[2]],[12.2,6.3,P.orange[2]]])add(x,y,()=>pennant(x,y,tone));
  landmarks.filter(l=>l.id!=='L-08'||courtKind==='party').forEach(l=>hits.push({id:l.id,kind:'landmark',p:pt(...l.at),radius:l.id==='L-01'?30:l.id==='L-06'?9:l.id==='L-07'?19:25}));}
  if(layer>=3){const walk=[{x:6.5,y:1.5+(time*.52)%13},{x:1.3+(time*.41+2)%13,y:6.5},{x:7.2,y:2+(time*.35+5)%13},{x:10+(time*.22)%3,y:14.4},{x:6.45,y:10+(time*.27)%4},{x:9.5,y:5.5},{x:11.5,y:5.5},{x:2.1,y:13.9}];walk.forEach((p,i)=>add(p.x,p.y,()=>person(p.x,p.y,P[['pink','blue','orange','green'][i%4]],time*4+i,i===5)));const pace=boerumMotion.sample(time);/* Entire pacing path is in front of Boerum's facade. */add(6,5.02,()=>fedora(1.7+pace.u*3.9,5.02,pace));}
  items.sort((a,b)=>a.key-b.key).forEach(i=>i.fn());
- if(layer>=4){sign(1.25,5.65,'BOERUM',P.pink);sign(9.1,5.25,'PORTER',P.orange);sign(10.05,14.18,'JOHNSON',P.green);sign(8.9,16.2,'MAD MONEY',P.pink);}
+ if(layer>=4){sign(1.25,5.65,'BOERUM',P.pink);sign(9.1,5.25,'PORTER',P.orange);sign(11.3,16.05,'JOHNSON',P.green);sign(8.9,16.2,'MAD MONEY',P.pink);}
  if(layer>=5){if(landmark){const l=landmarks.find(l=>l.id===landmark);if(l){const [x,y]=pt(...l.at);line(x-13,y+10,x+13,y+10,P.green[2]);rect(x-15,y-12,2,24,P.green[2]);rect(x+14,y-12,2,24,P.green[2]);}}else selection(buildings.find(b=>b.id===selected)||buildings[1]);}
  return hits;
 }
@@ -658,5 +700,5 @@ function specimen(canvas,kind){const alias={creative:'boerum',production:'porter
  if(kind==='car'){car(0,0,0);return;}if(kind==='stag'){stag(0,0);return;}if(kind==='supernova'){supernova(-1.35,-1);return;}if(kind==='solarium'){solarium(-1.2,-1.2);return;}if(kind==='overlook'){overlook(-.6,-.3);return;}if(kind==='reception'){reception(-1,-.3);return;}if(kind==='inflatable'){inflatable(-1.5,-1);return;}if(kind==='cat'){cat(0,0,0);return;}if(kind==='shark'){shark(0,0,0);return;}if(kind==='props'){whiteDesk(-2,-1,2);booth(.6,-1);crate(-.6,1);return;}if(kind==='signs'){sign(-2,-.5,'BOERUM',P.pink);sign(.8,-.5,'PORTER',P.orange);return;}
  const type=alias[kind]||'porter',b={x:-1.75,y:-1.2,w:3.5,d:2.3,h:type==='boerum'?39:24,type};building(b,kind!=='cutaway'&&!['stage0','stage1','stage2'].includes(kind),kind.startsWith('stage')?Number(kind.at(-1)):4);
 }
-window.MMTArt={...old,scene,specimen,buildings,landmarks,boerumMotion,components:{circuit,building,whiteDesk,timberPod,booth,skylight,car,stag,supernova,solarium,overlook,inflatable,shark,reception,cat,pennant},sceneSize:{width:640,height:360},version:'0.8'};
+window.MMTArt={...old,scene,specimen,buildings,landmarks,boerumMotion,components:{circuit,building,birch,supernovaSign,whiteDesk,timberPod,booth,skylight,car,stag,supernova,solarium,overlook,inflatable,shark,reception,cat,pennant},sceneSize:{width:640,height:360},version:'0.9'};
 })();

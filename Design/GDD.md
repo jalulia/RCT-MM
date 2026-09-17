@@ -1,6 +1,6 @@
 # Mad Money Tycoon — game design document
 
-Revision 0.9 · 16 September 2026 · Design review edition
+Revision 0.10 · 16 September 2026 · Design review edition
 
 ## 01. Game
 
@@ -287,7 +287,7 @@ The world is drawn on an integer pixel grid. Text, controls and source documents
 
 The kit separates ground, props, people, signs and building parts. It can be extended without repainting a whole scene. Boerum, Porter and Johnson supply distinct site forms. Their placement together is a fictional park composition; no department, entity or historical chronology is inferred from a building style.
 
-The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registered objects and 121 transparent frames, with labelled overviews, per-object sheets and a frame manifest. The Boerum previews show the full 36-second cycle. Catalogue exports rebuild from the same render functions as the park. The current pass redraws all 43 previous objects and adds the complete Chrysler attraction assembly. Its car has 16 orientations. [Compare the previous and refined sprites](assets/sprite-catalogue/sheets/refinement-comparison.png).
+The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registered objects and 121 transparent frames, with labelled overviews, per-object sheets and a frame manifest. The Boerum previews show the full 36-second cycle. Catalogue exports rebuild from the same render functions as the park. The full refinement redrew 43 earlier objects and added the complete Chrysler attraction assembly. The latest pass refines Supernova and corrects Johnson’s frontage and interior. Its car has 16 orientations. [Compare the previous and refined sprites](assets/sprite-catalogue/sheets/refinement-comparison.png).
 
 ### Assembly
 
@@ -299,7 +299,7 @@ The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registere
 
 Sites and scenery can be selected separately. A landmark opens its photograph and identifies the invented park behaviour. Courtyard choices change the visible installation; the Chrysler can remain parked or run a miniature circuit. These are art-study interactions, not a working economy.
 
-The five views retain the selected object. Scenery carries no invented cash or authority record. Porter alone hosts the fictional C-07 interaction fixture; Boerum and Johnson retain their own site descriptions. Cash events stay in the record pane.
+Each building has visible **Exterior / Interior** previews. The inspector consistently shows the selected sprite, source photograph and park interpretation. The **Practice documents** tray opens C-07 independently of building selection and returns to the same park state. The proposed Work, Cash, Information, Control and People views remain in the [interface study](#interface/five-views); architectural browsing does not use those tabs.
 
 The arrangement combines architecture and objects from different sites and photographs. It is not a historical map or a claim that the event objects were permanent. The next play test should make one spatial choice affect an ordinary production handoff before adding more attractions.
 
@@ -430,6 +430,7 @@ Audience and player authority remain open design decisions. Binding now uses CAS
 
 | Revision | Change | Status |
 |---|---|---|
+| 0.10 | Exterior/interior preview choices, consistent source inspector, separate practice desk, compact home navigation; Johnson frontage and interior correction; black-and-silver Supernova | Design 0.10 / art 0.9; historical interaction remains inactive |
 | 0.9 | Full editorial reconciliation; inline visual examples; current preview library; GIF exports and versioned archive; portable Pages package | Design review release; historical interaction remains inactive |
 | 0.8 | Source-based refinement of every registered sprite; rounded reception sculpture, rebuilt booth/cat/stag/castle, corrected stairs and stepped shadows, 16-direction Chrysler and complete attraction assembly | Art study; photographs remain references and attraction behaviour remains invented |
 | 0.7 | Shared document-material system, interactive invoice/carbon/bank/form/note specimens, park record comparison and six-leg Boerum moonwalk | Fictional interface proof; native evidence unchanged |

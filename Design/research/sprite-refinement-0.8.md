@@ -1,10 +1,14 @@
-# Sprite refinement 0.8
+# Sprite refinement
 
-The 32 × 16 projection and original pixel renderer are retained. All 43 previous registered objects were redrawn; the complete Chrysler attraction adds one assembly. The catalogue holds 44 objects and 121 frame slots, matching its revision 0.8 manifest. These are implemented art assets, not evidence that the operating game is complete.
+The 32 × 16 projection and original pixel renderer are retained. All 43 previous registered objects were redrawn; the complete Chrysler attraction adds one assembly. The catalogue holds 44 objects and 121 frame slots, in the current art 0.9 manifest. These are implemented art assets, not evidence that the operating game is complete.
 
 ![Current building families](../assets/sprite-catalogue/sheets/buildings-overview.png)
 
-The [full object catalogue](../assets/sprite-catalogue/index.html) exposes native frames, cutaways and animation samples. The [0.7 / 0.8 comparison sheet](../assets/sprite-catalogue/sheets/refinement-comparison.png) preserves the visual comparison across the complete set.
+The [full object catalogue](../assets/sprite-catalogue/index.html) exposes native frames, cutaways and animation samples. The [0.7 / current comparison sheet](../assets/sprite-catalogue/sheets/refinement-comparison.png) preserves the visual comparison across the complete set.
+
+## Art 0.9 corrections
+
+Supernova keeps its pavilion and orbital ornament, with a black body, chrome canopy, ribbed silver panels and bright fascia lettering. Johnson now follows the supplied loading-door frontage. Its interior has a stair descending from the mezzanine, a central white birch and the office cat. The scene clears the foreground sightline to that interior. The original 0.8 review is retained in the version archive.
 
 ## Source reading
 
@@ -18,7 +22,7 @@ The [full object catalogue](../assets/sprite-catalogue/index.html) exposes nativ
 | Inflatable | Blue/red columns, pointed orange/teal caps, yellow entrance frame and netting | Rounded inflated forms, seams and a clear entrance; a selectable courtyard layout, not a verified permanent installation |
 | Solarium | Indoor planting and raised white planters | Invented glass pavilion; glints terminate within panes; shadows continue onto planter faces |
 | Orange stair | Orange rails, open treads and elevated mezzanine | External overlook remains invented; risers increase toward the deck and rails follow the tread noses |
-| Buildings | Boerum’s three brick/glass frontages; Porter’s dark masonry, high curtain-backed windows and recessed entrance; Johnson’s white hall/orange mezzanine | Distinct facades and cutaways; unseen exterior/roof geometry remains a proposal |
+| Buildings | Boerum’s three brick/glass frontages; Porter’s dark masonry, high curtain-backed windows and recessed entrance; Johnson’s yellow-brick loading frontage and white hall/orange mezzanine | Distinct facades and cutaways; unseen roof geometry remains a proposal |
 
 Photo sources: [Matt Fry / 65 Porter](https://mattfryed.com/65porter), [Matt Fry / 266 Johnson](https://mattfryed.com/266-johnson), [PSF Projects / Madwell](https://www.psfprojects.com/workplace/madwell-creative-agency), and the supplied Boerum street image. The exact photo mappings and attribution limits remain in [office architecture research](office-art-research.md) and [campus discoveries](campus-discoveries.md).
 

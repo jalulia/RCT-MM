@@ -19,3 +19,13 @@
 .article-body>p>img{max-width:100%;height:auto;display:block;image-rendering:pixelated;border:1px solid var(--rule);background-image:radial-gradient(#15151920 .5px,transparent .6px);background-size:4px 4px;padding:16px;margin:18px 0}.article-body>p>img[src*='/objects/']{width:384px;max-width:100%}.article-body>p>img[src*='-overview']{width:100%;max-width:800px}.article-body>p:has(>img)+p{font-size:12px;color:var(--muted)}
 
 .source-preface img{max-width:100%;height:auto}.example-image{position:relative}.inline-example{margin:26px 0 34px;border:1px solid var(--rule);background:#fff}.inline-example>a{display:flex;justify-content:center;align-items:center;min-width:0;background-image:radial-gradient(#15151920 .5px,transparent .6px);background-size:4px 4px;padding:20px}.inline-example img{display:block;max-width:100%;height:auto;image-rendering:pixelated}.inline-example img[src*='/objects/']{width:384px}.inline-example figcaption{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;padding:14px 18px;border-top:1px solid var(--rule)}.inline-example figcaption a{font:10px var(--mono)}
+
+/* Home: the rail holds context and tools; the main column starts with chapters. */
+.index-notes .source-document{display:grid;grid-template-columns:88px minmax(0,1fr);gap:17px;margin:26px 0 24px;align-items:start}
+.index-notes .source-page{margin:0;max-width:none}.index-notes .source-page img{width:100%;height:auto}
+.index-notes .source-description{border:0;padding:0;gap:7px}.index-notes .source-description strong{font-size:20px;line-height:1.15}.index-notes .source-description>span{font-size:11px}.index-notes .source-description .source-code{font-size:8px}.index-notes .source-description .source-open{font-size:12px}
+.index-notes .reader-preview-links{grid-template-columns:1fr;margin:25px 0;border:0;border-top:1px solid var(--ink)}
+.index-notes .reader-preview-links a{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:center;gap:14px;border:0;border-bottom:1px solid var(--rule);padding:10px 0}
+.index-notes .reader-preview-links img{height:76px;padding:0;background:#f5f6f3;image-rendering:pixelated}.index-notes .reader-preview-links span{padding:0;border:0;font:12px/1.4 var(--mono)}
+.index-notes .scope-note{font-size:12px}.contents-main>.index-label{margin-top:0}
+@media(max-width:740px){.index-notes .reader-preview-links{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.index-notes .reader-preview-links a{display:flex;flex-direction:column;align-items:stretch;gap:9px}.index-notes .reader-preview-links img{width:100%;height:70px}.index-notes .reader-preview-links span{font-size:10px}.index-notes .source-document{max-width:340px}}

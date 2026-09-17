@@ -1,6 +1,6 @@
 # Campus discoveries — objects with evidence
 
-Research checked against revision 0.8, 16 September 2026. Sources: inspected photographs in Matt Fry’s locally archived public portfolio, checked against the public project pages and PSF Projects’ project page. These are visual references, not facts about the case. Each entry separates the observed object, its current game interpretation and any further proposed interaction.
+Research checked against design 0.10 / art 0.9, 16 September 2026. Sources: inspected photographs in Matt Fry’s locally archived public portfolio, checked against the public project pages and PSF Projects’ project page. These are visual references, not facts about the case. Each entry separates the observed object, its current game interpretation and any further proposed interaction.
 
 The sculpted reception desk, indoor Chrysler and tree under the skylight supply three different silhouettes and spatial conditions: arrival, an obstruction people gather around, and a shared clearing. The park makes the car a circuit attraction and the room name Supernova an orbital pavilion. The inflatable/shark kit changes the courtyard arrangement. Small objects can reward attention through their shape and placement without requiring a dialogue box each.
 
@@ -118,7 +118,7 @@ The sculpted reception desk, indoor Chrysler and tree under the skylight supply 
 
 **Evidence.** [SUPERNOVA, curtain and painting](../assets/office-references/porter-supernova.jpg); [MAGMA recess](https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1732580664767-V1LUQQFL74X7NSRVDE4P/5-Capture0001-163.jpg); [GROVE doorway](https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1732580667965-9KM29A8YNSQ29UIXGV7H/Capture0019-102.jpg). [Coral booth sequence](https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1732580665943-FDO8SVBWFTZA4QLA0FY7/8-Capture0001-251.jpg) adds small portrait blocks and black/white globe pendants to the same room-scale vocabulary.
 
-**Current study.** Timber-room M-02 retains the coloured doorway pocket. Supernova becomes L-03, a warm glazed meeting pavilion with a flat canopy and invented copper orbit around a luminous sphere. **Next steps:** decide whether meeting occupancy warrants a curtain state. Paintings, portraits and other named rooms are not implemented as a complete room set; photographed art must not be imported as game texture.
+**Current study.** Timber-room M-02 retains the coloured doorway pocket. Supernova becomes L-03, a black-and-silver roadside pavilion with ribbed lower panels, a chrome canopy, bright fascia lettering and an invented silver orbit around a warm sphere. **Next steps:** decide whether meeting occupancy warrants a curtain state. Paintings, portraits and other named rooms are not implemented as a complete room set; photographed art must not be imported as game texture.
 
 ![Supernova meeting pavilion with invented orbital sign](../assets/sprite-catalogue/objects/L-03/default.png)
 

@@ -80,7 +80,7 @@ for e in json.loads((root/'Design/previews/manifest.json').read_text())['entries
 with zipfile.ZipFile(root/'Design/assets/sprite-catalogue/mad-money-sprite-catalogue.zip') as z:
  assert z.testzip() is None
  names=z.namelist();assert any(x.endswith('fonts/OFL.txt') for x in names),'Font licence missing in ZIP'
-report={'designRevision':'0.9','artRevision':manifest['revision'],'htmlPagesChecked':len(pages),'internalReferencesChecked':checked,'authoredReferencesChecked':markdown_checked,'externalReferenceURLs':len(external),'readerPages':len(json.loads((root/'Design/working/reader-map.json').read_text())),'objects':len(object_ids),'frames':sum(len(o['variants']) for o in manifest['objects']),'historicalInteractionEnabled':False,'sourcePdfHashMatches':True,'spriteSourceHashesMatch':True,'errors':errors}
+report={'designRevision':json.loads((root/'Design/project.json').read_text())['designRevision'],'artRevision':manifest['revision'],'htmlPagesChecked':len(pages),'internalReferencesChecked':checked,'authoredReferencesChecked':markdown_checked,'externalReferenceURLs':len(external),'readerPages':len(json.loads((root/'Design/working/reader-map.json').read_text())),'objects':len(object_ids),'frames':sum(len(o['variants']) for o in manifest['objects']),'historicalInteractionEnabled':False,'sourcePdfHashMatches':True,'spriteSourceHashesMatch':True,'errors':errors}
 (root/'Design/qa').mkdir(exist_ok=True);(root/'Design/qa/release-checks.json').write_text(json.dumps(report,indent=2)+'\n')
 (root/'Design/qa/external-links.json').write_text(json.dumps(sorted(external),indent=2)+'\n')
 print(json.dumps(report,indent=2))

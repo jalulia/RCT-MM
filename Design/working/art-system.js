@@ -3,44 +3,51 @@ const kit=window.MMTArt;if(!kit)return;
 document.querySelectorAll('[data-art-icon]').forEach(c=>kit.icon(c,c.dataset.artIcon));
 document.querySelectorAll('[data-art-sprite]').forEach(c=>kit.specimen(c,c.dataset.artSprite));
 document.querySelectorAll('[data-art-scene="cover"],[data-art-scene="assembly"]').forEach(c=>kit.scene(c));
-const state={selected:'B-02',roof:true,view:'Work',motion:false,time:0,record:false,landmark:null,court:'party',circuit:false};
+const state={selected:'B-03',roof:false,motion:false,time:0,record:false,landmark:null,court:'party',circuit:false};
 const scene=document.querySelector('[data-art-scene="interactive"]'),workbench=document.querySelector('.art-workbench');if(!scene||!workbench)return;
 const body=workbench.querySelector('.art-inspector-body');
+const siteDetails={
+ 'B-01':{photo:'assets/office-references/boerum-user-street-view.png',observed:'Three joined brick-and-glass bays with pale window frames.',invented:'One park building. Its unseen interior and roof are interpretations.'},
+ 'B-02':{photo:'assets/office-references/porter-hall.jpg',observed:'An industrial hall with glazed rooms, shared worktables and sculptural objects.',invented:'A compact shell and removable roof collect selected interior details.'},
+ 'B-03':{photo:'assets/office-references/johnson-street-2017.png',observed:'Yellow brick, broad dark fascia and a gridded loading door in the supplied street view.',invented:'A compressed hall with orange stairs, a central white birch and the cat. The unseen roof and floor plan are interpreted.'}
+};
 let lastSelected;
-function centerScene(){workbench.style.setProperty('--record-top',workbench.querySelector('.art-game-layout').offsetTop+'px');const map=workbench.querySelector('.art-map-scroll');if(map.clientWidth===0)return;const b=kit.buildings.find(b=>b.id===state.selected);const l=kit.landmarks.find(l=>l.id===state.landmark);const x=320+(l?l.at[0]-l.at[1]:(b.x+b.w/2)-(b.y+b.d/2))*16;map.scrollLeft=Math.max(0,x*(scene.clientWidth/640)-map.clientWidth/2);}
+function centerScene(){const map=workbench.querySelector('.art-map-scroll');if(map.clientWidth===0)return;const b=kit.buildings.find(b=>b.id===state.selected),l=kit.landmarks.find(l=>l.id===state.landmark);const x=320+(l?l.at[0]-l.at[1]:(b.x+b.w/2)-(b.y+b.d/2))*16;map.scrollLeft=Math.max(0,x*(scene.clientWidth/640)-map.clientWidth/2);}
 new ResizeObserver(()=>requestAnimationFrame(centerScene)).observe(workbench.querySelector('.art-map-scroll'));
-function render(){kit.scene(scene,state);if(lastSelected!==state.selected+state.landmark){lastSelected=state.selected+state.landmark;requestAnimationFrame(centerScene);}const b=kit.buildings.find(b=>b.id===state.selected);workbench.querySelector('[data-art-selection-id]').textContent=b.id;workbench.querySelector('[data-art-selection-name]').textContent=b.name;workbench.querySelectorAll('[data-art-building]').forEach(btn=>btn.setAttribute('aria-pressed',btn.dataset.artBuilding===b.id&&!state.landmark));
-workbench.querySelectorAll('[data-art-landmark]').forEach(btn=>btn.setAttribute('aria-pressed',btn.dataset.artLandmark===state.landmark));
-workbench.querySelectorAll('[data-park-court]').forEach(btn=>btn.setAttribute('aria-pressed',btn.dataset.parkCourt===state.court));
-workbench.querySelector('[data-art-roof]').disabled=!!state.landmark;
-const l=kit.landmarks.find(l=>l.id===state.landmark);
-workbench.querySelector('[data-art-selection-kind]').textContent=l?'SELECTED SCENERY':'SELECTED SITE';
-if(l){workbench.querySelector('[data-art-selection-id]').textContent=l.id;workbench.querySelector('[data-art-selection-name]').textContent=l.name;
-const extra=state.view==='Cash'?'<p class="park-view-note">No cash event is assigned to this scenery object.</p>':state.view==='People'?'<p class="park-view-note">People around an attraction are scene occupants. Clothing does not establish employment.</p>':state.view==='Control'?'<p class="park-view-note">These controls change the art study. No business action is executed.</p>':'';
-body.innerHTML='<small>PHOTOGRAPH → PARK OBJECT</small><a class="park-source-thumb" href="'+l.photo+'" target="_blank"><img src="'+l.photo+'" alt="Photographic reference for '+l.name+'"><span>Open photograph ↗</span></a><dl><dt>In the photograph</dt><dd>'+l.observed+'</dd><dt>In the park</dt><dd>'+l.invented+'</dd></dl>'+extra+(l.id==='L-01'?'<button data-park-circuit>'+ (state.circuit?'Park the Chrysler':'Run Chrysler circuit')+'</button>':'')+(l.id==='L-05'?'<button data-park-open-johnson>Inspect Johnson interior</button>':'')+'<a class="park-source-link" href="'+l.source+'" target="_blank" rel="noopener">Source project ↗</a>';
-workbench.querySelector('.art-scene-caption').textContent=l.name+' · '+(state.view==='Work'?'Scenery study':state.view+' view');return;}
-if(b.id!=='B-02'){body.innerHTML='<small>SITE STUDY / MIXED OCCUPANCY</small><h5>'+b.name+'</h5><dl><dt>Proposed use</dt><dd>'+b.occupants+'</dd><dt>Architecture</dt><dd>'+(b.id==='B-01'?'Joined brick and glass frontage':'White industrial hall, work tables and tree')+'</dd></dl><p>'+(state.view==='Work'?'Site and department remain separate. Several teams can share the same building.':'No '+state.view.toLowerCase()+' fixture is attached to this site in the art study.')+'</p><a class="park-source-link" href="'+b.source+'">View architectural references →</a>';workbench.querySelector('.art-scene-caption').textContent=b.name+' · roof '+(state.roof?'visible':'removed');return;}
-const where='Component awaiting release';
-const base='<small>FICTIONAL PRACTICE / C-07 / O-19</small>';
-const row=(a,b,c='')=>`<div class="art-state-row ${c}"><span>${a}</span><b>${b}</b></div>`;
-if(state.view==='Work')body.innerHTML=`<small>FICTIONAL PRACTICE / C-07</small><h5>${where}</h5><dl><dt>Reserved capacity</dt><dd>2 team-days</dd><dt>Target handoff</dt><dd>Thursday · week 3</dd><dt>Linked obligation</dt><dd>O-19 / Fabrication</dd></dl><button data-art-open-record>Inspect linked record ↗</button><p>Moving people show occupation and scale. They do not advance this fixture.</p>`;
-if(state.view==='Cash')body.innerHTML=base+'<div class="dm-compact-receipt"><small>P-04 / BANK EVENTS / USD</small><div><span>Debit</span><b>−12,000.00</b></div><div><span>Return</span><b>+12,000.00</b></div><small>LATER SETTLEMENT · NOT SUPPLIED</small></div><div class="dm-compact-copy">PLATFORM COPY / v2<strong>Paid</strong></div><button data-art-open-record>Open document comparison ↗</button>';
-if(state.view==='Information')body.innerHTML=base+'<h5>O-19 · Record v2</h5>'+row('Platform label','Paid','pink')+'<dl><dt>Effective time</dt><dd>W3 Tue · 10:00</dd><dt>Recorded time</dt><dd>W3 Tue · 10:02</dd><dt>Related records</dt><dd>Bill · debit · return</dd></dl><button data-art-open-record>Open record ↗</button>';
-if(state.view==='People')body.innerHTML='<small>PROJECT C-07 / PEOPLE</small><h5>Internal and external work</h5><dl><dt>P-03 / employee</dt><dd>Production department</dd><dt>S-08 / external provider</dt><dd>Fabrication engagement</dd><dt>Employment basis</dt><dd>Explicit record; not shirt color</dd></dl><p>The external provider has an engagement and obligation. Their visit is not a change in employee headcount.</p>';
-if(state.view==='Control')body.innerHTML='<small>PROJECT C-07 / PERMISSIONS</small><h5>Preparation ≠ approval</h5><dl><dt>Production role</dt><dd>May prepare a release request</dd><dt>Approver role</dt><dd>May authorize release</dd><dt>Action in this study</dt><dd>None executed</dd></dl><p>A title or a selected building does not establish who exercised authority.</p>';
-workbench.querySelector('.art-scene-caption').textContent=state.view==='Work'?`${where} · 2 team-days reserved`:`${state.selected} stays selected · ${state.view} view`;
+function render(){
+ kit.scene(scene,state);const selection=state.selected+state.landmark;if(lastSelected!==selection){lastSelected=selection;requestAnimationFrame(centerScene);}
+ const b=kit.buildings.find(b=>b.id===state.selected),l=kit.landmarks.find(l=>l.id===state.landmark),item=l||b,details=l||siteDetails[b.id];
+ if(!l&&b.id==='B-03'&&!state.roof){details.photo='assets/office-references/johnson-mezzanine.jpg';details.observed='Orange mezzanine, workstations and an indoor tree; identified as a white birch in supplied context.';}else if(!l&&b.id==='B-03'){details.photo='assets/office-references/johnson-street-2017.png';details.observed='Yellow brick, broad dark fascia and a gridded loading door in the supplied street view.';}
+ const stateName=l?'SCENERY':state.roof?'EXTERIOR':'INTERIOR';
+ workbench.querySelector('[data-art-selection-id]').textContent=item.id;
+ workbench.querySelector('[data-art-selection-name]').textContent=item.name;
+ workbench.querySelector('[data-art-selection-kind]').textContent=stateName;
+ workbench.querySelectorAll('[data-art-building]').forEach(btn=>btn.setAttribute('aria-pressed',!l&&btn.dataset.artBuilding===b.id&&(btn.dataset.artState==='roof-on')===state.roof));
+ workbench.querySelectorAll('[data-art-landmark]').forEach(btn=>btn.setAttribute('aria-pressed',btn.dataset.artLandmark===state.landmark));
+ workbench.querySelectorAll('[data-park-court]').forEach(btn=>btn.setAttribute('aria-pressed',btn.dataset.parkCourt===state.court));
+ workbench.querySelectorAll('[data-park-circuit]').forEach(btn=>{btn.textContent=state.circuit?'Park the Chrysler':'Run Chrysler circuit';btn.setAttribute('aria-pressed',state.circuit)});
+ const motion=workbench.querySelector('[data-art-motion]');motion.textContent=state.motion?'Pause motion':'Play motion';motion.setAttribute('aria-pressed',state.motion);
+ const key=l?(l.id==='L-01'?'heading-0':l.id==='L-06'?'tail-0':'default'):(state.roof?'roof-on':'roof-off');
+ const sprite='assets/sprite-catalogue/objects/'+item.id+'/'+key+'.png';
+ body.innerHTML=`<a class="park-selected-sprite" href="assets/sprite-catalogue/index.html#${item.id}"><img src="${sprite}" alt="${item.name}, ${stateName.toLowerCase()}"><span>Object sheet & GIF downloads ↗</span></a><a class="park-source-thumb" href="${details.photo}" target="_blank" rel="noopener"><img src="${details.photo}" alt="Source photograph for ${item.name}"><span>Source photograph ↗</span></a><dl><dt>Source</dt><dd>${details.observed}</dd><dt>Park interpretation</dt><dd>${details.invented}</dd></dl>${l&&l.id==='L-05'?'<button data-park-open-johnson>Open Johnson interior →</button>':''}<a class="park-source-link" href="${item.source}" ${item.source.startsWith('http')?'target="_blank" rel="noopener"':''}>${l?'Source project ↗':'Architecture references →'}</a>`;
+ workbench.querySelector('.art-scene-caption').textContent=item.name+' · '+(l?'Scenery':state.roof?'Exterior':'Interior');
 }
 workbench.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
-if(b.dataset.artBuilding){state.selected=b.dataset.artBuilding;state.landmark=null;render()}
-if(b.dataset.artLandmark){state.landmark=b.dataset.artLandmark;render()}
-if(b.dataset.parkCourt){state.court=b.dataset.parkCourt;state.landmark=state.court==='party'?'L-08':null;render()}
-if(b.hasAttribute('data-park-circuit')){state.circuit=!state.circuit;if(state.circuit&&!matchMedia('(prefers-reduced-motion: reduce)').matches)state.motion=true;const motion=workbench.querySelector('[data-art-motion]');motion.textContent=state.motion?'Pause motion':'Play motion';motion.setAttribute('aria-pressed',state.motion);workbench.querySelectorAll('[data-park-circuit]').forEach(x=>{x.textContent=state.circuit?'Park the Chrysler':'Run Chrysler circuit';x.setAttribute('aria-pressed',state.circuit)});render()}
-if(b.hasAttribute('data-park-open-johnson')){state.selected='B-03';state.landmark=null;state.roof=false;const btn=workbench.querySelector('[data-art-roof]');btn.textContent='Show roof';btn.setAttribute('aria-pressed',true);render()}
-if(b.dataset.artView){state.view=b.dataset.artView;workbench.querySelectorAll('[data-art-view]').forEach(x=>x.setAttribute('aria-pressed',x===b));render()}
-if(b.hasAttribute('data-art-roof')){state.roof=!state.roof;b.textContent=state.roof?'Hide roof':'Show roof';b.setAttribute('aria-pressed',!state.roof);render()}
-if(b.hasAttribute('data-art-motion')){state.motion=!state.motion;b.textContent=state.motion?'Pause motion':'Play motion';b.setAttribute('aria-pressed',state.motion)}
-if(b.hasAttribute('data-art-open-record')){state.record=true;state.motion=false;workbench.querySelector('.art-game-layout').inert=true;workbench.querySelector('.art-toolbar').inert=true;state.beforeRead={page:window.scrollY,panel:workbench.scrollTop,focus:document.activeElement};workbench.classList.add('is-reading');const motion=workbench.querySelector('[data-art-motion]');motion.textContent='Play motion';motion.setAttribute('aria-pressed',false);workbench.querySelector('.art-record').hidden=false;const h=workbench.querySelector('.art-record h4');h.tabIndex=-1;h.focus({preventScroll:true});h.scrollIntoView({block:'nearest'});}
-if(b.hasAttribute('data-art-close-record')){state.record=false;workbench.querySelector('.art-game-layout').inert=false;workbench.querySelector('.art-toolbar').inert=false;workbench.classList.remove('is-reading');workbench.querySelector('.art-record').hidden=true;state.beforeRead?.focus?.focus({preventScroll:true});if(state.beforeRead){window.scrollTo(0,state.beforeRead.page);workbench.scrollTop=state.beforeRead.panel;}}
+ if(b.dataset.artBuilding){state.selected=b.dataset.artBuilding;state.landmark=null;state.roof=b.dataset.artState==='roof-on';render();}
+ if(b.dataset.artLandmark){state.landmark=b.dataset.artLandmark;if(state.landmark==='L-08')state.court='party';render();}
+ if(b.dataset.parkCourt){state.court=b.dataset.parkCourt;if(state.landmark==='L-08'&&state.court!=='party')state.landmark=null;render();}
+ if(b.hasAttribute('data-park-circuit')){state.circuit=!state.circuit;if(state.circuit&&!matchMedia('(prefers-reduced-motion: reduce)').matches)state.motion=true;render();}
+ if(b.hasAttribute('data-park-open-johnson')){state.selected='B-03';state.landmark=null;state.roof=false;render();}
+ if(b.hasAttribute('data-art-motion')){state.motion=!state.motion;render();}
+ if(b.hasAttribute('data-art-open-record')){
+  state.record=true;state.motion=false;state.beforeRead={page:window.scrollY,panel:workbench.scrollTop,focus:document.activeElement};
+  workbench.querySelector('.art-exploration').hidden=true;workbench.classList.add('is-reading');workbench.querySelector('.art-record').hidden=false;
+  const h=workbench.querySelector('.art-record h4');h.tabIndex=-1;h.focus({preventScroll:true});h.scrollIntoView({block:'nearest'});
+ }
+ if(b.hasAttribute('data-art-close-record')){
+  state.record=false;workbench.querySelector('.art-exploration').hidden=false;workbench.classList.remove('is-reading');workbench.querySelector('.art-record').hidden=true;render();
+  state.beforeRead?.focus?.focus({preventScroll:true});if(state.beforeRead){window.scrollTo(0,state.beforeRead.page);workbench.scrollTop=state.beforeRead.panel;}
+ }
 });
 function insidePolygon(x,y,polygon){let c=false;for(let i=0,j=polygon.length-1;i<polygon.length;j=i++){const a=polygon[i],b=polygon[j];if(((a[1]>y)!==(b[1]>y))&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])c=!c;}return c;}
 scene.addEventListener('click',e=>{const r=scene.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*scene.width,y=(e.clientY-r.top)/r.height*scene.height;const hits=kit.scene(scene,state);const object=hits.filter(h=>h.kind==='landmark'&&Math.hypot(h.p[0]-x,h.p[1]-y)<=h.radius).sort((a,b)=>Math.hypot(a.p[0]-x,a.p[1]-y)-Math.hypot(b.p[0]-x,b.p[1]-y))[0];if(object){state.landmark=object.id;render();return;}const site=hits.filter(h=>h.kind==='building'&&insidePolygon(x,y,h.polygon)).at(-1);if(site){state.selected=site.id;state.landmark=null;render();}});

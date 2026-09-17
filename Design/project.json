@@ -1,9 +1,15 @@
 {
   "name": "Mad Money Tycoon",
-  "designRevision": "0.9",
-  "artRevision": "0.8",
+  "designRevision": "0.10",
+  "artRevision": "0.9",
   "reviewDate": "2026-09-16",
-  "views": ["Work", "Cash", "Information", "Control", "People"],
+  "views": [
+    "Work",
+    "Cash",
+    "Information",
+    "Control",
+    "People"
+  ],
   "current": {
     "reader": "design-review.html",
     "specification": "GDD.md",
@@ -16,7 +22,7 @@
   "status": {
     "designReader": "Review edition",
     "pixelSystem": "Accepted component system; building aesthetics remain in refinement",
-    "artInteractions": "Implemented proof; not a production economy",
+    "artInteractions": "Architecture explorer and separate practice-document desk; not a production economy",
     "practiceEpisode": "Specified; full management loop not implemented",
     "historicalBinding": "Selected export fields inspected; originals and identity links unresolved",
     "historicalInteractionEnabled": false,

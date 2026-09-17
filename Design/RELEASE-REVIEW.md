@@ -1,6 +1,12 @@
-# Release review · design 0.9 / art 0.8
+# Release review · design 0.10 / art 0.9
 
 Reviewed 16 September 2026. [Open the current design document](design-review.html).
+
+## This revision
+
+The contents index starts at the top of the main column. The left panel groups purpose, source-document preview and three visual shortcuts. Each building has paired exterior/interior previews, with Johnson’s interior initially exposed. The object inspector consistently shows a sprite, reference photograph and interpretation. Practice documents have a separate entry and preserve the park selection on return.
+
+Supernova uses a black-and-silver diner vocabulary with its orbital ornament retained. Johnson’s frontage follows the supplied 2017/2019 Street View captures; the interior contains the orange mezzanine/stair, central white birch and cat. The map clears tall foreground planting and separates Supernova from the stag. Capture dates are not treated as office-occupation dates.
 
 ## Editorial reconciliation
 
@@ -8,7 +14,7 @@ The complete GDD, evidence map, six research documents, two binding documents an
 
 | Issue | Current decision |
 |---|---|
-| Four-view research conflicted with the implemented interface | Five views: Work, Cash, Information, Control, People |
+| Four-view research conflicted with the implemented interface | Proposed operational views: Work, Cash, Information, Control, People. The art explorer has separate architectural choices. |
 | Buildings were still described as departments | Sites, occupants, departments and legal entities remain separate |
 | Older content said no export fields had been inspected | Selected first-episode exports have been inspected; original statements and important joins remain unresolved |
 | Art proof and operating gameplay were conflated | Site selection, cutaways, document comparison and scenic motion are implemented; the management economy and complete episode remain proposed |

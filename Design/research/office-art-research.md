@@ -1,10 +1,10 @@
 # Office architecture: source study and sprite translation
 
-Research checked against revision 0.8, 16 September 2026. The accepted pixel system now includes office-derived architectural shells, cutaways and furnishings. This brief records their source basis and remaining spatial tests. The companion Porter and Boerum studies are architectural studies; the catalogue and assembled park show the current reusable assets.
+Research checked against design 0.10 / art 0.9, 16 September 2026. The accepted pixel system now includes office-derived architectural shells, cutaways and furnishings. This brief records their source basis and remaining spatial tests. The companion Porter and Boerum studies are architectural studies; the catalogue and assembled park show the current reusable assets.
 
 ## Architectural direction
 
-The current buildings use long masonry shells, tall metal window grids, flat roof planes and deliberate interior insertions. The photographs supply distinctive forms: orange stair rails, timber room-boxes, an indoor tree, booth seating and a white car. Revision 0.8 gives the three building families distinct facades and cutaways rather than assigning architecture by department.
+The current buildings use long masonry shells, tall metal window grids, flat roof planes and deliberate interior insertions. The photographs supply distinctive forms: orange stair rails, timber room-boxes, an indoor tree, booth seating and a white car. The current kit gives the three building families distinct facades and cutaways rather than assigning architecture by department.
 
 The shared projection, person/door scale, hard pixel edges, modular construction and material ramps remain. The park compresses and recombines the architecture to leave room for attractions and visible circulation. Its composite layout is an invention, not a reconstruction of geographically adjacent offices.
 
@@ -13,6 +13,16 @@ The shared projection, person/door scale, hard pixel edges, modular construction
 ![The same Porter module with its roof removed](../assets/sprite-catalogue/objects/B-02/roof-off.png)
 
 The same footprint supports both states. The catalogue supplies [Boerum](../assets/sprite-catalogue/index.html#B-01), [Porter](../assets/sprite-catalogue/index.html#B-02) and [Johnson](../assets/sprite-catalogue/index.html#B-03) at native scale and enlarged for inspection.
+
+## Johnson frontage and interior correction
+
+![266 Johnson, supplied Street View from September 2017](../assets/office-references/johnson-street-2017.png)
+
+Google Street View · supplied capture displaying 266 Johnson Ave and September 2017. The broad dark fascia, yellow brick and gridded loading door guide the exterior. A [July 2019 capture](../assets/office-references/johnson-street-2019.png) shows the same frontage. Capture dates do not establish dates of office occupation.
+
+![266 Johnson, current interior](../assets/sprite-catalogue/objects/B-03/roof-off.png)
+
+The orange stair descends from the mezzanine into the hall. The white birch sits in the central clearing; the cat occupies the front floor. The birch identification, former marble-warehouse context and adjoining art gallery are supplied project context. No gallery identity or tenancy date is assigned. The compact footprint, unseen roof and furniture layout are park interpretations. [Exterior, interior and exports](../assets/sprite-catalogue/index.html#B-03).
 
 ## Evidence and attribution
 
@@ -56,7 +66,7 @@ These are proposed game translations, not measured reconstructions. Full footpri
 | Vertical circulation | Thin orange stair stringers and guardrail, grey tread tops, dark gaps between risers. This can be a reusable stair/landing unit with a clear silhouette at normal zoom. | Johnson mezzanine. Preserve its orange material identity even if the operating department changes. |
 | Workstation | White slab with a warm ply edge, charcoal screen, coloured supports and a separate chair. Rows use repeated stations with sparse personal props. Storage/divider variations remain possible additions. | Porter working hall and Johnson desks. The current white-worktable component is M-01. |
 | Social module | A rectangular coral booth with a pale tall divider; a curved or straight planter-seat edge; pale round tables with blue supports. Use one dominant shape per module. | Porter gathering area. Booth shape survives reduction better than many miniature accessories. |
-| Interior landmark | Johnson’s cutaway includes a tree and white planter; the separate Solarium is an invented Porter-derived glass attraction. The Chrysler can be parked or follow its invented circuit. | Both office sets show a white car; Johnson shows the Chrysler and central tree clearly. Similar appearance does not establish a relocation history. |
+| Interior landmark | Johnson’s cutaway includes a central white birch, connected orange stair and office cat; the separate Solarium is an invented Porter-derived glass attraction. The Chrysler can be parked or follow its invented circuit. | Both office sets show a white car; Johnson shows the Chrysler and central tree clearly. Similar appearance does not establish a relocation history. |
 | Street edge | Concrete sidewalk adjoining the facade, asphalt/service paving, a hydrant or bollards, occasional tree pits. Retain planted pockets as deliberate places rather than a continuous lawn apron around every building. | Porter exterior; placement beyond the photographed frontage is a game-layout proposal. |
 
 The room modules can serve different departments. Do not equate “Accounts” with one architectural style or make a real street address synonymous with a department. Place and operational function remain separate objects in the design.
@@ -75,7 +85,7 @@ Use colour in large, meaningful objects: rail, booth, inset, door, divider. Do n
 
 ## Next steps: spatial and recognition tests
 
-1. **Shell recognition:** use the completed B-01, B-02 and B-03 sprites at native size with labels hidden. Check whether viewers distinguish the brick/glass frontage, dark hall and white workshop.
+1. **Shell recognition:** use the completed B-01, B-02 and B-03 sprites at native size with labels hidden. Check whether viewers distinguish the brick/glass frontage, dark hall and yellow-brick loading frontage.
 2. **Interior recognition:** compare each roof-on/off pair at the same camera and scale. Check that timber insert, workstations and Johnson’s mezzanine remain legible without their captions.
 3. **Occupation:** test seated work, circulation and handoff states. The present moving people demonstrate scale and occupation, not task completion or four verified work states.
 4. **Scene layout:** compare the current composite park with a denser street edge and shared service circulation. Preserve the attraction spaces and planted clearings. This is a layout test, not a decision to replace the theme park with an office replica.

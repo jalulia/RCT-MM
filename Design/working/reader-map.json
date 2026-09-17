@@ -565,6 +565,11 @@
     "number": "R3",
     "headings": [
       {
+        "id": "research-refinement/art-09-corrections",
+        "title": "Art 0.9 corrections",
+        "level": 2
+      },
+      {
         "id": "research-refinement/source-reading",
         "title": "Source reading",
         "level": 2
@@ -594,6 +599,11 @@
       {
         "id": "research-offices/architectural-direction",
         "title": "Architectural direction",
+        "level": 2
+      },
+      {
+        "id": "research-offices/johnson-frontage-and-interior-correction",
+        "title": "Johnson frontage and interior correction",
         "level": 2
       },
       {

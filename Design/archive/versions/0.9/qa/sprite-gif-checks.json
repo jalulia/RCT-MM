@@ -1,0 +1,30 @@
+[
+  {
+    "file": "boerum-street-loop.gif",
+    "dimensions": [
+      960,
+      540
+    ],
+    "frames": 360,
+    "durationMs": 36000,
+    "loop": 0,
+    "sourceColors": 64,
+    "paletteColors": 64,
+    "decodedSamplesMatch": 12,
+    "bytes": 217349
+  },
+  {
+    "file": "boerum-closeup-loop.gif",
+    "dimensions": [
+      960,
+      300
+    ],
+    "frames": 360,
+    "durationMs": 36000,
+    "loop": 0,
+    "sourceColors": 711,
+    "paletteColors": 256,
+    "decodedSamplesMatch": 12,
+    "bytes": 333328
+  }
+]
