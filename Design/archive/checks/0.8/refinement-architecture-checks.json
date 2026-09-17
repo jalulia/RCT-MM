@@ -1,0 +1,152 @@
+[
+  {
+    "name": "B-01 / roof-on",
+    "bounds": [
+      38,
+      30,
+      154,
+      143
+    ],
+    "clipped": false
+  },
+  {
+    "name": "B-01 / roof-off",
+    "bounds": [
+      38,
+      33,
+      154,
+      143
+    ],
+    "clipped": false
+  },
+  {
+    "name": "B-02 / roof-on",
+    "bounds": [
+      18,
+      38,
+      173,
+      153
+    ],
+    "clipped": false
+  },
+  {
+    "name": "B-02 / roof-off",
+    "bounds": [
+      18,
+      42,
+      173,
+      153
+    ],
+    "clipped": false
+  },
+  {
+    "name": "B-03 / roof-on",
+    "bounds": [
+      28,
+      44,
+      163,
+      148
+    ],
+    "clipped": false
+  },
+  {
+    "name": "B-03 / roof-off",
+    "bounds": [
+      28,
+      48,
+      163,
+      148
+    ],
+    "clipped": false
+  },
+  {
+    "name": "L-03 / default",
+    "bounds": [
+      54,
+      66,
+      136,
+      140
+    ],
+    "clipped": false
+  },
+  {
+    "name": "M-01 / default",
+    "bounds": [
+      74,
+      90,
+      114,
+      120
+    ],
+    "clipped": false
+  },
+  {
+    "name": "M-02 / default",
+    "bounds": [
+      63,
+      74,
+      129,
+      126
+    ],
+    "clipped": false
+  },
+  {
+    "name": "M-04 / default",
+    "bounds": [
+      74,
+      99,
+      118,
+      122
+    ],
+    "clipped": false
+  },
+  {
+    "name": "Porter stage 0",
+    "bounds": [
+      18,
+      70,
+      173,
+      153
+    ],
+    "clipped": false
+  },
+  {
+    "name": "Porter stage 1",
+    "bounds": [
+      18,
+      42,
+      173,
+      153
+    ],
+    "clipped": false
+  },
+  {
+    "name": "Porter stage 2",
+    "bounds": [
+      18,
+      42,
+      173,
+      153
+    ],
+    "clipped": false
+  },
+  {
+    "name": "Porter stage 3",
+    "bounds": [
+      18,
+      42,
+      173,
+      153
+    ],
+    "clipped": false
+  },
+  {
+    "name": "Porter stage 4",
+    "bounds": [
+      18,
+      38,
+      173,
+      153
+    ],
+    "clipped": false
+  }
+]

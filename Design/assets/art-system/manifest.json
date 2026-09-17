@@ -1,0 +1,104 @@
+{
+  "revision": "0.8",
+  "kind": "original pixel art study",
+  "source": [
+    "../../working/pixel-kit.js",
+    "../../working/park-kit.js"
+  ],
+  "projection": {
+    "tileWidth": 32,
+    "tileHeight": 16,
+    "sourcePixels": true
+  },
+  "spriteFrame": {
+    "width": 160,
+    "height": 116,
+    "origin": [
+      80,
+      73
+    ]
+  },
+  "files": [
+    "tile.png",
+    "people.png",
+    "props.png",
+    "trees.png",
+    "signs.png",
+    "van.png",
+    "creative.png",
+    "production.png",
+    "accounts.png",
+    "cutaway.png",
+    "stage0.png",
+    "stage1.png",
+    "stage2.png",
+    "stage4.png",
+    "car.png",
+    "stag.png",
+    "supernova.png",
+    "solarium.png",
+    "overlook.png",
+    "reception.png",
+    "inflatable.png",
+    "cat.png",
+    "shark.png",
+    "sprite-atlas.png",
+    "icon-work.png",
+    "icon-cash.png",
+    "icon-information.png",
+    "icon-people.png",
+    "icon-control.png",
+    "campus.png",
+    "campus-cutaway.png",
+    "campus-social.png",
+    "campus-garden.png",
+    "campus-party.png"
+  ],
+  "buildings": [
+    {
+      "id": "B-01",
+      "name": "Boerum frontage",
+      "type": "boerum",
+      "x": 1.3,
+      "y": 2.5,
+      "w": 4.7,
+      "d": 2.2,
+      "h": 48,
+      "occupants": "Creative · accounts · shared work",
+      "source": "#art/boerum-street-study"
+    },
+    {
+      "id": "B-02",
+      "name": "Porter hall",
+      "type": "porter",
+      "x": 8.5,
+      "y": 1.35,
+      "w": 5.7,
+      "d": 3.65,
+      "h": 30,
+      "occupants": "Creative · production · shared rooms",
+      "source": "#art/office-architecture"
+    },
+    {
+      "id": "B-03",
+      "name": "Johnson workshop",
+      "type": "johnson",
+      "x": 10.1,
+      "y": 10.2,
+      "w": 4.6,
+      "d": 3.5,
+      "h": 29,
+      "occupants": "Production · fabrication · shared work",
+      "source": "#art/office-architecture"
+    }
+  ],
+  "rights": "Original code-drawn study. Reference images and rejected generated art excluded.",
+  "limits": [
+    "one camera",
+    "procedural actor poses; incomplete animation set",
+    "no economy",
+    "office-derived fictional park arrangement; not historical geography",
+    "car circuit and scenery actions are invented",
+    "source photographs excluded from sprite exports"
+  ]
+}

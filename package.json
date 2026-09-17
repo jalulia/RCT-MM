@@ -1,0 +1,19 @@
+{
+  "name": "mad-money-tycoon-design",
+  "version": "0.9.0",
+  "private": true,
+  "description": "Mad Money Tycoon design reader, art studies, asset catalogue and source-binding records",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node Design/working/build-review.mjs && python3 Design/working/build-libraries.py",
+    "build:art": "node Design/working/export-art-local.cjs && sh Design/working/rebuild-sprite-catalogue.sh && node Design/working/export-scene-previews.cjs && python3 Design/working/export-scene-gifs.py",
+    "check": "node Design/working/boerum-motion-check.cjs && node Design/working/check-refinement.cjs && python3 Design/working/check-release.py",
+    "serve": "python3 -m http.server 8000"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.100",
+    "marked": "17.0.5"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "version1": {
+    "label": "Scheduled",
+    "recorded": "W3 Mon / 16:04"
+  },
+  "version2": {
+    "label": "Paid"
+  },
+  "bankInvariant": true,
+  "tax": {
+    "pinned": false,
+    "index": false,
+    "locator": "FORM STUDY / T-01",
+    "previewLoaded": true
+  },
+  "noteRetained": true,
+  "unpin": true,
+  "reading": {
+    "motion": false,
+    "inert": true,
+    "docs": 4,
+    "tax": false
+  },
+  "returnPreserves": true,
+  "mobile": [
+    {
+      "kind": "invoice",
+      "pageOverflow": false,
+      "deskOverflow": false
+    },
+    {
+      "kind": "copy",
+      "pageOverflow": false,
+      "deskOverflow": false
+    },
+    {
+      "kind": "bank",
+      "pageOverflow": false,
+      "deskOverflow": false
+    },
+    {
+      "kind": "tax",
+      "pageOverflow": false,
+      "deskOverflow": false
+    },
+    {
+      "kind": "note",
+      "pageOverflow": false,
+      "deskOverflow": false
+    }
+  ],
+  "integrity": {
+    "anchors": [],
+    "duplicates": [],
+    "overflow": false
+  },
+  "localLinks": {
+    "count": 58,
+    "missing": []
+  },
+  "folderRename": {
+    "path": "/Users/juliacompton/Library/Mobile Documents/com~apple~CloudDocs/ICLOUD-bridge/_ALLM/Codex-BR/Games/CdxCloud - Mad Money Tycoon/Design/",
+    "localLinks": 58,
+    "missing": []
+  },
+  "mobileIdentifier": {
+    "whiteSpace": "nowrap",
+    "verified": true
+  },
+  "motion": "Six-leg rendered motion test passed in both views and script orders."
+}

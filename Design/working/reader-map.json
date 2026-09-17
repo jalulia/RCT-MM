@@ -1,0 +1,834 @@
+[
+  {
+    "id": "game",
+    "title": "Game",
+    "number": "01",
+    "headings": [
+      {
+        "id": "game/player-role",
+        "title": "Player role",
+        "level": 2
+      },
+      {
+        "id": "game/two-structures-to-test",
+        "title": "Two structures to test",
+        "level": 2
+      },
+      {
+        "id": "game/how-the-story-enters-play",
+        "title": "How the story enters play",
+        "level": 2
+      },
+      {
+        "id": "game/design-decisions",
+        "title": "Design decisions",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "episode",
+    "title": "First episode",
+    "number": "02",
+    "headings": [
+      {
+        "id": "episode/fifteen-minute-path",
+        "title": "Fifteen-minute path",
+        "level": 2
+      },
+      {
+        "id": "episode/payment-states",
+        "title": "Payment states",
+        "level": 2
+      },
+      {
+        "id": "episode/historical-comparison",
+        "title": "Historical comparison",
+        "level": 2
+      },
+      {
+        "id": "episode/payment-created",
+        "title": "Payment created",
+        "level": 3
+      },
+      {
+        "id": "episode/bank-extraction-debit",
+        "title": "Bank extraction: debit",
+        "level": 3
+      },
+      {
+        "id": "episode/bank-extraction-credit",
+        "title": "Bank extraction: credit",
+        "level": 3
+      },
+      {
+        "id": "episode/later-platform-fields",
+        "title": "Later platform fields",
+        "level": 3
+      },
+      {
+        "id": "episode/23-october-is-a-separate-record",
+        "title": "23 October is a separate record",
+        "level": 3
+      },
+      {
+        "id": "episode/the-ordinary-control-is-still-open",
+        "title": "The ordinary control is still open",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": "objects",
+    "title": "Objects & systems",
+    "number": "03",
+    "headings": [
+      {
+        "id": "objects/relationship-model",
+        "title": "Relationship model",
+        "level": 2
+      },
+      {
+        "id": "objects/object-definitions",
+        "title": "Object definitions",
+        "level": 2
+      },
+      {
+        "id": "objects/sites-and-companies",
+        "title": "Sites and companies",
+        "level": 2
+      },
+      {
+        "id": "objects/operating-loop",
+        "title": "Operating loop",
+        "level": 2
+      },
+      {
+        "id": "objects/economy",
+        "title": "Economy",
+        "level": 2
+      },
+      {
+        "id": "objects/customization-and-outcomes",
+        "title": "Customization and outcomes",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "narrative",
+    "title": "Narrative",
+    "number": "04",
+    "headings": [
+      {
+        "id": "narrative/chapter-sequence",
+        "title": "Chapter sequence",
+        "level": 2
+      },
+      {
+        "id": "narrative/events",
+        "title": "Events",
+        "level": 2
+      },
+      {
+        "id": "narrative/characters-and-voice",
+        "title": "Characters and voice",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "interface",
+    "title": "Interface",
+    "number": "05",
+    "headings": [
+      {
+        "id": "interface/five-views",
+        "title": "Five views",
+        "level": 2
+      },
+      {
+        "id": "interface/desk-layouts",
+        "title": "Desk layouts",
+        "level": 2
+      },
+      {
+        "id": "interface/document-vocabulary",
+        "title": "Document vocabulary",
+        "level": 2
+      },
+      {
+        "id": "interface/payment-workbench",
+        "title": "Payment workbench",
+        "level": 2
+      },
+      {
+        "id": "interface/quantities-and-evidence",
+        "title": "Quantities and evidence",
+        "level": 2
+      },
+      {
+        "id": "interface/accessibility",
+        "title": "Accessibility",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "title": "Art & sound",
+    "number": "06",
+    "headings": [
+      {
+        "id": "art/visual-system",
+        "title": "Visual system",
+        "level": 2
+      },
+      {
+        "id": "art/mad-moneytycoon",
+        "title": "Mad MoneyTycoon",
+        "level": 3
+      },
+      {
+        "id": "art/references",
+        "title": "References",
+        "level": 2
+      },
+      {
+        "id": "art/office-architecture",
+        "title": "Office architecture",
+        "level": 2
+      },
+      {
+        "id": "art/a-long-industrial-frontage",
+        "title": "A long industrial frontage",
+        "level": 3
+      },
+      {
+        "id": "art/rooms-inside-a-larger-hall",
+        "title": "Rooms inside a larger hall",
+        "level": 3
+      },
+      {
+        "id": "art/colour-has-a-physical-job",
+        "title": "Colour has a physical job",
+        "level": 3
+      },
+      {
+        "id": "art/an-unmistakable-interior",
+        "title": "An unmistakable interior",
+        "level": 3
+      },
+      {
+        "id": "art/boerum-street-study",
+        "title": "Boerum street study",
+        "level": 2
+      },
+      {
+        "id": "art/three-adjoining-frontages",
+        "title": "Three adjoining frontages",
+        "level": 3
+      },
+      {
+        "id": "art/the-frontage-in-motion",
+        "title": "The frontage in motion",
+        "level": 3
+      },
+      {
+        "id": "art/architecture-study",
+        "title": "Architecture study",
+        "level": 2
+      },
+      {
+        "id": "art/shell",
+        "title": "Shell",
+        "level": 3
+      },
+      {
+        "id": "art/roof-removed",
+        "title": "Roof removed",
+        "level": 3
+      },
+      {
+        "id": "art/parts-before-more-scenery",
+        "title": "Parts before more scenery",
+        "level": 3
+      },
+      {
+        "id": "art/office-discoveries",
+        "title": "Office discoveries",
+        "level": 2
+      },
+      {
+        "id": "art/arrival-desk",
+        "title": "Arrival desk",
+        "level": 3
+      },
+      {
+        "id": "art/chrysler-circuit",
+        "title": "Chrysler circuit",
+        "level": 3
+      },
+      {
+        "id": "art/temporary-fairground",
+        "title": "Temporary fairground",
+        "level": 3
+      },
+      {
+        "id": "art/antler-display",
+        "title": "Antler display",
+        "level": 3
+      },
+      {
+        "id": "art/supernova-pavilion",
+        "title": "Supernova pavilion",
+        "level": 3
+      },
+      {
+        "id": "art/office-cat",
+        "title": "Office cat",
+        "level": 3
+      },
+      {
+        "id": "art/scale-and-material",
+        "title": "Scale and material",
+        "level": 2
+      },
+      {
+        "id": "art/component-kit",
+        "title": "Component kit",
+        "level": 2
+      },
+      {
+        "id": "art/assembly",
+        "title": "Assembly",
+        "level": 2
+      },
+      {
+        "id": "art/world-and-interface",
+        "title": "World and interface",
+        "level": 2
+      },
+      {
+        "id": "art/interface-materials",
+        "title": "Interface materials",
+        "level": 2
+      },
+      {
+        "id": "art/production-and-next-proof",
+        "title": "Production and next proof",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "production",
+    "title": "Build & test",
+    "number": "07",
+    "headings": [
+      {
+        "id": "production/architecture",
+        "title": "Architecture",
+        "level": 2
+      },
+      {
+        "id": "production/mod-boundary",
+        "title": "Mod boundary",
+        "level": 2
+      },
+      {
+        "id": "production/source-review",
+        "title": "Source review",
+        "level": 2
+      },
+      {
+        "id": "production/production-sequence",
+        "title": "Production sequence",
+        "level": 2
+      },
+      {
+        "id": "production/responsibilities",
+        "title": "Responsibilities",
+        "level": 2
+      },
+      {
+        "id": "production/acceptance-tests",
+        "title": "Acceptance tests",
+        "level": 2
+      },
+      {
+        "id": "production/open-decisions-and-next-steps",
+        "title": "Open decisions and next steps",
+        "level": 2
+      },
+      {
+        "id": "production/change-record",
+        "title": "Change record",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "evidence",
+    "title": "Evidence",
+    "number": "08",
+    "headings": [
+      {
+        "id": "evidence/what-has-actually-been-read",
+        "title": "What has actually been read",
+        "level": 2
+      },
+      {
+        "id": "evidence/first-binding-pass",
+        "title": "First binding pass",
+        "level": 2
+      },
+      {
+        "id": "evidence/source-classes",
+        "title": "Source classes",
+        "level": 2
+      },
+      {
+        "id": "evidence/the-story-in-seven-movements",
+        "title": "The story in seven movements",
+        "level": 2
+      },
+      {
+        "id": "evidence/chapter-coverage-of-the-whole-pdf",
+        "title": "Chapter coverage of the whole PDF",
+        "level": 2
+      },
+      {
+        "id": "evidence/cast-organizations-and-authority-over-time",
+        "title": "Cast, organizations and authority over time",
+        "level": 2
+      },
+      {
+        "id": "evidence/non-negotiable-distinctions-in-the-model",
+        "title": "Non-negotiable distinctions in the model",
+        "level": 2
+      },
+      {
+        "id": "evidence/issues-found-during-this-pass",
+        "title": "Issues found during this pass",
+        "level": 2
+      },
+      {
+        "id": "evidence/all-48-source-techniques-design-coverage",
+        "title": "All 48 source techniques: design coverage",
+        "level": 2
+      },
+      {
+        "id": "evidence/claim-record-required-before-historical-content-ships",
+        "title": "Claim record required before historical content ships",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "research-systems",
+    "title": "Game systems research",
+    "number": "R1",
+    "headings": [
+      {
+        "id": "research-systems/the-structural-decision",
+        "title": "The structural decision",
+        "level": 2
+      },
+      {
+        "id": "research-systems/what-the-source-makes-structurally-necessary",
+        "title": "What the source makes structurally necessary",
+        "level": 2
+      },
+      {
+        "id": "research-systems/entity-taxonomy",
+        "title": "Entity taxonomy",
+        "level": 2
+      },
+      {
+        "id": "research-systems/two-viable-architectures",
+        "title": "Two viable architectures",
+        "level": 2
+      },
+      {
+        "id": "research-systems/rct-craft-worth-carrying-across",
+        "title": "RCT craft worth carrying across",
+        "level": 2
+      },
+      {
+        "id": "research-systems/simcity-zomboid-and-period-design-theory",
+        "title": "SimCity, Zomboid, and period design theory",
+        "level": 2
+      },
+      {
+        "id": "research-systems/proposed-operating-and-inquiry-loops",
+        "title": "Proposed operating and inquiry loops",
+        "level": 2
+      },
+      {
+        "id": "research-systems/evidence-to-mechanic-table",
+        "title": "Evidence-to-mechanic table",
+        "level": 2
+      },
+      {
+        "id": "research-systems/discovery-order-and-views",
+        "title": "Discovery order and views",
+        "level": 2
+      },
+      {
+        "id": "research-systems/mods-borrow-the-architecture-check-the-asset",
+        "title": "Mods: borrow the architecture, check the asset",
+        "level": 2
+      },
+      {
+        "id": "research-systems/next-steps-prototype-gates-and-failure-tests",
+        "title": "Next steps: prototype gates and failure tests",
+        "level": 2
+      },
+      {
+        "id": "research-systems/research-access-and-scope",
+        "title": "Research access and scope",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "research-ux",
+    "title": "Interface research",
+    "number": "R2",
+    "headings": [
+      {
+        "id": "research-ux/1-start-with-work-then-reveal-what-each-system-says-about-it",
+        "title": "1. Start with work, then reveal what each system says about it",
+        "level": 2
+      },
+      {
+        "id": "research-ux/2-evidence-boundary",
+        "title": "2. Evidence boundary",
+        "level": 2
+      },
+      {
+        "id": "research-ux/3-object-model-translated-into-interaction",
+        "title": "3. Object model translated into interaction",
+        "level": 2
+      },
+      {
+        "id": "research-ux/4-the-five-views",
+        "title": "4. The five views",
+        "level": 2
+      },
+      {
+        "id": "research-ux/5-three-core-paths",
+        "title": "5. Three core paths",
+        "level": 2
+      },
+      {
+        "id": "research-ux/path-a-make-one-campaign-work",
+        "title": "Path A — Make one campaign work",
+        "level": 3
+      },
+      {
+        "id": "research-ux/path-b-a-payment-returned-the-interface-still-says-paid",
+        "title": "Path B — A payment returned; the interface still says Paid",
+        "level": 3
+      },
+      {
+        "id": "research-ux/path-c-same-work-different-record",
+        "title": "Path C — Same work, different record",
+        "level": 3
+      },
+      {
+        "id": "research-ux/6-low-fidelity-screens",
+        "title": "6. Low-fidelity screens",
+        "level": 2
+      },
+      {
+        "id": "research-ux/7-bill-belongs-in-the-workbench",
+        "title": "7. BILL belongs in the workbench",
+        "level": 2
+      },
+      {
+        "id": "research-ux/8-a-desktop-worth-using",
+        "title": "8. A desktop worth using",
+        "level": 2
+      },
+      {
+        "id": "research-ux/9-next-steps-operating-prototype-tests",
+        "title": "9. Next steps: operating-prototype tests",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "research-refinement",
+    "title": "Sprite refinement",
+    "number": "R3",
+    "headings": [
+      {
+        "id": "research-refinement/source-reading",
+        "title": "Source reading",
+        "level": 2
+      },
+      {
+        "id": "research-refinement/craft-references",
+        "title": "Craft references",
+        "level": 2
+      },
+      {
+        "id": "research-refinement/verification",
+        "title": "Verification",
+        "level": 2
+      },
+      {
+        "id": "research-refinement/next-steps",
+        "title": "Next steps",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "research-offices",
+    "title": "Office architecture",
+    "number": "R4",
+    "headings": [
+      {
+        "id": "research-offices/architectural-direction",
+        "title": "Architectural direction",
+        "level": 2
+      },
+      {
+        "id": "research-offices/evidence-and-attribution",
+        "title": "Evidence and attribution",
+        "level": 2
+      },
+      {
+        "id": "research-offices/four-architectural-references",
+        "title": "Four architectural references",
+        "level": 2
+      },
+      {
+        "id": "research-offices/boerum-street-reference",
+        "title": "Boerum street reference",
+        "level": 2
+      },
+      {
+        "id": "research-offices/what-the-component-kit-takes-from-the-photographs",
+        "title": "What the component kit takes from the photographs",
+        "level": 2
+      },
+      {
+        "id": "research-offices/colour-and-material-rules",
+        "title": "Colour and material rules",
+        "level": 2
+      },
+      {
+        "id": "research-offices/next-steps-spatial-and-recognition-tests",
+        "title": "Next steps: spatial and recognition tests",
+        "level": 2
+      },
+      {
+        "id": "research-offices/supporting-inspected-images-and-research-record",
+        "title": "Supporting inspected images and research record",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "research-discoveries",
+    "title": "Office discoveries",
+    "number": "R5",
+    "headings": [
+      {
+        "id": "research-discoveries/1-the-sculpted-white-reception-desk-porter",
+        "title": "1. The sculpted white reception desk — Porter",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/2-a-full-sized-white-chrysler-indoors-johnson",
+        "title": "2. A full-sized white Chrysler indoors — Johnson",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/3-inflatable-castle-and-suspended-shark-johnson",
+        "title": "3. Inflatable castle and suspended shark — Johnson",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/4-the-tabby-in-the-sun-patch-johnson",
+        "title": "4. The tabby in the sun patch — Johnson",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/5-the-arcade-cabinet-beside-the-car-johnson",
+        "title": "5. The arcade cabinet beside the car — Johnson",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/6-black-stag-with-bright-antlers-porter",
+        "title": "6. Black stag with bright antlers — Porter",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/7-pink-circular-neon-with-an-animal-outline-porter",
+        "title": "7. Pink circular neon with an animal outline — Porter",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/8-a-tree-occupying-the-skylight-johnson",
+        "title": "8. A tree occupying the skylight — Johnson",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/9-coral-brackets-and-white-plywood-dividers-porter",
+        "title": "9. Coral brackets and white plywood dividers — Porter",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/10-named-rooms-saturated-recesses-and-large-paintings-porter",
+        "title": "10. Named rooms, saturated recesses and large paintings — Porter",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/current-park-study",
+        "title": "Current park study",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/next-steps-scene-curation",
+        "title": "Next steps: scene curation",
+        "level": 2
+      },
+      {
+        "id": "research-discoveries/source-and-credit-record",
+        "title": "Source and credit record",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "research-park",
+    "title": "Park interaction study",
+    "number": "R6",
+    "headings": [
+      {
+        "id": "research-park/three-interaction-studies",
+        "title": "Three interaction studies",
+        "level": 2
+      },
+      {
+        "id": "research-park/1-white-chrysler-display-loop-and-object-inspection",
+        "title": "1. White Chrysler: display loop and object inspection",
+        "level": 3
+      },
+      {
+        "id": "research-park/2-coral-gathering-booth-proposed-service-frontage",
+        "title": "2. Coral gathering booth; proposed service frontage",
+        "level": 3
+      },
+      {
+        "id": "research-park/3-orange-stair-and-tree-an-overlook-that-reveals-the-assembly",
+        "title": "3. Orange stair and tree: an overlook that reveals the assembly",
+        "level": 3
+      },
+      {
+        "id": "research-park/current-arrangement-and-a-layout-alternative-to-test",
+        "title": "Current arrangement and a layout alternative to test",
+        "level": 2
+      },
+      {
+        "id": "research-park/selection-and-meaning",
+        "title": "Selection and meaning",
+        "level": 2
+      },
+      {
+        "id": "research-park/current-behavior-and-remaining-gaps",
+        "title": "Current behavior and remaining gaps",
+        "level": 2
+      },
+      {
+        "id": "research-park/next-steps-acceptance-checks",
+        "title": "Next steps: acceptance checks",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "binding",
+    "title": "Episode 01 binding",
+    "number": "B01",
+    "headings": [
+      {
+        "id": "binding/1-what-was-inspected",
+        "title": "1. What was inspected",
+        "level": 2
+      },
+      {
+        "id": "binding/2-the-reconstruction39s-claims-preserved-separately",
+        "title": "2. The reconstruction&#39;s claims, preserved separately",
+        "level": 2
+      },
+      {
+        "id": "binding/3-the-inspected-export-chain",
+        "title": "3. The inspected export chain",
+        "level": 2
+      },
+      {
+        "id": "binding/4-which-connections-can-be-drawn",
+        "title": "4. Which connections can be drawn",
+        "level": 2
+      },
+      {
+        "id": "binding/5-the-ordinary-control-is-still-an-open-binding-task",
+        "title": "5. The ordinary control is still an open binding task",
+        "level": 2
+      },
+      {
+        "id": "binding/6-what-remains-to-collect",
+        "title": "6. What remains to collect",
+        "level": 2
+      },
+      {
+        "id": "binding/7-conservation-play-and-the-fictional-boundary",
+        "title": "7. Conservation, play and the fictional boundary",
+        "level": 2
+      },
+      {
+        "id": "binding/8-readiness-decision",
+        "title": "8. Readiness decision",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "binding-inventory",
+    "title": "Source inventory",
+    "number": "B02",
+    "headings": [
+      {
+        "id": "binding-inventory/scope-and-integrity",
+        "title": "Scope and integrity",
+        "level": 2
+      },
+      {
+        "id": "binding-inventory/exact-observation-references",
+        "title": "Exact observation references",
+        "level": 2
+      },
+      {
+        "id": "binding-inventory/conflicts-and-limits-of-the-joins",
+        "title": "Conflicts and limits of the joins",
+        "level": 2
+      },
+      {
+        "id": "binding-inventory/ordinary-pooling-comparison",
+        "title": "Ordinary pooling comparison",
+        "level": 2
+      },
+      {
+        "id": "binding-inventory/missing-originals-and-next-binding-requirements",
+        "title": "Missing originals and next binding requirements",
+        "level": 2
+      }
+    ]
+  }
+]

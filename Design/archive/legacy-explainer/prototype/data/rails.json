@@ -1,0 +1,74 @@
+[
+ {
+  "id": "jw",
+  "name": "JustWorks",
+  "total": "$85.41M",
+  "entries": 708,
+  "years": "2018\u20132023 \u00b7 peak 2022 $19.17M",
+  "mechanism": "\u00a74.3 payroll/401(k) + \u00a74.3.10 books-side doubling",
+  "finding": "A.2 / B.25 / B.65"
+ },
+ {
+  "id": "ax",
+  "name": "American Express (Malaky)",
+  "total": "$23.89M",
+  "entries": 329,
+  "years": "2018\u20132024 \u00b7 longest-running",
+  "mechanism": "\u00a72.3 Channel 1 / Annex A",
+  "finding": "B.16 + B.62"
+ },
+ {
+  "id": "ex",
+  "name": "EXTENSIS INC",
+  "total": "$13.99M",
+  "entries": 101,
+  "years": "2024 only \u00b7 replaces JustWorks at the 3/14/2024 deconversion",
+  "mechanism": "\u00a74.3.8 / \u00a74.3.11",
+  "finding": "B.68"
+ },
+ {
+  "id": "tr",
+  "name": "TRICOR ASIA LTD",
+  "total": "$6.09M",
+  "entries": 59,
+  "years": "2019\u20132022 \u00b7 HK payroll",
+  "mechanism": "\u00a74.6.4",
+  "finding": "A.2 / B.71 (QB-side sibling)"
+ },
+ {
+  "id": "dv",
+  "name": "Divvy",
+  "total": "$5.67M",
+  "entries": 135,
+  "years": "2023\u20132024 \u00b7 escalates as Malaky tapers",
+  "mechanism": "\u00a72.3 Channel 2",
+  "finding": "A.3.3 / B.37"
+ },
+ {
+  "id": "aw",
+  "name": "AccountantsWorld",
+  "total": "$1.64M",
+  "entries": 386,
+  "years": "2019\u20132023 \u00b7 small-dollar drip",
+  "mechanism": "\u00a710 deferred-vector",
+  "finding": "A.2"
+ },
+ {
+  "id": "cm",
+  "name": "Credit Memo",
+  "total": "$0.56M",
+  "entries": 55,
+  "years": "2019\u20132024",
+  "mechanism": "\u00a73 Step 4 / B.6 RJE co-location",
+  "finding": "A.2"
+ },
+ {
+  "id": "uc",
+  "name": "Unknown Check (credits)",
+  "total": "+$1.05M",
+  "entries": 95,
+  "years": "2018\u20132023 \u00b7 inbound leg",
+  "mechanism": "\u00a72.7 deposit-rail loop",
+  "finding": "A.2 / B.63"
+ }
+]

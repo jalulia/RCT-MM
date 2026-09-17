@@ -1,0 +1,115 @@
+MADWELL ARCHITECTURE — LOCAL VERIFICATION RE-RUN (2026-06-10, second full pass)
+================================================================================
+TALLY:      56 [INFO]      53 [PASS]       1 [TIMEOUT-LOCAL] 
+(matches first run: 53 PASS / 56 INFO / 0 FAIL / 0 ERROR + B.3 local 45s cap, package-recorded PASS)
+
+[PASS]  P1      Source integrity (128 files)                            expected=128 PASS, 0 FAIL, 0 MISSING   computed=128 PASS, 0 FAIL, 0 MISSING
+[PASS]  A.1.1   Witness 1 vs Witness 2 (Total Income convergence)       expected=  variance < $10,000   computed=              $7,000
+[PASS]  A.1.2   Witness 1 vs Witness 3 (Internal surplus convergence)   expected=  variance < $30,000   computed=             $26,950
+[PASS]  A.1.3   Unreported revenue arithmetic                           expected=     $141,547,013.00   computed=     $141,547,013.00
+[PASS]  A.2     DataHole bucket (8 entities)                            expected=    $-136,202,381.00   computed=    $-136,202,381.00
+[PASS]  A.3.1   Malaky AMEX rail (165 txns)                             expected=      $14,440,826.00   computed=      $14,440,826.00
+[PASS]  A.3.2   Divvy EWALLET push (41 txns)                            expected=       $3,650,135.00   computed=       $3,650,135.00
+[PASS]  A.3.3a  Divvy gross outflow — strict (DIVVY only, debits)       expected=       $4,655,541.00   computed=       $4,655,541.00
+[PASS]  A.3.3b  Divvy gross outflow — with Dec 20 inferential           expected=       $4,755,541.00   computed=       $4,755,541.00
+[PASS]  A.3.4   Divvy excess over verifiable charges                    expected=       $3,139,090.00   computed=       $3,139,090.00
+[PASS]  A.3.5   Combined credit card masking gross                      expected=      $19,196,367.00   computed=      $19,196,367.00
+[PASS]  A.4     Settlement / PTET match                                 expected=              99.85%   computed=           (matched)
+[PASS]  A.5     HK intercompany substantiation                          expected=      $6,198,525 net   computed=           (matched)
+[PASS]  A.6     Closure Identity (inflow gap = outflow + debt residual)  expected=residual < 0.5% of inflow gap ($141,547,013)   computed=   $594,632 (0.420%)
+[PASS]  B.1     Bundle overshoot                                        expected=      $28,298,965.95   computed=           (matched)
+[PASS]  B.2     Other-method incongruity                                expected=      $20,599,394.62   computed=           (matched)
+[TIMEOUT-LOCAL] B.3 exceeded 45s sandbox call budget on re-run (consistent with first run); package-shipped verifier output records: PASS $22,789,412.78 / 1,194 events
+[PASS]  B.4     MS&J 2023 phantoms                                      expected=       $2,928,435.58   computed=           (matched)
+[PASS]  B.5     12/20/2023 reassignment                                 expected=       $2,264,696.15   computed=           (matched)
+[PASS]  B.6     RJE reclasses                                           expected=       $5,058,223.22   computed=           (matched)
+[PASS]  B.7     Bundle ∩ Incongruous overlap                            expected=            169 days   computed=           (matched)
+[PASS]  B.8     Account 1072 reference-tag pattern                      expected=      $25,777,875.43   computed=           (matched)
+[PASS]  B.9     Partner draws through 1072                              expected=     $468,845 (2020)   computed=           (matched)
+[PASS]  B.10    $8M shelter math                                        expected=              99.84%   computed=           (matched)
+[PASS]  B.11    K-1 disproportionate allocation                         expected=          $1,196,627   computed=           (matched)
+[PASS]  B.12    Dollar-amount engineering catalogue                     expected=          22 entries   computed=           (matched)
+[PASS]  B.13    Maple Syrup tri-system verification                     expected=         $328,773.58   computed=           (matched)
+[PASS]  B.14    JustWorks Madwell 2022 W-3                              expected=193 employees; Box 1 $17,327,584.86; D $1,190,275.76; AA $79,698.29   computed=193 employees; Box 1 $17,327,584.86; D $1,190,275.76; AA $79,698.29
+[PASS]  B.15    JustWorks Millwright 2022 W-3                           expected=15 employees; Box 1 $808,834.93; D $21,851.80; AA $4,000.00   computed=15 employees; Box 1 $808,834.93; D $21,851.80; AA $4,000.00
+[PASS]  B.16    Combined 2022 401K reported to IRS (W-3 D + AA)         expected=       $1,295,825.85   computed=       $1,295,825.85
+[PASS]  B.17    2023 Fidelity deposits (108 participants, 25 check dates)  expected=$615,948.34 employee + $134,625.40 match   computed=$615,948.34 employee + $134,625.40 match
+[PASS]  B.18    401K deferral rebate (197 entries, 90 employees)        expected=         $-68,633.01   computed=         $-68,633.01
+[PASS]  B.19    Employer match escalation 2017->2022                    expected=~690% growth (33,428 -> 264,000)   computed=         690% growth
+[PASS]  B.20    Form 5500 2021 (Fidelity Plan 99519) plan-level totals  expected=          See detail   computed=          See detail
+[PASS]  B.21    2022 Form 1065 Line 19 (retirement plans)               expected=           1,021,232   computed=           1,021,232
+[PASS]  B.22    Slavic->Fidelity transfer (March 2021)                  expected=exact reconciliation (~$43K market delta)   computed=Slavic $3,048,753.13 -> Fidelity $3,091,730.30 (delta $42,977.17)
+[PASS]  B.23    Plan 99519 — three Related Employers                    expected=3 employers (Madwell, GIGO, MSJ)   computed=3 employers documented
+[PASS]  B.24    Vesting schedule change at conversion (forfeiture-by-design)  expected=2-yr cliff -> 6-yr graded   computed=Confirmed in Adoption Agreement p.34
+[PASS]  B.25    Plan 99519 dual-instance (119 ACHes)                    expected=99519-001 $3,192,850 (99 txns) + 99519-002 $526,776 (20 txns)   computed=99519-001 $3,192,850 (99 txns) + 99519-002 $526,776 (20 txns)
+[PASS]  B.26    GIGO Chase zero retirement-plan ACHes (361 rows)        expected=           0 matches   computed=           0 matches
+[PASS]  B.27    MS&J Chase zero retirement-plan ACHes (539 rows)        expected=           0 matches   computed=           0 matches
+[INFO]  B.28    Anchin 2021 CFS five-position contradiction             expected=documentary; see Receipts.md Section C   computed=          documented
+[INFO]  B.29    Layoff arc — 2022 public cycle + 2023 attempted repeat  expected=documentary; see Receipts.md Section C   computed=          documented
+[INFO]  B.30    HK three thefts + Shanghai WFOE                         expected=documentary; see Receipts.md Section C   computed=          documented
+[INFO]  B.31    RGD/RifRaf receivable growth + contra-write-off         expected=documentary; see Receipts.md Section C   computed=          documented
+[PASS]  B.32    Account 1072 complete ledger architecture               expected=$118,864,832 total funding; 392 anomalous-Num entries   computed=$118,864,832 / 392 entries / $51,464,233 anomalous
+[PASS]  B.33    Account 1072 affiliate / Phantom-PE disbursements       expected=$3,515,407 to MSJ+GIGO+Millwright   computed=          $3,515,407
+[INFO]  B.34    GF 620 Park 2024 Bill.com extraction (distress-pretext window)  expected=$613,633 / 5 payments April-May 2024   computed=$613,633 / 5 payments
+[INFO]  B.35    RDC pre-encoded deposit reconciliation + two-device hardware  expected=documentary; ~10 checks reconciled to 2105 pre-encoded deposits   computed=          documented
+[INFO]  B.36    BoA Online Transfer Account Added (5/5/2015) — 7984 added off 1711  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.37    BoA Online Transfer Account Added (5/20/2015) — Eisenman personal 6973 added off 1711  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.38    BoA dual passcode-reset 11/11/2018 — 1711 + 6973 same Online ID  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.39    BoA dual statement notification 9/2/2011 — 1711 + 2105 single Online ID baseline  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.40    Tucker 11/8/2018 pre-CFO explicit-exclusion directive   expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.41    Tucker 11/16/2018 'our bank accounts' email — 1711 + 2105 enrolled in CashPro  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.42    Wilkins-by-proxy CashPro TnC signature 11/19/2018 (Sojka name forged)  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.43    Wilkins-by-proxy 1711 closure letter 12/18/2018 (Eisenman name)  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.44    Tucker-era BoA RDC scanner chain of custody             expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.45    30-day closure-theater sequence (4 BoA Service Request numbers)  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.46    Karen Garland 2011 + 2013 misrepresentation chains on 1711  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.47    Belfer $8M shelter approval thread 1/13-15/2024         expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.48    Supporting Schedule for Eisenman Losses xlsx — pre-modeled sale work product  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.49    BoA Special Assets Group November 2023 escalation / 48-hour ultimatum  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.50    November 2023 BoA Amendment No. 4 negotiation thread    expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.51    12/31/2023 Madwell Trial Balance — Chase-affiliated entity drain  expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.52    3/30/2023 credit-line-for-tax-extension thread          expected=documentary; see Receipts.md Section F   computed=          documented
+[INFO]  B.53    HK ESS first-tranche named roster (retracts '12 ghosts')  expected=28 named; HK$1,354,800/mo; temporal ramp   computed=28 named; HK$1,354,800/mo; 6 terms; ghosts withdrawn
+[INFO]  B.54    FPS low-value-rail metadata control (sender-typed payee name)  expected=documentary; Sec 4.6.5/4.6.9 primary source (FPS FAQ)   computed=          documented
+[PASS]  B.55    HK account 72440013 commingled inflows (Theft 1 + Theft 3 corroboration)  expected=Danone HK$193,464,678 (118) + US intercompany HK$61,781,671 (23)   computed=Danone HK$193,464,678 (118); US HK$61,781,671 (23)
+[PASS]  B.56    CashPro HK notification reconciliation (real transactions, unverified payees)  expected=747 txns; HK$157,102,226.63; >=746/747 reconcile   computed=747 txns; HK$157,102,226.63; 746/747 reconcile; 90 verbatim
+[INFO]  B.57    Hylink invoice triangulation + recipient-unverified limit  expected=documentary; HKD 487,093.37 invoice=payment=ledger; recipient unproven   computed=          documented
+[INFO]  B.58    CashPro value-date/repair pending suspense layer (settled-invisible)  expected=documentary; means/knowledge; CashPro audit log is the production target   computed=          documented
+[INFO]  B.59    AMEX 7002 Foundation #7 extensions (2/3/2020, 3/2/2020 cap signatures)  expected=documentary; two cap-and-residual session pairs on Eisenman's 7002   computed=          documented
+[INFO]  B.60    QBO AMEX Plum books extension (Barclaycard 2013, AMEX 2016, books-dark 2014-15)  expected=documentary; QBO-source extension of Malaky rail and Foundation #7 chronology   computed=          documented
+[INFO]  B.61    Malaky-destination systematic-absence test + Foundation #7 to 5 events  expected=documentary; 159 Malaky ACHes vs 35,323 card rows; ~0 match; 6004=Eisenman   computed=          documented
+[INFO]  B.62    2018 Malaky-tagged ACHes fund Eisenman 0-66004 (3 same-day matches at the cent)  expected=documentary; 3 verified matches; Foundation #7 10/17/2018 funded by Malaky ACH   computed=          documented
+[INFO]  B.63    Deposit-rail loop reconciliation (15 same-period + 61 composite at the cent)  expected=documentary; 76/107 merged-OCR checks resolved; 11 composite deposits   computed=          documented
+[INFO]  B.64    2013 Propeller-prepared Madwell Amex Activity.csv - Malaky-card ledger in finance archive  expected=documentary; Foundation #5 reframed (pre-operative architectural-staging color)   computed=          documented
+[INFO]  B.65    Payroll/COGS rail US labor limb: 60000+61000 doubling, 59999 COGS Elimination $4.68M dual-book contra (2019)  expected=documentary; M&S Global GL: 1,309 splits to 61000 in 2022 / 1,164 in 2023; 0 header rows   computed=          documented
+[INFO]  B.66    WBN 'DT Playground' ERTC qualified-wages basis (95 -> 249 employees / +78% nonbillable hrs / 2 days)  expected=documentary; Sep 24 / Sep 26 / Oct 9, 2020 three-version trail; Tucker-authored filename   computed=          documented
+[INFO]  B.67    Payroll/COGS rail HK media limb: 50100 inflated; HK$9.15M manufactured loss; HK labor clean 1.02x  expected=documentary; HK 2020 GL 61000 Wages 1.02x clean; HK 2021 IS Net Income -HK$9,152,055   computed=          documented
+[INFO]  B.68    Extensis 2024 conduit: 401(k) match buried in 'Benefits Charge'; employer funds only match; March 2024 1:1 recon  expected=documentary; EX-01..EX-11 in Payroll_401k_Forensic_Addendum/Exhibits; Benefits Charge = Report Benefits + Match within $4   computed=          documented
+[INFO]  B.69    Justworks deduction channels at full-year scale: 401(k) deduct-rebate ~$882K/yr; $77,808.68 health overpayment to company  expected=documentary; EX-12, EX-13, EX-14, EX-16; Oct-Dec 2023 deduct-rebate = $240,380.44 (7 payrolls)   computed=          documented
+[INFO]  B.70    Transamerica receiving side: NO Source 04; total ER money $930,589; $3.19M absent (3.4x ER balance)  expected=documentary; EX-15 Balance_by_Source 106 participants $4,575,862.21; eliminates hypotheses (b) and (c)   computed=          documented
+[INFO]  B.71    2021 Tricor reconciliation: monthly HKD ~2,000 bank-charge gross-up (12 entries / HKD 23,895); JE-template swap 21041905 -> 21031604 after 10/12 VOID  expected=documentary; arithmetic in memo field ('(2000-X)'); ~US$3,035 annual padding vs ~HKD 116 actual   computed=          documented
+[INFO]  B.72    Anchin engagement loop: Belfer placed Tucker (2017, defalcation carve-out, Eisenman-only) -> Tucker AT ANCHIN -> CFO 10/30/2018 -> 2019 architecture installation -> 5 iterations of 2021 followup-requests Feb-Apr 2022 -> 7/14/2022 CFS -> 1/15/2024 'Pretty much'  expected=documentary; Madwell Followup requests_4_5_2022.xlsx (118-row General + 17 sheets); six load-bearing rows establishing iterative consolidation of Madwell-supplied substantiation   computed=          documented
+[INFO]  B.73    2023 1065 partner-distribution reclassification ($4,078,143)  expected=documentary; see Receipts.md Section G   computed=          documented
+[INFO]  B.74    2023 K-1 (568) asymmetric basis assignment (Eisenman -$1,140,137 vs Sojka -$815,650)  expected=documentary; see Receipts.md Section G   computed=          documented
+[INFO]  B.75    2021 Anchin engagement letter — Eisenman addressed as 'President, Madwell LLC and Subsidiaries' (fictional title)  expected=documentary; see Receipts.md Section H   computed=          documented
+[INFO]  B.76    The Crossin Memorandum (12/8/2023) — independent privileged legal analysis verifying §7 / §8.1 / §8.5 two years before the package  expected=documentary; see Receipts.md Section H   computed=          documented
+[INFO]  B.77    Amendment 4 execution thread (11/15-17/2023) — 12 messages, Sojka on zero of them; Werbecki 24-hour ultimatum; Tucker negotiates $60K partner draws with bank without Sojka  expected=documentary; see Receipts.md Section H   computed=          documented
+[INFO]  B.78    Inquiry into Successive Defaults (12/14-15/2023) — Tucker confirms 'no personal guarantees' — true on its face, misdirection from the actual exit mechanism (equity-ownership consolidation onto Sojka)  expected=documentary; see Receipts.md Section H   computed=          documented
+[INFO]  B.79    Involuntary Chapter 7 petition + §303 dismissal mapping (package findings + Crossin Memorandum form the evidentiary basis for each of the four §303 grounds)  expected=documentary; see Receipts.md Section H   computed=          documented
+[INFO]  B.80    2023 Form 8275 §199A disclosure — Madwell as 'PUBLIC RELATIONS SERVICES'; de minimis exception claimed on $557,925/2.4% consulting; $2,346,799 199A deduction; Belfer-signed  expected=documentary; see Receipts.md Section I   computed=          documented
+[INFO]  B.81    'MANAGING MEMBER' e-file authorization (9/4/2024) — Eisenman authorizes 2023 1065 e-filing under fictional title on federal 8879-PE, NY TR-579-PT, NYC 579-UBTP, CA 8453-LLC, CO Form 106; 29 days before buyout  expected=documentary; see Receipts.md Section I   computed=          documented
+[INFO]  B.82    Per-partner $4.08M reclassification asymmetry — Eisenman $2,206,977 / Sojka $1,871,166 / $335,811 asymmetry on K-1 Capital Account Analysis 'DUE FROM PARTER' line (separate from B.74's basis-line asymmetry)  expected=documentary; see Receipts.md Section I   computed=          documented
+[INFO]  B.83    §6221(b) election out of centralized partnership audit regime for 2023 — partner-level audit liability post-exit lands on Sojka as sole remaining partner, while Eisenman signed the return as 'Managing Member'  expected=documentary; see Receipts.md Section I   computed=          documented
+[INFO]  B.84    Anchin engagement-letter title-invention sequence (2017-2024) — six instruments, five invented titles, silent President-to-CEO swap on the 2023 FY review letter, Rosenblatt rotation in for the 5/7/2024 'CEO Sojka' letter  expected=documentary; see Receipts.md Section I   computed=          documented
+[PASS]  C.1.2018a  2018 COGS displacement test                             expected=      $17,961,530.22   computed=      $12,916,335.00
+[PASS]  C.1.2018b  2018 suppression delta                                  expected=>$0 (positive suppression)   computed= $20,267,647 (61.1%)
+[PASS]  C.1.2019a  2019 COGS displacement test                             expected=      $23,311,013.25   computed=      $22,591,947.00
+[PASS]  C.1.2019b  2019 suppression delta                                  expected=>$0 (positive suppression)   computed= $21,407,987 (48.7%)
+[INFO]  C.1.2020a  2020 COGS displacement test                             expected=      $19,284,861.72   computed=      $22,045,456.00
+[PASS]  C.1.2020b  2020 suppression delta                                  expected=>$0 (positive suppression)   computed= $18,180,945 (45.2%)
+[PASS]  C.1.2021a  2021 COGS displacement test                             expected=      $36,302,831.26   computed=      $23,535,448.00
+[PASS]  C.1.2021b  2021 suppression delta                                  expected=>$0 (positive suppression)   computed= $39,559,274 (62.7%)
+[INFO]  C.1.2022a  2022 COGS displacement test                             expected=      $28,869,904.65   computed=      $33,630,033.00
+[PASS]  C.1.2022b  2022 suppression delta                                  expected=>$0 (positive suppression)   computed= $24,221,806 (41.9%)
+[INFO]  C.1.2023a  2023 COGS displacement test                             expected=      $17,844,049.70   computed=      $23,246,885.00
+[PASS]  C.1.2023b  2023 suppression delta                                  expected=>$0 (positive suppression)   computed= $17,940,712 (43.6%)

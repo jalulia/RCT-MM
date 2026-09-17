@@ -1,0 +1,116 @@
+{
+  "landmarks": [
+    {
+      "selected": "L-01",
+      "name": "Chrysler circuit",
+      "photoLoaded": true,
+      "roofDisabled": true
+    },
+    {
+      "selected": "L-02",
+      "name": "Antler display",
+      "photoLoaded": true,
+      "roofDisabled": true
+    },
+    {
+      "selected": "L-03",
+      "name": "Supernova pavilion",
+      "photoLoaded": true,
+      "roofDisabled": true
+    },
+    {
+      "selected": "L-04",
+      "name": "Solarium",
+      "photoLoaded": true,
+      "roofDisabled": true
+    },
+    {
+      "selected": "L-05",
+      "name": "Orange overlook",
+      "photoLoaded": true,
+      "roofDisabled": true
+    },
+    {
+      "selected": "L-06",
+      "name": "Office cat",
+      "photoLoaded": true,
+      "roofDisabled": true
+    },
+    {
+      "selected": "L-07",
+      "name": "Sculpted reception",
+      "photoLoaded": true,
+      "roofDisabled": true
+    }
+  ],
+  "sceneryCash": {
+    "selected": "L-07",
+    "text": "No cash event is assigned to this scenery object.",
+    "hasPaymentButton": false
+  },
+  "courts": [
+    {
+      "court": "social",
+      "selected": null,
+      "pixels": 73494
+    },
+    {
+      "court": "garden",
+      "selected": null,
+      "pixels": 73670
+    },
+    {
+      "court": "party",
+      "selected": "L-08",
+      "pixels": 72390
+    }
+  ],
+  "circuit": {
+    "running": true,
+    "motion": false,
+    "time": 0.375,
+    "pauseStable": true
+  },
+  "roof": {
+    "site": "B-02",
+    "roof": false
+  },
+  "recordReturn": {
+    "preserved": true,
+    "scrollPreserved": true
+  },
+  "siteIsolation": {
+    "name": "Boerum frontage",
+    "hasPracticeButton": false
+  },
+  "pointerPick": "L-02",
+  "expanded": {
+    "open": true,
+    "focus": "Close expanded view"
+  },
+  "expandEscape": true,
+  "integrity": {
+    "brokenAnchors": [],
+    "duplicateIds": [],
+    "overflow": false
+  },
+  "render": {
+    "samples": 10,
+    "averageMs": 7,
+    "maxMs": 8.199999988079071
+  },
+  "sourceLinks": {
+    "checked": 214,
+    "missing": []
+  },
+  "mobile": {
+    "width": 390,
+    "overflow": false,
+    "selected": "L-06",
+    "mapScroll": 93
+  },
+  "reducedMotion": {
+    "circuitRequested": true,
+    "motion": false
+  }
+}

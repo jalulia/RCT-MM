@@ -1,0 +1,125 @@
+{
+  "frame": [
+    192,
+    160
+  ],
+  "anchor": [
+    96,
+    112
+  ],
+  "syntax": "passed",
+  "checks": [
+    {
+      "name": "booth",
+      "x0": 75,
+      "y0": 79,
+      "x1": 114,
+      "y1": 117,
+      "clipped": false
+    },
+    {
+      "name": "stag",
+      "x0": 75,
+      "y0": 60,
+      "x1": 117,
+      "y1": 119,
+      "clipped": false
+    },
+    {
+      "name": "solarium",
+      "x0": 58,
+      "y0": 51,
+      "x1": 135,
+      "y1": 130,
+      "clipped": false
+    },
+    {
+      "name": "overlook",
+      "x0": 57,
+      "y0": 69,
+      "x1": 126,
+      "y1": 126,
+      "clipped": false
+    },
+    {
+      "name": "inflatable",
+      "x0": 55,
+      "y0": 51,
+      "x1": 137,
+      "y1": 131,
+      "clipped": false
+    },
+    {
+      "name": "shark",
+      "x0": 69,
+      "y0": 31,
+      "x1": 114,
+      "y1": 61,
+      "clipped": false
+    },
+    {
+      "name": "shark-frame-0",
+      "x0": 69,
+      "y0": 31,
+      "x1": 114,
+      "y1": 61,
+      "clipped": false
+    },
+    {
+      "name": "shark-frame-1",
+      "x0": 69,
+      "y0": 30,
+      "x1": 114,
+      "y1": 60,
+      "clipped": false
+    },
+    {
+      "name": "shark-frame-2",
+      "x0": 69,
+      "y0": 29,
+      "x1": 114,
+      "y1": 59,
+      "clipped": false
+    },
+    {
+      "name": "shark-frame-3",
+      "x0": 69,
+      "y0": 30,
+      "x1": 114,
+      "y1": 60,
+      "clipped": false
+    },
+    {
+      "name": "shark-frame-4",
+      "x0": 69,
+      "y0": 31,
+      "x1": 114,
+      "y1": 61,
+      "clipped": false
+    },
+    {
+      "name": "shark-frame-5",
+      "x0": 69,
+      "y0": 32,
+      "x1": 114,
+      "y1": 62,
+      "clipped": false
+    },
+    {
+      "name": "shark-frame-6",
+      "x0": 69,
+      "y0": 33,
+      "x1": 114,
+      "y1": 63,
+      "clipped": false
+    },
+    {
+      "name": "shark-frame-7",
+      "x0": 69,
+      "y0": 32,
+      "x1": 114,
+      "y1": 62,
+      "clipped": false
+    }
+  ]
+}

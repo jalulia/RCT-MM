@@ -1,0 +1,42 @@
+{
+  "before": {
+    "selected": "B-02",
+    "roof": false,
+    "view": "Cash",
+    "scroll": 5059
+  },
+  "opened": {
+    "open": true,
+    "text": "P-04 · Bank events1 / DEBIT− $12,000 USDWeek 3 · Tuesday2 / RETURN+ $12,000 USDWeek 3 · WednesdayLater settlement Not suppliedThe record label and the bank events remain separate.",
+    "motion": false
+  },
+  "after": {
+    "selected": "B-02",
+    "roof": false,
+    "view": "Cash",
+    "scroll": 5059
+  },
+  "expanded": true,
+  "restored": {
+    "expanded": false,
+    "focus": true
+  },
+  "duplicates": [],
+  "badAnchors": [],
+  "overflow": false,
+  "missing": [],
+  "narrow": [
+    {
+      "route": "#art",
+      "overflow": false
+    },
+    {
+      "route": "#art/component-kit",
+      "overflow": false
+    },
+    {
+      "route": "#art/world-and-interface",
+      "overflow": false
+    }
+  ]
+}

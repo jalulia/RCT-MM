@@ -1,0 +1,642 @@
+{
+  "schemaVersion": 1,
+  "packet": "case/episode-01",
+  "reviewDate": "2026-09-16",
+  "status": "binding-in-progress",
+  "historicalInteractionEnabled": false,
+  "scope": "Selected local export fields; original statements not verified",
+  "caseSource": {
+    "file": "/Users/juliacompton/Library/Mobile Documents/com~apple~CloudDocs/ICLOUD-bridge/_ALLM/Codex-BR/Games/Mad Money Tycoon/The_Zero_Machine_Specific_Story_Reconstruction FINAL.pdf",
+    "sha256": "9352893711180900fcd770651011c65036504a66570490138d68fcd9a5c253e8",
+    "role": "Attributed reconstruction, not governing instructions"
+  },
+  "files": [
+    {
+      "id": "B1",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/Banks/Combine Statements_Madwell BoA_2019-2024.csv",
+      "sha256": "b79176a6837843749b7cccb3d17cea8cec889763e1993b47bdb18789f7703823",
+      "kind": "Consolidated/enriched statement extraction; includes classifications, source filename, and page fields",
+      "manifestMatch": true
+    },
+    {
+      "id": "B2",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/Banks/chase_additional_transactions.csv",
+      "sha256": "4fee4962303b1019586719405331518f8a7c8be5d7b197ac213560d595c1e328",
+      "kind": "Statement extraction with parser/classification fields; direction requires original-page verification",
+      "manifestMatch": true
+    },
+    {
+      "id": "BN",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/Exports November 2025/3142087651595154464_Madwell_Bill_11-14-25-060716.csv",
+      "sha256": "50b4f8661f65fd1a69f8683b9680ada2ef78bca30bfe2cb385ccf18b43a07c35",
+      "kind": "Packaged BILL bill export; later snapshot",
+      "manifestMatch": true
+    },
+    {
+      "id": "PN",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/Exports November 2025/3142087767626386927_Madwell_Payment_11-14-25-060730.csv",
+      "sha256": "8ab82d2bb3f7b7701259bca988b18cc79239a39cbbf9409b8b9069349aa26be6",
+      "kind": "Packaged BILL payment export; later snapshot",
+      "manifestMatch": true
+    },
+    {
+      "id": "FN",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/Exports November 2025/3142088456155106656_Madwell_Funds_Transfer_11-14-25-06085.csv",
+      "sha256": "012f982a5b4438bcef0508b7364c9031961dfcda524e29e192b78bf6d85643ae",
+      "kind": "Packaged funding-transfer export; no unique transfer ID column",
+      "manifestMatch": true
+    },
+    {
+      "id": "BM",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/Exports from May 2025/3019846565496268547_Madwell_Bill_05-29-25-141603 (1).csv",
+      "sha256": "83dada2a2f8afb9b09dd927d24c12b0d221cfa7e8f938449f38e2a82a77bb6a0",
+      "kind": "Earlier packaged bill snapshot",
+      "manifestMatch": true
+    },
+    {
+      "id": "PM",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/Exports from May 2025/3019846974298497443_Madwell_Payment_05-29-25-141652.csv",
+      "sha256": "c85e9666153d6da5d83e376ffd89cd8c378ee9e75ecba86cbcfa91d8b46103d9",
+      "kind": "Earlier packaged payment snapshot",
+      "manifestMatch": true
+    },
+    {
+      "id": "FM",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/Exports from May 2025/3019848671145928536_Madwell_Funds_Transfer_05-29-25-14201.csv",
+      "sha256": "6ab5473a04d944bcb057aabe44a43b35e3b3e1d26df15869e615bc70a68a7f45",
+      "kind": "Earlier packaged funding snapshot",
+      "manifestMatch": true
+    },
+    {
+      "id": "FT",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/Exports November 2025/09. FundsTransferDetail_rpt1114070123.csv",
+      "sha256": "6d09229da4a52b52d17c766f641ee392a5b8369f30dfa3875f6509d9734a2771",
+      "kind": "Detailed export/report with SentPay and ACH fields; 5,485 data records including subtotal/total rows",
+      "manifestMatch": true
+    },
+    {
+      "id": "AU",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/Exports November 2025/10. ApproverAudit.csv",
+      "sha256": "7b442de2ff9e0ed66d090bebd51d2b171f03e096fc62937874cf4165b8003fe8",
+      "kind": "29-byte error response, not an audit dataset",
+      "manifestMatch": true
+    },
+    {
+      "id": "Q1",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/QB/Madwell LLC_Journal_2024.csv",
+      "sha256": "e067678197ac9baa7c33dbf1d17c29a44254ef065ce1b3a322d5a8635804c3bf",
+      "kind": "QBO journal report export, including report/group headers",
+      "manifestMatch": true
+    },
+    {
+      "id": "Q2",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/QB/1072_all_years.csv",
+      "sha256": "c2446200d5fe8ee55e21d4f20d1f60abc82a1d04fab5b321839d47cba038c252",
+      "kind": "Account-specific derivative; corroborative locator, not independent evidence",
+      "manifestMatch": false
+    },
+    {
+      "id": "D1",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/billcom_bank_reconciled.csv",
+      "sha256": "16586f4f55d9029303a74aa4750b3d613046ae00780141dc21bf0879dc2dd683",
+      "kind": "Derived join/risk classification table; contains an incorrect CP bill join",
+      "manifestMatch": true
+    },
+    {
+      "id": "IX",
+      "path": "/Users/juliacompton/Documents/Ø/The Madwell Architecture/validation_package/BILL/bill_query_pdfs_index.json",
+      "sha256": "34d5ecc1e8485f4a77a4ac4a010b27b31015ddf434aecfbe75c6cdc8fbdb538b",
+      "kind": "Derived index of 585 PDF names/previews; not the PDFs",
+      "manifestMatch": false
+    }
+  ],
+  "observations": [
+    {
+      "id": "CP-BILL",
+      "locations": [
+        {
+          "source": "BN",
+          "csvRecord": 11940,
+          "physicalLine": 11940,
+          "numbering": "1-based from file start; report/header records included"
+        },
+        {
+          "source": "BM",
+          "csvRecord": 11927,
+          "physicalLine": 11927,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "vendor": "Creative Peaks LLC",
+        "invoice": "8",
+        "invoiceDate": "2024-09-30",
+        "dueDate": "2024-10-07",
+        "terms": "Due upon receipt",
+        "description": "2nd 50% of Muse Video (60\" version)",
+        "customer": "ELF23-112S-2 Muse Starfish",
+        "amount": {
+          "value": "23500.00",
+          "currency": null,
+          "displaySymbol": "$",
+          "currencyStatus": "not independently bound"
+        }
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-STATE",
+      "locations": [
+        {
+          "source": "BN",
+          "csvRecord": 11940,
+          "physicalLine": 11940,
+          "numbering": "1-based from file start; report/header records included"
+        },
+        {
+          "source": "BM",
+          "csvRecord": 11927,
+          "physicalLine": 11927,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "status": "PaidInFull",
+        "uiPaymentStatus": "PaidInFull",
+        "paidOn": "2024-10-21",
+        "updatedDate": "2024-10-23"
+      },
+      "limit": "Observed in May/November-labelled later exports, not continuous audit history",
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-PAY",
+      "locations": [
+        {
+          "source": "PN",
+          "csvRecord": 12215,
+          "physicalLine": 12215,
+          "numbering": "1-based from file start; report/header records included"
+        },
+        {
+          "source": "PM",
+          "csvRecord": 12215,
+          "physicalLine": 12215,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "confirmation": "P24102001 - 2159600",
+        "vendor": "Creative Peaks LLC",
+        "invoice": "8",
+        "amount": {
+          "value": "23500.00",
+          "currency": null,
+          "displaySymbol": "$",
+          "currencyStatus": "not independently bound"
+        },
+        "status": "Paid",
+        "createdDate": "2024-10-20",
+        "processDate": "2024-10-21",
+        "updatedDate": "2024-10-23",
+        "method": "ACH",
+        "clearingAccount": "1072"
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-BANK-DEBIT",
+      "locations": [
+        {
+          "source": "B1",
+          "csvRecord": 5833,
+          "physicalLine": 5833,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "date": "2024-10-21",
+        "direction": "debit",
+        "amount": {
+          "value": "23500.00",
+          "currency": null,
+          "displaySymbol": "$",
+          "currencyStatus": "not independently bound"
+        },
+        "vendor": "Creative Peaks LLC",
+        "invoice": "8",
+        "token": "016SQQKNZ3IU6KL"
+      },
+      "uninspectedOriginal": {
+        "file": "Madwell_BofA Statements_2024.pdf",
+        "pageAsExported": 82
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-BANK-RETURN",
+      "locations": [
+        {
+          "source": "B1",
+          "csvRecord": 5834,
+          "physicalLine": 5834,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "date": "2024-10-22",
+        "direction": "credit",
+        "amount": {
+          "value": "23500.00",
+          "currency": null,
+          "displaySymbol": "$",
+          "currencyStatus": "not independently bound"
+        },
+        "description": "RETURN OF POSTED CHECK / ITEM (RECEIVED ON 955210210004019 10-21) ELECTRONIC TRANSACTION"
+      },
+      "uninspectedOriginal": {
+        "file": "Madwell_BofA Statements_2024.pdf",
+        "pageAsExported": 80
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-FUND-DEBIT",
+      "locations": [
+        {
+          "source": "FN",
+          "csvRecord": 820,
+          "physicalLine": 820,
+          "numbering": "1-based from file start; report/header records included"
+        },
+        {
+          "source": "FM",
+          "csvRecord": 820,
+          "physicalLine": 820,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "date": "2024-10-21",
+        "signedAmount": "-23500.00",
+        "description": "BILL 10/21/24 Payables Funding"
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-FUND-RETURN",
+      "locations": [
+        {
+          "source": "FN",
+          "csvRecord": 825,
+          "physicalLine": 825,
+          "numbering": "1-based from file start; report/header records included"
+        },
+        {
+          "source": "FM",
+          "csvRecord": 823,
+          "physicalLine": 823,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "date": "2024-10-22",
+        "signedAmount": "23500.00",
+        "description": "BILL 10/21/24 Payables Funding Return"
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-QB-PAY",
+      "locations": [
+        {
+          "source": "Q1",
+          "csvRecord": 87625,
+          "physicalLine": 87630,
+          "numbering": "1-based from file start; report/header records included"
+        },
+        {
+          "source": "Q1",
+          "csvRecord": 87626,
+          "physicalLine": 87631,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "date": "2024-10-20",
+        "reportGroupLabel": "244448",
+        "creditAccount": "1072",
+        "debitAccount": "20011",
+        "amount": {
+          "value": "23500.00",
+          "currency": null,
+          "displaySymbol": "$",
+          "currencyStatus": "not independently bound"
+        }
+      },
+      "limit": "Group label not established as native transaction ID",
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-QB-WIRE",
+      "locations": [
+        {
+          "source": "Q1",
+          "csvRecord": 89021,
+          "physicalLine": 89028,
+          "numbering": "1-based from file start; report/header records included"
+        },
+        {
+          "source": "Q1",
+          "csvRecord": 89022,
+          "physicalLine": 89029,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "date": "2024-10-23",
+        "reportGroupLabel": "247396",
+        "creditAccount": "10048 Chase - Madwell - 6976",
+        "debitAccount": "1072",
+        "maskedConfirmation": "PXXXX2001 - XXX9600",
+        "amount": {
+          "value": "23500.00",
+          "currency": null,
+          "displaySymbol": "$",
+          "currencyStatus": "not independently bound"
+        }
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-CHASE",
+      "locations": [
+        {
+          "source": "B2",
+          "csvRecord": 1148,
+          "physicalLine": 1148,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "date": "2024-10-23",
+        "confirmation": "P24102001 - 2159600",
+        "amount": "23500",
+        "direction": "IN",
+        "section": "DEPOSIT",
+        "accountSuffix": "6976"
+      },
+      "uninspectedOriginal": {
+        "file": "20241031-statements-6976-.pdf",
+        "pageAsExported": null
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-AUDIT-GAP",
+      "locations": [
+        {
+          "source": "AU",
+          "scope": "whole file"
+        }
+      ],
+      "fields": {
+        "contents": "ORA-00936: missing expression"
+      },
+      "usableAsAudit": false,
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "CP-DERIVED-JOIN-ERROR",
+      "locations": [
+        {
+          "source": "D1",
+          "csvRecord": 9991,
+          "physicalLine": 9991,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "paymentConfirmation": "P24102001 - 2159600",
+        "joinedBillVendor": "Elite Office Cleaning",
+        "joinedBillAmount": "4365.89"
+      },
+      "excludedFromClaims": true,
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "POOL-MEMBER-A",
+      "locations": [
+        {
+          "source": "FT",
+          "csvRecord": 348,
+          "physicalLine": 348,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "vendor": "Katherine  Beherec",
+        "invoice": "3-14",
+        "amount": "1920.00",
+        "achConfirmation": "015ECWFDPPZCFOP",
+        "processDate": "2019-02-14"
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "POOL-MEMBER-B",
+      "locations": [
+        {
+          "source": "FT",
+          "csvRecord": 349,
+          "physicalLine": 349,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "vendor": "Scott Nolan",
+        "invoice": "12519",
+        "amount": "2600.00",
+        "achConfirmation": "015ECWFDPPZCFOP",
+        "processDate": "2019-02-14"
+      },
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    },
+    {
+      "id": "POOL-BANK",
+      "locations": [
+        {
+          "source": "B1",
+          "csvRecord": 89,
+          "physicalLine": 89,
+          "numbering": "1-based from file start; report/header records included"
+        }
+      ],
+      "fields": {
+        "date": "2019-02-14",
+        "displayedDebit": "4520",
+        "achConfirmation": "015ECWFDPPZCFOP"
+      },
+      "uninspectedOriginal": {
+        "file": "2 Bank of America_Madwell LLC_February 2019.pdf",
+        "pageAsExported": 3
+      },
+      "limit": "Whole-dollar extraction does not independently establish original cents or recipient settlement",
+      "inspection": "export-fields-inspected",
+      "sourceClass": "local"
+    }
+  ],
+  "links": [
+    {
+      "from": "CP-BILL",
+      "to": "CP-PAY",
+      "type": "bill-payment-correspondence",
+      "status": "export-supported",
+      "basis": [
+        "vendor",
+        "invoice",
+        "amount"
+      ],
+      "missing": [
+        "stable bill/payment IDs"
+      ]
+    },
+    {
+      "from": "CP-PAY",
+      "to": "CP-BANK-DEBIT",
+      "type": "processor-bank-correspondence",
+      "status": "candidate",
+      "basis": [
+        "vendor",
+        "invoice",
+        "amount",
+        "process date"
+      ],
+      "missing": [
+        "native identifier bridge"
+      ]
+    },
+    {
+      "from": "CP-BANK-DEBIT",
+      "to": "CP-BANK-RETURN",
+      "type": "return-of",
+      "status": "candidate",
+      "basis": [
+        "equal amount",
+        "consecutive dates",
+        "BILL funding/return descriptions"
+      ],
+      "missing": [
+        "explicit native parent-child return link"
+      ]
+    },
+    {
+      "from": "CP-PAY",
+      "to": "CP-CHASE",
+      "type": "confirmation-match",
+      "status": "exact-export-token-match",
+      "basis": [
+        "P24102001 - 2159600"
+      ],
+      "limit": "Does not resolve extraction direction or establish recipient receipt"
+    },
+    {
+      "from": "POOL-MEMBER-A",
+      "to": "POOL-BANK",
+      "type": "pooled-funding-member",
+      "status": "export-token-match",
+      "basis": [
+        "015ECWFDPPZCFOP"
+      ]
+    },
+    {
+      "from": "POOL-MEMBER-B",
+      "to": "POOL-BANK",
+      "type": "pooled-funding-member",
+      "status": "export-token-match",
+      "basis": [
+        "015ECWFDPPZCFOP"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "DATE-01",
+      "subject": "return posting",
+      "sourceClaim": {
+        "source": "CASE-01",
+        "page": 31,
+        "date": "2024-10-21"
+      },
+      "contraryObservations": [
+        "CP-BANK-RETURN",
+        "CP-FUND-RETURN"
+      ],
+      "resolution": "open; retain dates by source and event type"
+    },
+    {
+      "id": "DIRECTION-01",
+      "observations": [
+        "CP-QB-WIRE",
+        "CP-CHASE"
+      ],
+      "resolution": "open; original Chase statement required before bank-direction assertion"
+    },
+    {
+      "id": "JOIN-01",
+      "observation": "CP-DERIVED-JOIN-ERROR",
+      "contradiction": "CP-BILL",
+      "resolution": "derived bill association and dependent risk labels excluded"
+    }
+  ],
+  "arithmetic": [
+    {
+      "id": "PAIR-NET",
+      "expression": "-23500.00 + 23500.00",
+      "result": "0.00",
+      "scope": "Selected observed funding/return pair; does not prove unique identity, fees, cash available or final loss"
+    },
+    {
+      "id": "POOL-SUM",
+      "members": [
+        "POOL-MEMBER-A",
+        "POOL-MEMBER-B"
+      ],
+      "sum": "4520.00",
+      "scope": "Sum of two inspected allocation rows; complete group membership and original bank cents unchecked"
+    }
+  ],
+  "unresolved": [
+    "nativeCurrency",
+    "originalStatements",
+    "uniqueReturnIdentity",
+    "continuousStateHistory",
+    "October23BankDirection",
+    "recipientSettlement",
+    "completeOrdinaryControl"
+  ],
+  "practiceBoundary": {
+    "namespace": "practice/*",
+    "historicalNamespace": "case/*",
+    "fixtureIDs": [
+      "C-07",
+      "O-19",
+      "P-04"
+    ],
+    "rule": "No invented schedules, amounts, capacity, dialogue or decisions may be copied into historical records."
+  }
+}

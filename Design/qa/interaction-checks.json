@@ -1,0 +1,67 @@
+{
+  "catalogue": {
+    "buildingIDs": [
+      "B-01",
+      "B-02",
+      "B-03"
+    ],
+    "searchChrysler": [
+      "L-01",
+      "L-10",
+      "S-05"
+    ],
+    "emptyState": true,
+    "gifPlaying": true,
+    "gifStopped": true,
+    "actualGifDownload": {
+      "filename": "boerum-street-loop.gif",
+      "matchesSource": true
+    }
+  },
+  "documents": {
+    "v1": {
+      "status": "Scheduled",
+      "effective": "W3 Mon / 16:00",
+      "recorded": "W3 Mon / 16:04",
+      "index-recorded": "Recorded W3 Mon",
+      "index-version": "v1 · Scheduled"
+    },
+    "v2": {
+      "status": "Paid",
+      "effective": "W3 Tue / 10:00",
+      "recorded": "W3 Tue / 10:02",
+      "index-recorded": "Recorded W3 Tue",
+      "index-version": "v2 · Paid"
+    },
+    "tax": {
+      "path": "FORM STUDY / T-01",
+      "bankHidden": true,
+      "indexHidden": true,
+      "pinDisabled": true
+    },
+    "note": {
+      "editable": true,
+      "content": "Is there a later payment attempt linked to O-19?"
+    }
+  },
+  "park": {
+    "roofRemoved": true,
+    "cashRetainsSelection": {
+      "selected": "B-02",
+      "view": "Cash",
+      "body": "FICTIONAL PRACTICE / C-07 / O-19\nP-04 / BANK EVENTS / USD\nDebit\n−12,000.00\nReturn\n+12,000.00\nLATER SETTLEMENT · NOT SUPPLIED\nPLATFORM COPY / v2\nPaid\nOpen document comparison ↗"
+    },
+    "recordOpened": true,
+    "recordReturn": {
+      "closed": true,
+      "interactive": true,
+      "selected": "B-02",
+      "focus": true
+    },
+    "garden": true,
+    "circuitRunning": true,
+    "boerumUnbound": true,
+    "scenerySeparate": true
+  },
+  "rootEntryPreservesHash": true
+}

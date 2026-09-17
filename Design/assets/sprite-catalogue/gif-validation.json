@@ -1,0 +1,22 @@
+{
+  "errors": [],
+  "files": 206,
+  "decodedFrames": 278,
+  "transparentFiles": 193,
+  "rgbaRoundTrips": 278,
+  "timingChecks": 92,
+  "preservedPreviews": [
+    {
+      "file": "previews/boerum-street-loop.gif",
+      "sha256": "53fa602fa3e73655d186ccf5296b31f2e71342324ee39aa20c40708b3a50a446",
+      "frames": 360,
+      "durationMs": 36000
+    },
+    {
+      "file": "previews/boerum-closeup-loop.gif",
+      "sha256": "401e88ddb003b7432c5de653ee5468f602cba0612aa50bab9d6ddc4b10a2ea17",
+      "frames": 360,
+      "durationMs": 36000
+    }
+  ]
+}

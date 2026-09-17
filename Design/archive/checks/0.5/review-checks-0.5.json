@@ -1,0 +1,101 @@
+{
+  "motionChanges": true,
+  "pause": {
+    "stable": true,
+    "label": "Play loop"
+  },
+  "reducedMotionPauses": true,
+  "anchorAndCanvas": {
+    "brokenAnchors": [],
+    "duplicateIds": [],
+    "canvases": [
+      {
+        "kind": "boerum",
+        "backing": [
+          320,
+          180
+        ],
+        "css": [
+          320,
+          180
+        ]
+      },
+      {
+        "kind": "shell",
+        "backing": [
+          320,
+          180
+        ],
+        "css": [
+          320,
+          180
+        ]
+      },
+      {
+        "kind": "interior",
+        "backing": [
+          320,
+          180
+        ],
+        "css": [
+          320,
+          180
+        ]
+      },
+      {
+        "kind": "parts",
+        "backing": [
+          320,
+          180
+        ],
+        "css": [
+          320,
+          180
+        ]
+      }
+    ]
+  },
+  "routes": [
+    {
+      "hash": "#binding",
+      "position": "B01 / REF",
+      "overflow": false
+    },
+    {
+      "hash": "#binding-inventory",
+      "position": "B02 / REF",
+      "overflow": false
+    },
+    {
+      "hash": "#episode/historical-comparison",
+      "position": "02 / 08",
+      "overflow": false
+    },
+    {
+      "hash": "#art/boerum-street-study",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "hash": "#art/office-architecture",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "hash": "#binding",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "hash": "#binding-inventory",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "hash": "#episode/historical-comparison",
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "missingLocal": []
+}

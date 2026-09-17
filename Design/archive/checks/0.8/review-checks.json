@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-16",
+  "scope": "Design-document and interface-study validation; not a case verification or playtest",
+  "source_pdf_sha256": "9352893711180900fcd770651011c65036504a66570490138d68fcd9a5c253e8",
+  "source_pages_text_reviewed": 58,
+  "source_pages_visual_reviewed": [
+    4,
+    5,
+    47
+  ],
+  "technique_coverage": {
+    "count": 48,
+    "unique": 48,
+    "complete_T01_T48": true
+  },
+  "arithmetic_only": {
+    "statement_difference": "141578371.18",
+    "cash_decomposition": "141749443.50",
+    "between_measurements": "171072.32",
+    "supported_plus_disproved_pair_face": "10562497.34",
+    "1072_partition_total": "120047590.39"
+  },
+  "browser_checks": [
+    "Desktop overview, payment and comparison screens screenshot inspected",
+    "390px overview screenshot inspected; no body horizontal overflow",
+    "390px payment columns collapse and manual no body horizontal overflow",
+    "All five view controls exercised; selected object and period unchanged",
+    "Object selection, research selector and evidence navigation exercised",
+    "Three embedded style studies present; iframe height fits content",
+    "Keyboard Tab reaches navigation; full keyboard accessibility audit pending"
+  ],
+  "semantic_review": "Systems and UX agents reviewed GDD and evidence map; cash availability, many-to-many links, knowledge attribution, record/claim distinction, cast register, historical anchors and navigation-versus-choice issues addressed",
+  "not_tested": [
+    "human play experience",
+    "learning outcomes",
+    "native case exhibits",
+    "historical accounting/legal conclusions",
+    "asset pipeline performance",
+    "production sprites",
+    "full accessibility audit"
+  ],
+  "outputs": {
+    "GDD.md": "caf15f3026aca5f128858780451f5f6296fbfa5e53ceacf07662c8d13dffc2af",
+    "evidence-map.md": "968a0cc7b1c721fc5d089f6bb6c04edefd465dca0edc62111d3541aab48cf3c4",
+    "design-review.html": "bc84570bfd4b36676356a2497561f4cb72a8ee18526984e534fda1b897955b51"
+  }
+}

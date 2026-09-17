@@ -1,0 +1,98 @@
+{
+  "reviewDate": "2026-09-16",
+  "entries": [
+    {
+      "file": "porter-exterior.jpg",
+      "site": "65porter",
+      "sourceURL": "https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/a68fd0ce-f72b-427a-8f60-f2476b1bf753/1_8504217.jpg",
+      "projectURL": "https://mattfryed.com/65porter",
+      "archiveCapturedAt": "2026-08-24T00:16:09.233Z",
+      "sha256": "324f4902fb93ccac14eb7c226c254b6c7b8d2c263fd4d012c784b8f96da8f01d",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "credit": "Zach Pontz, per PSF project page",
+      "sourceFile": "65porter/04-1_8504217.jpg"
+    },
+    {
+      "file": "porter-hall.jpg",
+      "site": "65porter",
+      "sourceURL": "https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1732580663779-060NLDWFL24R3ZNZV4W9/4-Capture0005-142.jpg",
+      "projectURL": "https://mattfryed.com/65porter",
+      "archiveCapturedAt": "2026-08-24T00:16:09.233Z",
+      "sha256": "ea7e0eacc857fb0e57d3cb6cb621e03948817444f60acb84ac0903bf5d150722",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "credit": "Zach Pontz, per PSF project page",
+      "sourceFile": "65porter/11-4-capture0005-142.jpg"
+    },
+    {
+      "file": "porter-gathering.jpg",
+      "site": "65porter",
+      "sourceURL": "https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1732580666602-EN4D9D2X8RBCNUCORW6J/9-Capture0016-245.jpg",
+      "projectURL": "https://mattfryed.com/65porter",
+      "archiveCapturedAt": "2026-08-24T00:16:09.233Z",
+      "sha256": "89d1a9a6aab1d9be0ca80b5cf5f41ec65e1d2ea05db4bad899202578569d483b",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "credit": "Zach Pontz, per PSF project page",
+      "sourceFile": "65porter/16-9-capture0016-245.jpg"
+    },
+    {
+      "file": "johnson-mezzanine.jpg",
+      "site": "266-johnson",
+      "sourceURL": "https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1588805188537-6X36RIM8DPUJ38BVLKMJ/6A0A9246.jpg",
+      "projectURL": "https://mattfryed.com/266-johnson",
+      "archiveCapturedAt": "2026-08-24T00:16:09.233Z",
+      "sha256": "02504de89e8359f112119b0a17221701d68d0e243fb982f6353c6a79100ebfba",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "credit": "Photographer not stated on inspected project page",
+      "sourceFile": "266-johnson/01-6a0a9246.jpg"
+    },
+    {
+      "file": "boerum-user-street-view.png",
+      "site": "Boerum — three adjoining frontages identified in supplied reference",
+      "provenance": "user-supplied screenshot of Google street imagery; site identification provided in conversation",
+      "captureDate": null,
+      "sha256": "391e1c4b160ba00ffa540f25b6c6bd958a2b83c14491e33941dd11eb3a083db0",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "sourceFile": "codex-clipboard-cee4db2c-8b05-4e39-9a32-537efdb0cefa.png"
+    },
+    {
+      "file": "porter-supernova.jpg",
+      "site": "65porter",
+      "sourceURL": "https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1732580666947-EOV6NESVGOJDA7PANC1L/10-Capture0018-341.jpg",
+      "projectURL": "https://mattfryed.com/65porter",
+      "sha256": "c194828dfb23e9101a27bc952cfc5855d04e14f3d92e07cbb719813768c110d0",
+      "credit": "Zach Pontz, matched PSF gallery",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "sourceFile": "65porter/17-10-capture0018-341.jpg"
+    },
+    {
+      "file": "porter-reception.jpg",
+      "site": "65porter",
+      "sourceURL": "https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/ec79094a-e8c6-4347-b43b-3d0be5acdf2b/IMG_0947.jpg",
+      "projectURL": "https://mattfryed.com/65porter",
+      "sha256": "ee33900803e89e02925a3ae25bfcac89c8da8cc5efb28839341635c3338f7d4a",
+      "credit": "Photographer not established",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "sourceFile": "65porter/32-img_0947.jpg"
+    },
+    {
+      "file": "johnson-cat.jpg",
+      "site": "266-johnson",
+      "sourceURL": "https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1588805935622-LKWX7EWO27G8Z1W56EG0/795B4469.jpg",
+      "projectURL": "https://mattfryed.com/266-johnson",
+      "sha256": "1d4d32224dedf1add01d0546b9c7bb786be669328aa712596330feeb167a84cf",
+      "credit": "Photographer not established",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "sourceFile": "266-johnson/08-795b4469.jpg"
+    },
+    {
+      "file": "johnson-inflatable.jpg",
+      "site": "266-johnson",
+      "sourceURL": "https://images.squarespace-cdn.com/content/v1/5eb3104d0e74237ec948380b/1588805949921-7NWAJMQPVSGUJERLWRVF/JoeCarrotta-0004.jpg",
+      "projectURL": "https://mattfryed.com/266-johnson",
+      "sha256": "b53cc2599e13e06c5670cf9b48f309cdd4c5732f4a1d51bf99baded2cb8aaf5b",
+      "credit": "Photographer not established",
+      "use": "Credited design-review reference; not included in the sprite asset ZIP. No third-party reuse licence is granted.",
+      "sourceFile": "266-johnson/07-joecarrotta-0004.jpg"
+    }
+  ]
+}

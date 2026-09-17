@@ -1,0 +1,706 @@
+{
+  "artRevision": "0.8",
+  "entries": [
+    {
+      "id": "park-party",
+      "title": "Event courtyard",
+      "png": "park-party.png",
+      "gif": "park-party.gif",
+      "kind": "still",
+      "size": [
+        640,
+        360
+      ],
+      "route": "#art/world-and-interface",
+      "caption": "Current art study. Fictional arrangement; no production economy.",
+      "encodedFrames": 1
+    },
+    {
+      "id": "park-social",
+      "title": "Booth courtyard",
+      "png": "park-social.png",
+      "gif": "park-social.gif",
+      "kind": "still",
+      "size": [
+        640,
+        360
+      ],
+      "route": "#art/world-and-interface",
+      "caption": "Current art study. Fictional arrangement; no production economy.",
+      "encodedFrames": 1
+    },
+    {
+      "id": "park-garden",
+      "title": "Garden courtyard",
+      "png": "park-garden.png",
+      "gif": "park-garden.gif",
+      "kind": "still",
+      "size": [
+        640,
+        360
+      ],
+      "route": "#art/world-and-interface",
+      "caption": "Current art study. Fictional arrangement; no production economy.",
+      "encodedFrames": 1
+    },
+    {
+      "id": "boerum-cutaway",
+      "title": "Boerum cutaway",
+      "png": "boerum-cutaway.png",
+      "gif": "boerum-cutaway.gif",
+      "kind": "still",
+      "size": [
+        640,
+        360
+      ],
+      "route": "#art/world-and-interface",
+      "caption": "Current art study. Fictional arrangement; no production economy.",
+      "encodedFrames": 1
+    },
+    {
+      "id": "porter-cutaway",
+      "title": "Porter cutaway",
+      "png": "porter-cutaway.png",
+      "gif": "porter-cutaway.gif",
+      "kind": "still",
+      "size": [
+        640,
+        360
+      ],
+      "route": "#art/world-and-interface",
+      "caption": "Current art study. Fictional arrangement; no production economy.",
+      "encodedFrames": 1
+    },
+    {
+      "id": "johnson-cutaway",
+      "title": "Johnson cutaway",
+      "png": "johnson-cutaway.png",
+      "gif": "johnson-cutaway.gif",
+      "kind": "still",
+      "size": [
+        640,
+        360
+      ],
+      "route": "#art/world-and-interface",
+      "caption": "Current art study. Fictional arrangement; no production economy.",
+      "encodedFrames": 1
+    },
+    {
+      "id": "chrysler-circuit",
+      "title": "Chrysler circuit",
+      "png": "chrysler-circuit.png",
+      "gif": "chrysler-circuit.gif",
+      "kind": "animation",
+      "size": [
+        640,
+        360
+      ],
+      "durationMs": 22400,
+      "route": "#art/world-and-interface",
+      "caption": "One circuit at approximately real study speed. Driving attraction invented; the photographed car is stationary.",
+      "encodedFrames": 224
+    },
+    {
+      "id": "office-study-boerum-return",
+      "title": "Boerum return",
+      "png": "../assets/office-study/boerum-return.png",
+      "gif": "office-study-boerum-return.gif",
+      "kind": "still",
+      "group": "Architecture",
+      "size": [
+        320,
+        180
+      ],
+      "route": "#art/architecture-study",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "office-study-boerum-start",
+      "title": "Boerum start",
+      "png": "../assets/office-study/boerum-start.png",
+      "gif": "office-study-boerum-start.gif",
+      "kind": "still",
+      "group": "Architecture",
+      "size": [
+        320,
+        180
+      ],
+      "route": "#art/architecture-study",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "office-study-boerum-turn",
+      "title": "Boerum turn",
+      "png": "../assets/office-study/boerum-turn.png",
+      "gif": "office-study-boerum-turn.gif",
+      "kind": "still",
+      "group": "Architecture",
+      "size": [
+        320,
+        180
+      ],
+      "route": "#art/architecture-study",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "office-study-boerum",
+      "title": "Boerum",
+      "png": "../assets/office-study/boerum.png",
+      "gif": "office-study-boerum.gif",
+      "kind": "still",
+      "group": "Architecture",
+      "size": [
+        320,
+        180
+      ],
+      "route": "#art/architecture-study",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "office-study-interior",
+      "title": "Interior",
+      "png": "../assets/office-study/interior.png",
+      "gif": "office-study-interior.gif",
+      "kind": "still",
+      "group": "Architecture",
+      "size": [
+        320,
+        180
+      ],
+      "route": "#art/architecture-study",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "office-study-parts",
+      "title": "Parts",
+      "png": "../assets/office-study/parts.png",
+      "gif": "office-study-parts.gif",
+      "kind": "still",
+      "group": "Architecture",
+      "size": [
+        320,
+        180
+      ],
+      "route": "#art/architecture-study",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "office-study-shell",
+      "title": "Shell",
+      "png": "../assets/office-study/shell.png",
+      "gif": "office-study-shell.gif",
+      "kind": "still",
+      "group": "Architecture",
+      "size": [
+        320,
+        180
+      ],
+      "route": "#art/architecture-study",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-accounts",
+      "title": "Johnson workshop",
+      "png": "../assets/art-system/accounts.png",
+      "gif": "art-system-accounts.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-car",
+      "title": "Chrysler / vehicle",
+      "png": "../assets/art-system/car.png",
+      "gif": "art-system-car.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-cat",
+      "title": "Office cat",
+      "png": "../assets/art-system/cat.png",
+      "gif": "art-system-cat.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-creative",
+      "title": "Boerum frontage",
+      "png": "../assets/art-system/creative.png",
+      "gif": "art-system-creative.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-cutaway",
+      "title": "Porter / interior",
+      "png": "../assets/art-system/cutaway.png",
+      "gif": "art-system-cutaway.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-icon-cash",
+      "title": "Icon cash",
+      "png": "../assets/art-system/icon-cash.png",
+      "gif": "art-system-icon-cash.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        16,
+        16
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-icon-control",
+      "title": "Icon control",
+      "png": "../assets/art-system/icon-control.png",
+      "gif": "art-system-icon-control.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        16,
+        16
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-icon-information",
+      "title": "Icon information",
+      "png": "../assets/art-system/icon-information.png",
+      "gif": "art-system-icon-information.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        16,
+        16
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-icon-people",
+      "title": "Icon people",
+      "png": "../assets/art-system/icon-people.png",
+      "gif": "art-system-icon-people.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        16,
+        16
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-icon-work",
+      "title": "Icon work",
+      "png": "../assets/art-system/icon-work.png",
+      "gif": "art-system-icon-work.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        16,
+        16
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-inflatable",
+      "title": "Inflatable castle",
+      "png": "../assets/art-system/inflatable.png",
+      "gif": "art-system-inflatable.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-overlook",
+      "title": "Orange stair overlook",
+      "png": "../assets/art-system/overlook.png",
+      "gif": "art-system-overlook.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-people",
+      "title": "People",
+      "png": "../assets/art-system/people.png",
+      "gif": "art-system-people.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-production",
+      "title": "Porter hall",
+      "png": "../assets/art-system/production.png",
+      "gif": "art-system-production.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-props",
+      "title": "Props",
+      "png": "../assets/art-system/props.png",
+      "gif": "art-system-props.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-reception",
+      "title": "Sculpted reception",
+      "png": "../assets/art-system/reception.png",
+      "gif": "art-system-reception.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-shark",
+      "title": "Shark balloon",
+      "png": "../assets/art-system/shark.png",
+      "gif": "art-system-shark.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-signs",
+      "title": "Signs",
+      "png": "../assets/art-system/signs.png",
+      "gif": "art-system-signs.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-solarium",
+      "title": "Glass garden pavilion",
+      "png": "../assets/art-system/solarium.png",
+      "gif": "art-system-solarium.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-sprite-atlas",
+      "title": "Component overview",
+      "png": "../assets/art-system/sprite-atlas.png",
+      "gif": "art-system-sprite-atlas.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        960,
+        816
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-stag",
+      "title": "Antler display",
+      "png": "../assets/art-system/stag.png",
+      "gif": "art-system-stag.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-stage0",
+      "title": "Porter / structure",
+      "png": "../assets/art-system/stage0.png",
+      "gif": "art-system-stage0.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-stage1",
+      "title": "Porter / floors",
+      "png": "../assets/art-system/stage1.png",
+      "gif": "art-system-stage1.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-stage2",
+      "title": "Porter / fit-out",
+      "png": "../assets/art-system/stage2.png",
+      "gif": "art-system-stage2.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-stage4",
+      "title": "Porter / roof",
+      "png": "../assets/art-system/stage4.png",
+      "gif": "art-system-stage4.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-supernova",
+      "title": "Supernova pavilion",
+      "png": "../assets/art-system/supernova.png",
+      "gif": "art-system-supernova.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-tile",
+      "title": "Tile",
+      "png": "../assets/art-system/tile.png",
+      "gif": "art-system-tile.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-trees",
+      "title": "Trees",
+      "png": "../assets/art-system/trees.png",
+      "gif": "art-system-trees.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "art-system-van",
+      "title": "Van",
+      "png": "../assets/art-system/van.png",
+      "gif": "art-system-van.gif",
+      "kind": "still",
+      "group": "Components",
+      "size": [
+        160,
+        116
+      ],
+      "route": "#art/component-kit",
+      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+    },
+    {
+      "id": "bank-events",
+      "title": "Bank events",
+      "png": "documents/bank-events.png",
+      "gif": "documents/bank-events.gif",
+      "kind": "still",
+      "group": "Documents",
+      "size": [
+        624,
+        1010
+      ],
+      "route": "#art/interface-materials",
+      "caption": "Rendered fictional interface specimen. Open the live study for selectable text and controls."
+    },
+    {
+      "id": "form-reader",
+      "title": "Form reader",
+      "png": "documents/form-reader.png",
+      "gif": "documents/form-reader.gif",
+      "kind": "still",
+      "group": "Documents",
+      "size": [
+        1164,
+        1408
+      ],
+      "route": "#art/interface-materials",
+      "caption": "Rendered fictional interface specimen. Open the live study for selectable text and controls."
+    },
+    {
+      "id": "invoice",
+      "title": "Invoice",
+      "png": "documents/invoice.png",
+      "gif": "documents/invoice.gif",
+      "kind": "still",
+      "group": "Documents",
+      "size": [
+        1164,
+        1194
+      ],
+      "route": "#art/interface-materials",
+      "caption": "Rendered fictional interface specimen. Open the live study for selectable text and controls."
+    },
+    {
+      "id": "player-note",
+      "title": "Player note",
+      "png": "documents/player-note.png",
+      "gif": "documents/player-note.gif",
+      "kind": "still",
+      "group": "Documents",
+      "size": [
+        1164,
+        1020
+      ],
+      "route": "#art/interface-materials",
+      "caption": "Rendered fictional interface specimen. Open the live study for selectable text and controls."
+    },
+    {
+      "id": "record-v2",
+      "title": "Record v2",
+      "png": "documents/record-v2.png",
+      "gif": "documents/record-v2.gif",
+      "kind": "still",
+      "group": "Documents",
+      "size": [
+        1164,
+        1072
+      ],
+      "route": "#art/interface-materials",
+      "caption": "Rendered fictional interface specimen. Open the live study for selectable text and controls."
+    },
+    {
+      "id": "boerum-street-loop",
+      "title": "Boerum street / full loop",
+      "png": "../assets/sprite-catalogue/previews/boerum-street-poster.png",
+      "gif": "../assets/sprite-catalogue/previews/boerum-street-loop.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "size": [
+        960,
+        540
+      ],
+      "route": "#art/boerum-street-study",
+      "caption": "36 seconds. Left, right, moonwalk left, right, left, moonwalk right."
+    },
+    {
+      "id": "boerum-closeup-loop",
+      "title": "Fedora / six legs",
+      "png": "../assets/sprite-catalogue/previews/boerum-closeup-poster.png",
+      "gif": "../assets/sprite-catalogue/previews/boerum-closeup-loop.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "size": [
+        960,
+        300
+      ],
+      "route": "#art/boerum-street-study",
+      "caption": "36 seconds. Left, right, moonwalk left, right, left, moonwalk right."
+    }
+  ]
+}

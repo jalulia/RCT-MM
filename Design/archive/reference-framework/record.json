@@ -1,0 +1,116 @@
+{
+  "id": "framework:institutional-terminal",
+  "title": "Two-register manual",
+  "code": "institutional-terminal",
+  "kind": "framework",
+  "collection": "Document systems",
+  "status": "proposed",
+  "summary": "Separate explanation and document control from operational demonstrations while linking them through one navigation structure.",
+  "tags": [
+    "analog",
+    "institutional",
+    "technical",
+    "modern",
+    "bureaucratic",
+    "manual",
+    "terminal",
+    "precise",
+    "dense",
+    "utilitarian",
+    "document control",
+    "framework"
+  ],
+  "facets": {
+    "tone": [
+      "institutional",
+      "precise",
+      "utilitarian"
+    ],
+    "surface": [
+      "flat paper",
+      "dark terminal",
+      "hole-punch margin"
+    ],
+    "typography": [
+      "sans",
+      "monospace",
+      "IBM Plex Mono"
+    ],
+    "structure": [
+      "manual",
+      "fixed sidebar",
+      "two registers"
+    ],
+    "density": [
+      "dense"
+    ],
+    "motion": [
+      "functional"
+    ]
+  },
+  "family": "Institutional terminal",
+  "themePreview": "",
+  "thumb": "",
+  "sourcePath": "/Users/juliacompton/Documents/Julia/house-style/HOLY_OPS_GDD_V2.html",
+  "sourceHash": "a05e307cd5443f0c846ac2978b085ac8688477b4aca268daa5063af2f589a988",
+  "sourceRevision": "User-selected source; extraction 2026-09-10",
+  "sourceUrl": "/systems/institutional-terminal/framework.json",
+  "preview": "",
+  "spec": {
+    "palette": {},
+    "tokens": {},
+    "guidelines": [
+      "Document cover and identity → contents → numbered specification sections.",
+      "Use prose, tables and callouts for the explanatory register.",
+      "Embed operational examples in a distinct terminal register, clearly labeled as examples or live instruments.",
+      "Separate current specification, research, superseded material and future proposals in appendices."
+    ],
+    "adaptations": [
+      "Project-specific subject matter omitted; method/structure/standard generalized from the cited source."
+    ]
+  },
+  "passes": [],
+  "relations": [
+    {
+      "type": "same source, independent layer",
+      "id": "theme:institutional-terminal"
+    },
+    {
+      "type": "same source, independent layer",
+      "id": "method:institutional-terminal"
+    },
+    {
+      "type": "same source, independent layer",
+      "id": "standard:institutional-terminal"
+    }
+  ],
+  "detail": {
+    "text": "Separate explanation and document control from operational demonstrations while linking them through one navigation structure.",
+    "guidelines": [
+      "Document cover and identity → contents → numbered specification sections.",
+      "Use prose, tables and callouts for the explanatory register.",
+      "Embed operational examples in a distinct terminal register, clearly labeled as examples or live instruments.",
+      "Separate current specification, research, superseded material and future proposals in appendices."
+    ]
+  },
+  "guidelines": [
+    "Document cover and identity → contents → numbered specification sections.",
+    "Use prose, tables and callouts for the explanatory register.",
+    "Embed operational examples in a distinct terminal register, clearly labeled as examples or live instruments.",
+    "Separate current specification, research, superseded material and future proposals in appendices."
+  ],
+  "assets": [
+    {
+      "url": "/systems/institutional-terminal/framework.md",
+      "filename": "framework.md",
+      "sha256": "e64510534186b4991cc561b470f5111b7a609e80c1df8dc6636964906715f8bc"
+    },
+    {
+      "url": "/systems/institutional-terminal/framework.html",
+      "filename": "framework.html",
+      "sha256": "7bdc4b27a20bcc749696420fa217b130e44cd668a48c109e5fdf9d257caf7d48"
+    }
+  ],
+  "rights": "Private working extraction. Reference/source rights are not changed. Cross font and image rights are recorded in supplied source credits; original Mir and HOLY OPS fonts use external Google stylesheet links.",
+  "evidence": "Source code and document structure inspected. Taxonomy and portable guidelines are proposed interpretations, not source approval or visual QA."
+}

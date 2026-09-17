@@ -1,0 +1,144 @@
+DSPK V01.10 Furcadia
+
+(0:9) When a furre arrives in the dream,
+	(5:15) move the triggering furre to (8,46), or to someplace nearby if it's occupied.
+	(5:12) play sound 1 to everyone on the map.
+
+	ROLLERCOASTER
+(0:100) When 30 seconds have passed, offset by 0,
+	(3:2) at position (24,24) on the map,
+	(5:16) move any furre here to (26,23) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 1,
+	(3:2) at position (26,23) on the map,
+	(5:16) move any furre here to (26,22) if there's nobody already there.
+	(5:12) play sound 1 to everyone on the map.
+(0:100) When 30 seconds have passed, offset by 2,
+	(3:2) at position (26,22) on the map,
+	(5:16) move any furre here to (28,21) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 3,
+	(3:2) at position (28,21) on the map,
+	(5:16) move any furre here to (28,20) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 4,
+	(3:2) at position (28,20) on the map,
+	(5:16) move any furre here to (26,17) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 5,
+	(3:2) at position (26,17) on the map,
+	(5:16) move any furre here to (24,18) if there's nobody already there.
+	(5:12) play sound 2 to everyone on the map.
+(0:100) When 30 seconds have passed, offset by 6,
+	(3:2) at position (24,18) on the map,
+	(5:16) move any furre here to (24,19) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 7,
+	(3:2) at position (24,19) on the map,
+	(5:16) move any furre here to (22,20) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 8,
+	(3:2) at position (22,20) on the map,
+	(5:16) move any furre here to (22,21) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 9,
+	(3:2) at position (22,21) on the map,
+	(5:16) move any furre here to (20,22) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 10,
+	(3:2) at position (20,22) on the map,
+	(5:16) move any furre here to (20,23) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 11,
+	(3:2) at position (20,23) on the map,
+	(5:16) move any furre here to (18,24) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 12,
+	(3:2) at position (18,24) on the map,
+	(5:16) move any furre here to (18,25) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 13,
+	(3:2) at position (18,25) on the map,
+	(5:16) move any furre here to (16,26) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 14,
+	(3:2) at position (16,26) on the map,
+	(5:16) move any furre here to (16,27) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 15,
+	(3:2) at position (16,27) on the map,
+	(5:16) move any furre here to (14,28) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 16,
+	(3:2) at position (14,28) on the map,
+	(5:16) move any furre here to (14,29) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 17,
+	(3:2) at position (14,29) on the map,
+	(5:16) move any furre here to (12,30) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 18,
+	(3:2) at position (12,30) on the map,
+	(5:16) move any furre here to (12,31) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 19,
+	(3:2) at position (12,31) on the map,
+	(5:16) move any furre here to (14,34) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 20,
+	(3:2) at position (14,34) on the map,
+	(5:16) move any furre here to (16,33) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 21,
+	(3:2) at position (16,33) on the map,
+	(5:16) move any furre here to (16,32) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 22,
+	(3:2) at position (16,32) on the map,
+	(5:16) move any furre here to (18,31) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 23,
+	(3:2) at position (18,31) on the map,
+	(5:16) move any furre here to (18,30) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 24,
+	(3:2) at position (18,30) on the map,
+	(5:16) move any furre here to (20,29) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 25,
+	(3:2) at position (20,29) on the map,
+	(5:16) move any furre here to (20,28) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 26,
+	(3:2) at position (20,28) on the map,
+	(5:16) move any furre here to (22,27) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 27,
+	(3:2) at position (22,27) on the map,
+	(5:16) move any furre here to (22,26) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 28,
+	(3:2) at position (22,26) on the map,
+	(5:16) move any furre here to (24,25) if there's nobody already there.
+(0:100) When 30 seconds have passed, offset by 29,
+	(3:2) at position (24,25) on the map,
+	(5:16) move any furre here to (24,26) if there's nobody already there.
+
+	FURRE-GO-ROUND
+(0:100) When 1 seconds have passed, offset by 0,
+	(3:2) at position (32,12) on the map,
+	(5:16) move the furre to (34,11) if there's nobody already there.
+	(3:2) at position (32,14) on the map,
+	(5:16) move the furre to (32,12) if there's nobody already there.
+	(3:2) at position (34,14) on the map,
+	(5:16) move the furre to (32,14) if there's nobody already there.
+	(3:2) at position (34,12) on the map,
+	(5:16) move the furre to (34,14) if there's nobody already there.
+	(3:2) at position (34,11) on the map,
+	(5:16) move the furre to (34,12) if there's nobody already there.
+
+	FURRE-LIFT
+(0:100) When 10 seconds have passed, offset by 1,
+	(3:1) everywhere on the whole map,
+	(5:5) change object type 81 to type 82.
+(0:100) When 10 seconds have passed, offset by 2,
+	(3:1) everywhere on the whole map,
+	(5:5) change object type 82 to type 83.
+(0:100) When 10 seconds have passed, offset by 3,
+	(3:1) everywhere on the whole map,
+	(5:5) change object type 83 to type 84.
+(0:100) When 10 seconds have passed, offset by 4,
+	(3:1) everywhere on the whole map,
+	(5:5) change object type 84 to type 85.
+(0:100) When 10 seconds have passed, offset by 5,
+	(3:1) everywhere on the whole map,
+	(5:5) change object type 85 to type 84.
+(0:100) When 10 seconds have passed, offset by 6,
+	(3:1) everywhere on the whole map,
+	(5:5) change object type 84 to type 83.
+(0:100) When 10 seconds have passed, offset by 7,
+	(3:1) everywhere on the whole map,
+	(5:5) change object type 83 to type 82.
+(0:100) When 10 seconds have passed, offset by 8,
+	(3:1) everywhere on the whole map,
+	(5:5) change object type 82 to type 81.
+
+
+
+
+
+*Endtriggers* 8888 *Endtriggers*

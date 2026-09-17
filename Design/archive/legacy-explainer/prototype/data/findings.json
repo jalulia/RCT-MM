@@ -1,0 +1,552 @@
+[
+{
+"id": "P1",
+"st": "PASS",
+"l": "Source integrity (128 files)"
+},
+{
+"id": "A.1.1",
+"st": "PASS",
+"l": "Witness 1 vs Witness 2 (Total Income convergence)"
+},
+{
+"id": "A.1.2",
+"st": "PASS",
+"l": "Witness 1 vs Witness 3 (Internal surplus convergence)"
+},
+{
+"id": "A.1.3",
+"st": "PASS",
+"l": "Unreported revenue arithmetic"
+},
+{
+"id": "A.2",
+"st": "PASS",
+"l": "DataHole bucket (8 entities)"
+},
+{
+"id": "A.3.1",
+"st": "PASS",
+"l": "Malaky AMEX rail (165 txns)"
+},
+{
+"id": "A.3.2",
+"st": "PASS",
+"l": "Divvy EWALLET push (41 txns)"
+},
+{
+"id": "A.3.3a",
+"st": "PASS",
+"l": "Divvy gross outflow \u2014 strict (DIVVY only, debits)"
+},
+{
+"id": "A.3.3b",
+"st": "PASS",
+"l": "Divvy gross outflow \u2014 with Dec 20 inferential"
+},
+{
+"id": "A.3.4",
+"st": "PASS",
+"l": "Divvy excess over verifiable charges"
+},
+{
+"id": "A.3.5",
+"st": "PASS",
+"l": "Combined credit card masking gross"
+},
+{
+"id": "A.4",
+"st": "PASS",
+"l": "Settlement / PTET match"
+},
+{
+"id": "A.5",
+"st": "PASS",
+"l": "HK intercompany substantiation"
+},
+{
+"id": "A.6",
+"st": "PASS",
+"l": "Closure Identity (inflow gap = outflow + debt residual)"
+},
+{
+"id": "B.1",
+"st": "PASS",
+"l": "Bundle overshoot"
+},
+{
+"id": "B.2",
+"st": "PASS",
+"l": "Other-method incongruity"
+},
+{
+"id": "B.3",
+"st": "TIMEOUT",
+"l": "All-methods incongruity (local 45s cap; package-recorded PASS $22,789,412.78 / 1,194 events)"
+},
+{
+"id": "B.4",
+"st": "PASS",
+"l": "MS&J 2023 phantoms"
+},
+{
+"id": "B.5",
+"st": "PASS",
+"l": "12/20/2023 reassignment"
+},
+{
+"id": "B.6",
+"st": "PASS",
+"l": "RJE reclasses"
+},
+{
+"id": "B.7",
+"st": "PASS",
+"l": "Bundle \u2229 Incongruous overlap"
+},
+{
+"id": "B.8",
+"st": "PASS",
+"l": "Account 1072 reference-tag pattern"
+},
+{
+"id": "B.9",
+"st": "PASS",
+"l": "Partner draws through 1072"
+},
+{
+"id": "B.10",
+"st": "PASS",
+"l": "$8M shelter math"
+},
+{
+"id": "B.11",
+"st": "PASS",
+"l": "K-1 disproportionate allocation"
+},
+{
+"id": "B.12",
+"st": "PASS",
+"l": "Dollar-amount engineering catalogue"
+},
+{
+"id": "B.13",
+"st": "PASS",
+"l": "Maple Syrup tri-system verification"
+},
+{
+"id": "B.14",
+"st": "PASS",
+"l": "JustWorks Madwell 2022 W-3"
+},
+{
+"id": "B.15",
+"st": "PASS",
+"l": "JustWorks Millwright 2022 W-3"
+},
+{
+"id": "B.16",
+"st": "PASS",
+"l": "Combined 2022 401K reported to IRS (W-3 D + AA)"
+},
+{
+"id": "B.17",
+"st": "PASS",
+"l": "2023 Fidelity deposits (108 participants, 25 check dates)"
+},
+{
+"id": "B.18",
+"st": "PASS",
+"l": "401K deferral rebate (197 entries, 90 employees)"
+},
+{
+"id": "B.19",
+"st": "PASS",
+"l": "Employer match escalation 2017->2022"
+},
+{
+"id": "B.20",
+"st": "PASS",
+"l": "Form 5500 2021 (Fidelity Plan 99519) plan-level totals"
+},
+{
+"id": "B.21",
+"st": "PASS",
+"l": "2022 Form 1065 Line 19 (retirement plans)"
+},
+{
+"id": "B.22",
+"st": "PASS",
+"l": "Slavic->Fidelity transfer (March 2021)"
+},
+{
+"id": "B.23",
+"st": "PASS",
+"l": "Plan 99519 \u2014 three Related Employers"
+},
+{
+"id": "B.24",
+"st": "PASS",
+"l": "Vesting schedule change at conversion (forfeiture-by-design)"
+},
+{
+"id": "B.25",
+"st": "PASS",
+"l": "Plan 99519 dual-instance (119 ACHes)"
+},
+{
+"id": "B.26",
+"st": "PASS",
+"l": "GIGO Chase zero retirement-plan ACHes (361 rows)"
+},
+{
+"id": "B.27",
+"st": "PASS",
+"l": "MS&J Chase zero retirement-plan ACHes (539 rows)"
+},
+{
+"id": "B.28",
+"st": "INFO",
+"l": "Anchin 2021 CFS five-position contradiction"
+},
+{
+"id": "B.29",
+"st": "INFO",
+"l": "Layoff arc \u2014 2022 public cycle + 2023 attempted repeat"
+},
+{
+"id": "B.30",
+"st": "INFO",
+"l": "HK three thefts + Shanghai WFOE"
+},
+{
+"id": "B.31",
+"st": "INFO",
+"l": "RGD/RifRaf receivable growth + contra-write-off"
+},
+{
+"id": "B.32",
+"st": "PASS",
+"l": "Account 1072 complete ledger architecture"
+},
+{
+"id": "B.33",
+"st": "PASS",
+"l": "Account 1072 affiliate / Phantom-PE disbursements"
+},
+{
+"id": "B.34",
+"st": "INFO",
+"l": "GF 620 Park 2024 Bill.com extraction (distress-pretext window)"
+},
+{
+"id": "B.35",
+"st": "INFO",
+"l": "RDC pre-encoded deposit reconciliation + two-device hardware"
+},
+{
+"id": "B.36",
+"st": "INFO",
+"l": "BoA Online Transfer Account Added (5/5/2015) \u2014 7984 added off 1711"
+},
+{
+"id": "B.37",
+"st": "INFO",
+"l": "BoA Online Transfer Account Added (5/20/2015) \u2014 Eisenman personal 6973 added off 1711"
+},
+{
+"id": "B.38",
+"st": "INFO",
+"l": "BoA dual passcode-reset 11/11/2018 \u2014 1711 + 6973 same Online ID"
+},
+{
+"id": "B.39",
+"st": "INFO",
+"l": "BoA dual statement notification 9/2/2011 \u2014 1711 + 2105 single Online ID baseline"
+},
+{
+"id": "B.40",
+"st": "INFO",
+"l": "Tucker 11/8/2018 pre-CFO explicit-exclusion directive"
+},
+{
+"id": "B.41",
+"st": "INFO",
+"l": "Tucker 11/16/2018 'our bank accounts' email \u2014 1711 + 2105 enrolled in CashPro"
+},
+{
+"id": "B.42",
+"st": "INFO",
+"l": "Wilkins-by-proxy CashPro TnC signature 11/19/2018 (Sojka name forged)"
+},
+{
+"id": "B.43",
+"st": "INFO",
+"l": "Wilkins-by-proxy 1711 closure letter 12/18/2018 (Eisenman name)"
+},
+{
+"id": "B.44",
+"st": "INFO",
+"l": "Tucker-era BoA RDC scanner chain of custody"
+},
+{
+"id": "B.45",
+"st": "INFO",
+"l": "30-day closure-theater sequence (4 BoA Service Request numbers)"
+},
+{
+"id": "B.46",
+"st": "INFO",
+"l": "Karen Garland 2011 + 2013 misrepresentation chains on 1711"
+},
+{
+"id": "B.47",
+"st": "INFO",
+"l": "Belfer $8M shelter approval thread 1/13-15/2024"
+},
+{
+"id": "B.48",
+"st": "INFO",
+"l": "Supporting Schedule for Eisenman Losses xlsx \u2014 pre-modeled sale work product"
+},
+{
+"id": "B.49",
+"st": "INFO",
+"l": "BoA Special Assets Group November 2023 escalation / 48-hour ultimatum"
+},
+{
+"id": "B.50",
+"st": "INFO",
+"l": "November 2023 BoA Amendment No. 4 negotiation thread"
+},
+{
+"id": "B.51",
+"st": "INFO",
+"l": "12/31/2023 Madwell Trial Balance \u2014 Chase-affiliated entity drain"
+},
+{
+"id": "B.52",
+"st": "INFO",
+"l": "3/30/2023 credit-line-for-tax-extension thread"
+},
+{
+"id": "B.53",
+"st": "INFO",
+"l": "HK ESS first-tranche named roster (retracts '12 ghosts')"
+},
+{
+"id": "B.54",
+"st": "INFO",
+"l": "FPS low-value-rail metadata control (sender-typed payee name)"
+},
+{
+"id": "B.55",
+"st": "PASS",
+"l": "HK account 72440013 commingled inflows (Theft 1 + Theft 3 corroboration)"
+},
+{
+"id": "B.56",
+"st": "PASS",
+"l": "CashPro HK notification reconciliation (real transactions, unverified payees)"
+},
+{
+"id": "B.57",
+"st": "INFO",
+"l": "Hylink invoice triangulation + recipient-unverified limit"
+},
+{
+"id": "B.58",
+"st": "INFO",
+"l": "CashPro value-date/repair pending suspense layer (settled-invisible)"
+},
+{
+"id": "B.59",
+"st": "INFO",
+"l": "AMEX 7002 Foundation #7 extensions (2/3/2020, 3/2/2020 cap signatures)"
+},
+{
+"id": "B.60",
+"st": "INFO",
+"l": "QBO AMEX Plum books extension (Barclaycard 2013, AMEX 2016, books-dark 2014-15)"
+},
+{
+"id": "B.61",
+"st": "INFO",
+"l": "Malaky-destination systematic-absence test + Foundation #7 to 5 events"
+},
+{
+"id": "B.62",
+"st": "INFO",
+"l": "2018 Malaky-tagged ACHes fund Eisenman 0-66004 (3 same-day matches at the cent)"
+},
+{
+"id": "B.63",
+"st": "INFO",
+"l": "Deposit-rail loop reconciliation (15 same-period + 61 composite at the cent)"
+},
+{
+"id": "B.64",
+"st": "INFO",
+"l": "2013 Propeller-prepared Madwell Amex Activity.csv - Malaky-card ledger in finance archive"
+},
+{
+"id": "B.65",
+"st": "INFO",
+"l": "Payroll/COGS rail US labor limb: 60000+61000 doubling, 59999 COGS Elimination $4.68M dual-book contra (2019)"
+},
+{
+"id": "B.66",
+"st": "INFO",
+"l": "WBN 'DT Playground' ERTC qualified-wages basis (95 -> 249 employees / +78% nonbillable hrs / 2 days)"
+},
+{
+"id": "B.67",
+"st": "INFO",
+"l": "Payroll/COGS rail HK media limb: 50100 inflated; HK$9.15M manufactured loss; HK labor clean 1.02x"
+},
+{
+"id": "B.68",
+"st": "INFO",
+"l": "Extensis 2024 conduit: 401(k) match buried in 'Benefits Charge'; employer funds only match; March 2024 1:1 recon"
+},
+{
+"id": "B.69",
+"st": "INFO",
+"l": "Justworks deduction channels at full-year scale: 401(k) deduct-rebate ~$882K/yr; $77,808.68 health overpayment to company"
+},
+{
+"id": "B.70",
+"st": "INFO",
+"l": "Transamerica receiving side: NO Source 04; total ER money $930,589; $3.19M absent (3.4x ER balance)"
+},
+{
+"id": "B.71",
+"st": "INFO",
+"l": "2021 Tricor reconciliation: monthly HKD ~2,000 bank-charge gross-up (12 entries / HKD 23,895); JE-template swap 21041905 -> 21031604 after 10/12 VOID"
+},
+{
+"id": "B.72",
+"st": "INFO",
+"l": "Anchin engagement loop: Belfer placed Tucker (2017, defalcation carve-out, Eisenman-only) -> Tucker AT ANCHIN -> CFO 10/30/2018 -> 2019 architecture installation -> 5 iterations of 2021 followup-requests Feb-Apr 2022 -> 7/14/2022 CFS -> 1/15/2024 'Pretty much'"
+},
+{
+"id": "B.73",
+"st": "INFO",
+"l": "2023 1065 partner-distribution reclassification ($4,078,143)"
+},
+{
+"id": "B.74",
+"st": "INFO",
+"l": "2023 K-1 (568) asymmetric basis assignment (Eisenman -$1,140,137 vs Sojka -$815,650)"
+},
+{
+"id": "B.75",
+"st": "INFO",
+"l": "2021 Anchin engagement letter \u2014 Eisenman addressed as 'President, Madwell LLC and Subsidiaries' (fictional title)"
+},
+{
+"id": "B.76",
+"st": "INFO",
+"l": "The Crossin Memorandum (12/8/2023) \u2014 independent privileged legal analysis verifying \u00a77 / \u00a78.1 / \u00a78.5 two years before the package"
+},
+{
+"id": "B.77",
+"st": "INFO",
+"l": "Amendment 4 execution thread (11/15-17/2023) \u2014 12 messages, Sojka on zero of them; Werbecki 24-hour ultimatum; Tucker negotiates $60K partner draws with bank without Sojka"
+},
+{
+"id": "B.78",
+"st": "INFO",
+"l": "Inquiry into Successive Defaults (12/14-15/2023) \u2014 Tucker confirms 'no personal guarantees' \u2014 true on its face, misdirection from the actual exit mechanism (equity-ownership consolidation onto Sojka)"
+},
+{
+"id": "B.79",
+"st": "INFO",
+"l": "Involuntary Chapter 7 petition + \u00a7303 dismissal mapping (package findings + Crossin Memorandum form the evidentiary basis for each of the four \u00a7303 grounds)"
+},
+{
+"id": "B.80",
+"st": "INFO",
+"l": "2023 Form 8275 \u00a7199A disclosure \u2014 Madwell as 'PUBLIC RELATIONS SERVICES'; de minimis exception claimed on $557,925/2.4% consulting; $2,346,799 199A deduction; Belfer-signed"
+},
+{
+"id": "B.81",
+"st": "INFO",
+"l": "'MANAGING MEMBER' e-file authorization (9/4/2024) \u2014 Eisenman authorizes 2023 1065 e-filing under fictional title on federal 8879-PE, NY TR-579-PT, NYC 579-UBTP, CA 8453-LLC, CO Form 106; 29 days before buyout"
+},
+{
+"id": "B.82",
+"st": "INFO",
+"l": "Per-partner $4.08M reclassification asymmetry \u2014 Eisenman $2,206,977 / Sojka $1,871,166 / $335,811 asymmetry on K-1 Capital Account Analysis 'DUE FROM PARTER' line (separate from B.74's basis-line asymmetry)"
+},
+{
+"id": "B.83",
+"st": "INFO",
+"l": "\u00a76221(b) election out of centralized partnership audit regime for 2023 \u2014 partner-level audit liability post-exit lands on Sojka as sole remaining partner, while Eisenman signed the return as 'Managing Member'"
+},
+{
+"id": "B.84",
+"st": "INFO",
+"l": "Anchin engagement-letter title-invention sequence (2017-2024) \u2014 six instruments, five invented titles, silent President-to-CEO swap on the 2023 FY review letter, Rosenblatt rotation in for the 5/7/2024 'CEO Sojka' letter"
+},
+{
+"id": "C.1.2018a",
+"st": "PASS",
+"l": "2018 COGS displacement test"
+},
+{
+"id": "C.1.2018b",
+"st": "PASS",
+"l": "2018 suppression delta"
+},
+{
+"id": "C.1.2019a",
+"st": "PASS",
+"l": "2019 COGS displacement test"
+},
+{
+"id": "C.1.2019b",
+"st": "PASS",
+"l": "2019 suppression delta"
+},
+{
+"id": "C.1.2020a",
+"st": "INFO",
+"l": "2020 COGS displacement test"
+},
+{
+"id": "C.1.2020b",
+"st": "PASS",
+"l": "2020 suppression delta"
+},
+{
+"id": "C.1.2021a",
+"st": "PASS",
+"l": "2021 COGS displacement test"
+},
+{
+"id": "C.1.2021b",
+"st": "PASS",
+"l": "2021 suppression delta"
+},
+{
+"id": "C.1.2022a",
+"st": "INFO",
+"l": "2022 COGS displacement test"
+},
+{
+"id": "C.1.2022b",
+"st": "PASS",
+"l": "2022 suppression delta"
+},
+{
+"id": "C.1.2023a",
+"st": "INFO",
+"l": "2023 COGS displacement test"
+},
+{
+"id": "C.1.2023b",
+"st": "PASS",
+"l": "2023 suppression delta"
+}
+]

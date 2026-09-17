@@ -1,0 +1,12 @@
+(()=>{
+const descriptions={invoice:['C-07 / O-19','O-19 / Invoice / 1 page','Invoice: what is owed.'],copy:['C-07 / O-19','O-19 / Saved record / v2','Carbon copy: what this version says.'],bank:['C-07 / P-04','P-04 / Bank-event extract / 2 events','Bank strip: movements in the supplied extract.'],tax:['FORM STUDY / T-01','T-01 / Unbound specimen','Form: entity, period, revision and source locator.'],note:['C-07 / O-19','N-01 / Player note','Note: an interpretation linked to records.']};
+document.querySelectorAll('[data-dm-desk]').forEach(desk=>{
+let active='invoice',pinned=true,version=2;
+const find=s=>desk.querySelector(s);
+function render(){desk.dataset.dmActive=active;desk.dataset.dmPinned=String(pinned&&active!=='bank'&&active!=='tax');desk.querySelectorAll('[data-dm-doc]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.dmDoc===active));desk.querySelectorAll('[data-dm-panel]').forEach(p=>p.hidden=p.dataset.dmPanel!==active);const [path,locator,purpose]=descriptions[active];find('[data-dm-path]').textContent=path;find('[data-dm-locator]').textContent=active==='copy'?`O-19 / Saved record / v${version}`:locator;find('[data-dm-purpose]').textContent=purpose;find('[data-dm-mode]').textContent=active==='note'?'EDIT NOTE':'READ MODE';
+const pin=find('[data-dm-pin]');pin.disabled=active==='tax'||active==='bank';pin.textContent=active==='tax'?'Separate specimen':active==='bank'?'Bank strip open':pinned?'Unpin bank strip':'Pin bank strip';pin.setAttribute('aria-pressed',String(pinned&&active!=='tax'&&active!=='bank'));find('.dm-pinned').hidden=!(pinned&&active!=='bank'&&active!=='tax');find('.dm-terminal').hidden=active==='tax';
+}
+desk.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.dmDoc){active=b.dataset.dmDoc;render()}if(b.hasAttribute('data-dm-pin')){pinned=!pinned;render()}if(b.dataset.dmVersion){version=Number(b.dataset.dmVersion);desk.querySelectorAll('[data-dm-version]').forEach(x=>x.setAttribute('aria-pressed',x===b));find('[data-dm-copy-version]').textContent='v'+version;find('[data-dm-status]').textContent=version===1?'Scheduled':'Paid';find('[data-dm-effective]').textContent=version===1?'W3 Mon / 16:00':'W3 Tue / 10:00';find('[data-dm-recorded]').textContent=version===1?'W3 Mon / 16:04':'W3 Tue / 10:02';find('[data-dm-index-recorded]').textContent=version===1?'Recorded W3 Mon':'Recorded W3 Tue';find('[data-dm-index-version]').textContent=`v${version} · ${version===1?'Scheduled':'Paid'}`;render()}});
+render();
+});
+})();

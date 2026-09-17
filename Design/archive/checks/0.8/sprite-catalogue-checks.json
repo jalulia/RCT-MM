@@ -1,0 +1,37 @@
+{
+  "buildings": [
+    "B-01",
+    "B-02",
+    "B-03"
+  ],
+  "search": [
+    "A-01"
+  ],
+  "frames": {
+    "count": 26,
+    "open": true
+  },
+  "empty": true,
+  "play": {
+    "pressed": "true",
+    "src": "previews/boerum-street-loop.gif"
+  },
+  "stop": {
+    "pressed": "false",
+    "src": "previews/boerum-street-poster.png"
+  },
+  "reducedMotionStops": true,
+  "mobile": {
+    "overflow": false,
+    "visibleCards": 9
+  },
+  "links": {
+    "count": 179,
+    "missing": []
+  },
+  "integrity": {
+    "ids": 43,
+    "duplicates": [],
+    "overflow": false
+  }
+}

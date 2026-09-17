@@ -1,0 +1,1246 @@
+{
+  "status": "superseded-or-quarantined",
+  "notCurrentSpecification": true,
+  "files": [
+    {
+      "file": "checks/0.3/review-checks-0.3.json",
+      "bytes": 761,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.4/art-review-checks-0.4.json",
+      "bytes": 852,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.5/review-checks-0.5.json",
+      "bytes": 1692,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.6/park-checks-0.6.json",
+      "bytes": 2185,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.7/material-checks-0.7.json",
+      "bytes": 1428,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.8/refinement-architecture-checks.json",
+      "bytes": 1865,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.8/refinement-browser-checks.json",
+      "bytes": 372,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.8/refinement-checks.json",
+      "bytes": 930,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.8/refinement-landmarks-checks.json",
+      "bytes": 1927,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.8/review-checks.json",
+      "bytes": 1998,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.8/sprite-catalogue-checks.json",
+      "bytes": 561,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.8/sprite-gif-checks.json",
+      "bytes": 514,
+      "classification": "checks"
+    },
+    {
+      "file": "construction-scripts/art-test.html.txt",
+      "bytes": 736,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/integrate-refinement.cjs",
+      "bytes": 3229,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/proof-refinement.cjs",
+      "bytes": 2324,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/reception-refined.part",
+      "bytes": 2335,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/refine-office-study.cjs",
+      "bytes": 2221,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/refinement-architecture.js",
+      "bytes": 15904,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/refinement-featured.js",
+      "bytes": 12881,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/refinement-interface.js",
+      "bytes": 2016,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/refinement-landmarks.js",
+      "bytes": 11913,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/refinement-primitives.js",
+      "bytes": 14180,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/reframe-reader.py",
+      "bytes": 6805,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/reframe-styles.py",
+      "bytes": 17551,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "construction-scripts/revise-gdd.py",
+      "bytes": 19378,
+      "classification": "construction-scripts"
+    },
+    {
+      "file": "legacy-explainer/00_PLAN.md",
+      "bytes": 6871,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/01_DESIGN_SYSTEM.md",
+      "bytes": 6775,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/02_CONTENT_MAP.md",
+      "bytes": 14199,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/03_PROCESS_LOG.md",
+      "bytes": 24602,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/04_VISUAL_FLOW.md",
+      "bytes": 10015,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/05_REVIEW.md",
+      "bytes": 12216,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/06_OVERHAUL.md",
+      "bytes": 5078,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/README_HANDOFF.md",
+      "bytes": 3240,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/prototype/data/cast.json",
+      "bytes": 1384,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/prototype/data/findings.json",
+      "bytes": 11807,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/prototype/data/rails.json",
+      "bytes": 1737,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/prototype/data/timeline.json",
+      "bytes": 1172,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/prototype/data/verifier_cache.json",
+      "bytes": 35094,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/prototype/index.html.txt",
+      "bytes": 318046,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/prototype/verify_server.py",
+      "bytes": 1387,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/verification/FIDELITY_CHECK.md",
+      "bytes": 5808,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/verification/fidelity_check.py",
+      "bytes": 2383,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/verification/findings_index.json",
+      "bytes": 11807,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/verification/run_verify_chunked.py",
+      "bytes": 2089,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/verification/verify_rerun_2026-06-10_pass2.txt",
+      "bytes": 20047,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "legacy-explainer/verification/verify_run_2026-06-10_summary.txt",
+      "bytes": 20216,
+      "classification": "legacy-explainer"
+    },
+    {
+      "file": "moves.json",
+      "bytes": 14392,
+      "classification": "moves.json"
+    },
+    {
+      "file": "previews/0.2/review-02-contents.gif",
+      "bytes": 51908,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-contents.png",
+      "bytes": 102939,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-episode.gif",
+      "bytes": 75530,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-episode.png",
+      "bytes": 130171,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-lifecycle.gif",
+      "bytes": 86331,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-lifecycle.png",
+      "bytes": 137908,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-mobile.gif",
+      "bytes": 37451,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-mobile.png",
+      "bytes": 61731,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-objects.gif",
+      "bytes": 69109,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.2/review-02-objects.png",
+      "bytes": 115823,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-contents.gif",
+      "bytes": 108787,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-contents.png",
+      "bytes": 190621,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-episode.gif",
+      "bytes": 100656,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-episode.png",
+      "bytes": 162472,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-mobile.gif",
+      "bytes": 36752,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-mobile.png",
+      "bytes": 62639,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-objects.gif",
+      "bytes": 84604,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-objects.png",
+      "bytes": 133987,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-sources.gif",
+      "bytes": 116649,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.3/review-03-sources.png",
+      "bytes": 185974,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/binding-mobile-verified.gif",
+      "bytes": 42300,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/binding-mobile-verified.png",
+      "bytes": 61712,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/binding-review.gif",
+      "bytes": 134997,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/binding-review.png",
+      "bytes": 209744,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/boerum-mobile-verified.gif",
+      "bytes": 82225,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/boerum-mobile-verified.png",
+      "bytes": 162729,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/boerum-reader-review.gif",
+      "bytes": 237591,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/boerum-reader-review.png",
+      "bytes": 479665,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/boerum-reader-verified.gif",
+      "bytes": 234313,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/boerum-reader-verified.png",
+      "bytes": 479587,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/office-research-review.gif",
+      "bytes": 562101,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.5/office-research-review.png",
+      "bytes": 1165304,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-discoveries-verified.gif",
+      "bytes": 445322,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-discoveries-verified.png",
+      "bytes": 983979,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-final-review.gif",
+      "bytes": 155572,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-final-review.png",
+      "bytes": 263788,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-first-review.gif",
+      "bytes": 124652,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-first-review.png",
+      "bytes": 189900,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-first-world.gif",
+      "bytes": 64139,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-first-world.png",
+      "bytes": 94387,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-mobile-verified.gif",
+      "bytes": 71368,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-mobile-verified.png",
+      "bytes": 122196,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-object-review.gif",
+      "bytes": 155426,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.6/park-object-review.png",
+      "bytes": 259640,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-carbon-0.7.gif",
+      "bytes": 106090,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-carbon-0.7.png",
+      "bytes": 151607,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-final-0.7.gif",
+      "bytes": 106212,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-final-0.7.png",
+      "bytes": 151786,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-first-0.7.gif",
+      "bytes": 104398,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-first-0.7.png",
+      "bytes": 151039,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-in-park-0.7.gif",
+      "bytes": 153265,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-in-park-0.7.png",
+      "bytes": 225412,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-mobile-0.7.gif",
+      "bytes": 35059,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-mobile-0.7.png",
+      "bytes": 40493,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-mobile-final-0.7.gif",
+      "bytes": 42840,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-mobile-final-0.7.png",
+      "bytes": 53140,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-tax-0.7.gif",
+      "bytes": 98063,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/material-tax-0.7.png",
+      "bytes": 138030,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-desktop.gif",
+      "bytes": 72340,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-desktop.png",
+      "bytes": 89063,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-fedora.gif",
+      "bytes": 38540,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-fedora.png",
+      "bytes": 42718,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-final.gif",
+      "bytes": 80621,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-final.png",
+      "bytes": 93741,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-mobile-final.gif",
+      "bytes": 22053,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-mobile-final.png",
+      "bytes": 29256,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-mobile.gif",
+      "bytes": 18927,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.7/sprite-catalogue-mobile.png",
+      "bytes": 28352,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-L-01.gif",
+      "bytes": 5401,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-L-01.png",
+      "bytes": 4546,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-L-06.gif",
+      "bytes": 2744,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-L-06.png",
+      "bytes": 3131,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-L-07.gif",
+      "bytes": 5418,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-L-07.png",
+      "bytes": 4739,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-architecture-proof.gif",
+      "bytes": 213080,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-architecture-proof.png",
+      "bytes": 124356,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-architecture-scene.gif",
+      "bytes": 191316,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-architecture-scene.png",
+      "bytes": 155388,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-campus.gif",
+      "bytes": 95675,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-campus.png",
+      "bytes": 76442,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-catalogue-browser.gif",
+      "bytes": 98997,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-catalogue-browser.png",
+      "bytes": 89719,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-landmarks-proof.gif",
+      "bytes": 44037,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-landmarks-proof.png",
+      "bytes": 47753,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-mobile.gif",
+      "bytes": 27377,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-mobile.png",
+      "bytes": 31250,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-park-browser.gif",
+      "bytes": 170327,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-park-browser.png",
+      "bytes": 208339,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-proof.gif",
+      "bytes": 267651,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-proof.png",
+      "bytes": 211528,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-supernova-proof.gif",
+      "bytes": 22194,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.8/refinement-supernova-proof.png",
+      "bytes": 17995,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-final-overview.gif",
+      "bytes": 95479,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-final-overview.png",
+      "bytes": 131752,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-interface-04.gif",
+      "bytes": 115750,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-interface-04.png",
+      "bytes": 180641,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-kit-04.gif",
+      "bytes": 90702,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-kit-04.png",
+      "bytes": 128768,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-kit-final.gif",
+      "bytes": 90711,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-kit-final.png",
+      "bytes": 128029,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-material-verified.gif",
+      "bytes": 103272,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-material-verified.png",
+      "bytes": 149810,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-mobile-final.gif",
+      "bytes": 31109,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-mobile-final.png",
+      "bytes": 41796,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-mobile-verified.gif",
+      "bytes": 35179,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-mobile-verified.png",
+      "bytes": 45716,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-pixel-first.gif",
+      "bytes": 66990,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-pixel-first.png",
+      "bytes": 49822,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-record-04.gif",
+      "bytes": 104244,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-record-04.png",
+      "bytes": 164901,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-refined-04.gif",
+      "bytes": 95479,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-refined-04.png",
+      "bytes": 131752,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-review-04.gif",
+      "bytes": 103306,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/art-review-04.png",
+      "bytes": 143186,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/map-reference.gif",
+      "bytes": 283959,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/map-reference.png",
+      "bytes": 485641,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-compare.gif",
+      "bytes": 82666,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-compare.png",
+      "bytes": 122642,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-desktop.gif",
+      "bytes": 97557,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-desktop.png",
+      "bytes": 153204,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-final.gif",
+      "bytes": 83962,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-final.png",
+      "bytes": 133717,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-mobile.gif",
+      "bytes": 43128,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-mobile.png",
+      "bytes": 74055,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-payment.gif",
+      "bytes": 83256,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/review-payment.png",
+      "bytes": 123120,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/riso-reference.gif",
+      "bytes": 299217,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/riso-reference.png",
+      "bytes": 604687,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/source-limits-47.gif",
+      "bytes": 89780,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/source-limits-47.png",
+      "bytes": 154659,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/source-limits-48.gif",
+      "bytes": 230047,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/source-limits-48.png",
+      "bytes": 475149,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/source-page-04.gif",
+      "bytes": 255398,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/source-page-04.png",
+      "bytes": 503213,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/source-page-05.gif",
+      "bytes": 394626,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/unversioned/source-page-05.png",
+      "bytes": 751331,
+      "classification": "previews"
+    },
+    {
+      "file": "quarantine/0.8/sprite-render-input.json",
+      "bytes": 279,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/dizzyland/default.ds",
+      "bytes": 6957,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/dizzyland/default.map",
+      "bytes": 16754,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/dizzyland.txt",
+      "bytes": 294,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/patches/dizzyland/FLOORS.FSH",
+      "bytes": 420642,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/patches/dizzyland/ITEM.FSH",
+      "bytes": 1097792,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/patches/dizzyland/ITEM.Fbj",
+      "bytes": 373,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/patches/dizzyland/WALL.FSH",
+      "bytes": 260710,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/patches/dizzyland/s1.wav",
+      "bytes": 60376,
+      "classification": "quarantine"
+    },
+    {
+      "file": "quarantine/third-party-mod/patches/dizzyland/s2.wav",
+      "bytes": 37148,
+      "classification": "quarantine"
+    },
+    {
+      "file": "reference-framework/framework.html.txt",
+      "bytes": 1045,
+      "classification": "reference-framework"
+    },
+    {
+      "file": "reference-framework/framework.md",
+      "bytes": 708,
+      "classification": "reference-framework"
+    },
+    {
+      "file": "reference-framework/record.json",
+      "bytes": 4102,
+      "classification": "reference-framework"
+    },
+    {
+      "file": "superseded-art/afterhours-scene.svg",
+      "bytes": 13475,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/afterhours-study.gif",
+      "bytes": 67556,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/afterhours-study.png",
+      "bytes": 87680,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/campus-scene.svg",
+      "bytes": 13317,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/campus-study.gif",
+      "bytes": 66256,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/campus-study.png",
+      "bytes": 87246,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/production-scene.svg",
+      "bytes": 13454,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/production-study.gif",
+      "bytes": 90572,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/production-study.png",
+      "bytes": 147860,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-art/tiles.html.txt",
+      "bytes": 50790,
+      "classification": "superseded-art"
+    },
+    {
+      "file": "superseded-fonts/IBMPlexSans-Bold.ttf",
+      "bytes": 175712,
+      "classification": "superseded-fonts"
+    },
+    {
+      "file": "superseded-fonts/IBMPlexSans-Medium.ttf",
+      "bytes": 177104,
+      "classification": "superseded-fonts"
+    },
+    {
+      "file": "superseded-fonts/IBMPlexSans-Regular.ttf",
+      "bytes": 175748,
+      "classification": "superseded-fonts"
+    },
+    {
+      "file": "versions/0.1/GDD-0.1.md",
+      "bytes": 41337,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.1/build-review-0.1.mjs",
+      "bytes": 35321,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.1/design-review-0.1.html.txt",
+      "bytes": 294702,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.1/evidence-map-0.1.md",
+      "bytes": 24713,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.3/GDD-0.3.md",
+      "bytes": 29301,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.3/visual-craft-0.3.md",
+      "bytes": 29360,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.4/GDD-0.4.md",
+      "bytes": 30155,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.5/GDD-0.5.md",
+      "bytes": 31473,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.5/art-figures.mjs",
+      "bytes": 12900,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.5/art-system.js",
+      "bytes": 7371,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.5/pixel-kit.js",
+      "bytes": 15285,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.6/GDD-0.6.md",
+      "bytes": 32459,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.6/art-figures.mjs",
+      "bytes": 13870,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.6/art-system.js",
+      "bytes": 11495,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.7/office-pixel-study.js",
+      "bytes": 21727,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.7/park-kit.js",
+      "bytes": 22245,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.7/pixel-kit.js",
+      "bytes": 15423,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.7/sprite-registry.cjs",
+      "bytes": 6464,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/GDD.md",
+      "bytes": 36236,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/binding/episode-01-draft.md",
+      "bytes": 16390,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/binding/episode-01.bindings.json",
+      "bytes": 20324,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/binding/native-inventory.md",
+      "bytes": 16076,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/evidence-map.md",
+      "bytes": 26896,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/research/campus-discoveries.md",
+      "bytes": 18430,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/research/office-art-research.md",
+      "bytes": 16081,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/research/park-logic-review.md",
+      "bytes": 9745,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/research/sprite-refinement-0.8.md",
+      "bytes": 3946,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/research/systems.md",
+      "bytes": 25814,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/research/ux.md",
+      "bytes": 22400,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/art-figures.mjs",
+      "bytes": 13278,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/binding-figures.mjs",
+      "bytes": 2673,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/build-review.mjs",
+      "bytes": 11719,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/document-materials.mjs",
+      "bytes": 9242,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/export-art.mjs",
+      "bytes": 205,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/figures.mjs",
+      "bytes": 15039,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/office-figures.mjs",
+      "bytes": 7143,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/park-figures.mjs",
+      "bytes": 2934,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/review.css",
+      "bytes": 40808,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.8/working/review.js",
+      "bytes": 8443,
+      "classification": "versions"
+    }
+  ]
+}

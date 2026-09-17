@@ -1,0 +1,30 @@
+{
+  "revision": "0.3",
+  "title": "Mad Money Tycoon",
+  "font": "Geist + Geist Mono, bundled locally",
+  "document_layout": "context column beside figures and specification",
+  "source_preview_pages": [
+    1,
+    34,
+    45
+  ],
+  "source_page_fragments_verified": true,
+  "cross_reference_return_scroll_verified": true,
+  "local_file_links_missing": [],
+  "duplicate_html_ids": [],
+  "broken_section_anchors": [],
+  "mobile": {
+    "width": 390,
+    "chapters_checked": 11,
+    "horizontal_page_overflow": false
+  },
+  "desktop": {
+    "width": 1512,
+    "horizontal_page_overflow": false
+  },
+  "retained_evidence": {
+    "issues": 14,
+    "techniques": 48
+  },
+  "scope": "Presentation and navigation checks; not verification of underlying case exhibits."
+}

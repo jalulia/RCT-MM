@@ -1,0 +1,38 @@
+[
+  {
+    "file": "receipt-type.png",
+    "source": "User-supplied screenshot, September 16 2026",
+    "original": "supplied-reference/codex-clipboard-398b7d49-4ba2-4ebe-8829-4bc811016b8d.png",
+    "sha256": "b4ade5612679c46b1f85c76393718aee663dffad91e9d9e2198ca23bf48f099f",
+    "use": "Research reference only; not a licensed game asset."
+  },
+  {
+    "file": "ascii-files.png",
+    "source": "User-supplied screenshot, September 16 2026",
+    "original": "supplied-reference/codex-clipboard-01dec811-0e72-48eb-ade5-fc7052ba4fed.png",
+    "sha256": "e33140d65625d95ef2be60e9f43e3e08999e8c08fbb86ebe16e3b35a242bee2a",
+    "use": "Research reference only; not a licensed game asset."
+  },
+  {
+    "file": "workstation.png",
+    "source": "User-supplied screenshot, September 16 2026",
+    "original": "supplied-reference/codex-clipboard-c0e97926-b807-4d24-8005-334cb07f37eb.png",
+    "sha256": "cc87f977da1f2305037e689a76b6d8afef6368977155adae9692b368af478081",
+    "use": "Research reference only; not a licensed game asset."
+  },
+  {
+    "file": "form-type.png",
+    "source": "User-supplied screenshot, September 16 2026",
+    "original": "supplied-reference/codex-clipboard-1a4f6708-9024-4286-8fb4-a2e290d145fc.png",
+    "sha256": "305399560f89ee0e61d294a3de8d7fe79dabae5593a1b48f58e2125dfc7931f6",
+    "use": "Research reference only; not a licensed game asset."
+  },
+  {
+    "file": "irs-941x-2024.pdf",
+    "source": "https://www.irs.gov/pub/irs-prior/f941x--2024.pdf",
+    "revision": "April 2024",
+    "use": "Blank official form, visual reference. No filing attached.",
+    "preview": "irs-941x-2024-page-1.png",
+    "sha256": "d3f933c9084e15ff8952421d405791f8889d59718522e5360df86b35c6544729"
+  }
+]
