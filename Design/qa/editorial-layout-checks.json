@@ -1,0 +1,182 @@
+{
+  "designRevision": "0.15",
+  "checks": [
+    "Inline workshop advances while visible",
+    "Local pause holds the canvas",
+    "Hidden chapter does not advance its scene",
+    "Reduced motion stops the inline scene",
+    "Seven chapter proposals and ten events retained without duplicate grids",
+    "Nine affected routes fit 1512px, 768px and 390px"
+  ],
+  "structure": {
+    "chapters": 7,
+    "events": 10,
+    "obsoleteGrids": 0,
+    "figures": 12
+  },
+  "widths": [
+    {
+      "width": 1512,
+      "route": "game/player-role",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 1512,
+      "route": "episode/session-path",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 1512,
+      "route": "objects/sites-and-companies",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 1512,
+      "route": "narrative",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 1512,
+      "route": "narrative/clocks-and-consequences",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 1512,
+      "route": "interface/document-vocabulary",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 1512,
+      "route": "art/implementation-scope",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 1512,
+      "route": "production/source-review",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 1512,
+      "route": "research-discoveries",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "game/player-role",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "episode/session-path",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "objects/sites-and-companies",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "narrative",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "narrative/clocks-and-consequences",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "interface/document-vocabulary",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "art/implementation-scope",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "production/source-review",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "route": "research-discoveries",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "game/player-role",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "episode/session-path",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "objects/sites-and-companies",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "narrative",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "narrative/clocks-and-consequences",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "interface/document-vocabulary",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "art/implementation-scope",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "production/source-review",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "route": "research-discoveries",
+      "overflow": false,
+      "broken": []
+    }
+  ],
+  "passed": true
+}

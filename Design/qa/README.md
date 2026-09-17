@@ -1,12 +1,13 @@
 # Current verification
 
-Design 0.14 / art 0.10. The reader, playable episode, art hero, truck route, catalogue and download libraries are checked together. Prior specifications and review captures are retained in the archive.
+Design 0.15 / art 0.10. The reader, playable episode, art hero, truck route, catalogue and download libraries are checked together. Prior specifications and review captures are retained in the archive.
 
 | Record | Scope |
 |---|---|
 | `release-checks.json` | Authored/published links, shared phase records, versions, source hashes, catalogue counts, episode capture provenance and every sprite ZIP member |
 | `episode-engine-checks.json` | Both ordinary plans, placement timing, staffing conflict, returned cash, permission, one reissue, substitute obligations, valid pooling and exact replay |
 | `episode-browser-checks.json` | Visible-control playthroughs, available documents, pause/return, five views for both selections, export/reload, file URL, mobile width and keyboard focus |
+| `editorial-layout-checks.json` | 27 route/width checks at 1512, 768 and 390px; inline-scene play, pause, offscreen suspension and reduced motion; narrative sequence completeness |
 | `reader-browser-checks.json` | 38 reader route/viewport checks; image loading, overflow and art-hero pause/reduced motion |
 | `component-library-checks.json` | Register coverage, visible motion, pause/reduced motion, old bookmarks, mobile layout and isolated GIF download |
 | `library-browser-checks.json` | Preview, archive and catalogue at desktop/mobile widths |
@@ -24,6 +25,8 @@ Design 0.14 / art 0.10. The reader, playable episode, art hero, truck route, cat
 Run `npm run build:art`, `npm run build`, then `npm run check`. A shared renderer change requires rebuilding PNGs, GIFs, atlas manifests and the sprite ZIP. The GDD phase table generates the reader’s production diagram.
 
 For fresh episode captures, serve the repository on port 8769, install Chromium with `npx playwright install chromium`, and run `npm run capture:episode`. Set `MMT_PREVIEW_URL` to a different episode URL if needed. `MMT_CHROMIUM` accepts a compatible local executable. The capture script operates the visible controls, exports the runs and produces five sequences, nine stills and three diagrams. Python/Pillow encodes GIFs and checks decoded size/timing. The Node capture tools require the declared Playwright development dependency.
+
+Run `npm run capture:reading` after changing the small inline-scene renderer. It regenerates the two eight-second loops and their source manifest, then rebuilds the library. These illustrations do not advance the episode model.
 
 Run `npm run check:browser` against the same server for reader/library checks. `MMT_SITE_URL` can point to another Design directory URL. Browser screenshots live here; published, captioned previews live in the preview library.
 

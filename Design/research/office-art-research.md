@@ -1,6 +1,6 @@
 # Office architecture: source study and sprite translation
 
-Research checked against design 0.14 / art 0.10, 17 September 2026. The accepted pixel system now includes office-derived architectural shells, cutaways and furnishings. This brief records their source basis and remaining spatial tests. The companion Porter and Boerum studies are architectural studies; the catalogue and assembled park show the current reusable assets.
+Research checked against design 0.15 / art 0.10, 17 September 2026. The accepted pixel system now includes office-derived architectural shells, cutaways and furnishings. This brief records their source basis and remaining spatial tests. The companion Porter and Boerum studies are architectural studies; the catalogue and assembled park show the current reusable assets.
 
 ## Architectural direction
 
@@ -38,10 +38,10 @@ The four inspected photographs establish shell, internal construction, occupatio
 
 | Image and exact local path | What is visibly present | Annotation for the board | Credit/provenance |
 |---|---|---|---|
-| [65 Porter exterior](../assets/office-references/porter-exterior.jpg) | Broad charcoal wall; brick, ribbed block and stucco share one paint colour; tall dark-framed glazing; deeply recessed paired doors; shallow parapet lines; concrete pavement, hydrant and bollards. | **One colour, several materials.** Use masonry changes and window proportions to articulate a long industrial shell. | Matt Fry portfolio local copy, linked to live Porter project; same photograph appears on PSF’s project page. Photography: Zach Pontz per PSF project credit. |
-| [65 Porter working hall](../assets/office-references/porter-hall.jpg) | White exposed beams and ducts; raw pale timber volumes; orange doorway recess; white workstations with coloured uprights and screens; dense desk occupation; plants. | **A building inside a building.** The timber volumes remain distinct from the shell and stop below the industrial ceiling. | Matt Fry portfolio local copy; matching image on PSF project page. Photography: Zach Pontz. |
-| [65 Porter kitchen / gathering area](../assets/office-references/porter-gathering.jpg) | Very tall black glazing; white roof frame and skylights; coral/orange booth structures; pale tile dividers; blue table supports; broad planted seating edge; a white car beyond the railing. | **Colour belongs to constructed objects.** The booths, plant edge and window grid make a recognisable gathering place at small scale. | Matt Fry portfolio local copy; matching image on PSF project page. Photography: Zach Pontz. |
-| [266 Johnson mezzanine and central tree](../assets/office-references/johnson-mezzanine.jpg) | Orange metal stair and mezzanine rail; black-framed upper meeting room; exposed white roof; indoor tree below a skylight; long desks; a white Chrysler in the hall. | **One strong landmark beats ten decorative props.** Orange circulation, the tree and the long car identify this place before any label. | Matt Fry portfolio, 266 Johnson project. Photographer not stated on the inspected page. |
+| [65 Porter exterior](../assets/office-references/porter-exterior.jpg) | Broad charcoal wall; brick, ribbed block and stucco share one paint colour; tall dark-framed glazing; deeply recessed paired doors; shallow parapet lines; concrete pavement, hydrant and bollards. | **Painted masonry.** Use masonry changes and window proportions to articulate a long industrial shell. | Matt Fry portfolio local copy, linked to live Porter project; same photograph appears on PSF’s project page. Photography: Zach Pontz per PSF project credit. |
+| [65 Porter working hall](../assets/office-references/porter-hall.jpg) | White exposed beams and ducts; raw pale timber volumes; orange doorway recess; white workstations with coloured uprights and screens; dense desk occupation; plants. | **Interior rooms.** The timber volumes remain distinct from the shell and stop below the industrial ceiling. | Matt Fry portfolio local copy; matching image on PSF project page. Photography: Zach Pontz. |
+| [65 Porter kitchen / gathering area](../assets/office-references/porter-gathering.jpg) | Very tall black glazing; white roof frame and skylights; coral/orange booth structures; pale tile dividers; blue table supports; broad planted seating edge; a white car beyond the railing. | **Colour placement.** The booths, plant edge and window grid make a recognisable gathering place at small scale. | Matt Fry portfolio local copy; matching image on PSF project page. Photography: Zach Pontz. |
+| [266 Johnson mezzanine and central tree](../assets/office-references/johnson-mezzanine.jpg) | Orange metal stair and mezzanine rail; black-framed upper meeting room; exposed white roof; indoor tree below a skylight; long desks; a white Chrysler in the hall. | **Interior landmarks.** The orange stair, tree and long car distinguish Johnson at scene scale. | Matt Fry portfolio, 266 Johnson project. Photographer not stated on the inspected page. |
 
 Do not label any of these four as Boerum. Do not silently assign the Porter photography credit to Johnson.
 
@@ -61,7 +61,7 @@ These are proposed game translations, not measured reconstructions. Full footpri
 |---|---|---|
 | Industrial shell | A long, low-parapet masonry volume assembled from repeated bays. Vary bay widths and glass heights; use an inset entrance and a narrow dark shadow at the lintel. Make it materially substantial enough to support a tall internal hall. | Porter exterior. The exact roof shape behind the parapet is not established by the frontal photo. |
 | Roof family | Broad mineral-grey roof planes, parapet returns and low raised skylight units. Roof removal exposes the interior. Utility details remain grouped. | Skylights and exposed roof members are directly visible in both office sets. Skylight positions in the sprite are a compositional proposal. |
-| Window kit | Two tall industrial grids, one broad black meeting-room window and a glazed double entrance. A 1-pixel dark mullion, brighter outer reveal and restrained glass ramp will do more than a repeated flat blue square. | Porter exterior, Johnson mezzanine and Porter room-boxes. |
+| Window kit | Two tall industrial grids, one broad black meeting-room window and a glazed double entrance. Use a dark 1-pixel mullion, a brighter outer reveal and a short glass colour ramp. | Porter exterior, Johnson mezzanine and Porter room-boxes. |
 | Interior insert | Pale timber box with vertical battens, a black-framed window and a deeply coloured doorway recess. It sits below the shell roof, with a visible gap above. Make two lengths from the same bay. | Porter working hall and close view linked below. |
 | Vertical circulation | Thin orange stair stringers and guardrail, grey tread tops, dark gaps between risers. This can be a reusable stair/landing unit with a clear silhouette at normal zoom. | Johnson mezzanine. Preserve its orange material identity even if the operating department changes. |
 | Workstation | White slab with a warm ply edge, charcoal screen, coloured supports and a separate chair. Rows use repeated stations with sparse personal props. Storage/divider variations remain possible additions. | Porter working hall and Johnson desks. The current white-worktable component is M-01. |
@@ -81,7 +81,7 @@ The renderer uses material-specific ramps and additional face shading. These are
 - **Orange metal / coral upholstery:** metal `#8B372B`, `#D9512D`, `#F17A47`; upholstery may be softer but retains a separate shadow face. Keep this as a visible material, not the universal alert colour.
 - **Glass and painted metal accents:** subdued blue/green panes, near-black frames, limited teal and dusty pink furnishings. Deep green plants provide organic contrast against the white hall.
 
-Use colour in large, meaningful objects: rail, booth, inset, door, divider. Do not tint whole buildings by department. Saturation can approach RCT’s clarity without turning every facade into a sweet shop.
+Use colour in large, meaningful objects: rail, booth, inset, door, divider. Keep department colours off the building shell. Use stronger colour on recognisable rails, doors and furnishings.
 
 ## Next steps: spatial and recognition tests
 
@@ -91,7 +91,7 @@ Use these checks where they support the [P2 ordinary-work proof](#production/cur
 2. **Interior recognition:** compare each roof-on/off pair at the same camera and scale. Check that timber insert, workstations and Johnson’s mezzanine remain legible without their captions.
 3. **Handoff:** in Episode 01, check whether players can identify the ready component, staff allocation and difference between the near-dock and shared-floor bays.
 
-A close architectural crop is valuable only if the normal-size sprite carries the same identity. Johnson’s internal mezzanine and orange stair remain in the cutaway. L-05 is the Voila delivery truck beside Porter. Porter’s coral booth and timber insert retain their own sources. The [current building sheet](../assets/sprite-catalogue/sheets/buildings-overview.png) makes the three roof-on forms directly comparable; individual catalogue entries include their cutaways.
+Check the same identifying features at native size and enlarged. Johnson’s internal mezzanine and orange stair remain in the cutaway. L-05 is the Voila delivery truck beside Porter. Porter’s coral booth and timber insert retain their own sources. The [current building sheet](../assets/sprite-catalogue/sheets/buildings-overview.png) makes the three roof-on forms directly comparable; individual catalogue entries include their cutaways.
 
 ## Supporting inspected images and research record
 

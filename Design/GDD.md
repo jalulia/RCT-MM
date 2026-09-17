@@ -1,18 +1,20 @@
 # Mad Money Tycoon — game design document
 
-Revision 0.14 · 17 September 2026 · Design review edition
+Revision 0.15 · 17 September 2026 · Design review edition
 
 ## 01. Game
 
-Run an agency: arrange production, assign departments, commission suppliers and meet commitments. Conflicting records become part of play when they change a decision about the work.
+Plan production, assign staff, commission suppliers and deliver client work. Use payment records and approval histories to resolve delays.
 
 <!-- figure:game-in-context -->
 
 ### Player role
 
-The working proposal gives the player a fictional operations role with limited authority. They can make production plans, reserve capacity and request approvals. Historical scenes use fixed records and distinguish what the source reports from what has been independently checked.
+<!-- figure:margin-role -->
 
-The audience is provisionally curious adults familiar with management games, without accounting expertise. Desktop browser; mouse and keyboard; pauseable single-player sessions. Test a 12–15 minute episode before setting campaign length. Audience, player authority and distribution remain open.
+The player is a fictional operations coordinator. They can choose production plans, reserve capacity and request approvals. Historical comparisons identify the source claim, the records inspected and any unresolved links.
+
+The initial test audience is adults familiar with management games; accounting knowledge is optional. The prototype runs in a desktop browser with mouse, keyboard and pause controls. Test a 12–15 minute session before setting campaign length. The final audience, player permissions and game distribution are undecided.
 
 ### Two structures to test
 
@@ -24,13 +26,13 @@ The audience is provisionally curious adults familiar with management games, wit
 | Cannot change | The historical record | Past events or missing endpoints |
 | Main risk | The player assumes real people had the same freedom or information | The activity becomes filing rather than play |
 
-Test both with the same returned-payment episode and amount of source information. Look for voluntary experimentation and accurate explanation. The current preference is operating play with a linked historical reconstruction; it remains a testable choice.
+Compare both structures using the same payment conflict and source material. Observe whether players try another plan and can explain the result. Operating play with a historical comparison is the preferred proposal, pending that test.
 
 ### How the story enters play
 
 <!-- figure:chapter-lanes -->
 
-Every narrative chapter includes a short historical comparison. It identifies what transfers from practice, what the source says, and what remains unresolved. The deeper dossier is optional. A separate sandbox may omit the historical sequence.
+Each proposed chapter ends with a short comparison between the fictional scenario and the case records. It states which mechanism they share and where the evidence stops. Further source reading is optional. The standalone park builder has no historical sequence.
 
 ### Design decisions
 
@@ -43,13 +45,13 @@ Every narrative chapter includes a short historical comparison. It identifies wh
 | Preserve selection and period across views | Players need to compare the same object |
 | Keep historical and simulated outcomes distinct | A player's choices cannot create evidence |
 
-The first episode applies these rules to one workshop, two projects and a shared staff pool. Their clarity and interest still need the [uncoached ordinary-work test](#production/current-focus); automated playthroughs do not validate comprehension.
+Episode 01 applies these rules to one workshop, two projects and a shared staff pool. The [next playtest](#production/current-focus) checks whether players understand and enjoy the choices. Automated checks cover state transitions.
 
 Open decisions: audience; player authority; real-name representation; final building aesthetics; game distribution. This design review is prepared for public GitHub Pages; publication of the eventual game remains a separate decision.
 
 ## 02. First episode
 
-Campaign C-07 has a $100,000 budget ceiling and a Thursday handoff. Make its component in-house or commission supplier S-08 for $12,000. Staff time, bay placement and payment release affect delivery. The supplier route in the full episode introduces a returned payment; the in-house route avoids that obligation.
+Produce C-07’s component in-house or commission S-08. Staff allocation, bay placement and payment release determine the handoff date.
 
 All operating amounts, schedules, replies and permissions are invented. The historical comparison is read-only.
 
@@ -57,7 +59,7 @@ All operating amounts, schedules, replies and permissions are invented. The hist
 
 <!-- figure:episode-playable -->
 
-The complete fictional loop is playable: planning, half-day intervals, shared staffing, material purchases, supplier release, record inspection, trace requests, reissue authority, substitute production, revised handoff, a routine pooled payment and a final run receipt. Five views preserve the selected project and period. Save/reopen restores the current run; export retains its action history.
+The episode runs from planning to closeout in half-day intervals. It includes shared staffing, material purchases, supplier release, record requests, reissue approval, substitute production and a revised handoff. A routine pooled payment provides a comparison. Five views retain the selected project and period. Runs can be saved, reopened and exported with their action history.
 
 ### Scenario rules
 
@@ -77,7 +79,7 @@ The complete fictional loop is playable: planning, half-day intervals, shared st
 | Revised promise | Client accepts Friday PM after one interval; the original Thursday promise remains in the outcome |
 | Closeout | Earliest Friday PM, once both jobs finish; otherwise closes after interval 12 with unresolved work visible |
 
-The fixed P-04 records never change. P-05 and responsive messages are new simulation events, explicitly labelled as such. The exact executable values and transition rules are maintained in the [scenario model](episode-01/model.js).
+P-04 records are fixed. A reissue creates P-05; replies and approval messages are labelled simulation events. The [scenario model](episode-01/model.js) defines the executable values and transitions.
 
 <!-- figure:episode-branches -->
 
@@ -95,21 +97,20 @@ The episode’s **On the desk** tray exposes only records available at the curre
 
 The lifecycle diagram describes the fixed returned-payment fixture. A successful player-created P-05 is a separate later attempt; it does not fill a missing historical endpoint.
 
-Inspecting and comparing are navigation actions. The consequential choice is the changed commitment or plan they inform.
 
 ### Historical comparison
 
-Creative Peaks on CASE-01 p.34 remains the proposed historical anchor. The first binding pass has inspected BILL, bank-data and QBO export rows. A return-date conflict, a bank-direction conflict and an incorrect derived vendor join require explicit treatment. Historical play remains inactive while those links and an ordinary pooled-payment control are checked.
+The proposed historical comparison is Creative Peaks, CASE-01 p.34. Selected BILL, bank-data and QBO export rows have been inspected. The return date and bank direction conflict across sources; a derived vendor join is incorrect. Historical interaction remains disabled until the required links and an ordinary pooled-payment comparison are checked.
 
 <!-- figure:binding-status -->
 
 <!-- figure:source-comparison -->
 
-Ask the player to distinguish what their invented run changed from what the historical records establish. If this transition feels detached from the operating problem, revise it before expanding the campaign. See [source issues](evidence-map.md#issues-found-during-this-pass).
+Ask players what their run changed and what the historical records establish. Revise the comparison if they cannot connect it to the operating problem. See [source issues](evidence-map.md#issues-found-during-this-pass).
 
 ## 03. Objects & systems
 
-A project connects people, contracts, places and obligations. These are separate objects even when they share a building or illustration.
+Projects link contracts, people, sites and obligations. Each has its own identity, dates and relationships.
 
 ### Relationship model
 
@@ -136,13 +137,15 @@ A project connects people, contracts, places and obligations. These are separate
 | Record/version | Provenance, author/account, date, immutable source and prior versions | Receipt, message, audit event or comparison |
 | Claim | Exact proposition, scope, supporting/conflicting records, proof boundary and review state | Attributed finding or open question; many records may support one claim |
 
-Employment can be salaried, hourly or otherwise structured. Fixed recurring cost is an initial simulation approximation. Benefits create obligations; a repeat freelancer remains an external engagement unless the underlying relationship changes.
+Employment records include pay structure and benefits. The initial model approximates payroll as a recurring cost. Repeat freelance work remains an external engagement unless the relationship changes.
 
 Clients and suppliers may share animation assets but have different behavior. A client commissions work; a supplier provides it. Courier engagements attach to handoffs. Artist collaborations may include rights as well as production. A freelancer's tax form is a dated reporting artifact, with treatment dependent on the recipient, payment route and year; see [IRS 2024 instructions](https://www.irs.gov/pub/irs-prior/i1099mec--2024.pdf). It is not the character type.
 
 ### Sites and companies
 
-“Office Space” can be a build-menu category. Each site still needs an occupant, lessee or owner, dates, capacity, cost and narrative purpose. McKibbin, Boerum, 266 Johnson, Colorado, Porter and Hong Kong require those checks before becoming map locations.
+<!-- figure:margin-site -->
+
+The proposed “Office Space” menu groups sites. Before a site enters a historical scenario, establish its occupant, lessee or owner, dates, capacity, cost and relevance. This applies to McKibbin, Boerum, 266 Johnson, Colorado, Porter and Hong Kong. Architectural studies alone do not establish those facts.
 
 An affiliated company such as Starfish is an entity with contracts, accounts and obligations. It may share a site or remain off-map. Place a site only when location, capacity, access or geography matters; otherwise show an address in the inspector.
 
@@ -150,9 +153,11 @@ An affiliated company such as Starfish is an entity with contracts, accounts and
 
 <!-- figure:operating-loop -->
 
+<!-- figure:margin-handoff -->
+
 Accepting scope reserves future time. A specialist may reduce production time but require a deposit and advance notice. Internal production competes for shared staff and facilities. Acceptance may unlock a contractual milestone; it does not settle an invoice.
 
-Supported routine transactions are handled in batches. Inquiry starts with a conflict that affects a commitment or historical question: inspect → compare → request a useful record → narrow the explanation → adjust the plan.
+Process routine transactions in batches. When a conflict affects delivery, compare the records, request missing information and adjust the plan.
 
 ### Economy
 
@@ -162,15 +167,15 @@ Supported routine transactions are handled in batches. Inquiry starts with a con
 | Contracts | Choose eligible scope/production plan, seek approval | Rights and obligations change | Budget ceiling is not a cash receipt |
 | Treasury | Schedule authorized payments and contingency | Reservations, posted bank movement and final settlement affect different liquidity measures | Posted cash, committed funds, usable liquidity, credit and revenue remain separate |
 | People | Allocate work, add slack, commission help | Availability and service continuity change | No invented emotional diagnosis of real people |
-| Suppliers | Commit service, approve milestones, check delivery | Payables and production dependencies | Real invoice does not close payment endpoint |
-| Payment lifecycle | Inspect attempts, returns, reissues, confirmation | An obligation may remain unresolved | Paid is not a universal settlement truth |
-| Reporting | Compare eligible views and periods | Same work can have different representations | A noncash reclassification cannot refill a bank |
-| Control | Inspect/request specific permissions | A supported action becomes available or remains blocked | Ownership and seniority do not grant root access |
+| Suppliers | Commit service, approve milestones, check delivery | Payables and production dependencies | An invoice establishes the obligation; recipient settlement still needs evidence |
+| Payment lifecycle | Inspect attempts, returns, reissues, confirmation | An obligation may remain unresolved | A Paid label requires a dated record and separate settlement evidence |
+| Reporting | Compare eligible views and periods | Same work can have different representations | A noncash reclassification does not change the bank balance |
+| Control | Inspect/request specific permissions | A supported action becomes available or remains blocked | Ownership and seniority do not grant system access |
 | Records | Preserve versions, compare sources, bind claims | Better explanation and retained lineage | Missing records do not become adverse facts by default |
 
-The first operating proof uses one cash balance, one shared production capacity, one site and supplier S-08. Expand to the five departments after that tradeoff works. Add a credit facility, currencies or legal entities when the test needs them. Hong Kong data requires explicit HKD/USD fields and sourced conversion rules.
+Episode 01 uses one cash balance, one shared staff pool, one site and supplier S-08. Test these choices before adding five departments, credit, currencies or more entities. Hong Kong records require explicit HKD/USD fields and sourced conversion rules.
 
-Compute money in integer minor units. Preserve original source precision and record display rounding separately. Aggregate by stated population and economic episode; a platform object and its bank member cannot become two expenses.
+Store money in integer minor units. Preserve source precision and record any display rounding. Totals must identify their population and economic episode; exclude duplicate representations of the same expense.
 
 ### Customization and outcomes
 
@@ -182,60 +187,80 @@ Allow pause, planning undo, branching and replay. After running an interval, sho
 
 ## 04. Narrative
 
-Order the campaign by what the player needs to understand. Keep the full chronology available in the record view.
+Introduce production first, then permissions, reporting and payment. Keep the case chronology available in the record view.
 
 ### The episode in play
 
-<!-- figure:episode-storyboard -->
+<!-- figure:story-work -->
 
-The implemented episode compresses work, authority and payment into one test. It does not lock the longer campaign order below. Its screenshots and GIFs record the running simulation; the chapter proposals remain unbuilt.
+Episode 01 begins with a production choice. Making C-07 in-house uses shared staff; commissioning S-08 costs $12,000 and makes delivery depend on supplier release. The competing display job needs three work units by Tuesday PM.
 
-<!-- figure:narrative-sequence -->
+The supplier route then introduces a returned payment. The player can request records, seek reissue approval, make a substitute or revise the handoff. These choices change the fictional run. The historical comparison is read-only.
+
+[Play the episode](episode-01/index.html) or [watch the supplier run](previews/episode/supplier-run.gif). The longer campaign below is proposed.
 
 ### Chapter sequence
+
+<!-- layout:campaign -->
 
 | Chapter proposal | First experience | New distinction | Historical anchor in CASE-01 | Requires before script lock |
 |---|---|---|---|---|
 | 1. The work | Deliver a small production using staff and a supplier | Work / cost / fee / receipt | pp.1–6, 56 | One complete contract/job chain |
 | 2. The desk | Responsibility without the permission to finish a task | Role / access / authority | pp.10–16 | Dated access and correspondence exhibits |
-| 3. The report | A busy campus has two different financial portraits | Activity / presentation | pp.17–22 | Native workbooks and audience versions |
-| 4. The payment | A label and cash lifecycle disagree | Obligation / attempt / settlement | pp.28–29, 33–34 | Adverse chain plus legitimate controls |
-| 5. The other company | Cash travels while a debt stays | Entity / site / benefit / burden | pp.23–27, 48–49 | Corrected property/affiliate source manifest |
+| 3. The report | Compare two financial reports for the same operating activity | Activity / presentation | pp.17–22 | Native workbooks and audience versions |
+| 4. The payment | Compare the saved payment label with dated bank events | Obligation / attempt / settlement | pp.28–29, 33–34 | Adverse chain plus legitimate controls |
+| 5. The other company | Trace a transfer between entities while tracking the original obligation | Entity / site / benefit / burden | pp.23–27, 48–49 | Corrected property/affiliate source manifest |
 | 6. The handover | New ownership, incomplete control, changed records | Ownership / administration / version | pp.29–38 | Settlement, platform and migration records |
-| 7. After closing | The world stops producing; documents continue changing | Operational time / record time | pp.39–40 | Bounded audit windows and account attribution |
+| 7. After closing | Production stops; later records may revise the account | Operational time / record time | pp.39–40 | Bounded audit windows and account attribution |
 
-Each chapter begins with a normal case, allows a plan, introduces pressure, offers competing readings and resolves only what the records support. Documents enter when they help answer the current question.
+<!-- /layout:campaign -->
+
+Start each chapter with routine work. Let the player make a plan before introducing a delay or record conflict. Make the relevant documents available at that point; keep unresolved findings visible at closeout.
 
 ### Events
 
+<!-- layout:events -->
+
 | Event | Decision or record interaction | Consequence and narrative purpose |
 |---|---|---|
-| A commission exceeds the current workshop | Internal overtime/slack versus external specialist versus phased delivery | Establishes the attraction of growth and the cost of commitments |
+| A commission exceeds the current workshop | Internal overtime/slack versus external specialist versus phased delivery | Introduces the cost and capacity commitments of accepting work |
 | Client approval arrives after a reserved slot | Hold capacity, swap sequence, or release it | Makes contract time and production time diverge |
 | A real bill enters a pooled payment | Inspect batch membership or let supported routine processing proceed | Teaches a normal state before an exception |
 | A bank return arrives beside a saved Paid snapshot | Establish which attempt returned, then protect delivery | Distinguishes a saved record from a later status observation |
-| Two transfers share amount and date | Compare native identities and banks | Defeats the tempting but invalid matching shortcut |
+| Two transfers share amount and date | Compare native identities and banks | Requires an identifier match before joining the transfers |
 | An off-map affiliate requests liquidity | Compare authorization, return terms and remaining commitments | Distinguishes gross deployment from retained benefit |
-| A report preserves profit but changes scale | Pin operating activity beside two reports | Makes representation consequential and inspectable |
-| The owner cannot administer the software | Follow dated permission grants | Reveals the distance between ownership and control |
-| Migration keeps money fields and loses job identity | Restore or mark lineage using documented links | A puzzle about history, not “missing money” animation |
-| Business closes but an account edits a bill | Compare operation date with edit date | Ends the productive world without inventing an evidentiary ending |
+| A report changes gross amounts while preserving profit | Pin operating activity beside two reports | Shows how a saved record affects a later decision |
+| The owner cannot administer the software | Follow dated permission grants | Separates ownership from system permissions |
+| Migration keeps money fields and loses job identity | Restore or mark lineage using documented links | Tests record lineage without implying a cash loss |
+| Business closes but an account edits a bill | Compare operation date with edit date | Separates business closure from later account activity |
 
-These are proposed decisions and record interactions. Compare, pin and follow do not count as consequential gameplay by themselves. In an operating scenario they must inform a commitment; in reconstruction they must help discriminate between explanations.
+<!-- /layout:events -->
 
-Relief, tax and employee-benefit episodes are deferred modules. Their historical rules, populations and source claims require specialist review before gameplay design.
+These events are proposals. In an operating scenario, record inspection must inform a production or payment decision. In reconstruction, it must help distinguish competing explanations.
+
+Relief, tax and employee-benefit episodes are deferred until specialist review establishes their rules, populations and source claims.
 
 ### Clocks and consequences
 
+<!-- figure:story-record -->
+
+Tuesday’s saved v2 says **Paid**. Wednesday’s bank event records an equal return. The earlier copy stays available, but it cannot establish the platform’s status on Wednesday. The player needs a later observation to answer that question.
+
 <!-- figure:episode-clocks -->
 
-<!-- figure:episode-cash -->
+<!-- figure:story-obligation -->
+
+A substitute can complete the job while O-19 remains open. In the captured substitute run, $26,500 remains in posted cash; $12,000 is reserved for O-19, leaving $14,500 available. The $100,000 budget ceiling and $24,000 client invoice are separate measures.
+
+[Inspect the cash diagram](previews/episode/cash-boundaries.svg) or [open the captured outcome](previews/episode/substitute-outcome.png).
 
 ### Characters and voice
 
-Use fictional roles with practical constraints: a producer coordinating dependencies; an account lead protecting a promise; a freelancer awaiting confirmation; an operations coordinator finding capacity; a finance approver with a specific permission; a client contact authorized to approve scope. One person can occupy several roles.
+<!-- figure:margin-people -->
 
-Historical representation follows documented roles and actions. Motives and dialogue require sources. Rogers's authority problem must not become an invented suspicion motive, and named account activity must not become authenticated human action. The [cast register](evidence-map.md#cast-organizations-and-authority-over-time) preserves those distinctions.
+Use fictional roles with specific responsibilities. Producers coordinate dependencies; account leads manage client commitments; freelancers wait for release or payment confirmation. Operations allocates capacity, finance approves payments, and the client contact approves scope. One person may hold several roles.
+
+Historical characters use documented roles and actions. Source any dialogue or claim about motive. Rogers’s limited authority does not establish suspicion or intent. Platform activity identifies an account unless separate evidence identifies its operator. See the [cast register](evidence-map.md#cast-organizations-and-authority-over-time).
 
 Dry humor can come from fictional workplace friction. Avoid jokes at the expense of unpaid people and invented quotations from source subjects.
 
@@ -243,7 +268,7 @@ Dry humor can come from fictional workplace friction. Avoid jokes at the expense
 
 ## 05. Interface
 
-Keep the world, selected object and active question in view. Documents open alongside the context that made them useful.
+Retain the selected object, date and view when opening a document. Return to the same state when reading ends.
 
 ### Five views
 
@@ -263,11 +288,15 @@ Rights and obligations stay in the inspector across views. Preserve the selected
 
 <!-- figure:desk-layouts -->
 
-The episode implements one active document, its reading context and an exact return to the selected project/view. Its saved v1/v2 records have direct version switches. Side-by-side pinning remains a proposed extension; the separate art material study demonstrates comparison. Reading pauses the schedule. A full window manager is outside this prototype.
+Episode 01 opens one document at a time and pauses the schedule while reading. Version controls switch between saved v1/v2 records. Closing the document restores the selected project and view. Side-by-side pinning is demonstrated in the material study but is not implemented in the episode.
 
 ### Document vocabulary
 
-The [interactive material study](#art/interface-materials) develops the invoice, saved record, bank-event strip, form reader, player note and record index as distinct objects. The art explorer retains its separate **Practice documents** tray. The playable episode uses an **On the desk** tray with records gated by the simulated date; its bank strips and carbon sheets draw on the same vocabulary. White invoice stock carries obligations; pink carbon stock carries a version; the narrow strip carries dated events. Shape and printed labels carry the distinction as well as colour.
+<!-- figure:margin-materials -->
+
+Invoices show obligations. Pink carbon copies show saved platform versions. Narrow bank strips list dated movements. Printed labels and shape distinguish the records as well as colour. The [material study](#art/interface-materials) also includes a form reader, player note and record index.
+
+The art explorer opens these specimens through **Practice documents**. Episode 01 uses **On the desk**, which lists only records available at the current simulated date.
 
 ### Payment workbench
 
@@ -276,6 +305,8 @@ Use three aligned columns: obligation and terms; bank/processor lifecycle; platf
 See the [payment lifecycle](#episode/payment-states) and the [detailed interface research](research/ux.md) for the same interaction at different levels of detail.
 
 ### Quantities and evidence
+
+<!-- figure:margin-quantity -->
 
 Every quantitative display includes measure, unit, population, period and basis. Keep necessary qualifiers visible; put the exact source locator one step away. Distinguish zero, not applicable, unavailable, not supplied, not inspected and modeled.
 
@@ -287,7 +318,7 @@ Keyboard equivalents; visible focus; a nonspatial object list; independent text 
 
 ## 06. Art & sound
 
-One original pixel system, developed from components into a working scene. RCT supplies the scale and spatial logic; the agency supplies the buildings, work, records and people. The document keeps its own crisp typography.
+Isometric pixel art based on Madwell’s offices, with RCT-style scale and object controls. Buildings, props and people share one renderer. Interface text uses Geist and Geist Mono.
 
 ### Visual system
 
@@ -303,11 +334,13 @@ The animated cover is a separately composed 36-second scene: a foreground Chrysl
 
 <!-- figure:office-references -->
 
-The component system is accepted. The building forms, scene density and material palette remain in development. The current sites use Matt Fry’s documented office features; the earlier village architecture is archived. Place and department stay separate: Porter is a site, not an “Accounts building.”
+The component system is accepted; building forms, scene density and colours remain adjustable. The sites use office features documented in Matt Fry’s portfolio. Porter, Boerum and Johnson identify places; department assignments are separate.
 
 ### Boerum street study
 
 <!-- figure:boerum-study -->
+
+<!-- figure:margin-walk -->
 
 The anonymous fedora walker repeats six traversals: left, right, moonwalk left, right, left, moonwalk right. Each traversal takes 5.4 seconds, followed by a 0.6-second pause. Both Boerum views use the same cycle; reduced motion and the pause control still apply.
 
@@ -315,7 +348,7 @@ The anonymous fedora walker repeats six traversals: left, right, moonwalk left, 
 
 <!-- figure:office-study -->
 
-Richness comes from repeated facade bays, layered interiors, visible work and distinctive gathering places. The assembled scene combines a compact street edge with planted courts. Episode 01 tests a physical consequence: near-dock placement saves one handoff interval. The [current focus](#production/current-focus) is whether players understand that choice without coaching.
+Repeated facade bays, cutaway rooms and occupied workstations establish scale. The park combines these with planted courts. In Episode 01, placing production near the dock saves one handoff interval. The [next playtest](#production/current-focus) checks whether players notice and understand that effect.
 
 ### Office discoveries
 
@@ -325,13 +358,13 @@ Richness comes from repeated facade bays, layered interiors, visible work and di
 
 <!-- figure:art-scale -->
 
-The world is drawn on an integer pixel grid. Text, controls and source documents remain independent of it. A building needs a recognisable roof, entrance and working interior before it needs surface detail.
+Draw the world on an integer pixel grid. Render text and controls separately so they scale without enlarging the sprites. Check the roof, entrance and interior at native size before adding surface detail.
 
 ### Component kit
 
 <!-- figure:art-components -->
 
-The kit and catalogue read the same register: 44 objects, 136 atlas frames and eight categories. Motion previews use the scene renderer; frame sheets remain explicit records of poses and states. Open an object for its source notes, all variants and PNG/GIF downloads.
+The kit and catalogue share a register of 44 objects, 136 atlas frames and eight categories. Each entry links to its source notes, variants and downloads. Animated entries show an isolated loop; frame sheets show the saved poses.
 
 L-05 is the Voila bakery truck, associated with Porter. Its invented route includes a four-second loading stop and a 28-second circuit. PR-04 is the generic supplier van used in the fictional episode. Johnson’s orange stair remains inside B-03. These are separate components with separate uses.
 
@@ -343,17 +376,17 @@ L-05 is the Voila bakery truck, associated with Porter. Its invented route inclu
 
 <!-- figure:art-world -->
 
-Sites and scenery can be selected separately. A landmark opens its photograph and identifies the invented park behaviour. Courtyard choices change the visible installation. The Chrysler circuit and Voila delivery route each have a run/park control. **Play motion / Pause motion** controls the shared scenic clock. These are art-study interactions, not a working economy.
+Select a site or landmark to open its sprite, source photograph and interpretation. Courtyard controls switch installations. Each vehicle has run/park controls; **Play motion / Pause motion** controls the shared clock. These interactions change the art study only.
 
 Each building has visible **Exterior / Interior** previews. The inspector consistently shows the selected sprite, source photograph and park interpretation. The **Practice documents** tray opens C-07 independently of building selection and returns to the same park state. Work, Cash, Information, Control and People views operate in Episode 01 and have a separate [relationship study](#interface/five-views). Architectural browsing does not use those tabs.
 
-The arrangement combines architecture and objects from different sites and photographs. It is not a historical map or a claim that the event objects were permanent. The playable episode uses a smaller Johnson-derived practice workshop: near-dock placement saves one handoff interval. Test whether that consequence is legible before adding more attractions.
+The park combines sites and objects from different photographs in an invented arrangement. The photographs do not establish permanent installations. The [standalone park builder](../test/index.html) allows free placement of objects, people and event loops, with local saving and GIF export. It has fixed terrain and no pathfinding or economy. Episode 01 separately models production and handoff timing.
 
 ### Interface materials
 
 <!-- figure:art-material-system -->
 
-| Material | Information it carries | Interaction |
+| Material | Fields shown | Interaction |
 |---|---|---|
 | Ruled invoice | Supplier, obligation, amount and terms | Open the obligation; pin its related bank extract |
 | Carbon copy | Platform label, saved version, effective and recorded times | Switch v1/v2 without overwriting either snapshot |
@@ -362,9 +395,9 @@ The arrangement combines architecture and objects from different sites and photo
 | Ruled note | Player interpretation and linked record IDs | Edit a question; preserve it while switching documents |
 | File tabs and terminal index | Record identity and relationships | Change document while retaining the selected object |
 
-RCT’s object inspector remains the organising model: select, inspect, compare, return. One reader with one pinned comparison is enough for this proof. Documents have fixed reading positions; managing a pile of draggable windows is not the task.
+Use RCT’s object-inspector pattern: select an object, inspect its details and return to the map. The material study has one reader and one pinned comparison, both in fixed positions.
 
-The invoice and bank extract are not interchangeable receipts. A platform label stays inside its dated record. The source image, when bound, retains its original appearance in a separate viewer; themed summaries never replace native evidence.
+Keep each platform label with its dated record. An invoice states an obligation; a bank extract reports movements. When an original source is linked, open it unchanged in a separate viewer.
 
 Geist remains the navigation face. Geist Mono handles IDs, narrow records and tabular figures. Sprocket holes, perforations and dense dot patterns stay at the edge of the reading surface. No texture, random ink loss or simulated screen flicker crosses a number. Pink identifies a record copy, green identifies an active control; neither is a verdict.
 
@@ -380,9 +413,13 @@ The populated specimens use the fictional C-07 / O-19 / P-04 fixture. The versio
 | Separate practice-document desk with version and bank comparison | Introduce the payment exception after ordinary work is understandable |
 | PNG/GIF exports, atlases, anchors and orientation metadata | Gameplay, map cycle and UI captures published alongside the scenic exports |
 
-The [current focus](#production/current-focus) defines that proof. Art work follows demonstrated recognition or interaction problems in that test.
+<!-- figure:margin-components -->
 
-The art study demonstrates the visual system. Episode 01 reuses it for a running fictional economy at one-workshop scope. Neither establishes a complete animation set or an approved engine for the full campaign. The procedural drawings remain the current editable source.
+The worktable and shipping crate use the same anchors in the component kit, park and playable episode. An asset change should update all three.
+
+Prioritise art changes that address recognition or interaction problems found in the [playtest](#production/current-focus).
+
+Episode 01 reuses the renderer for one workshop and a fictional economy. Campaign engine selection and a full animation set are still open. Edit the procedural drawings to change the current assets.
 
 Sound is not implemented. A later pass should use footsteps, fabrication, paper handling and deliveries; reading and essential state changes must remain clear with sound off.
 
@@ -390,7 +427,7 @@ Source images and third-party game art stay in the reference board. Supplied PZ 
 
 ## 07. Build & test
 
-Next: test the ordinary scenario without coaching. The fictional episode is built; participant comprehension and structure comparison remain open. Source binding runs in parallel. Choose the campaign and engine after the relevant source and play tests.
+Test the ordinary scenario with six to eight participants, without coaching. Episode 01 is built; comprehension, session timing and campaign structure still need testing. Source verification continues separately.
 
 <!-- figure:current-deliverables -->
 
@@ -402,9 +439,9 @@ Next: test the ordinary scenario without coaching. The fictional episode is buil
 
 Run the ordinary scenario first with six to eight participants of varied game/accounting familiarity. Allow three minutes without coaching. Observe plan selection, bay recognition, staff reassignment and voluntary replay. Ask what changed delivery, what consumed cash, and what remains owed. Then offer the full supplier route and ask them to distinguish the saved Tuesday label from Wednesday’s return.
 
-Review the run receipts and observed mistakes before changing the model. If the choices are dull or the distinctions need explanation from the facilitator, revise P2. **Next implementation depends on those findings:** clearer spatial handoff cues, stronger competing-job feedback or a smaller record set. P3’s reconstruction alternative has not been built or compared.
+Review run receipts and observed mistakes before changing the model. Revise P2 if participants need coaching or do not want to try another plan. Findings will determine whether to clarify handoff locations, improve competing-job feedback or reduce the record set. The P3 reconstruction alternative is not yet built.
 
-The full fictional loop was implemented early to expose dependencies and produce test material. This does not pass P2/P3 or lock the campaign. A 12–15 minute reading-and-play session remains a target; the automated captures are condensed demonstrations, not measured participant sessions.
+The full fictional loop is available for testing, but P2 and P3 have not passed participant review. The 12–15 minute session length is a target. Captured demonstrations do not measure participant timing.
 
 **P1 · Source binding — parallel.** Retrieve the original return chain, establish the later observation of the same payment object and bind an ordinary control. Its [release gate](binding/episode-01-draft.md#8-readiness-decision) applies to the historical comparison; it does not block this fictional proof. Additional art studies enter the immediate work only when they solve a demonstrated recognition or interaction problem.
 
@@ -415,7 +452,7 @@ The full fictional loop was implemented early to expose dependencies and produce
 
 The episode uses a canvas scene with a DOM interface and a pure transition model. Cash uses integer cents. Save/reopen replays the action log in a versioned namespace; run export includes configuration, current state and outcome. This narrow prototype does not yet have arbitrary timeline branching, document pinning or a general simulation engine.
 
-An event has an economic identity and a representation identity. Returns reference an attempt; reissues reference an obligation; edits reference prior versions. Use typed, sourced many-to-many links for batch members, partial settlements, repeated attempts and multi-client records. Shared amount/date or journal context does not establish identity. Do not invent fractional client allocations for unsplit objects.
+Separate economic events from their recorded representations. Link returns to payment attempts, reissues to obligations and edits to prior versions. Batch members, partial settlements and repeated attempts require typed links with source locators. Amount, date or journal context alone cannot establish identity. Preserve unsplit amounts until a source supports allocation.
 
 Keep effective time and recorded time. A source correction visibly invalidates dependent narrative and figures. Saves include scenario version, source/data version, seed, decisions, pins, layout and view state. Fictional parameters never write to historical data. Exports state their population and basis.
 
@@ -425,11 +462,13 @@ Separate art packs, fictional scenarios and versioned source/document packs. A m
 
 ### Source review
 
+<!-- figure:margin-source -->
+
 A complete historical-scene record needs: proposition; event and record dates; source and locator; amount, currency and population; supporting and conflicting evidence; endpoint boundary; source assessment; inspection status; withdrawn predecessors; allowed player action; simulated assumptions; and the argument the mechanic teaches.
 
-Check both arithmetic and meaning: denominator, identity, period, population, quotation context and endpoint. The current [evidence map](evidence-map.md) records unresolved routes and discrepancies; this design pass does not certify the case.
+Check denominators, identities, periods, populations, quotation context and endpoints as well as arithmetic. The [evidence map](evidence-map.md) lists the unresolved links and discrepancies.
 
-Each historical scene needs source/financial, gameplay-comprehension and interface-semantics review. AI review is preparation for the relevant human/source authority. Record disagreements beside the claim and hold the affected historical interaction until resolved.
+Before enabling a historical scene, obtain source and financial review, test comprehension, and check that interface labels and animations support the intended meaning. Record unresolved disagreements beside the claim. AI review prepares this work; the relevant human reviewers make the release decision.
 
 ### Production sequence
 
@@ -463,7 +502,7 @@ Estimate after the first source-bound slice using verified scenes, unique transi
 | Developer | Model, renderer, persistence and replay tools |
 | Integrator | Agreement across the model, narrative, figures and software |
 
-Workshop one scene through all roles: define its distinction, propose two decisions, draw the path, identify misleading marks, estimate hidden state and test a legitimate counterexample.
+Review one scene across these roles. Define what the player must understand, propose two choices, draw their consequences and test an ordinary counterexample.
 
 ### Acceptance tests
 
@@ -492,12 +531,13 @@ Start with six to eight participants with different management-game and financia
 | Art refinements | As required by P2 recognition or interaction | Observe recognition of work bays, ready components and the physical handoff before adding objects |
 | Real-name treatment, campaign and game distribution | Before P5/P7 respectively | Resolve against audience, source coverage and review findings |
 
-CASE-01 is the narrative reference; the validation package is an archival source collection. Neither overrides conflicting records. The [current focus](#production/current-focus) is the working priority; research-page proposals support it rather than creating separate production queues.
+Use CASE-01 for narrative references and the validation package for source retrieval. Retain conflicting records. The [current focus](#production/current-focus) sets the next task; supporting research does not create additional priorities.
 
 ### Change record
 
 | Revision | Change | Status |
 |---|---|---|
+| 0.15 | Copy revised across chapters and references; inline scenes, record extracts and illustrated narrative sequences replace large preview grids; saved-record timing corrected | P2 remains ready for playtest; P1 verification scope unchanged |
 | 0.14 | Catalogue-driven component kit, isolated motion previews, unified asset libraries and source links; redundant truck section and speculative art task lists removed | P2 remains the next test; P1 runs in parallel; no new gameplay or historical claims |
 | 0.13 | Playable fictional episode, ordinary control, conditional responses, five views, run persistence/export, captured gameplay and Narrative figures; test plan reconciled | P2 ready for uncoached playtest; P4 fictional loop built early; P1 and historical gates remain open |
 | 0.12 | Voila bakery truck replaces L-05 overlook; Porter service route, 16 vehicle orientations and GIF exports; Johnson stair retained; custom animated art hero | Design 0.12 / art 0.10; P2 remains next, P1 remains parallel |

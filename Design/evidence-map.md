@@ -1,14 +1,14 @@
 # Story and evidence map
 
-Reviewed for edition 0.14 · 17 September 2026 · source scope below
+Reviewed for edition 0.15 · 17 September 2026 · source scope below
 
-Edition 0.14 reconciles the component kit, motion previews and library navigation. The fictional episode and art hero remain at their previous operating scope. The financial-source inspection described below is retained from the prior binding review; no new financial authentication is claimed.
+This edition revises copy and layout. The source findings below come from the existing binding review; no additional financial records were authenticated.
 
 ## What has actually been read
 
-The complete 58-page text of **The Zero Machine — Specific Story Reconstruction FINAL.pdf**, including its appendices, was read during source orientation. Selected rendered pages were inspected to check tables and visual context. This began as a review of a reconstruction. The first binding pass now also inspects selected bank-data, BILL and QBO exports; original bank statements, invoice originals, full audit history and recipient confirmations have not yet been verified. Tax, correspondence and court records remain outside that bounded inspection. The word “proved” inside the PDF describes the reconstruction's assessment; it does not describe verification performed in this design pass.
+The complete 58-page text of **The Zero Machine — Specific Story Reconstruction FINAL.pdf**, including its appendices, was read during source orientation. Selected rendered pages were inspected to check tables and visual context. The binding review also covers selected bank-data, BILL and QBO exports; original bank statements, invoice originals, full audit history and recipient confirmations have not yet been verified. Tax, correspondence and court records remain outside that bounded inspection. The word “proved” inside the PDF describes the reconstruction's assessment; it does not describe verification performed in this design pass.
 
-The PDF's opening date is September 2, 2026. Its SHA-256 is `9352893711180900fcd770651011c65036504a66570490138d68fcd9a5c253e8`. That hash identifies this exact input. “FINAL” in a filename does not establish authority over unavailable exhibits. It remains the narrative reference for binding; a conflicting underlying record is preserved beside its claim.
+The PDF's opening date is September 2, 2026. Its SHA-256 is `9352893711180900fcd770651011c65036504a66570490138d68fcd9a5c253e8`. That hash identifies this exact input. The filename does not resolve conflicts with underlying records. It remains the narrative reference for binding; a conflicting underlying record is preserved beside its claim.
 
 The review also inspected the old explainer's content map, handoff, verification report, and selected implementation/data references; the two visual references; the supplied screenshot; the garden source and rendered page; and selected technique-library records and the HOLY_OPS GDD's section structure. No old verification suite was rerun against a missing corpus. Its recorded PASS is historical evidence of a check, not a present certificate.
 
@@ -16,7 +16,7 @@ The review also inspected the old explainer's content map, handoff, verification
 
 ## First binding pass
 
-The [Creative Peaks packet](binding/episode-01-draft.md) and [source inventory](binding/native-inventory.md) record exact export rows, file hashes, unresolved joins and exclusions. They narrow the source scope; they do not certify the full validation package.
+The [Creative Peaks packet](binding/episode-01-draft.md) and [source inventory](binding/native-inventory.md) record exact export rows, file hashes, unresolved joins and exclusions. Their findings apply to the listed files and rows.
 
 | Finding | Binding consequence |
 |---|---|
@@ -61,7 +61,7 @@ Every sentence in this table is a summary of CASE-01, not a separately verified 
 | Ownership transfers while control lags | pp.29–38 | The account connects migration, tax preparation, financing, settlement and incomplete access | Legal ownership, account administration and payment authority are distinct |
 | The company closes; the records continue | pp.39–40, 45–47 | Platform accounts continue actions after operations cease; further records are sought | A named account is not proof of the person using it; investigation is not adjudication |
 
-The likely opening is ordinary production work. Beginning with the largest aggregate or an accusation gives players the answer before they understand the nouns.
+Begin with ordinary production so players can distinguish work, obligations and cash before inspecting aggregate claims.
 
 ## Chapter coverage of the whole PDF
 
@@ -113,15 +113,15 @@ All roles below are attributed to CASE-01. This is a routing register, not indep
 | Nicole Brunner | Terminated November 17, 2016 in source | Imported active-employee label survives much later | p.36; no reviewed later action attributed to her |
 | Doug Fischer account / named subject | Later historical-record packet | Source describes an unwitting execution point | p.36; no knowing designer characterization |
 
-This register is deliberately wider than the proposed dramatic cast. A person can remain in an inspectable record without becoming an animated principal. Agency departments use fictional aggregate workers until real-person representation is settled.
+The register includes source subjects who may never appear as characters. Departments use fictional aggregate workers until real-person representation is decided.
 
 ## Non-negotiable distinctions in the model
 
 1. **1072 is not a bank.** It is a synthetic clearing account. A spatial service building may provide access to payment work; it must not store the modeled $141.578m field as cash.
 2. **An economic episode has several representations.** A bill, platform Paid object, journal, bank debit and tax record may describe related aspects of one episode. Summing the screens can count the same event repeatedly.
-3. **Dates have jobs.** Service date, invoice date, posting date, cash-settlement date, later edit date, and the date a participant could know something need separate fields.
+3. **Use separate date fields.** Service date, invoice date, posting date, cash-settlement date, later edit date, and the date a participant could know something need separate fields.
 4. **The endpoint can be unknown.** A bank batch can be observed while its final recipient is unclosed. Unknown is neither zero nor stolen nor legitimate.
-5. **An employee is not a row called Employee.** Nicole Brunner's surviving imported label does not establish her presence or later actions (p.36).
+5. **Imported employment labels require verification.** Nicole Brunner's surviving imported label does not establish her presence or later actions (p.36).
 6. **An account label is not a physical user.** Import Administration is not a character. Named platform activity needs distinct attribution from authenticated human action (pp.35–39, 47).
 7. **The $141.578m and $141.749m fields overlap.** Different period windows and different measurement bases are explicit. Their near agreement cannot animate a dollar-by-dollar trail or become additive damages (pp.8–9, 46–47).
 8. **2024 modeled input is unavailable.** The computational zero used in the discharge model is not evidence of no business activity (p.9).
@@ -175,7 +175,7 @@ Source: CASE-01 Appendix L, pp.48–50. Labels below are shortened for routing; 
 | T20 | False A/P–A/R settlement | Settlement | 65 supported controls beside 43 disproved represented routes |
 | T21 | One event/two book benefits | Reporting | No second cash merely because two balances change |
 | T22 | Wire rewritten as owner history | Reporting | Bank event fixed; later ledger labels shown side by side |
-| T23 | Debt/collateral/guarantees left behind | Control | Burden is an object with an obligor, not a mood penalty |
+| T23 | Debt/collateral/guarantees left behind | Control | Burden is an object with an obligor, separate from workload measures |
 | T24 | Investor/creditor identity conversion | Reporting | Legal terms still needed |
 | T25 | Capital true-up without returned cash | Reporting | Noncash adjustment cannot refill treasury |
 | T26 | Revenue and cost eliminated together | Reporting | Gross profit may persist while reported scale changes |
@@ -202,7 +202,7 @@ Source: CASE-01 Appendix L, pp.48–50. Labels below are shortened for routing; 
 | T47 | Selective non-reconciliation | Afterlife | Observed omission; outcome endpoints still open |
 | T48 | Terminal liability backfill | Afterlife | Reconstructed liability needs invoice/creditor adjudication |
 
-All 48 have a proposed home. That is coverage, not verification and not a commitment to 48 mechanics. A small number of reusable state transitions should explain many techniques.
+All 48 techniques are mapped to proposed learning groups. Verification remains claim-specific. Several techniques can use the same state transitions; this register does not propose 48 separate mechanics.
 
 ## Claim record required before historical content ships
 

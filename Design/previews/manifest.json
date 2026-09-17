@@ -131,6 +131,36 @@
       "encodedFrames": 320
     },
     {
+      "id": "reading-workshop",
+      "title": "Workshop illustration",
+      "png": "reading/workshop.png",
+      "gif": "reading/workshop.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "size": [
+        320,
+        184
+      ],
+      "durationMs": 8000,
+      "route": "#narrative/the-episode-in-play",
+      "caption": "Eight-second illustrative loop. Reuses the park components; does not advance episode state."
+    },
+    {
+      "id": "reading-handoff",
+      "title": "Physical handoff illustration",
+      "png": "reading/handoff.png",
+      "gif": "reading/handoff.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "size": [
+        320,
+        184
+      ],
+      "durationMs": 8000,
+      "route": "#objects/operating-loop",
+      "caption": "Eight-second illustrative loop. Reuses the park components; does not advance episode state."
+    },
+    {
       "id": "object-B-01",
       "title": "Boerum frontage",
       "png": "../assets/sprite-catalogue/objects/B-01/roof-on.png",
@@ -1246,8 +1276,8 @@
       "kind": "still",
       "group": "Documents",
       "size": [
-        1164,
-        1020
+        1170,
+        1026
       ],
       "route": "#art/interface-materials",
       "caption": "Rendered fictional interface specimen. Open the live study for selectable text and controls."
@@ -1260,8 +1290,8 @@
       "kind": "still",
       "group": "Documents",
       "size": [
-        1164,
-        1072
+        1170,
+        1078
       ],
       "route": "#art/interface-materials",
       "caption": "Rendered fictional interface specimen. Open the live study for selectable text and controls."

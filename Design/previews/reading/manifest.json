@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "id": "workshop",
+      "durationMs": 8000,
+      "frames": 79,
+      "size": [
+        320,
+        184
+      ]
+    },
+    {
+      "id": "handoff",
+      "durationMs": 8000,
+      "frames": 79,
+      "size": [
+        320,
+        184
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "file": "../../working/pixel-kit.js",
+      "sha256": "1ae3568ea8eee349179a35cca91ee413fad2c3d2ef95ba0dc861bbb50712e4a9"
+    },
+    {
+      "file": "../../working/park-kit.js",
+      "sha256": "3a5d047f47b7aa48ab0a3729bd54be54af2db15e5e358efbb2feb65cba9d2c96"
+    },
+    {
+      "file": "../../working/reading-moments.js",
+      "sha256": "17b862a56240cf17f3c6adde5cc2241885a4aa0e4a3ee16a2e800087d503a52b"
+    }
+  ]
+}

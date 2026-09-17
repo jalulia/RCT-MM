@@ -1,8 +1,8 @@
 # Park interactions
 
-Checked against design 0.14 / art 0.10, 17 September 2026. This separates implemented scenic interactions from proposed operating behavior. The original 0.5 review is archived. These observations concern architecture, objects and interface behavior, not the verification of financial claims.
+Checked against design 0.15 / art 0.10, 17 September 2026. This separates implemented scenic interactions from proposed operating behavior. The original 0.5 review is archived. These observations concern architecture, objects and interface behavior, not the verification of financial claims.
 
-**Make the campus an assembled industrial pleasure ground.** Three distinctive sites, a few improbable furnishings, visible human occupation and one clear circulation system will carry more character than additional lawn, identical trees or miniature signs. The attraction is getting close to the objects and seeing how the place works. Every landmark does not need to mint revenue.
+Use three distinct industrial sites, visible people and clear circulation. The photographed furnishings provide landmarks. Scenic objects support orientation and exploration without generating revenue.
 
 ## Three interaction studies
 
@@ -14,9 +14,9 @@ The long white car occupies an invented paved circuit with a planted island and 
 
 ![The complete invented Chrysler circuit](../assets/sprite-catalogue/objects/L-10/default.png)
 
-**Why it earns its space:** a memorable moving landmark supplies orientation and a miniature spectacle. It gives the player a reason to explore close-up art without requiring a modal interruption. The visible closed loop makes its decorative purpose intelligible.
+**Purpose:** the moving car helps orient the player and provides an inspectable attraction. Its closed circuit keeps the motion local.
 
-**Limit:** the photographs establish a white car as furnishing. Its motion and outdoor display are design fiction. Do not animate it travelling between named offices: seeing a similar car in different source photographs does not establish a relocation history. No passenger icons for clients, suppliers or transfers. The car carries the car.
+**Limit:** the photographs establish a white car as furnishing. Its motion and outdoor display are design fiction. Do not animate it travelling between named offices: seeing a similar car in different source photographs does not establish a relocation history. No passenger icons for clients, suppliers or transfers. The car does not represent a financial transfer.
 
 ### 2. Coral gathering booth
 
@@ -34,7 +34,7 @@ Johnson’s cutaway retains its connected orange stair, mezzanine, central white
 
 L-05 now contains the Voila delivery truck. Supplied context identifies Porter’s former bakery use; the classic step van and its service loop are inventions. A four-second loading stop gives the vehicle a readable purpose. Its sixteen orientations share the catalogue renderer. It can run or remain parked; the global motion control pauses both vehicles and people.
 
-**Why it earns its space:** the truck adds a distinct moving silhouette and a trace of the site’s earlier use. The service road stays clear of the guest paths and building footprints. Johnson’s architecture can be understood through its own interior view.
+**Purpose:** the truck refers to Porter’s earlier bakery use. Its service road is separate from pedestrian paths and buildings. Johnson’s stair and tree remain visible in its interior view.
 
 **Limit:** neither route changes money, authority, evidence or production state. The operating episode has its own project selection and save/reopen behavior. Essential objects remain reachable through the object list.
 
@@ -74,4 +74,4 @@ Use these checks where they support the [P2 ordinary-work proof](#production/cur
 * Can they find Johnson’s interior directly and distinguish the bakery’s invented scenic route from an operating delivery?
 * Can every inspection and route preview be reached with motion disabled and without pixel hunting?
 
-The implemented interactions make the park worth inspecting and show how its component system works. The gathering booth and courtyard controls remain scenic; Episode 01 implements the handoff consequence.
+The booth and courtyard controls change scenery. Episode 01 separately implements production and handoff timing.

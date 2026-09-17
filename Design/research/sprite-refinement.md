@@ -1,6 +1,6 @@
 # Sprite refinement
 
-The 32 × 16 projection and original pixel renderer are retained. All 43 previous registered objects were redrawn; the complete Chrysler attraction adds one assembly. The catalogue holds 44 objects and 136 frame slots, in the current art 0.10 manifest. These are implemented art assets, not evidence that the operating game is complete.
+The 32 × 16 projection and original pixel renderer are retained. All 43 previous registered objects were redrawn; the complete Chrysler attraction adds one assembly. The catalogue holds 44 objects and 136 frame slots, in the current art 0.10 manifest. The assets support the art study and Episode 01; the campaign is not built.
 
 ![Current building families](../assets/sprite-catalogue/sheets/buildings-overview.png)
 

@@ -1,0 +1,41 @@
+{
+  "name": "Mad Money Tycoon",
+  "designRevision": "0.14",
+  "artRevision": "0.10",
+  "reviewDate": "2026-09-17",
+  "views": [
+    "Work",
+    "Cash",
+    "Information",
+    "Control",
+    "People"
+  ],
+  "current": {
+    "reader": "design-review.html",
+    "specification": "GDD.md",
+    "evidence": "evidence-map.md",
+    "binding": "binding/episode-01.bindings.json",
+    "catalogue": "assets/sprite-catalogue/index.html",
+    "previews": "previews/index.html",
+    "archive": "archive/index.html",
+    "episode": "episode-01/index.html",
+    "componentKit": "design-review.html#art/component-kit"
+  },
+  "status": {
+    "designReader": "Review edition",
+    "pixelSystem": "44 registered objects and 136 atlas frames; one camera; 11 isolated motion previews",
+    "artInteractions": "Independent architecture explorer and animated art hero; playable economy lives in Episode 01",
+    "practiceEpisode": "Full fictional loop and ordinary control implemented; engine and browser checks pass; uncoached comprehension and session timing not tested",
+    "historicalBinding": "Selected export fields inspected; originals and identity links unresolved",
+    "historicalInteractionEnabled": false,
+    "publicReleaseScope": "Design review, original art library and fictional playable prototype; external validation corpus excluded",
+    "assetLibraries": "Component kit, object catalogue and preview library share object IDs and display metadata"
+  },
+  "focus": {
+    "phase": "P2",
+    "title": "Uncoached ordinary-work playtest",
+    "route": "production/current-focus",
+    "parallelPhase": "P1",
+    "phaseSource": "GDD.md#production-sequence"
+  }
+}

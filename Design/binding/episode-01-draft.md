@@ -4,7 +4,7 @@ Source-binding draft · 16 September 2026
 
 **Bound at export-field level:** a $23,500 Creative Peaks LLC invoice/payment representation; October 21 funding debit; October 22 return credit; Paid/PaidInFull fields in later BILL exports; and a separate October 23 QBO entry crediting Chase and debiting clearing account 1072. Each item has an exact file/row locator below. **Not yet bound:** the original bank pages, an identifier-complete return-to-payment join, the October 23 bank direction, final supplier receipt or later cure, and the ordinary pooling control.
 
-**Recommendation:** retain Creative Peaks as the first historical payment-state comparison, conditional on these joins. It is suitable for asking what a payment attempt did and what the platform continued to report. It is not yet a historical production-management episode. The fictional fabrication job must remain fictional.
+**Recommendation:** retain Creative Peaks as the first historical payment-state comparison, conditional on these joins. It can support a comparison between a payment attempt and later platform observations. It is not yet a historical production-management episode. The fictional fabrication job must remain fictional.
 
 ## 1. What was inspected
 
@@ -59,7 +59,7 @@ The BILL Vendor Id fields are empty in these rows. Creative Peaks LLC is the exp
 | Payment → October 23 entry | Same amount; masked QBO confirmation suffixes; inventory reports full matching Chase reference | Original Chase direction; processor receipt and allocation; actual reissue/settlement result |
 | Any of the above → supplier never paid, permanent loss, named operator's purpose | **Unsupported here** | Recipient evidence, later rail search, dated actor/audit records and separate evidence of intent |
 
-Draw bank events as bank events. A bank debit to a processor is not automatically a delivery to the supplier. The visible return credit is not permission to animate the same dollars into a later expense.
+Draw bank events as bank events. A bank debit to a processor is not automatically a delivery to the supplier. A later expense requires its own source link before an animation connects it to the return.
 
 ## 5. The ordinary control is still an open binding task
 
@@ -90,7 +90,7 @@ Date of event, date represented in accounting, date of record update and date of
 
 The reported debit and return net to **zero for that pair**: −23,500 + 23,500 = 0. That is not an available-cash calculation or a conclusion about fees, other payments or final loss. Paid/PaidInFull adds no second cash event. The October 23 clearing entry is neither automatic cure nor a second supplier payment. Never add a selected control to the $1,014,217.28 aggregate before checking membership.
 
-In the historical comparison, the player can inspect the records, separate their dates, test identity matches, assemble a bounded account and identify the next necessary exhibit. They cannot change history. A useful answer may end at an unresolved endpoint. “Not supplied” must never score as “never happened.”
+In the historical comparison, the player can inspect the records, separate their dates, test identity matches, assemble a bounded account and identify the next necessary exhibit. They cannot change history. An answer may leave the recipient endpoint unresolved. “Not supplied” must never score as “never happened.”
 
 In fictional practice, they can reserve capacity, choose in-house or external work, defer a handoff and request a simulated confirmation. **C-07/O-19/P-04, the $100,000 campaign, $12,000 attempted payment, fabricated component, week-three Thursday deadline, team-day capacity, replacement price, approval roles, cash reserves, supplier dialogue and consequences remain invented.** Replacing the supplier's name with Creative Peaks would not turn them into historical facts. The exported “second 50%” description also does not license treating the synthetic payment as a deposit.
 
@@ -98,7 +98,7 @@ Use separate `practice/*` and `case/*` records. Their comparison concerns a mech
 
 ## 8. Readiness decision
 
-Creative Peaks remains a compact candidate because its central distinction can be taught without accepting the reconstruction's enterprise-wide thesis. The date conflict is useful editorial pressure: it forces the interface to distinguish a source's narration from the records it cites.
+Creative Peaks remains a compact candidate because its central distinction can be taught without accepting the reconstruction's enterprise-wide thesis. The date conflict requires the interface to show the briefing’s date beside the export dates.
 
 Release a historical comparison only at its supported scope: inspect the original return join, establish a later observation of the same BILL object, resolve or visibly retain the October 23 bank-direction issue, and bind one ordinary control. Final supplier receipt may remain open if the episode says so. Complete historical production play requires the separate engagement and delivery chain.
 

@@ -138,6 +138,19 @@ for directory,data in [(root/'Design/previews/episode',capture),(root/'Design/pr
   file=(directory/source['file']).resolve()
   assert file.is_relative_to(root) and file.is_file(),source['file']
   assert hashlib.sha256(file.read_bytes()).hexdigest()==source['sha256'],source['file']+' capture source changed; recapture or rebuild'
+# The reading illustrations must match their drawing source and exported loop.
+reading_dir=root/'Design/previews/reading'
+reading_manifest=json.loads((reading_dir/'manifest.json').read_text())
+from PIL import Image
+for source in reading_manifest['sources']:
+ assert hashlib.sha256((reading_dir/source['file']).resolve().read_bytes()).hexdigest()==source['sha256'], 'Stale reading illustration'
+for entry in reading_manifest['entries']:
+ assert any(e['id']=='reading-'+entry['id'] for e in preview_manifest['entries'])
+ with Image.open(reading_dir/(entry['id']+'.gif')) as gif:
+  assert list(gif.size)==entry['size'] and gif.info.get('loop')==0
+  duration=0
+  for i in range(gif.n_frames):gif.seek(i);gif.load();duration+=gif.info.get('duration',0)
+  assert duration==entry['durationMs']==8000
 assert len(capture['entries'])==14
 assert sum(e['kind']=='animation' for e in capture['entries'])==5
 assert project['current']['episode']=='episode-01/index.html'
@@ -152,7 +165,7 @@ with zipfile.ZipFile(root/'Design/assets/sprite-catalogue/mad-money-sprite-catal
   assert member.is_relative_to(root/'Design/assets/sprite-catalogue') and member.is_file(),name
   assert z.read(name)==member.read_bytes(),'Stale ZIP member: '+name
 zip_members_checked=len(names)
-report={'designRevision':json.loads((root/'Design/project.json').read_text())['designRevision'],'artRevision':manifest['revision'],'phaseRecordsChecked':len(plan['phases']),'zipMembersByteMatched':zip_members_checked,'htmlPagesChecked':len(pages),'internalReferencesChecked':checked,'authoredReferencesChecked':markdown_checked,'externalReferenceURLs':len(external),'readerPages':len(json.loads((root/'Design/working/reader-map.json').read_text())),'objects':len(object_ids),'frames':sum(len(o['variants']) for o in manifest['objects']),'historicalInteractionEnabled':False,'sourcePdfHashMatches':True,'spriteSourceHashesMatch':True,'episodeCaptureSourceHashesMatch':True,'episodeCaptures':len(capture['entries']),'errors':errors}
+report={'designRevision':json.loads((root/'Design/project.json').read_text())['designRevision'],'artRevision':manifest['revision'],'phaseRecordsChecked':len(plan['phases']),'zipMembersByteMatched':zip_members_checked,'htmlPagesChecked':len(pages),'internalReferencesChecked':checked,'authoredReferencesChecked':markdown_checked,'externalReferenceURLs':len(external),'readerPages':len(json.loads((root/'Design/working/reader-map.json').read_text())),'objects':len(object_ids),'frames':sum(len(o['variants']) for o in manifest['objects']),'historicalInteractionEnabled':False,'sourcePdfHashMatches':True,'spriteSourceHashesMatch':True,'episodeCaptureSourceHashesMatch':True,'episodeCaptures':len(capture['entries']),'readingIllustrations':len(reading_manifest['entries']),'errors':errors}
 (root/'Design/qa').mkdir(exist_ok=True);(root/'Design/qa/release-checks.json').write_text(json.dumps(report,indent=2)+'\n')
 (root/'Design/qa/external-links.json').write_text(json.dumps(sorted(external),indent=2)+'\n')
 print(json.dumps(report,indent=2))

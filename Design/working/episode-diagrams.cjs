@@ -11,23 +11,23 @@ function svg(w,h,title,body){return `<svg xmlns="http://www.w3.org/2000/svg" wid
 let b=text(36,160,'ONE COMPONENT / TWO PRODUCTION PLANS',12,true)+node(36,190,240,'C-07',['Thu PM handoff','$100,000 budget ceiling']);
 b+=line(276,242,310,242)+`<path d="M310 224V469" stroke="#171b22"/>`+line(310,224,342,224)+line(310,469,342,469);
 b+=node(342,172,292,'Make in-house',['$4,000 materials','6 make + 2 check/pack units'],'#ddf4df')+line(634,224,678,224)+node(678,172,290,'Protect the display slot',['1 unit to each job, Mon–Tue','Then concentrate on C-07'])+line(968,224,1012,224)+node(1012,172,272,'Thu PM handoff',['Near-dock placement','No O-19 or P-04 created'],'#4feb79');
-b+=node(342,417,292,'Commission S-08',['$12,000 O-19 obligation','2 check/pack units in-house'])+line(634,469,678,469)+node(678,417,290,'P-04 returns',['Saved v2 still says Paid','Wednesday AM funding return'],'#efb1cb')+line(968,469,994,469);
+b+=node(342,417,292,'Commission S-08',['$12,000 O-19 obligation','2 check/pack units in-house'])+line(634,469,678,469)+node(678,417,290,'P-04 returns',['Tuesday v2: Paid','Wednesday AM funding return'],'#efb1cb')+line(968,469,994,469);
 b+=`<path d="M994 372V632" stroke="#171b22"/>`+line(994,372,1012,372)+line(994,632,1012,632);
 b+=node(1012,320,272,'Reissue after approval',['Trace → finance → P-05','Fri AM / $20,000 cash'])+node(1012,580,272,'Build a substitute',['$5,500 + 3 work units','Thu PM / O-19 stays open']);
-b+=rect(342,580,626,104,'url(#dots)')+text(360,610,'ORDINARY CONTROL',12,true)+text(360,641,'P-04 is received Tuesday PM; handoff completes Wednesday.',17)+text(360,668,'Same supplier plan, without a manufactured payment exception.',14);
+b+=rect(342,580,626,104,'url(#dots)')+text(360,610,'ORDINARY CONTROL',12,true)+text(360,641,'P-04 is received Tuesday PM; handoff completes Wednesday.',17)+text(360,668,'Same supplier plan; no payment return.',14);
 b+=text(36,756,'Example runs: both jobs retain shared staffing through Tuesday PM. Cash is measured after payroll and B-09.',13,true);
-fs.writeFileSync(path.join(out,'decision-map.svg'),svg(1320,800,'The plan changes the story.',b));
+fs.writeFileSync(path.join(out,'decision-map.svg'),svg(1320,800,'Production and payment branches',b));
 b='';const cols=[260,480,700,920,1140],labels=['Mon PM','Tue AM','Wed AM','Thu AM','Fri AM'];for(let i=0;i<cols.length;i++){b+=text(cols[i],166,labels[i],13,true)+`<path d="M${cols[i]} 183V605" stroke="#c6cdd0" stroke-dasharray="3 5"/>`;}
 for(const[y,label]of[[228,'WORK'],[366,'BANK'],[504,'SAVED RECORD']])b+=text(36,y,label,12,true)+`<path d="M235 ${y+26}H1260" stroke="#c6cdd0"/>`;
 b+=node(260,204,176,'Prepare',['2 staff units','Ready, then held'])+line(436,256,920,256)+node(920,204,184,'P-05',['Approval; debit','Receipt Thu PM'],'#ddf4df')+line(1104,256,1130,256)+node(1130,204,154,'Deliver',['Fri AM','Revised date'],'#4feb79');
 b+=node(480,342,176,'−$12,000',['P-04 funding','Posted debit'])+line(656,394,700,394)+node(700,342,176,'+$12,000',['P-04 return','Net P-04 = $0'],'#efb1cb')+line(876,394,920,394)+node(920,342,184,'−$12,000',['P-05 reissue','Separate debit']);
 b+=node(260,480,176,'Scheduled',['v1 / Monday','Saved copy'],'#efb1cb')+line(436,532,480,532)+node(480,480,176,'Paid',['v2 / Tuesday','Saved copy'],'#efb1cb')+`<path d="M656 532H1258" fill="none" stroke="#171b22" stroke-dasharray="5 5"/>`+text(721,514,'Reading v2 later does not make it a later observation.',15);
 b+=rect(36,640,1248,106,'url(#dots)')+text(56,676,'The player adds P-05 to the simulation. They do not update v2 or establish a historical endpoint.',20)+text(56,713,'B-09 and payroll are omitted from this attempt-level diagram; they remain in the complete bank extract.',13,true);
-fs.writeFileSync(path.join(out,'three-clocks.svg'),svg(1320,780,'Work, bank events and records have different clocks.',b));
+fs.writeFileSync(path.join(out,'three-clocks.svg'),svg(1320,780,'Work, bank and record dates',b));
 let s=E.initial();s=E.reduce(s,{type:'plan',value:'supplier'});for(let i=0;i<4;i++)s=E.reduce(s,{type:'advance'});s=E.reduce(s,{type:'substitute'});s=E.reduce(s,{type:'crew',value:2});while(!s.finished)s=E.reduce(s,{type:'advance'});
 b=text(36,170,'SUBSTITUTE ROUTE / FRIDAY CLOSEOUT',12,true)+rect(36,203,392,265,'#fff')+text(59,239,'POSTED CASH',13,true)+text(59,313,E.money(s.cash),57)+text(59,363,'Cash still at the bank.',20)+text(59,419,'$40,000 + signed bank events',13,true);
 b+=rect(464,203,392,265,'#efb1cb')+text(487,239,'STILL RESERVED',13,true)+text(487,313,E.money(E.committed(s)),57)+text(487,363,'O-19 remains unresolved.',20)+text(487,419,'A substitute is not a settlement.',13,true);
 b+=rect(892,203,392,265,'#4feb79')+text(915,239,'AVAILABLE AFTER RESERVES',13,true)+text(915,313,E.money(E.available(s)),57)+text(915,363,'For new commitments.',20)+text(915,419,'Posted cash minus open reservations',13,true);
 b+=rect(36,504,1248,169,'url(#dots)')+text(58,542,'OUTSIDE THE CASH EQUATION',12,true)+text(58,590,'$100,000',34)+text(260,585,'Campaign ceiling',20)+text(260,618,'A planning limit. No bank movement.',14)+text(690,590,'$24,000',34)+text(898,585,'Client receivable',20)+text(898,618,'Issued on delivery. No receipt modeled.',14);
-fs.writeFileSync(path.join(out,'cash-boundaries.svg'),svg(1320,712,'Delivery can finish while an obligation stays open.',b));
+fs.writeFileSync(path.join(out,'cash-boundaries.svg'),svg(1320,712,'Cash at substitute closeout',b));
 console.log('3 authored episode diagrams');

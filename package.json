@@ -1,6 +1,6 @@
 {
   "name": "mad-money-tycoon-design",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "private": true,
   "description": "Mad Money Tycoon design reader, art studies, asset catalogue and source-binding records",
   "engines": {
@@ -13,7 +13,8 @@
     "serve": "python3 -m http.server 8000",
     "capture:episode": "node Design/working/capture-episode.cjs && python3 Design/working/export-episode-gifs.py && node Design/working/episode-diagrams.cjs && node Design/working/export-episode-diagrams.cjs && npm run build",
     "check:browser": "node Design/working/check-reader-browser.cjs && node Design/working/check-component-libraries.cjs",
-    "build:park": "node Design/working/build-park-builder.cjs"
+    "build:park": "node Design/working/build-park-builder.cjs",
+    "capture:reading": "node Design/working/export-reading-scenes.cjs && npm run build"
   },
   "dependencies": {
     "@napi-rs/canvas": "0.1.100",

@@ -16,6 +16,10 @@ def still_gif(file):
  return dest
 preview=root/'previews';preview.mkdir(exist_ok=True)
 manifest=json.loads((preview/'manifest.json').read_text());entries=[e for e in manifest['entries'] if e['id'] in {'park-party','park-social','park-garden','boerum-cutaway','porter-cutaway','johnson-cutaway','chrysler-circuit','voila-delivery','art-hero'}]
+# Inline reading scenes use the same drawing function as the live reader.
+reading=json.loads((preview/'reading/manifest.json').read_text())
+for e in reading['entries']:
+ entries.append({'id':'reading-'+e['id'],'title':'Workshop illustration' if e['id']=='workshop' else 'Physical handoff illustration','png':'reading/'+e['id']+'.png','gif':'reading/'+e['id']+'.gif','kind':'animation','group':'Motion','size':e['size'],'durationMs':e['durationMs'],'route':'#narrative/the-episode-in-play' if e['id']=='workshop' else '#objects/operating-loop','caption':'Eight-second illustrative loop. Reuses the park components; does not advance episode state.'})
 # Retain assembly demonstrations. Individual components come from the object manifest.
 cat=json.loads((root/'assets/sprite-catalogue/manifest.json').read_text())
 for o in cat['objects']:

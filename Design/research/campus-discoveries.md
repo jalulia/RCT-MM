@@ -1,8 +1,8 @@
 # Campus discoveries — objects with evidence
 
-Research checked against design 0.14 / art 0.10, 17 September 2026. Sources: inspected photographs in Matt Fry’s locally archived public portfolio, checked against the public project pages and PSF Projects’ project page. These are visual references, not facts about the case. Each entry separates the observed object, its current game interpretation and any further proposed interaction.
+Research checked against design 0.15 / art 0.10, 17 September 2026. Sources: inspected photographs in Matt Fry’s locally archived public portfolio, checked against the public project pages and PSF Projects’ project page. These are visual references, not facts about the case. Each entry separates the photographed object from its game interpretation.
 
-The sculpted reception desk, indoor Chrysler and tree under the skylight supply three different silhouettes and spatial conditions: arrival, an obstruction people gather around, and a shared clearing. The park makes the car a circuit attraction and the room name Supernova an orbital pavilion. The inflatable/shark kit changes the courtyard arrangement. Small objects can reward attention through their shape and placement without requiring a dialogue box each.
+The reception desk, Chrysler and central tree provide distinct landmarks. The park adds an invented car circuit and Supernova pavilion; the inflatable and shark provide an alternate courtyard layout. Select an object to inspect its source photograph.
 
 **Reading rule:** “Observed” describes the photograph. “Reported” comes from a named source. “Proposal” is new game design. Proposed game behaviours do not claim what the real office or its occupants did.
 

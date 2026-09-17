@@ -2,7 +2,7 @@
 
 Inspected 16 September 2026. This is a read-only inventory of local files and their observed fields, not a determination of fraud or recipient settlement. CASE-01 claims remain a separate layer; see [episode-01-draft.md](episode-01-draft.md). No source files were changed and no supplied analysis scripts were executed.
 
-The usable evidence is currently **export-level**. The packaged BILL exports and QBO journal support identifiable bill/payment/ledger observations. The bank files are consolidated or extracted CSVs carrying statement locators; they are **not native bank statements**. Original statements, a working payment audit, and a unique bank-return link were not located. Two date/direction conflicts and one incorrect derived join must survive any adaptation.
+The usable evidence is currently **export-level**. The packaged BILL exports and QBO journal support identifiable bill/payment/ledger observations. The bank files are consolidated or extracted CSVs carrying statement locators; they are **not native bank statements**. Original statements, a working payment audit, and a unique bank-return link were not located. Any adaptation must retain the date conflict, direction conflict and incorrect derived join.
 
 ## Scope and integrity
 
@@ -81,7 +81,7 @@ The bill creator field is `00601NEQXUFVRIJ6gwek`; payment creator is `00601ZYFHX
 
 **Status is a snapshot.** May and November exports each say `Paid` / `PaidInFull`. That supports the later displayed states. It does not prove the status was unchanged at every intervening moment, who set it, whether another route settled the invoice, recipient receipt, intent, or loss. `Cancel Request Submitted=false` is also a snapshot field, not proof that no return or other lifecycle event happened.
 
-**Missing detail is a coverage result.** FT contains no case-insensitive `Creative Peaks` match and no match for the CP debit token or payment-confirmation suffix in the targeted search. This establishes a gap in the inspected report, not a missing payment in the world. AU cannot fill it. Do not treat the report's omission, or a derived `FTD_Match=NONE`, as evidence of wrongdoing.
+**Missing detail is a coverage result.** FT contains no case-insensitive `Creative Peaks` match and no match for the CP debit token or payment-confirmation suffix in the targeted search. This establishes a gap in the inspected report. It does not establish whether payment occurred. AU cannot fill it. Do not treat the report's omission, or a derived `FTD_Match=NONE`, as evidence of wrongdoing.
 
 ## Ordinary pooling comparison
 
@@ -106,4 +106,4 @@ For a bounded historical comparison, obtain the cited original BoA pages and exp
 
 Further claims require further records: independent access/user records before attributing an action to a person; recipient settlement or replacement-payment evidence before asserting receipt or permanent nonpayment; the engagement and delivery chain before historical production play. An unknown endpoint can remain explicitly unknown in the bounded comparison. The [binding gate](episode-01-draft.md#8-readiness-decision) governs release; this inventory is not a competing checklist.
 
-For the reader now, show literal export fields beside CASE-01 claims, mark the October 21/22 and Chase-direction conflicts, and label the conclusion **recipient settlement unresolved**. A synthetic exercise may demonstrate a return/status mismatch, but it must not borrow a definitive historical ending from the scenario designer.
+For the reader now, show literal export fields beside CASE-01 claims, mark the October 21/22 and Chase-direction conflicts, and label the conclusion **recipient settlement unresolved**. A synthetic exercise may demonstrate a return/status mismatch, with its outcome clearly labelled as invented.

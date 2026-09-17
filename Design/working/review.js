@@ -1,7 +1,7 @@
 const REVIEW=__REVIEW_DATA__;
 const pages=REVIEW.pages;
 const valid=new Set(['contents',...pages.map(p=>p.id)]);
-const alias={'art/production-and-next-proof':'art/implementation-scope','art/voila-delivery':'art/kit-L-05',overview:'contents',paths:'episode',views:'interface/five-views',directions:'art',process:'production',manual:'game',research:'research-systems'};
+const alias={"art/colour-has-a-physical-job":"art/coral-booths-and-blue-supports","art/an-unmistakable-interior":"art/johnsons-stair-tree-and-chrysler","art/parts-before-more-scenery":"art/building-components","research-ux/path-b-a-payment-returned-the-interface-still-says-paid":"research-ux/path-b-compare-the-return-with-the-saved-paid-record",'art/production-and-next-proof':'art/implementation-scope','art/voila-delivery':'art/kit-L-05',overview:'contents',paths:'episode',views:'interface/five-views',directions:'art',process:'production',manual:'game',research:'research-systems'};
 const dialog=document.querySelector('#search-dialog');
 const searchInput=document.querySelector('#search-input');
 const safe=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');

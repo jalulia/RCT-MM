@@ -1,6 +1,6 @@
 {
   "name": "Mad Money Tycoon",
-  "designRevision": "0.14",
+  "designRevision": "0.15",
   "artRevision": "0.10",
   "reviewDate": "2026-09-17",
   "views": [
@@ -19,10 +19,11 @@
     "previews": "previews/index.html",
     "archive": "archive/index.html",
     "episode": "episode-01/index.html",
-    "componentKit": "design-review.html#art/component-kit"
+    "componentKit": "design-review.html#art/component-kit",
+    "parkBuilder": "../test/index.html"
   },
   "status": {
-    "designReader": "Review edition",
+    "designReader": "Copy and layout revised across chapters, research and binding notes; inline figures and compact record extracts",
     "pixelSystem": "44 registered objects and 136 atlas frames; one camera; 11 isolated motion previews",
     "artInteractions": "Independent architecture explorer and animated art hero; playable economy lives in Episode 01",
     "practiceEpisode": "Full fictional loop and ordinary control implemented; engine and browser checks pass; uncoached comprehension and session timing not tested",

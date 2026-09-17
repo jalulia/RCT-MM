@@ -1,11 +1,11 @@
 {
-  "designRevision": "0.14",
+  "designRevision": "0.15",
   "artRevision": "0.10",
   "phaseRecordsChecked": 8,
   "zipMembersByteMatched": 449,
   "htmlPagesChecked": 7,
-  "internalReferencesChecked": 2067,
-  "authoredReferencesChecked": 109,
+  "internalReferencesChecked": 2110,
+  "authoredReferencesChecked": 116,
   "externalReferenceURLs": 47,
   "readerPages": 16,
   "objects": 44,
@@ -15,5 +15,6 @@
   "spriteSourceHashesMatch": true,
   "episodeCaptureSourceHashesMatch": true,
   "episodeCaptures": 14,
+  "readingIllustrations": 2,
   "errors": []
 }

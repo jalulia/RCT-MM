@@ -1953,6 +1953,66 @@
       "classification": "versions"
     },
     {
+      "file": "versions/0.14/GDD.md",
+      "bytes": 45384,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/RELEASE-REVIEW.md",
+      "bytes": 2908,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/binding/episode-01-draft.md",
+      "bytes": 16406,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/binding/native-inventory.md",
+      "bytes": 16307,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/evidence-map.md",
+      "bytes": 27449,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/project.json",
+      "bytes": 1653,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/research/campus-discoveries.md",
+      "bytes": 16292,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/research/office-art-research.md",
+      "bytes": 17220,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/research/park-logic-review.md",
+      "bytes": 8522,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/research/sprite-refinement.md",
+      "bytes": 6145,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/research/systems.md",
+      "bytes": 27801,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.14/research/ux.md",
+      "bytes": 24218,
+      "classification": "versions"
+    },
+    {
       "file": "versions/0.3/GDD-0.3.md",
       "bytes": 29301,
       "classification": "versions"
