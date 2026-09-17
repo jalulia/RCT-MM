@@ -33,6 +33,16 @@ Historical source binding remains at selected-export-field level. Original state
 
 `Design/working/` contains maintained build/runtime sources, not an unsorted work bin. The only archived code used by a current check is the explicitly retained 0.7 renderer baseline for before/after comparison. One-off patch scripts are archived and are not build commands.
 
+## Ordinary-work practice (Path A)
+
+Playable ordinary-first loop (no payment exception on the default path): [`ordinary-work/`](ordinary-work/).
+
+```sh
+cd ordinary-work && python3 -m http.server 8040
+```
+
+Then open http://localhost:8040/ — Make vs Buy, staffing, bay placement, shared capacity, posted/reserved/available cash.
+
 ## View locally
 
 Open `index.html`, or run `python3 -m http.server 8000` from this folder. The checked-in site requires no build, login, backend or external font service.

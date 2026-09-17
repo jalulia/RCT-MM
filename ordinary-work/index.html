@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mad Money Tycoon — Ordinary practice</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">Mad Money Tycoon <span>ORDINARY · WORK FIRST</span></div>
+  <div class="ep">PRACTICE MODE <b>Run the agency</b></div>
+  <span class="fixture">FICTIONAL · INVENTED VALUES</span>
+  <button type="button" id="new-run">New run</button>
+</header>
+
+<main>
+<section class="brief">
+  <div>
+    <span class="folio">C-07 / PRODUCTION · ORDINARY PATH</span>
+    <h1>Arrange production. Watch it work. Revise.</h1>
+    <p>Accept the scope, reserve capacity, commit make or buy, produce, hand off, review.
+      Primary fun is running a small agency — not chasing exceptions.
+      Inquiry and returned-payment stay off this default path.</p>
+  </div>
+  <div class="mode">
+    <label>Scenario</label>
+    <div class="locked-mode">Practice · ordinary <small>locked for v1</small></div>
+    <p>Campaign budget <b>$100,000</b> is a ceiling · not cash.
+      Opening posted cash <b>$40,000</b>. Client receivable on delivery is not a receipt.
+      Historical snapshots are inactive.</p>
+  </div>
+</section>
+
+<section class="dashboard" aria-label="Current campaign state">
+  <div class="date"><span>WEEK 3</span><strong id="date">Mon AM</strong><small id="interval">Planning</small></div>
+  <div><span>POSTED BANK CASH</span><strong id="cash"></strong></div>
+  <div><span>RESERVED / NOT YET PAID</span><strong id="reserved"></strong></div>
+  <div><span>AVAILABLE AFTER RESERVES</span><strong id="available"></strong></div>
+  <div><span>CLIENT RECEIVABLE</span><strong id="receivable">$0</strong><small>Not a cash receipt</small></div>
+</section>
+
+<div class="workspace">
+  <section class="world">
+    <nav class="views" aria-label="View of selected object">
+      <button type="button" data-view="Work" aria-pressed="true">Work</button>
+      <button type="button" data-view="Cash">Cash</button>
+      <button type="button" data-view="Information">Information</button>
+      <button type="button" data-view="Control">Control</button>
+      <button type="button" data-view="People">People</button>
+    </nav>
+
+    <div class="workshop" aria-label="Workshop capacity board">
+      <div class="workshop-head">
+        <span>Workshop board <small>shared staff pool · 2 units / half-day</small></span>
+        <span class="budget-tag">Ceiling $100k · not cash</span>
+      </div>
+      <div class="capacity-board">
+        <div class="cap-card">
+          <b>C-07</b>
+          <div class="bars" id="bars-c07"></div>
+          <small id="cap-c07-label">Choose a plan</small>
+        </div>
+        <div class="cap-card">
+          <b>Display job</b>
+          <div class="bars" id="bars-other"></div>
+          <small id="cap-other-label">3 units · due Tue AM</small>
+        </div>
+        <div class="cap-card pool">
+          <b>Staff pool</b>
+          <div class="pool-units" id="pool-units"></div>
+          <small>Assign 1 or 2 to C-07; remainder works the display</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="bay-choices" aria-label="Place the project">
+      <button type="button" data-bay="dock"><b>01 · Near dock</b><span>1 handoff interval</span></button>
+      <button type="button" data-bay="studio"><b>02 · Shared floor</b><span>2 handoff intervals</span></button>
+    </div>
+    <div class="selection" aria-label="Selected object">
+      <button type="button" data-select="C-07" aria-pressed="true">C-07 / campaign component</button>
+      <button type="button" data-select="OTHER">Display job / competing reservation</button>
+    </div>
+    <div id="view-panel"></div>
+  </section>
+
+  <aside class="inspector">
+    <div class="inspector-head"><span>C-07 / WORK ORDER</span><a href="#records" id="terms-link">Terms ↗</a></div>
+    <div id="decisions"></div>
+    <div class="clock">
+      <button type="button" id="advance" class="primary">Run one interval →</button>
+      <button type="button" id="auto">Run schedule</button>
+      <small>One interval = half a workday. Promise Thu AM. Reading pauses auto.</small>
+    </div>
+    <p id="notice" role="status" aria-live="polite"></p>
+  </aside>
+</div>
+
+<section class="records" id="records">
+  <div class="section-head"><h2>On the desk</h2><span>Records appear when available. Snapshots are inactive.</span></div>
+  <div id="record-tray"></div>
+</section>
+
+<section class="lower">
+  <div class="log">
+    <div class="section-head"><h2>Shift log</h2><button type="button" id="export-run">Export run ↓</button></div>
+    <ol id="event-log"></ol>
+  </div>
+  <div class="control">
+    <div class="section-head"><h2>Liquidity reminder</h2><span>ALWAYS TRUE</span></div>
+    <ul class="semantics-list">
+      <li>Work ≠ revenue</li>
+      <li>Obligation ≠ settlement</li>
+      <li>Capability ≠ execution</li>
+      <li>Fiction ≠ history</li>
+      <li>Unknown is valid</li>
+      <li>Posted ≠ available after reserves</li>
+      <li>Receivable ≠ cash receipt</li>
+      <li>Budget ceiling ≠ posted cash</li>
+    </ul>
+  </div>
+</section>
+
+<section id="outcome" hidden></section>
+
+<div class="semantics">
+  <b>SEMANTIC LABELS (ALWAYS TRUE HERE)</b>
+  Budget ceiling is not cash. Posted bank cash is not usable until reservations clear.
+  An obligation is not a settlement. A receivable is not a receipt.
+  Invented simulation values are not historical evidence.
+  Saved snapshots are inactive and are never rewritten by later events.
+</div>
+</main>
+
+<dialog id="desk">
+  <header>
+    <div><span>DOCUMENT DESK / FICTIONAL</span><h2 id="doc-title"></h2></div>
+    <button type="button" id="close-desk">Return to workshop ↙</button>
+  </header>
+  <div id="doc-content"></div>
+</dialog>
+
+<footer class="site">Mad Money Tycoon · Ordinary-work-first practice · invented values · no build step</footer>
+
+<script src="model.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
