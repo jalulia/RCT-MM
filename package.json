@@ -12,7 +12,8 @@
     "check": "node Design/working/boerum-motion-check.cjs && node Design/working/check-refinement.cjs && node Design/working/check-voila.cjs && node Design/working/check-episode.cjs && python3 Design/working/check-release.py",
     "serve": "python3 -m http.server 8000",
     "capture:episode": "node Design/working/capture-episode.cjs && python3 Design/working/export-episode-gifs.py && node Design/working/episode-diagrams.cjs && node Design/working/export-episode-diagrams.cjs && npm run build",
-    "check:browser": "node Design/working/check-reader-browser.cjs && node Design/working/check-component-libraries.cjs"
+    "check:browser": "node Design/working/check-reader-browser.cjs && node Design/working/check-component-libraries.cjs",
+    "build:park": "node Design/working/build-park-builder.cjs"
   },
   "dependencies": {
     "@napi-rs/canvas": "0.1.100",
