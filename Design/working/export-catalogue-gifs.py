@@ -70,10 +70,10 @@ def quantized_frames(images):
     return result, not exact
 
 
-def encode(relative, sources, *, label, kind, durations=None, timing_basis=None):
+def encode(relative, sources, *, label, kind, durations=None, timing_basis=None, source_root=None):
     images = []
     for source in sources:
-        with Image.open(safe_path(source)) as image:
+        with Image.open((source_root / source) if source_root else safe_path(source)) as image:
             images.append(image.convert('RGBA'))
     assert len({im.size for im in images}) == 1, relative
     frames, reduced = quantized_frames(images)
@@ -122,7 +122,7 @@ def encode(relative, sources, *, label, kind, durations=None, timing_basis=None)
             'frames': len(frames), 'transparent': has_transparency,
             'paletteReduced': reduced,
             'alpha': 'threshold at 128' if partial_alpha else 'original binary alpha',
-            'sourcePngs': sources, 'sha256': sha(path)}
+            'sourcePngs': [] if source_root else sources, 'sha256': sha(path)}
     if animated:
         meta.update(durationsMs=durations, durationMs=sum(durations), loop=0,
                     timingBasis=timing_basis)
@@ -204,6 +204,39 @@ for obj in manifest['objects']:
         sequence(obj, 'state-comparison', variants, 'States — comparison, not animation',
                  'state-comparison', [1000] * len(variants),
                  'Comparison timing: 1000 ms per state. These are alternatives, not a continuous animation.')
+
+# Continuous isolated motion uses the same render functions and periods as the scene.
+render_input = json.loads((Path(__file__).parent / 'sprite-render-input.json').read_text())
+for m in render_input.get('isolated', []):
+    obj = next(o for o in manifest['objects'] if o['id'] == m['id'])
+    source_root = Path(m['dir'])
+    sources = [p.name for p in sorted(source_root.glob('*.png'))]
+    assert len(sources) == m['frames']
+    meta = encode(m['file'], sources, label=m['label'], kind='scene-motion',
+                  durations=[m['delayMs']] * m['frames'], source_root=source_root,
+                  timing_basis=f"Shared scene renderer, sampled over {m['sourcePeriodSeconds']:.6f} seconds. GIF duration rounded to whole 100 ms frames.")
+    obj['motionPreview'].update(meta)
+    obj['motionPreview']['bounds'] = m['bounds']
+    obj['motionPreview']['poster'] = m['poster']
+    still(m['poster'], obj['name'] + ' / motion poster — still')
+
+# One display choice drives the reader, library and catalogue. State alternatives never autoplay.
+for obj in manifest['objects']:
+    variant = obj['variants'][0]
+    motion = obj.get('motionPreview')
+    gait = next((g for g in obj['gifSequences'] if g['kind'] in ('gait-loop', 'pose-preview')), None)
+    seq = motion or gait
+    bounds = motion['bounds'] if motion else variant['bounds']
+    if gait:
+        frames = [v for v in obj['variants'] if v['key'] in gait['variantKeys']]
+        x, y = min(v['bounds']['x'] for v in frames), min(v['bounds']['y'] for v in frames)
+        bounds = dict(x=x, y=y, width=max(v['bounds']['x']+v['bounds']['width'] for v in frames)-x, height=max(v['bounds']['y']+v['bounds']['height'] for v in frames)-y)
+    obj['display'] = dict(poster=motion['poster'] if motion else variant['file'],
+                          gif=seq['file'] if seq else variant['gif']['file'],
+                          animated=bool(seq), bounds=bounds,
+                          width=motion['width'] if motion else obj['size'][0],
+                          height=motion['height'] if motion else obj['size'][1],
+                          label=seq['label'] if seq else ('Exterior + interior' if obj['group']=='Buildings' else 'Static component'))
 
 for group in manifest['groupSheets']:
     group['gif'] = still(group['file'], group['name'] + ' / transparent atlas — still sheet')

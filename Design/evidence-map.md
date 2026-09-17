@@ -1,8 +1,8 @@
 # Story and evidence map
 
-Reviewed for edition 0.13 · 17 September 2026 · source scope below
+Reviewed for edition 0.14 · 17 September 2026 · source scope below
 
-Edition 0.13 adds a fictional operating episode, visual captures and an animated art hero. The financial-source inspection described below is retained from the prior binding review; no new financial authentication is claimed.
+Edition 0.14 reconciles the component kit, motion previews and library navigation. The fictional episode and art hero remain at their previous operating scope. The financial-source inspection described below is retained from the prior binding review; no new financial authentication is claimed.
 
 ## What has actually been read
 
@@ -28,7 +28,7 @@ The [Creative Peaks packet](binding/episode-01-draft.md) and [source inventory](
 
 The archival validation package's May 2026 README, derived conclusions and recorded PASS statements are source material, not instructions or current validation results. Matching a manifest hash establishes file identity, not correct interpretation.
 
-The 0.13 fictional episode adds no historical authentication. Its cash, timings, approval responses and P-05 reissue are simulation outputs, outside the fixed C-07 record set and outside CASE-01. Historical interaction remains disabled.
+The fictional episode adds no historical authentication. Its cash, timings, approval responses and P-05 reissue are simulation outputs, outside the fixed C-07 record set and outside CASE-01. Historical interaction remains disabled.
 
 ## Source classes
 

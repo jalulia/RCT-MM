@@ -1,6 +1,6 @@
 # Mad Money Tycoon — game design document
 
-Revision 0.13 · 17 September 2026 · Design review edition
+Revision 0.14 · 17 September 2026 · Design review edition
 
 ## 01. Game
 
@@ -43,7 +43,7 @@ Every narrative chapter includes a short historical comparison. It identifies wh
 | Preserve selection and period across views | Players need to compare the same object |
 | Keep historical and simulated outcomes distinct | A player's choices cannot create evidence |
 
-These constraints are implemented at the first episode’s narrow scope. Their clarity and interest still need the [uncoached ordinary-work test](#production/current-focus); automated playthroughs do not validate comprehension.
+The first episode applies these rules to one workshop, two projects and a shared staff pool. Their clarity and interest still need the [uncoached ordinary-work test](#production/current-focus); automated playthroughs do not validate comprehension.
 
 Open decisions: audience; player authority; real-name representation; final building aesthetics; game distribution. This design review is prepared for public GitHub Pages; publication of the eventual game remains a separate decision.
 
@@ -93,7 +93,7 @@ The fixed P-04 records never change. P-05 and responsive messages are new simula
 
 The episode’s **On the desk** tray exposes only records available at the current interval. Reading pauses the schedule and returns to the same selection and view. The player can request a processor trace or recipient confirmation, seek one finance approval, build a substitute or revise the handoff. Reading an invoice export alone does not unlock reissue authority.
 
-The diagram below describes the fixed returned-payment fixture. A successful player-created P-05 is a separate later attempt; it does not fill a missing historical endpoint.
+The lifecycle diagram describes the fixed returned-payment fixture. A successful player-created P-05 is a separate later attempt; it does not fill a missing historical endpoint.
 
 Inspecting and comparing are navigation actions. The consequential choice is the changed commitment or plan they inform.
 
@@ -315,7 +315,7 @@ The anonymous fedora walker repeats six traversals: left, right, moonwalk left, 
 
 <!-- figure:office-study -->
 
-Richness comes from repeated facade bays, layered interiors, visible work and distinctive gathering places. The assembled scene combines a compact street edge with planted courts. **Next spatial proof:** make one service route affect an ordinary handoff.
+Richness comes from repeated facade bays, layered interiors, visible work and distinctive gathering places. The assembled scene combines a compact street edge with planted courts. Episode 01 tests a physical consequence: near-dock placement saves one handoff interval. The [current focus](#production/current-focus) is whether players understand that choice without coaching.
 
 ### Office discoveries
 
@@ -331,9 +331,9 @@ The world is drawn on an integer pixel grid. Text, controls and source documents
 
 <!-- figure:art-components -->
 
-The kit separates ground, props, people, signs and building parts. It can be extended without repainting a whole scene. Boerum, Porter and Johnson supply distinct site forms. Their placement together is a fictional park composition; no department, entity or historical chronology is inferred from a building style.
+The kit and catalogue read the same register: 44 objects, 136 atlas frames and eight categories. Motion previews use the scene renderer; frame sheets remain explicit records of poses and states. Open an object for its source notes, all variants and PNG/GIF downloads.
 
-The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registered objects and 136 transparent frames, with labelled overviews, per-object sheets and a frame manifest. The Boerum previews show the full 36-second cycle. Catalogue exports rebuild from the same render functions as the park. The full refinement redrew 43 earlier objects and added the complete Chrysler attraction assembly. The latest pass replaces the standalone overlook with the Voila delivery truck; Johnson retains its orange interior stair. Both vehicles have 16 orientations. [Compare the previous and refined sprites](assets/sprite-catalogue/sheets/refinement-comparison.png).
+L-05 is the Voila bakery truck, associated with Porter. Its invented route includes a four-second loading stop and a 28-second circuit. PR-04 is the generic supplier van used in the fictional episode. Johnson’s orange stair remains inside B-03. These are separate components with separate uses.
 
 ### Assembly
 
@@ -348,14 +348,6 @@ Sites and scenery can be selected separately. A landmark opens its photograph an
 Each building has visible **Exterior / Interior** previews. The inspector consistently shows the selected sprite, source photograph and park interpretation. The **Practice documents** tray opens C-07 independently of building selection and returns to the same park state. Work, Cash, Information, Control and People views operate in Episode 01 and have a separate [relationship study](#interface/five-views). Architectural browsing does not use those tabs.
 
 The arrangement combines architecture and objects from different sites and photographs. It is not a historical map or a claim that the event objects were permanent. The playable episode uses a smaller Johnson-derived practice workshop: near-dock placement saves one handoff interval. Test whether that consequence is legible before adding more attractions.
-
-### Voila delivery
-
-<!-- figure:voila-delivery -->
-
-L-05 is a bakery delivery NPC associated with Porter. The 32-second sequence begins with a four-second loading stop, then follows the marked service road. The truck, route and loading behavior are park inventions. They do not imply a historical delivery or a transaction in the case. The separate PR-04 generic van remains an available component, without a duplicate placement on the current map.
-
-The external orange overlook has been retired. Johnson’s internal stair and mezzanine remain part of B-03.
 
 ### Interface materials
 
@@ -378,7 +370,7 @@ Geist remains the navigation face. Geist Mono handles IDs, narrow records and ta
 
 The populated specimens use the fictional C-07 / O-19 / P-04 fixture. The version labels and times are invented interaction values. V2 was recorded on Tuesday, before Wednesday’s bank return; reopening it does not establish a post-return platform status. A later status observation is required before the playable episode can teach label persistence. T-01 is a separate, unbound form-layout study, not an IRS form or a record connected to C-07. The 2024 IRS Form 941-X is linked only as a visual reference for field and part structure. Player notes persist across document changes but reset on page reload.
 
-### Production and next proof
+### Implementation scope
 
 | Implemented system | Use in Episode 01 / next test |
 |---|---|
@@ -388,11 +380,11 @@ The populated specimens use the fictional C-07 / O-19 / P-04 fixture. The versio
 | Separate practice-document desk with version and bank comparison | Introduce the payment exception after ordinary work is understandable |
 | PNG/GIF exports, atlases, anchors and orientation metadata | Gameplay, map cycle and UI captures published alongside the scenic exports |
 
-The [current focus](#production/current-focus) defines that proof. Model-to-sprite comparisons, new camera angles, extra attractions and a full animation set are later production options. Occlusion and handoff poses become immediate tasks only where the chosen scene needs them.
+The [current focus](#production/current-focus) defines that proof. Art work follows demonstrated recognition or interaction problems in that test.
 
-The art study demonstrates the visual system. Episode 01 reuses it for a running fictional economy at one-workshop scope. Neither establishes a complete animation set or an approved engine for the full campaign. The current procedural drawings are an editable art proof; modelled source assets can replace them only if they preserve the resulting image.
+The art study demonstrates the visual system. Episode 01 reuses it for a running fictional economy at one-workshop scope. Neither establishes a complete animation set or an approved engine for the full campaign. The procedural drawings remain the current editable source.
 
-Sound follows ordinary work: footsteps, fabrication, paper handling and deliveries. Reading pauses ambient motion. A future sound pass should test one handoff, one waiting state and one record opening; the same states must remain clear with sound off.
+Sound is not implemented. A later pass should use footsteps, fabrication, paper handling and deliveries; reading and essential state changes must remain clear with sound off.
 
 Source images and third-party game art stay in the reference board. Supplied PZ mods remain craft references with their stated reuse restrictions. The [OpenRCT2 graphics helper](https://github.com/OpenRCT2/Blender-RCT-Graphics) documents a historical sprite workflow; its Blender 2.79 dependency makes it a reference, not the proposed production setup. The [supplied tile mod](https://steamcommunity.com/workshop/filedetails/?id=2337452747) is likewise a construction reference, not an asset license for this game.
 
@@ -506,6 +498,7 @@ CASE-01 is the narrative reference; the validation package is an archival source
 
 | Revision | Change | Status |
 |---|---|---|
+| 0.14 | Catalogue-driven component kit, isolated motion previews, unified asset libraries and source links; redundant truck section and speculative art task lists removed | P2 remains the next test; P1 runs in parallel; no new gameplay or historical claims |
 | 0.13 | Playable fictional episode, ordinary control, conditional responses, five views, run persistence/export, captured gameplay and Narrative figures; test plan reconciled | P2 ready for uncoached playtest; P4 fictional loop built early; P1 and historical gates remain open |
 | 0.12 | Voila bakery truck replaces L-05 overlook; Porter service route, 16 vehicle orientations and GIF exports; Johnson stair retained; custom animated art hero | Design 0.12 / art 0.10; P2 remains next, P1 remains parallel |
 | 0.11 | Cross-reference and dependency audit; one P0–P7 phase sequence; explicit P2 ordinary-work proof; corrected document entry points, taxonomy, source gates and preview labels | Design 0.11 / art 0.9; source binding remains parallel and historical interaction inactive |

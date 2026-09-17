@@ -1,6 +1,6 @@
 # Systems research and ontology
 
-Research checked against design 0.13 / art 0.10, 17 September 2026. This records the rationale for the current object model and the proposed operating game. The architecture explorer remains an art study. Episode 01 separately implements one shared capacity, one cash balance, two production plans and a returned-payment response; the broader economy below remains proposed. Campaign structure and player authority remain open tests in the GDD.
+Research checked against design 0.14 / art 0.10, 17 September 2026. This records the rationale for the current object model and the proposed operating game. The architecture explorer remains an art study. Episode 01 separately implements one shared capacity, one cash balance, two production plans and a returned-payment response; the broader economy below remains proposed. Campaign structure and player authority remain open tests in the GDD.
 
 ## The structural decision
 

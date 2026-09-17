@@ -1,6 +1,6 @@
 # Current verification
 
-Design 0.13 / art 0.10. The reader, playable episode, art hero, truck route, catalogue and download libraries are checked together. Prior specifications and review captures are retained in the archive.
+Design 0.14 / art 0.10. The reader, playable episode, art hero, truck route, catalogue and download libraries are checked together. Prior specifications and review captures are retained in the archive.
 
 | Record | Scope |
 |---|---|
@@ -8,12 +8,13 @@ Design 0.13 / art 0.10. The reader, playable episode, art hero, truck route, cat
 | `episode-engine-checks.json` | Both ordinary plans, placement timing, staffing conflict, returned cash, permission, one reissue, substitute obligations, valid pooling and exact replay |
 | `episode-browser-checks.json` | Visible-control playthroughs, available documents, pause/return, five views for both selections, export/reload, file URL, mobile width and keyboard focus |
 | `reader-browser-checks.json` | 38 reader route/viewport checks; image loading, overflow and art-hero pause/reduced motion |
+| `component-library-checks.json` | Register coverage, visible motion, pause/reduced motion, old bookmarks, mobile layout and isolated GIF download |
 | `library-browser-checks.json` | Preview, archive and catalogue at desktop/mobile widths |
 | `voila-checks.json` | 640 route samples, building/Solarium clearance, bounds, loading stop, sixteen headings, loop continuity, moving selection target and unchanged Johnson cutaway |
 | `interaction-checks.json` | Art explorer: truck selection, motion pause, practice-document return and GIF download |
 | `refinement-checks.json` | 136 atlas frames, source hashes and renderer timing; L-05 recorded as a replacement |
 | `sprite-gif-checks.json` | Boerum choreography, decoded samples and 36-second duration |
-| `../assets/sprite-catalogue/gif-validation.json` | Catalogue GIF dimensions, alpha, decoded pixels and sequence timing |
+| `../assets/sprite-catalogue/gif-validation.json` | Catalogue GIF dimensions, alpha, 1,235 decoded frames and sequence timing |
 | `external-link-responses.json` | Earlier external-source access audit; no new source authentication |
 
 `previews/episode/manifest.json` identifies browser captures, timing, dimensions, labels and runtime source hashes. The run receipts retain the actual actions and model state. Authored diagrams are labelled separately from screenshots. The map cycle holds the economic state while sampling scenic motion. The art hero uses its own 36-second presentation clock; the study truck route remains 32 seconds.

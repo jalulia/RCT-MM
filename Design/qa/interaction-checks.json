@@ -1,14 +1,14 @@
 {
-  "design": "0.13",
+  "design": "0.14",
   "art": "0.10",
   "truckSelection": true,
   "routeRuns": true,
   "globalPausePreservesTime": true,
   "practiceReturnPreservesSelection": true,
   "routeGifDownloadedAndByteMatched": true,
-  "pausedTime": 0.75,
+  "pausedTime": 0.875,
   "returned": {
-    "time": 0.75,
+    "time": 0.875,
     "landmark": "L-05",
     "roof": false
   }

@@ -1,31 +1,27 @@
-# Release review · design 0.13 / art 0.10
+# Release review · design 0.14 / art 0.10
 
-Reviewed 17 September 2026. [Design document](design-review.html) · [Playable episode](episode-01/index.html) · [Current captures](previews/index.html#episode).
+Reviewed 17 September 2026. [Design document](design-review.html) · [Component kit](design-review.html#art/component-kit) · [Playable episode](episode-01/index.html).
 
-The fictional first episode is implemented and exercised through its visible controls. The operating model, Narrative figures, preview library, project status and P0–P7 phase table now agree. P2 is ready for uncoached playtesting. P4’s fictional loop was built early as test material; P2/P3 validation and historical binding have not been passed by implementation alone.
+The component kit, catalogue and preview library now share the same 44-object register and display metadata. All 136 atlas frames remain available. Eleven objects have isolated motion previews; buildings present exterior and interior states explicitly. Voila is L-05 in the existing Landmarks category, with its photographic reference alongside the other office discoveries.
 
-## What changed
+## Current release
 
-| Area | Current result |
+| Area | Result |
 |---|---|
-| Episode | Internal and supplier plans; two work bays; shared staff; half-day clock; purchases, payroll and reservations; conditional payment responses; final outcome |
-| Records | Date-gated document tray, fixed saved v1/v2 records, bank strip, replies, permission and a separate P-05 reissue |
-| Control | Trace or recipient response before approval; one approved reissue; recipient confirmation before release |
-| Continuity | Five views preserve project and interval; reading pauses the schedule; save/reopen replays the run; JSON export keeps its action history |
-| Ordinary control | Supplier receipt succeeds; routine B-09 has two allocations and both receipts; no anomaly is manufactured |
-| Narrative | Real gameplay captures plus diagrams of branches, clocks and cash boundaries; campaign proposals remain identified as proposals |
-| Art hero | Independent 36-second composed scene with cutaway foreground, circuit, bakery route, pacing, walkers and flags; pause and reduced-motion support |
-| Voila | L-05 replaces the external orange overlook; sixteen truck headings and a 32-second route beside Porter; Johnson’s internal stair is retained |
-| Libraries | Current previews, GIFs, original SVG diagrams, run receipts, object sheets and ZIP; prior specifications and checks retained in the archive |
+| Component kit | All eight categories; registered IDs, paired building states, isolated motion and direct object/download links |
+| Motion | Shared visible-preview playback, pause and reduced-motion support across the reader and libraries; continuous vehicle, cat and shark previews from the scene renderer |
+| Catalogue | Original frame sheets, state comparisons, gait loops, motion previews, source metadata and a complete offline ZIP |
+| Preview library | One entry per registered object; scenes, architecture, episode captures and document specimens; redundant early specimen cards removed |
+| Document | Standalone truck section removed; former bookmarks route to the component; obsolete art task lists consolidated around the current test |
+| Episode 01 | Fictional internal/supplier plans, shared staffing, placement, payment responses, five views, saved runs and JSON export; unchanged operating rules |
+| Project files | Superseded specifications and research retained under revision 0.13; replaced preview derivatives removed from the current library |
 
-## Review boundaries
+## Verification and limits
 
-The episode is a fictional design prototype, not a recreation of actual financial decisions. Starting cash, internal costs, timing, authority, recipient replies and P-05 are authored simulation inputs or results. CASE-01 and its export-level binding remain unchanged. The Tuesday saved Paid label is never described as proof of post-return platform persistence.
+[QA](qa/README.md) records checks of registered objects, motion bounds and timing, reader/library playback, reduced motion, navigation, references, source hashes and ZIP contents. Episode captures are rebuilt whenever their shared scene source changes. Static screenshots and authored diagrams stay labelled separately from animation.
 
-The engine and browser checks establish implementation behavior. They do not measure whether the decisions are enjoyable, whether uncoached players understand the distinctions, or whether a session lasts 12–15 minutes. A general economy, full campaign, reconstruction alternative, arbitrary save branching and production sound remain unimplemented.
+This pass changes presentation and documentation, not the case findings or episode economy. Historical interaction remains disabled. The source binding still lacks original return linkage, a later observation of the same payment object, and recipient settlement. The fictional episode has passed implementation checks; participant comprehension, enjoyment and session timing remain unmeasured.
 
-The detailed, repeatable check scope is recorded in [QA](qa/README.md). Source hashes, internal links, phase agreement, captures, exported formats and the complete sprite ZIP are checked together. External-source authentication was not repeated during this implementation pass.
+## Current focus
 
-## Next work
-
-Run the ordinary scenario without coaching, then the full supplier route. Observe whether players understand staffing, placement, posted cash, open obligations and saved record timing; inspect voluntary replay. Use those findings to revise the operating loop before locking the structure or campaign. P1 continues in parallel: original return linkage, bank direction, continuous status history and recipient settlement remain unresolved. Historical interaction stays disabled.
+**P2: run the ordinary scenario without coaching**, then offer the full supplier route. Observe staffing, bay placement, record timing, cash/obligation distinctions and voluntary replay. Revise the model or presentation from those findings before P3’s structure comparison. P1 source binding runs in parallel. The GDD’s [production sequence](design-review.html#production/production-sequence) remains the single phase plan.

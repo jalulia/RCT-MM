@@ -12,7 +12,7 @@ class Page(HTMLParser):
  def handle_starttag(self,tag,attrs):
   d=dict(attrs)
   if d.get('id'):self.ids.append(d['id'])
-  for key in ['href','src']:
+  for key in ['href','src','data-motion-src','data-motion-poster']:
    if d.get(key):self.refs.append((tag,key,d[key]))
   if tag in ['script','style']:self.ignore+=1
  def handle_endtag(self,tag):
@@ -107,10 +107,16 @@ for phase in plan['phases']:
   assert phase[key] in published_text,(phase['id'],key,'missing from published plan')
 assert {entry['title'] for entry in preview_manifest['entries'] if entry['id'] in ['art-system-stage0','art-system-stage1','art-system-stage2','art-system-stage4']}=={'Porter / footprint','Porter / shell','Porter / contents','Porter / roof'}
 for o in manifest['objects']:
- for item in [o['sheet'],*o['variants'],*o.get('gifSequences',[])]:
+ for item in [o['sheet'],*o['variants'],*o.get('gifSequences',[]),*([o['motionPreview']] if o.get('motionPreview') else [])]:
   if not (root/'Design/assets/sprite-catalogue'/item['file']).exists():errors.append('Missing object export '+item['file'])
  assert all(v.get('gif') for v in o['variants']),o['id']+' missing GIFs'
  assert o['sheet'].get('gif'),o['id']+' missing sheet GIF'
+ assert 'art/kit-'+o['id'] in reader_ids, o['id']+' absent from component kit'
+ assert sum(e.get('object')==o['id'] for e in preview_manifest['entries'])==1,o['id']+' absent or duplicated in preview library'
+ for key in ['poster','gif']:
+  assert (root/'Design/assets/sprite-catalogue'/o['display'][key]).is_file(),o['id']+' display asset missing'
+assert 'art/voila-delivery' not in reader_ids, 'Redundant standalone truck chapter'
+assert not any(e['id'].startswith('art-system-') and e['id'] not in ['art-system-stage0','art-system-stage1','art-system-stage2','art-system-stage4'] for e in preview_manifest['entries']), 'Legacy specimen cards remain in the library'
 binding=json.loads((root/'Design/binding/episode-01.bindings.json').read_text())
 assert binding['historicalInteractionEnabled'] is False
 assert binding['readinessDecision']=='episode-01-draft.md#8-readiness-decision'

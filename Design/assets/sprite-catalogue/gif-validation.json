@@ -1,10 +1,10 @@
 {
   "errors": [],
-  "files": 222,
-  "decodedFrames": 309,
-  "transparentFiles": 209,
-  "rgbaRoundTrips": 309,
-  "timingChecks": 108,
+  "files": 232,
+  "decodedFrames": 1235,
+  "transparentFiles": 219,
+  "rgbaRoundTrips": 1235,
+  "timingChecks": 1029,
   "preservedPreviews": [
     {
       "file": "previews/boerum-street-loop.gif",

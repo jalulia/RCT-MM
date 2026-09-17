@@ -1,7 +1,7 @@
 const REVIEW=__REVIEW_DATA__;
 const pages=REVIEW.pages;
 const valid=new Set(['contents',...pages.map(p=>p.id)]);
-const alias={overview:'contents',paths:'episode',views:'interface/five-views',directions:'art',process:'production',manual:'game',research:'research-systems'};
+const alias={'art/production-and-next-proof':'art/implementation-scope','art/voila-delivery':'art/kit-L-05',overview:'contents',paths:'episode',views:'interface/five-views',directions:'art',process:'production',manual:'game',research:'research-systems'};
 const dialog=document.querySelector('#search-dialog');
 const searchInput=document.querySelector('#search-input');
 const safe=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -25,7 +25,7 @@ function render(route,scroll,focus=false){
  if(back){back.hidden=!history.state?.fromTitle;back.textContent='← '+(history.state?.fromTitle||'Return');back.href='#'+(history.state?.fromRoute||'contents')}
  requestAnimationFrame(()=>{
   if(typeof scroll==='number')window.scrollTo(0,scroll);
-  else if(route.includes('/'))document.getElementById(route)?.scrollIntoView({block:'start'});
+  else if(route.includes('/')){const target=document.getElementById(route);if(target)window.scrollTo(0,window.scrollY+target.getBoundingClientRect().top-document.querySelector('.masthead').offsetHeight-24);}
   else window.scrollTo(0,0);
   if(typeof markSection==='function')markSection();
   if(focus){const target=document.getElementById(route)||document.querySelector('#page-'+activePage+' h1');if(target){target.setAttribute('tabindex','-1');target.focus({preventScroll:true})}}
@@ -89,3 +89,6 @@ let tocPending=false;
 function markSection(){const panel=document.getElementById('page-'+activePage);if(!panel||activePage==='contents')return;const headings=[...panel.querySelectorAll('.article-body h2')];let chosen=headings[0];for(const h of headings){if(h.getBoundingClientRect().top<=180)chosen=h;else break}if(document.documentElement.scrollHeight-innerHeight-scrollY<24)chosen=headings.at(-1)||chosen;panel.querySelectorAll('.page-links a').forEach(a=>{a.classList.toggle('is-current',a.hash.slice(1)===chosen?.id)});tocPending=false}
 addEventListener('scroll',()=>{if(!tocPending){tocPending=true;requestAnimationFrame(markSection)}},{passive:true});
 requestAnimationFrame(markSection);
+
+// Restore the requested section after the browser has completed native fragment scrolling.
+addEventListener('load',()=>{if(history.state?.index===0&&initial.includes('/'))requestAnimationFrame(()=>render(initial,undefined,false))},{once:true});

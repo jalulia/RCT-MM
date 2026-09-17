@@ -131,92 +131,976 @@
       "encodedFrames": 320
     },
     {
-      "id": "office-study-boerum-return",
-      "title": "Boerum return",
-      "png": "../assets/office-study/boerum-return.png",
-      "gif": "office-study-boerum-return.gif",
+      "id": "object-B-01",
+      "title": "Boerum frontage",
+      "png": "../assets/sprite-catalogue/objects/B-01/roof-on.png",
+      "gif": "../assets/sprite-catalogue/objects/B-01/roof-on.gif",
       "kind": "still",
-      "group": "Architecture",
+      "group": "Components",
+      "category": "Buildings",
       "size": [
-        320,
-        180
+        192,
+        160
       ],
-      "route": "#art/architecture-study",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "bounds": {
+        "x": 38,
+        "y": 29,
+        "width": 117,
+        "height": 114
+      },
+      "route": "#art/kit-B-01",
+      "object": "B-01",
+      "caption": "Exterior + interior. Actual park geometry. Roof and cutaway share one footprint."
     },
     {
-      "id": "office-study-boerum-start",
-      "title": "Boerum start",
-      "png": "../assets/office-study/boerum-start.png",
-      "gif": "office-study-boerum-start.gif",
+      "id": "object-B-02",
+      "title": "Porter hall",
+      "png": "../assets/sprite-catalogue/objects/B-02/roof-on.png",
+      "gif": "../assets/sprite-catalogue/objects/B-02/roof-on.gif",
       "kind": "still",
-      "group": "Architecture",
+      "group": "Components",
+      "category": "Buildings",
       "size": [
-        320,
-        180
+        192,
+        160
       ],
-      "route": "#art/architecture-study",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "bounds": {
+        "x": 19,
+        "y": 38,
+        "width": 156,
+        "height": 116
+      },
+      "route": "#art/kit-B-02",
+      "object": "B-02",
+      "caption": "Exterior + interior. Actual park geometry. Roof and cutaway share one footprint."
     },
     {
-      "id": "office-study-boerum-turn",
-      "title": "Boerum turn",
-      "png": "../assets/office-study/boerum-turn.png",
-      "gif": "office-study-boerum-turn.gif",
+      "id": "object-B-03",
+      "title": "266 Johnson",
+      "png": "../assets/sprite-catalogue/objects/B-03/roof-on.png",
+      "gif": "../assets/sprite-catalogue/objects/B-03/roof-on.gif",
       "kind": "still",
-      "group": "Architecture",
+      "group": "Components",
+      "category": "Buildings",
       "size": [
-        320,
-        180
+        192,
+        160
       ],
-      "route": "#art/architecture-study",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "bounds": {
+        "x": 28,
+        "y": 44,
+        "width": 136,
+        "height": 105
+      },
+      "route": "#art/kit-B-03",
+      "object": "B-03",
+      "caption": "Exterior + interior. Actual park geometry. Roof and cutaway share one footprint."
     },
     {
-      "id": "office-study-boerum",
-      "title": "Boerum",
-      "png": "../assets/office-study/boerum.png",
-      "gif": "office-study-boerum.gif",
-      "kind": "still",
-      "group": "Architecture",
+      "id": "object-L-01",
+      "title": "Chrysler",
+      "png": "../assets/sprite-catalogue/objects/L-01/motion/poster.png",
+      "gif": "../assets/sprite-catalogue/objects/L-01/motion/loop.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "Landmarks",
       "size": [
-        320,
-        180
+        192,
+        160
       ],
-      "route": "#art/architecture-study",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "bounds": {
+        "x": 25,
+        "y": 45,
+        "width": 143,
+        "height": 86
+      },
+      "route": "#art/kit-L-01",
+      "object": "L-01",
+      "caption": "Driving circuit \u00b7 22.4 s. Sixteen orientations with source-shaped body, chrome and glazing. The driving circuit is invented."
     },
     {
-      "id": "office-study-interior",
-      "title": "Interior",
-      "png": "../assets/office-study/interior.png",
-      "gif": "office-study-interior.gif",
-      "kind": "still",
-      "group": "Architecture",
+      "id": "object-L-05",
+      "title": "Voila delivery truck",
+      "png": "../assets/sprite-catalogue/objects/L-05/motion/poster.png",
+      "gif": "../assets/sprite-catalogue/objects/L-05/motion/loop.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "Landmarks",
       "size": [
-        320,
-        180
+        192,
+        160
       ],
-      "route": "#art/architecture-study",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "bounds": {
+        "x": 23,
+        "y": 28,
+        "width": 147,
+        "height": 99
+      },
+      "route": "#art/kit-L-05",
+      "object": "L-05",
+      "caption": "Delivery loop \u00b7 32 s. Bakery step van with sixteen orientations. Invented loading stop and service loop beside Porter."
     },
     {
-      "id": "office-study-parts",
-      "title": "Parts",
-      "png": "../assets/office-study/parts.png",
-      "gif": "office-study-parts.gif",
-      "kind": "still",
-      "group": "Architecture",
+      "id": "object-L-10",
+      "title": "Chrysler circuit",
+      "png": "../assets/sprite-catalogue/objects/L-10/motion/poster.png",
+      "gif": "../assets/sprite-catalogue/objects/L-10/motion/loop.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "Landmarks",
       "size": [
-        320,
-        180
+        192,
+        160
       ],
-      "route": "#art/architecture-study",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "bounds": {
+        "x": 25,
+        "y": 51,
+        "width": 143,
+        "height": 86
+      },
+      "route": "#art/kit-L-10",
+      "object": "L-10",
+      "caption": "Attraction cycle \u00b7 22.4 s. Invented attraction assembly: driving ribbon, planted island, boarding apron and Chrysler. The photographed car was stationary."
+    },
+    {
+      "id": "object-L-02",
+      "title": "Antler display",
+      "png": "../assets/sprite-catalogue/objects/L-02/default.png",
+      "gif": "../assets/sprite-catalogue/objects/L-02/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Landmarks",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 75,
+        "y": 60,
+        "width": 43,
+        "height": 60
+      },
+      "route": "#art/kit-L-02",
+      "object": "L-02",
+      "caption": "Static component. Includes the park plinth."
+    },
+    {
+      "id": "object-L-03",
+      "title": "Supernova pavilion",
+      "png": "../assets/sprite-catalogue/objects/L-03/default.png",
+      "gif": "../assets/sprite-catalogue/objects/L-03/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Landmarks",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 54,
+        "y": 56,
+        "width": 84,
+        "height": 77
+      },
+      "route": "#art/kit-L-03",
+      "object": "L-03",
+      "caption": "Static component. Conference-room name translated into an invented pavilion."
+    },
+    {
+      "id": "object-L-04",
+      "title": "Solarium",
+      "png": "../assets/sprite-catalogue/objects/L-04/default.png",
+      "gif": "../assets/sprite-catalogue/objects/L-04/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Landmarks",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 58,
+        "y": 51,
+        "width": 78,
+        "height": 80
+      },
+      "route": "#art/kit-L-04",
+      "object": "L-04",
+      "caption": "Static component. Garden pavilion; composite includes the tree."
+    },
+    {
+      "id": "object-L-07",
+      "title": "Sculpted reception",
+      "png": "../assets/sprite-catalogue/objects/L-07/default.png",
+      "gif": "../assets/sprite-catalogue/objects/L-07/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Landmarks",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 71,
+        "y": 83,
+        "width": 62,
+        "height": 52
+      },
+      "route": "#art/kit-L-07",
+      "object": "L-07",
+      "caption": "Static component. Includes the desk plant and screen."
+    },
+    {
+      "id": "object-L-08",
+      "title": "Inflatable castle",
+      "png": "../assets/sprite-catalogue/objects/L-08/default.png",
+      "gif": "../assets/sprite-catalogue/objects/L-08/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Landmarks",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 55,
+        "y": 51,
+        "width": 83,
+        "height": 82
+      },
+      "route": "#art/kit-L-08",
+      "object": "L-08",
+      "caption": "Static component. Castle only. The suspended shark is a separate object."
+    },
+    {
+      "id": "object-L-06",
+      "title": "Office cat",
+      "png": "../assets/sprite-catalogue/objects/L-06/motion/poster.png",
+      "gif": "../assets/sprite-catalogue/objects/L-06/motion/loop.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "Landmarks",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 77,
+        "y": 97,
+        "width": 40,
+        "height": 27
+      },
+      "route": "#art/kit-L-06",
+      "object": "L-06",
+      "caption": "Tail flick \u00b7 9 s. Resting tabby with a restrained tail flick. Johnson scene detail; no identity assigned."
+    },
+    {
+      "id": "object-L-09",
+      "title": "Suspended shark",
+      "png": "../assets/sprite-catalogue/objects/L-09/motion/poster.png",
+      "gif": "../assets/sprite-catalogue/objects/L-09/motion/loop.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "Landmarks",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 69,
+        "y": 29,
+        "width": 46,
+        "height": 35
+      },
+      "route": "#art/kit-L-09",
+      "object": "L-09",
+      "caption": "Suspended float \u00b7 6.3 s. Suspended balloon with a gentle vertical float."
+    },
+    {
+      "id": "object-M-01",
+      "title": "White worktable",
+      "png": "../assets/sprite-catalogue/objects/M-01/default.png",
+      "gif": "../assets/sprite-catalogue/objects/M-01/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Building parts",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 74,
+        "y": 90,
+        "width": 41,
+        "height": 31
+      },
+      "route": "#art/kit-M-01",
+      "object": "M-01",
+      "caption": "Static component. Reusable component from the current park renderer."
+    },
+    {
+      "id": "object-M-02",
+      "title": "Timber room",
+      "png": "../assets/sprite-catalogue/objects/M-02/default.png",
+      "gif": "../assets/sprite-catalogue/objects/M-02/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Building parts",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 63,
+        "y": 74,
+        "width": 67,
+        "height": 53
+      },
+      "route": "#art/kit-M-02",
+      "object": "M-02",
+      "caption": "Static component. Reusable component from the current park renderer."
+    },
+    {
+      "id": "object-M-03",
+      "title": "Coral booth",
+      "png": "../assets/sprite-catalogue/objects/M-03/default.png",
+      "gif": "../assets/sprite-catalogue/objects/M-03/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Building parts",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 75,
+        "y": 79,
+        "width": 40,
+        "height": 39
+      },
+      "route": "#art/kit-M-03",
+      "object": "M-03",
+      "caption": "Static component. Reusable component from the current park renderer."
+    },
+    {
+      "id": "object-M-04",
+      "title": "Roof skylight",
+      "png": "../assets/sprite-catalogue/objects/M-04/default.png",
+      "gif": "../assets/sprite-catalogue/objects/M-04/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Building parts",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 74,
+        "y": 99,
+        "width": 45,
+        "height": 24
+      },
+      "route": "#art/kit-M-04",
+      "object": "M-04",
+      "caption": "Static component. Reusable component from the current park renderer."
+    },
+    {
+      "id": "object-PR-01",
+      "title": "Lamp",
+      "png": "../assets/sprite-catalogue/objects/PR-01/default.png",
+      "gif": "../assets/sprite-catalogue/objects/PR-01/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Street & service",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 92,
+        "y": 81,
+        "width": 12,
+        "height": 41
+      },
+      "route": "#art/kit-PR-01",
+      "object": "PR-01",
+      "caption": "Static component. Original park component. Catalogue IDs in this section are asset IDs, not case record IDs."
+    },
+    {
+      "id": "object-PR-02",
+      "title": "Bench",
+      "png": "../assets/sprite-catalogue/objects/PR-02/default.png",
+      "gif": "../assets/sprite-catalogue/objects/PR-02/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Street & service",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 81,
+        "y": 95,
+        "width": 30,
+        "height": 28
+      },
+      "route": "#art/kit-PR-02",
+      "object": "PR-02",
+      "caption": "Static component. Original park component. Catalogue IDs in this section are asset IDs, not case record IDs."
+    },
+    {
+      "id": "object-PR-03",
+      "title": "Flower planter",
+      "png": "../assets/sprite-catalogue/objects/PR-03/default.png",
+      "gif": "../assets/sprite-catalogue/objects/PR-03/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Street & service",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 86,
+        "y": 91,
+        "width": 20,
+        "height": 28
+      },
+      "route": "#art/kit-PR-03",
+      "object": "PR-03",
+      "caption": "Static component. Original park component. Catalogue IDs in this section are asset IDs, not case record IDs."
+    },
+    {
+      "id": "object-PR-04",
+      "title": "Delivery van",
+      "png": "../assets/sprite-catalogue/objects/PR-04/default.png",
+      "gif": "../assets/sprite-catalogue/objects/PR-04/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Street & service",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 71,
+        "y": 87,
+        "width": 45,
+        "height": 39
+      },
+      "route": "#art/kit-PR-04",
+      "object": "PR-04",
+      "caption": "Static component. Original park component. Catalogue IDs in this section are asset IDs, not case record IDs."
+    },
+    {
+      "id": "object-PR-05",
+      "title": "Shipping crate",
+      "png": "../assets/sprite-catalogue/objects/PR-05/single.png",
+      "gif": "../assets/sprite-catalogue/objects/PR-05/single.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Street & service",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 86,
+        "y": 101,
+        "width": 20,
+        "height": 18
+      },
+      "route": "#art/kit-PR-05",
+      "object": "PR-05",
+      "caption": "Static component. Single crate or current two-crate stack."
+    },
+    {
+      "id": "object-PR-06",
+      "title": "Pennant",
+      "png": "../assets/sprite-catalogue/objects/PR-06/pink.png",
+      "gif": "../assets/sprite-catalogue/objects/PR-06/pink.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Street & service",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 94,
+        "y": 82,
+        "width": 15,
+        "height": 34
+      },
+      "route": "#art/kit-PR-06",
+      "object": "PR-06",
+      "caption": "Static component. Current scene colour variants."
+    },
+    {
+      "id": "object-G-01",
+      "title": "Grass tile",
+      "png": "../assets/sprite-catalogue/objects/G-01/texture-0.png",
+      "gif": "../assets/sprite-catalogue/objects/G-01/texture-0.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Ground & planting",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 80,
+        "y": 104,
+        "width": 33,
+        "height": 16
+      },
+      "route": "#art/kit-G-01",
+      "object": "G-01",
+      "caption": "Static component. 32 \u00d7 16 ground projection; four deterministic texture samples."
+    },
+    {
+      "id": "object-G-02",
+      "title": "Paving tile",
+      "png": "../assets/sprite-catalogue/objects/G-02/texture-0.png",
+      "gif": "../assets/sprite-catalogue/objects/G-02/texture-0.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Ground & planting",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 80,
+        "y": 104,
+        "width": 33,
+        "height": 17
+      },
+      "route": "#art/kit-G-02",
+      "object": "G-02",
+      "caption": "Static component. 32 \u00d7 16 ground projection; four deterministic texture samples."
+    },
+    {
+      "id": "object-G-03",
+      "title": "Tree",
+      "png": "../assets/sprite-catalogue/objects/G-03/full.png",
+      "gif": "../assets/sprite-catalogue/objects/G-03/full.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Ground & planting",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 76,
+        "y": 52,
+        "width": 43,
+        "height": 73
+      },
+      "route": "#art/kit-G-03",
+      "object": "G-03",
+      "caption": "Static component. Existing two scale variants."
+    },
+    {
+      "id": "object-G-04",
+      "title": "Hedge",
+      "png": "../assets/sprite-catalogue/objects/G-04/default.png",
+      "gif": "../assets/sprite-catalogue/objects/G-04/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Ground & planting",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 86,
+        "y": 97,
+        "width": 21,
+        "height": 21
+      },
+      "route": "#art/kit-G-04",
+      "object": "G-04",
+      "caption": "Static component. Clipped planting component."
+    },
+    {
+      "id": "object-S-01",
+      "title": "BOERUM",
+      "png": "../assets/sprite-catalogue/objects/S-01/default.png",
+      "gif": "../assets/sprite-catalogue/objects/S-01/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Signs",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 86,
+        "y": 79,
+        "width": 38,
+        "height": 44
+      },
+      "route": "#art/kit-S-01",
+      "object": "S-01",
+      "caption": "Static component. Pixel lettering and supports from the current scene."
+    },
+    {
+      "id": "object-S-02",
+      "title": "PORTER",
+      "png": "../assets/sprite-catalogue/objects/S-02/default.png",
+      "gif": "../assets/sprite-catalogue/objects/S-02/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Signs",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 86,
+        "y": 79,
+        "width": 36,
+        "height": 43
+      },
+      "route": "#art/kit-S-02",
+      "object": "S-02",
+      "caption": "Static component. Pixel lettering and supports from the current scene."
+    },
+    {
+      "id": "object-S-03",
+      "title": "JOHNSON",
+      "png": "../assets/sprite-catalogue/objects/S-03/default.png",
+      "gif": "../assets/sprite-catalogue/objects/S-03/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Signs",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 86,
+        "y": 79,
+        "width": 42,
+        "height": 46
+      },
+      "route": "#art/kit-S-03",
+      "object": "S-03",
+      "caption": "Static component. Pixel lettering and supports from the current scene."
+    },
+    {
+      "id": "object-S-04",
+      "title": "MAD MONEY",
+      "png": "../assets/sprite-catalogue/objects/S-04/default.png",
+      "gif": "../assets/sprite-catalogue/objects/S-04/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Signs",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 86,
+        "y": 79,
+        "width": 51,
+        "height": 51
+      },
+      "route": "#art/kit-S-04",
+      "object": "S-04",
+      "caption": "Static component. Pixel lettering and supports from the current scene."
+    },
+    {
+      "id": "object-S-05",
+      "title": "CHRYSLER",
+      "png": "../assets/sprite-catalogue/objects/S-05/default.png",
+      "gif": "../assets/sprite-catalogue/objects/S-05/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Signs",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 86,
+        "y": 79,
+        "width": 44,
+        "height": 47
+      },
+      "route": "#art/kit-S-05",
+      "object": "S-05",
+      "caption": "Static component. Pixel lettering and supports from the current scene."
+    },
+    {
+      "id": "object-S-06",
+      "title": "SUPERNOVA",
+      "png": "../assets/sprite-catalogue/objects/S-06/default.png",
+      "gif": "../assets/sprite-catalogue/objects/S-06/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Signs",
+      "size": [
+        192,
+        160
+      ],
+      "bounds": {
+        "x": 74,
+        "y": 83,
+        "width": 45,
+        "height": 32
+      },
+      "route": "#art/kit-S-06",
+      "object": "S-06",
+      "caption": "Static component. Pixel lettering and supports from the current scene."
+    },
+    {
+      "id": "object-A-01",
+      "title": "Boerum fedora",
+      "png": "../assets/sprite-catalogue/objects/A-01/walk-left-0.png",
+      "gif": "../assets/sprite-catalogue/objects/A-01/sequences/walk-left.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "People",
+      "size": [
+        24,
+        32
+      ],
+      "bounds": {
+        "x": 7,
+        "y": 8,
+        "width": 10,
+        "height": 19
+      },
+      "route": "#art/kit-A-01",
+      "object": "A-01",
+      "caption": "Walk left \u2014 gait loop. Anonymous pedestrian. Moonwalking faces opposite travel; both views use this painter."
+    },
+    {
+      "id": "object-A-02",
+      "title": "Person / pink",
+      "png": "../assets/sprite-catalogue/objects/A-02/walk-0.png",
+      "gif": "../assets/sprite-catalogue/objects/A-02/sequences/pose-preview.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "People",
+      "size": [
+        24,
+        32
+      ],
+      "bounds": {
+        "x": 8,
+        "y": 8,
+        "width": 10,
+        "height": 21
+      },
+      "route": "#art/kit-A-02",
+      "object": "A-02",
+      "caption": "Walking poses \u2014 preview sequence. Four walking poses. Colour does not establish employment or department."
+    },
+    {
+      "id": "object-A-03",
+      "title": "Person / blue",
+      "png": "../assets/sprite-catalogue/objects/A-03/walk-0.png",
+      "gif": "../assets/sprite-catalogue/objects/A-03/sequences/pose-preview.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "People",
+      "size": [
+        24,
+        32
+      ],
+      "bounds": {
+        "x": 8,
+        "y": 8,
+        "width": 10,
+        "height": 21
+      },
+      "route": "#art/kit-A-03",
+      "object": "A-03",
+      "caption": "Walking poses \u2014 preview sequence. Four walking poses. Colour does not establish employment or department."
+    },
+    {
+      "id": "object-A-04",
+      "title": "Person / green",
+      "png": "../assets/sprite-catalogue/objects/A-04/walk-0.png",
+      "gif": "../assets/sprite-catalogue/objects/A-04/sequences/pose-preview.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "People",
+      "size": [
+        24,
+        32
+      ],
+      "bounds": {
+        "x": 8,
+        "y": 8,
+        "width": 10,
+        "height": 21
+      },
+      "route": "#art/kit-A-04",
+      "object": "A-04",
+      "caption": "Walking poses \u2014 preview sequence. Four walking poses. Colour does not establish employment or department."
+    },
+    {
+      "id": "object-A-05",
+      "title": "Person / orange",
+      "png": "../assets/sprite-catalogue/objects/A-05/walk-0.png",
+      "gif": "../assets/sprite-catalogue/objects/A-05/sequences/pose-preview.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "People",
+      "size": [
+        24,
+        32
+      ],
+      "bounds": {
+        "x": 8,
+        "y": 8,
+        "width": 10,
+        "height": 21
+      },
+      "route": "#art/kit-A-05",
+      "object": "A-05",
+      "caption": "Walking poses \u2014 preview sequence. Four walking poses. Colour does not establish employment or department."
+    },
+    {
+      "id": "object-A-06",
+      "title": "Person carrying",
+      "png": "../assets/sprite-catalogue/objects/A-06/carry-0.png",
+      "gif": "../assets/sprite-catalogue/objects/A-06/sequences/pose-preview.gif",
+      "kind": "animation",
+      "group": "Motion",
+      "category": "People",
+      "size": [
+        24,
+        32
+      ],
+      "bounds": {
+        "x": 8,
+        "y": 8,
+        "width": 13,
+        "height": 21
+      },
+      "route": "#art/kit-A-06",
+      "object": "A-06",
+      "caption": "Walking poses \u2014 preview sequence. External/internal status is not encoded by the carried object."
+    },
+    {
+      "id": "object-U-01",
+      "title": "Work icon",
+      "png": "../assets/sprite-catalogue/objects/U-01/default.png",
+      "gif": "../assets/sprite-catalogue/objects/U-01/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Interface icons",
+      "size": [
+        16,
+        16
+      ],
+      "bounds": {
+        "x": 1,
+        "y": 2,
+        "width": 14,
+        "height": 12
+      },
+      "route": "#art/kit-U-01",
+      "object": "U-01",
+      "caption": "Static component. 16 \u00d7 16 original toolbar icon. Document panels remain live text, not sprites."
+    },
+    {
+      "id": "object-U-02",
+      "title": "Cash icon",
+      "png": "../assets/sprite-catalogue/objects/U-02/default.png",
+      "gif": "../assets/sprite-catalogue/objects/U-02/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Interface icons",
+      "size": [
+        16,
+        16
+      ],
+      "bounds": {
+        "x": 1,
+        "y": 3,
+        "width": 14,
+        "height": 11
+      },
+      "route": "#art/kit-U-02",
+      "object": "U-02",
+      "caption": "Static component. 16 \u00d7 16 original toolbar icon. Document panels remain live text, not sprites."
+    },
+    {
+      "id": "object-U-03",
+      "title": "Information icon",
+      "png": "../assets/sprite-catalogue/objects/U-03/default.png",
+      "gif": "../assets/sprite-catalogue/objects/U-03/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Interface icons",
+      "size": [
+        16,
+        16
+      ],
+      "bounds": {
+        "x": 2,
+        "y": 1,
+        "width": 12,
+        "height": 14
+      },
+      "route": "#art/kit-U-03",
+      "object": "U-03",
+      "caption": "Static component. 16 \u00d7 16 original toolbar icon. Document panels remain live text, not sprites."
+    },
+    {
+      "id": "object-U-04",
+      "title": "People icon",
+      "png": "../assets/sprite-catalogue/objects/U-04/default.png",
+      "gif": "../assets/sprite-catalogue/objects/U-04/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Interface icons",
+      "size": [
+        16,
+        16
+      ],
+      "bounds": {
+        "x": 1,
+        "y": 2,
+        "width": 15,
+        "height": 12
+      },
+      "route": "#art/kit-U-04",
+      "object": "U-04",
+      "caption": "Static component. 16 \u00d7 16 original toolbar icon. Document panels remain live text, not sprites."
+    },
+    {
+      "id": "object-U-05",
+      "title": "Control icon",
+      "png": "../assets/sprite-catalogue/objects/U-05/default.png",
+      "gif": "../assets/sprite-catalogue/objects/U-05/default.gif",
+      "kind": "still",
+      "group": "Components",
+      "category": "Interface icons",
+      "size": [
+        16,
+        16
+      ],
+      "bounds": {
+        "x": 1,
+        "y": 2,
+        "width": 14,
+        "height": 12
+      },
+      "route": "#art/kit-U-05",
+      "object": "U-05",
+      "caption": "Static component. 16 \u00d7 16 original toolbar icon. Document panels remain live text, not sprites."
     },
     {
       "id": "office-study-shell",
-      "title": "Shell",
+      "title": "Porter / shell study",
       "png": "../assets/office-study/shell.png",
       "gif": "office-study-shell.gif",
       "kind": "still",
@@ -226,287 +1110,35 @@
         180
       ],
       "route": "#art/architecture-study",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "caption": "Architectural state \u00b7 still image. The assembled park uses these forms."
     },
     {
-      "id": "art-system-accounts",
-      "title": "266 Johnson",
-      "png": "../assets/art-system/accounts.png",
-      "gif": "art-system-accounts.gif",
+      "id": "office-study-interior",
+      "title": "Porter / interior study",
+      "png": "../assets/office-study/interior.png",
+      "gif": "office-study-interior.gif",
       "kind": "still",
-      "group": "Components",
+      "group": "Architecture",
       "size": [
-        160,
-        116
+        320,
+        180
       ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "route": "#art/architecture-study",
+      "caption": "Architectural state \u00b7 still image. The assembled park uses these forms."
     },
     {
-      "id": "art-system-car",
-      "title": "Chrysler / vehicle",
-      "png": "../assets/art-system/car.png",
-      "gif": "art-system-car.gif",
+      "id": "office-study-parts",
+      "title": "Architectural parts",
+      "png": "../assets/office-study/parts.png",
+      "gif": "office-study-parts.gif",
       "kind": "still",
-      "group": "Components",
+      "group": "Architecture",
       "size": [
-        160,
-        116
+        320,
+        180
       ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-cat",
-      "title": "Office cat",
-      "png": "../assets/art-system/cat.png",
-      "gif": "art-system-cat.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-creative",
-      "title": "Boerum frontage",
-      "png": "../assets/art-system/creative.png",
-      "gif": "art-system-creative.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-cutaway",
-      "title": "Porter / interior",
-      "png": "../assets/art-system/cutaway.png",
-      "gif": "art-system-cutaway.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-icon-cash",
-      "title": "Icon cash",
-      "png": "../assets/art-system/icon-cash.png",
-      "gif": "art-system-icon-cash.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        16,
-        16
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-icon-control",
-      "title": "Icon control",
-      "png": "../assets/art-system/icon-control.png",
-      "gif": "art-system-icon-control.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        16,
-        16
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-icon-information",
-      "title": "Icon information",
-      "png": "../assets/art-system/icon-information.png",
-      "gif": "art-system-icon-information.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        16,
-        16
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-icon-people",
-      "title": "Icon people",
-      "png": "../assets/art-system/icon-people.png",
-      "gif": "art-system-icon-people.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        16,
-        16
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-icon-work",
-      "title": "Icon work",
-      "png": "../assets/art-system/icon-work.png",
-      "gif": "art-system-icon-work.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        16,
-        16
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-inflatable",
-      "title": "Inflatable castle",
-      "png": "../assets/art-system/inflatable.png",
-      "gif": "art-system-inflatable.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-people",
-      "title": "People",
-      "png": "../assets/art-system/people.png",
-      "gif": "art-system-people.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-production",
-      "title": "Porter hall",
-      "png": "../assets/art-system/production.png",
-      "gif": "art-system-production.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-props",
-      "title": "Props",
-      "png": "../assets/art-system/props.png",
-      "gif": "art-system-props.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-reception",
-      "title": "Sculpted reception",
-      "png": "../assets/art-system/reception.png",
-      "gif": "art-system-reception.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-shark",
-      "title": "Shark balloon",
-      "png": "../assets/art-system/shark.png",
-      "gif": "art-system-shark.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-signs",
-      "title": "Signs",
-      "png": "../assets/art-system/signs.png",
-      "gif": "art-system-signs.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-solarium",
-      "title": "Glass garden pavilion",
-      "png": "../assets/art-system/solarium.png",
-      "gif": "art-system-solarium.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-sprite-atlas",
-      "title": "Component overview",
-      "png": "../assets/art-system/sprite-atlas.png",
-      "gif": "art-system-sprite-atlas.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        960,
-        816
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-stag",
-      "title": "Antler display",
-      "png": "../assets/art-system/stag.png",
-      "gif": "art-system-stag.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "route": "#art/architecture-study",
+      "caption": "Architectural state \u00b7 still image. The assembled park uses these forms."
     },
     {
       "id": "art-system-stage0",
@@ -514,13 +1146,13 @@
       "png": "../assets/art-system/stage0.png",
       "gif": "art-system-stage0.gif",
       "kind": "still",
-      "group": "Components",
+      "group": "Architecture",
       "size": [
         160,
         116
       ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "route": "#art/assembly",
+      "caption": "Architectural state \u00b7 still image. The assembled park uses these forms."
     },
     {
       "id": "art-system-stage1",
@@ -528,13 +1160,13 @@
       "png": "../assets/art-system/stage1.png",
       "gif": "art-system-stage1.gif",
       "kind": "still",
-      "group": "Components",
+      "group": "Architecture",
       "size": [
         160,
         116
       ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "route": "#art/assembly",
+      "caption": "Architectural state \u00b7 still image. The assembled park uses these forms."
     },
     {
       "id": "art-system-stage2",
@@ -542,13 +1174,13 @@
       "png": "../assets/art-system/stage2.png",
       "gif": "art-system-stage2.gif",
       "kind": "still",
-      "group": "Components",
+      "group": "Architecture",
       "size": [
         160,
         116
       ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "route": "#art/assembly",
+      "caption": "Architectural state \u00b7 still image. The assembled park uses these forms."
     },
     {
       "id": "art-system-stage4",
@@ -556,83 +1188,13 @@
       "png": "../assets/art-system/stage4.png",
       "gif": "art-system-stage4.gif",
       "kind": "still",
-      "group": "Components",
+      "group": "Architecture",
       "size": [
         160,
         116
       ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-supernova",
-      "title": "Supernova pavilion",
-      "png": "../assets/art-system/supernova.png",
-      "gif": "art-system-supernova.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-tile",
-      "title": "Tile",
-      "png": "../assets/art-system/tile.png",
-      "gif": "art-system-tile.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-trees",
-      "title": "Trees",
-      "png": "../assets/art-system/trees.png",
-      "gif": "art-system-trees.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-van",
-      "title": "Van",
-      "png": "../assets/art-system/van.png",
-      "gif": "art-system-van.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
-    },
-    {
-      "id": "art-system-voila",
-      "title": "Voila delivery truck",
-      "png": "../assets/art-system/voila.png",
-      "gif": "art-system-voila.gif",
-      "kind": "still",
-      "group": "Components",
-      "size": [
-        160,
-        116
-      ],
-      "route": "#art/component-kit",
-      "caption": "Current renderer output. Individual sprites and transparent GIFs are in the object catalogue."
+      "route": "#art/assembly",
+      "caption": "Architectural state \u00b7 still image. The assembled park uses these forms."
     },
     {
       "id": "bank-events",
@@ -1129,7 +1691,7 @@
     },
     {
       "file": "../working/park-kit.js",
-      "sha256": "ae9fc21e975c0d83dbaaf0e22263295135200e40156bc928e7123fe076bd773e"
+      "sha256": "3a5d047f47b7aa48ab0a3729bd54be54af2db15e5e358efbb2feb65cba9d2c96"
     },
     {
       "file": "../working/hero-scene.js",

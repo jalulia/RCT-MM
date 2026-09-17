@@ -285,6 +285,11 @@
         "level": 2
       },
       {
+        "id": "art/bakery-delivery",
+        "title": "Bakery delivery",
+        "level": 3
+      },
+      {
         "id": "art/arrival-desk",
         "title": "Arrival desk",
         "level": 3
@@ -335,23 +340,13 @@
         "level": 2
       },
       {
-        "id": "art/voila-delivery",
-        "title": "Voila delivery",
-        "level": 2
-      },
-      {
-        "id": "art/porters-earlier-life",
-        "title": "Porter’s earlier life",
-        "level": 3
-      },
-      {
         "id": "art/interface-materials",
         "title": "Interface materials",
         "level": 2
       },
       {
-        "id": "art/production-and-next-proof",
-        "title": "Production and next proof",
+        "id": "art/implementation-scope",
+        "title": "Implementation scope",
         "level": 2
       }
     ],
@@ -640,7 +635,7 @@
         "level": 2
       }
     ],
-    "file": "research/sprite-refinement-0.8.md"
+    "file": "research/sprite-refinement.md"
   },
   {
     "id": "research-offices",
@@ -751,23 +746,23 @@
         "level": 2
       },
       {
+        "id": "research-discoveries/11-voila-bakeries-porter",
+        "title": "11. Voila Bakeries — Porter",
+        "level": 2
+      },
+      {
         "id": "research-discoveries/current-park-study",
         "title": "Current park study",
         "level": 2
       },
       {
-        "id": "research-discoveries/next-steps-scene-curation",
-        "title": "Next steps: scene curation",
+        "id": "research-discoveries/use-in-the-current-design",
+        "title": "Use in the current design",
         "level": 2
       },
       {
         "id": "research-discoveries/source-and-credit-record",
         "title": "Source and credit record",
-        "level": 2
-      },
-      {
-        "id": "research-discoveries/voila-bakeries-porter",
-        "title": "Voila Bakeries / Porter",
         "level": 2
       }
     ],
@@ -789,8 +784,8 @@
         "level": 3
       },
       {
-        "id": "research-park/2-coral-gathering-booth-proposed-service-frontage",
-        "title": "2. Coral gathering booth; proposed service frontage",
+        "id": "research-park/2-coral-gathering-booth",
+        "title": "2. Coral gathering booth",
         "level": 3
       },
       {
@@ -799,8 +794,8 @@
         "level": 3
       },
       {
-        "id": "research-park/current-arrangement-and-a-layout-alternative-to-test",
-        "title": "Current arrangement and a layout alternative to test",
+        "id": "research-park/scene-arrangement",
+        "title": "Scene arrangement",
         "level": 2
       },
       {

@@ -1,6 +1,6 @@
 # UX and information architecture
 
-Research checked against design 0.13 / art 0.10, 17 September 2026. Paired exterior/interior previews, a consistent source inspector, scenic controls and a separate practice-document desk are implemented. The five-view relationship demonstration remains in the Interface chapter. Episode 01 now implements five operational views, available-record gating, limited reissue authority and a return to the same project. The paths below remain design specifications beyond that narrow implementation; pinning and a general window manager are not built. Participant testing and the player’s final role remain open.
+Research checked against design 0.14 / art 0.10, 17 September 2026. Paired exterior/interior previews, a consistent source inspector, scenic controls and a separate practice-document desk are implemented. The five-view relationship demonstration remains in the Interface chapter. Episode 01 now implements five operational views, available-record gating, limited reissue authority and a return to the same project. The paths below remain design specifications beyond that narrow implementation; pinning and a general window manager are not built. Participant testing and the player’s final role remain open.
 
 ## 1. Start with work, then reveal what each system says about it
 

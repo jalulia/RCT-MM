@@ -103,6 +103,11 @@
       "classification": "construction-scripts"
     },
     {
+      "file": "construction-scripts/export-art-legacy-entry.mjs",
+      "bytes": 205,
+      "classification": "construction-scripts"
+    },
+    {
       "file": "construction-scripts/integrate-refinement.cjs",
       "bytes": 3229,
       "classification": "construction-scripts"
@@ -810,6 +815,16 @@
     {
       "file": "previews/0.11/references-390.png",
       "bytes": 113855,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.13/early-component-kit.gif",
+      "bytes": 50645,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.13/early-component-kit.png",
+      "bytes": 42542,
       "classification": "previews"
     },
     {
@@ -1890,6 +1905,51 @@
     {
       "file": "versions/0.12/working/production-plan.json",
       "bytes": 2325,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/GDD.md",
+      "bytes": 46249,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/RELEASE-REVIEW.md",
+      "bytes": 3459,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/project.json",
+      "bytes": 1462,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/research/campus-discoveries.md",
+      "bytes": 19420,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/research/office-art-research.md",
+      "bytes": 17544,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/research/park-logic-review.md",
+      "bytes": 10341,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/research/sprite-refinement-0.8.md",
+      "bytes": 6145,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/research/systems.md",
+      "bytes": 27801,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.13/research/ux.md",
+      "bytes": 24218,
       "classification": "versions"
     },
     {

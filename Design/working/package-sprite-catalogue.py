@@ -2,9 +2,10 @@ from pathlib import Path
 import json,zipfile,hashlib
 root=Path(__file__).resolve().parent.parent/'assets/sprite-catalogue'
 m=json.loads((root/'manifest.json').read_text())
-files={'index.html','catalogue-data.js','manifest.json','README.md','sheets/catalogue-overview.png','sheets/refinement-comparison.png','sheets/boerum-animation-labelled.png','fonts/Geist-Regular.otf','fonts/GeistMono-Regular.otf','fonts/OFL.txt'}
+files={'motion-player.js','index.html','catalogue-data.js','manifest.json','README.md','sheets/catalogue-overview.png','sheets/refinement-comparison.png','sheets/boerum-animation-labelled.png','fonts/Geist-Regular.otf','fonts/GeistMono-Regular.otf','fonts/OFL.txt'}
 for o in m['objects']:
     files.add(o['sheet']['file']);files.update(v['file'] for v in o['variants'])
+    if o.get('motionPreview'):files.add(o['motionPreview']['poster'])
 for s in m['groupSheets']:files.update([s['file'],s['preview']])
 for p in m['previews']:files.update([p['file'],p['poster']])
 gifs=m.get('gifDownloads',{})
