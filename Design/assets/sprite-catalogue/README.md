@@ -1,6 +1,6 @@
 # Mad Money Tycoon — sprite catalogue
 
-44 objects · 121 frames · 8 categories · art revision 0.9.
+44 objects · 136 frames · 8 categories · art revision 0.10.
 
 Open `index.html`. The catalogue works offline, with category filters, search, individual frame downloads, object sheets and GIF controls. Every registered frame and sheet also has a GIF download; available sequences distinguish gait loops, saved-pose samples, state comparisons and orientation studies. The Design document, Previews and Archive navigation links open the parent project and are not included in the standalone ZIP.
 
@@ -41,3 +41,5 @@ Add or change objects in `Design/working/sprite-registry.cjs`; renderers are sha
 This is the current art-study library, with one camera and an incomplete animation set. Buildings and several attractions are composite assemblies. A roof-off state is included for each building. Sampled shark/cat poses are listed as sampled poses. Object IDs are art-library IDs, not case-record identifiers.
 
 Original code-drawn art only; no source photography or third-party game graphics. Document UI remains HTML and live text. Catalogue typography uses the existing project's Geist and Geist Mono font files, included separately under `fonts/` with their SIL Open Font License.
+
+L-05 is now the Voila delivery truck, with 16 orientations and an orientation-study GIF. The previous external stair is archived. Johnson retains its interior orange stair. The live delivery route and full-scene GIF are in the main preview library. Voila livery is drawn from supplied branding references; no trademark rights are granted.

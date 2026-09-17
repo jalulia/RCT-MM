@@ -1,0 +1,4 @@
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
+const {chromium}=require('playwright');const out=path.resolve(__dirname,'../previews/episode');
+const localChrome=path.join(os.homedir(),'Library/Caches/ms-playwright/chromium_headless_shell-1194/chrome-mac/headless_shell');
+(async()=>{const b=await chromium.launch({executablePath:process.env.MMT_CHROMIUM||(fs.existsSync(localChrome)?localChrome:undefined),headless:true});const p=await b.newPage({viewport:{width:1320,height:800},deviceScaleFactor:1});const base=(process.env.MMT_PREVIEW_URL||'http://127.0.0.1:8769/Design/episode-01/index.html').replace('episode-01/index.html','previews/episode/');for(const [id,h] of [['decision-map',800],['three-clocks',780],['cash-boundaries',712]]){await p.setViewportSize({width:1320,height:h});await p.goto(base+id+'.svg');await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:path.join(out,id+'.png')});}await b.close();})();

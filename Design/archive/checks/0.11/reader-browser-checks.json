@@ -1,0 +1,252 @@
+{
+  "designRevision": "0.11",
+  "artRevision": "0.9",
+  "checks": [
+    {
+      "route": "contents",
+      "viewport": 1512,
+      "title": "Contents — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "game",
+      "viewport": 1512,
+      "title": "Game — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "episode",
+      "viewport": 1512,
+      "title": "First episode — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "objects",
+      "viewport": 1512,
+      "title": "Objects & systems — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "narrative",
+      "viewport": 1512,
+      "title": "Narrative — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "interface",
+      "viewport": 1512,
+      "title": "Interface — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "art",
+      "viewport": 1512,
+      "title": "Art & sound — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "production",
+      "viewport": 1512,
+      "title": "Build & test — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "evidence",
+      "viewport": 1512,
+      "title": "Evidence — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-systems",
+      "viewport": 1512,
+      "title": "Game systems research — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-ux",
+      "viewport": 1512,
+      "title": "Interface research — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-refinement",
+      "viewport": 1512,
+      "title": "Sprite refinement — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-offices",
+      "viewport": 1512,
+      "title": "Office architecture — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-discoveries",
+      "viewport": 1512,
+      "title": "Office discoveries — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "research-park",
+      "viewport": 1512,
+      "title": "Park interaction study — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "binding",
+      "viewport": 1512,
+      "title": "Episode 01 binding — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "binding-inventory",
+      "viewport": 1512,
+      "title": "Source inventory — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "contents",
+      "viewport": 390,
+      "title": "Contents — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "game",
+      "viewport": 390,
+      "title": "Game — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "episode",
+      "viewport": 390,
+      "title": "First episode — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "objects",
+      "viewport": 390,
+      "title": "Objects & systems — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "narrative",
+      "viewport": 390,
+      "title": "Narrative — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "interface",
+      "viewport": 390,
+      "title": "Interface — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "art",
+      "viewport": 390,
+      "title": "Art & sound — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "production",
+      "viewport": 390,
+      "title": "Build & test — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "evidence",
+      "viewport": 390,
+      "title": "Evidence — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-systems",
+      "viewport": 390,
+      "title": "Game systems research — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-ux",
+      "viewport": 390,
+      "title": "Interface research — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-refinement",
+      "viewport": 390,
+      "title": "Sprite refinement — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-offices",
+      "viewport": 390,
+      "title": "Office architecture — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-discoveries",
+      "viewport": 390,
+      "title": "Office discoveries — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "research-park",
+      "viewport": 390,
+      "title": "Park interaction study — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "binding",
+      "viewport": 390,
+      "title": "Episode 01 binding — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "binding-inventory",
+      "viewport": 390,
+      "title": "Source inventory — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    }
+  ],
+  "crossReferenceChecks": {
+    "researchToFocusAndReturn": true,
+    "informationSnapshot": {
+      "title": "Saved platform version",
+      "context": "Tuesday snapshot; Wednesday return",
+      "object": "Information / O-19"
+    }
+  }
+}

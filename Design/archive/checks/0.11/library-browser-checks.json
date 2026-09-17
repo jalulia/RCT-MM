@@ -1,0 +1,62 @@
+{
+  "designRevision": "0.11",
+  "artRevision": "0.9",
+  "checks": [
+    {
+      "route": "Design/previews/index.html",
+      "viewport": 1512,
+      "title": "Preview library — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "Design/archive/index.html",
+      "viewport": 1512,
+      "title": "Project archive — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "Design/assets/sprite-catalogue/index.html",
+      "viewport": 1512,
+      "title": "Sprite catalogue — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "Refs/index.html",
+      "viewport": 1512,
+      "title": "Visual references — Mad Money Tycoon",
+      "width": 1512,
+      "broken": []
+    },
+    {
+      "route": "Design/previews/index.html",
+      "viewport": 390,
+      "title": "Preview library — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "Design/archive/index.html",
+      "viewport": 390,
+      "title": "Project archive — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "Design/assets/sprite-catalogue/index.html",
+      "viewport": 390,
+      "title": "Sprite catalogue — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    },
+    {
+      "route": "Refs/index.html",
+      "viewport": 390,
+      "title": "Visual references — Mad Money Tycoon",
+      "width": 390,
+      "broken": []
+    }
+  ]
+}

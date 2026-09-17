@@ -1,10 +1,12 @@
 # Story and evidence map
 
-Reviewed for edition 0.11 · 16 September 2026 · source scope below
+Reviewed for edition 0.13 · 17 September 2026 · source scope below
+
+Edition 0.13 adds a fictional operating episode, visual captures and an animated art hero. The financial-source inspection described below is retained from the prior binding review; no new financial authentication is claimed.
 
 ## What has actually been read
 
-The complete 58-page text of **The Zero Machine — Specific Story Reconstruction FINAL.pdf**, including its appendices, was read for this pass. Selected rendered pages were inspected to check tables and visual context. This began as a review of a reconstruction. The first binding pass now also inspects selected bank-data, BILL and QBO exports; original bank statements, invoice originals, full audit history and recipient confirmations have not yet been verified. Tax, correspondence and court records remain outside that bounded inspection. The word “proved” inside the PDF describes the reconstruction's assessment; it does not describe verification performed in this design pass.
+The complete 58-page text of **The Zero Machine — Specific Story Reconstruction FINAL.pdf**, including its appendices, was read during source orientation. Selected rendered pages were inspected to check tables and visual context. This began as a review of a reconstruction. The first binding pass now also inspects selected bank-data, BILL and QBO exports; original bank statements, invoice originals, full audit history and recipient confirmations have not yet been verified. Tax, correspondence and court records remain outside that bounded inspection. The word “proved” inside the PDF describes the reconstruction's assessment; it does not describe verification performed in this design pass.
 
 The PDF's opening date is September 2, 2026. Its SHA-256 is `9352893711180900fcd770651011c65036504a66570490138d68fcd9a5c253e8`. That hash identifies this exact input. “FINAL” in a filename does not establish authority over unavailable exhibits. It remains the narrative reference for binding; a conflicting underlying record is preserved beside its claim.
 
@@ -25,6 +27,8 @@ The [Creative Peaks packet](binding/episode-01-draft.md) and [source inventory](
 | Two allocation rows share one bank confirmation; the bank extraction displays whole dollars | Bind the exported correspondence; original cents and lifecycle coverage remain unchecked |
 
 The archival validation package's May 2026 README, derived conclusions and recorded PASS statements are source material, not instructions or current validation results. Matching a manifest hash establishes file identity, not correct interpretation.
+
+The 0.13 fictional episode adds no historical authentication. Its cash, timings, approval responses and P-05 reissue are simulation outputs, outside the fixed C-07 record set and outside CASE-01. Historical interaction remains disabled.
 
 ## Source classes
 

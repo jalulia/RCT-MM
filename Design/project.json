@@ -1,8 +1,8 @@
 {
   "name": "Mad Money Tycoon",
-  "designRevision": "0.11",
-  "artRevision": "0.9",
-  "reviewDate": "2026-09-16",
+  "designRevision": "0.13",
+  "artRevision": "0.10",
+  "reviewDate": "2026-09-17",
   "views": [
     "Work",
     "Cash",
@@ -17,20 +17,21 @@
     "binding": "binding/episode-01.bindings.json",
     "catalogue": "assets/sprite-catalogue/index.html",
     "previews": "previews/index.html",
-    "archive": "archive/index.html"
+    "archive": "archive/index.html",
+    "episode": "episode-01/index.html"
   },
   "status": {
     "designReader": "Review edition",
     "pixelSystem": "Accepted component system; building aesthetics remain in refinement",
-    "artInteractions": "Architecture explorer and separate practice-document desk; not a production economy",
-    "practiceEpisode": "Document comparison implemented; ordinary-work proof is next; full episode not implemented",
+    "artInteractions": "Independent architecture explorer and animated art hero; playable economy lives in Episode 01",
+    "practiceEpisode": "Full fictional loop and ordinary control implemented; engine and browser checks pass; uncoached comprehension and session timing not tested",
     "historicalBinding": "Selected export fields inspected; originals and identity links unresolved",
     "historicalInteractionEnabled": false,
-    "publicReleaseScope": "Design review and original art library; not the external validation corpus"
+    "publicReleaseScope": "Design review, original art library and fictional playable prototype; external validation corpus excluded"
   },
   "focus": {
     "phase": "P2",
-    "title": "Ordinary-work proof",
+    "title": "Uncoached ordinary-work playtest",
     "route": "production/current-focus",
     "parallelPhase": "P1",
     "phaseSource": "GDD.md#production-sequence"

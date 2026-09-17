@@ -115,6 +115,30 @@
       "sha256": "7ec3cb5aad236289b5c6f0cb0ee6785c11a7d660621f5dda047c12eaf29706eb",
       "credit": "Google Street View; supplied screenshot",
       "use": "Architectural reference only; not included in the original sprite ZIP."
+    },
+    {
+      "file": "voila-facade.png",
+      "site": "65porter",
+      "sourceURL": null,
+      "projectURL": null,
+      "provenance": "User-supplied reference, 2026-09-16",
+      "description": "Supplied photograph of the Voila Bakeries facade sign.",
+      "context": "Former croissant factory association supplied by the user. Truck model and delivery route are invented park scenery.",
+      "sha256": "970154af8827efedb056619de3081668dc8e0f1b7446f01a9e439b2ad09ed4d1",
+      "use": "Design-review reference only; original photograph/logo is excluded from the sprite ZIP. No trademark rights granted.",
+      "credit": "Voila Bakeries; original image creator not identified"
+    },
+    {
+      "file": "voila-logo.png",
+      "site": "65porter",
+      "sourceURL": null,
+      "projectURL": null,
+      "provenance": "User-supplied reference, 2026-09-16",
+      "description": "Supplied Voila Bakeries logo reference.",
+      "context": "Former croissant factory association supplied by the user. Truck model and delivery route are invented park scenery.",
+      "sha256": "d3e5db134f6a35e42e7f8a137297cdd7dffb891b0ed12ffcef1ebf4748f55d17",
+      "use": "Design-review reference only; original photograph/logo is excluded from the sprite ZIP. No trademark rights granted.",
+      "credit": "Voila Bakeries; original image creator not identified"
     }
   ]
 }

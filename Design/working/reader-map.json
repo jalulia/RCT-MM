@@ -33,8 +33,18 @@
     "number": "02",
     "headings": [
       {
-        "id": "episode/fifteen-minute-path",
-        "title": "Fifteen-minute path",
+        "id": "episode/playable-episode",
+        "title": "Playable episode",
+        "level": 2
+      },
+      {
+        "id": "episode/scenario-rules",
+        "title": "Scenario rules",
+        "level": 2
+      },
+      {
+        "id": "episode/session-path",
+        "title": "Session path",
         "level": 2
       },
       {
@@ -124,6 +134,11 @@
     "number": "04",
     "headings": [
       {
+        "id": "narrative/the-episode-in-play",
+        "title": "The episode in play",
+        "level": 2
+      },
+      {
         "id": "narrative/chapter-sequence",
         "title": "Chapter sequence",
         "level": 2
@@ -131,6 +146,11 @@
       {
         "id": "narrative/events",
         "title": "Events",
+        "level": 2
+      },
+      {
+        "id": "narrative/clocks-and-consequences",
+        "title": "Clocks and consequences",
         "level": 2
       },
       {
@@ -313,6 +333,16 @@
         "id": "art/world-and-interface",
         "title": "World and interface",
         "level": 2
+      },
+      {
+        "id": "art/voila-delivery",
+        "title": "Voila delivery",
+        "level": 2
+      },
+      {
+        "id": "art/porters-earlier-life",
+        "title": "Porter’s earlier life",
+        "level": 3
       },
       {
         "id": "art/interface-materials",
@@ -580,6 +610,11 @@
     "number": "R3",
     "headings": [
       {
+        "id": "research-refinement/art-010-replacement",
+        "title": "Art 0.10 replacement",
+        "level": 2
+      },
+      {
         "id": "research-refinement/art-09-corrections",
         "title": "Art 0.9 corrections",
         "level": 2
@@ -729,6 +764,11 @@
         "id": "research-discoveries/source-and-credit-record",
         "title": "Source and credit record",
         "level": 2
+      },
+      {
+        "id": "research-discoveries/voila-bakeries-porter",
+        "title": "Voila Bakeries / Porter",
+        "level": 2
       }
     ],
     "file": "research/campus-discoveries.md"
@@ -754,8 +794,8 @@
         "level": 3
       },
       {
-        "id": "research-park/3-orange-stair-and-tree-an-overlook-that-reveals-the-assembly",
-        "title": "3. Orange stair and tree: an overlook that reveals the assembly",
+        "id": "research-park/3-johnson-interior-and-the-porter-delivery-route",
+        "title": "3. Johnson interior and the Porter delivery route",
         "level": 3
       },
       {

@@ -54,8 +54,8 @@ const landmarks=[
  {id:'L-01',name:'Chrysler circuit',x:3.7,y:12.4,w:4.1,d:3.5,at:[4.05,12.25,9],site:'B-03',photo:'assets/office-references/johnson-mezzanine.jpg',observed:'The white Chrysler parked inside Johnson, beside the workstations.',invented:'A miniature oval circuit and boarding platform. The photographed car is stationary.',source:'https://mattfryed.com/266-johnson'},
  {id:'L-02',name:'Antler display',x:6.7,y:8.2,w:.9,d:.8,at:[7,8.55,18],site:'B-02',photo:'assets/office-references/porter-hall.jpg',observed:'A black stag sculpture with reflective antlers among Porter’s workstations.',invented:'A larger silhouette on a park plinth. No artist or symbolic meaning is assigned.',source:'https://www.psfprojects.com/workplace/madwell-creative-agency'},
  {id:'L-03',name:'Supernova pavilion',x:1.3,y:8.1,w:2.7,d:2.25,at:[2.65,9.3,20],site:'B-02',photo:'assets/office-references/porter-supernova.jpg',observed:'SUPERNOVA appears on a conference room at Porter.',invented:'The room becomes a black-and-silver roadside pavilion with a chrome canopy and orbital roof sign.',source:'https://mattfryed.com/65porter'},
- {id:'L-04',name:'Solarium',x:13.25,y:6.2,w:2.4,d:2.4,at:[14.45,7.4,24],site:'B-02',photo:'assets/office-references/porter-gathering.jpg',observed:'Porter’s indoor garden sits beside its kitchen and gathering area.',invented:'A freestanding glass garden gives the park a tall, transparent landmark.',source:'https://www.psfprojects.com/workplace/madwell-creative-agency'},
- {id:'L-05',name:'Orange overlook',x:8.1,y:9.35,w:2.0,d:.8,at:[9.1,9.7,25],site:'B-03',photo:'assets/office-references/johnson-mezzanine.jpg',observed:'Johnson’s orange stair and mezzanine frame the open hall.',invented:'The circulation is pulled outside as a raised viewing platform.',source:'https://mattfryed.com/266-johnson'},
+ {id:'L-04',name:'Solarium',x:13,y:8,w:2.4,d:2.4,at:[14.2,9.2,24],site:'B-02',photo:'assets/office-references/porter-gathering.jpg',observed:'Porter’s indoor garden sits beside its kitchen and gathering area.',invented:'A freestanding glass garden gives the park a tall, transparent landmark.',source:'https://www.psfprojects.com/workplace/madwell-creative-agency'},
+ {id:'L-05',name:'Voila delivery truck',x:15.95,y:4.05,w:1.3,d:3.3,at:[15.95,4.05,18],site:'B-02',photo:'assets/office-references/voila-facade.png',observed:'Voila Bakeries signage. Supplied context identifies 65 Porter as a former croissant factory.',invented:'A classic 1980s-style step van with a croissant, red-and-blue lettering and a loading stop. Vehicle and route are invented scenery.',source:'#art/voila-delivery'},
  {id:'L-06',name:'Office cat',x:10.25,y:14.3,w:.5,d:.3,at:[10.5,14.45,4],site:'B-03',photo:'assets/office-references/johnson-cat.jpg',observed:'A tabby with a purple collar, photographed in a sun patch by Johnson’s stair.',invented:'A small resting sprite beside the workshop. No name or schedule has been inferred.',source:'https://mattfryed.com/266-johnson'},
  {id:'L-07',name:'Sculpted reception',x:6.2,y:15.45,w:2.15,d:.7,at:[7.25,15.8,10],site:'B-02',photo:'assets/office-references/porter-reception.jpg',observed:'Porter’s large white reception counter has curved lobes, concave hollows and a flecked surface.',invented:'It becomes the park’s open-air arrival desk. The material and maker are not assigned.',source:'https://mattfryed.com/65porter'},
  {id:'L-08',name:'Inflatable courtyard',x:8.05,y:6.5,w:3.3,d:2.25,at:[9.7,7.7,21],site:'B-03',photo:'assets/office-references/johnson-inflatable.jpg',observed:'An inflatable castle and suspended shark appear behind the indoor Chrysler in a Johnson photograph.',invented:'The temporary objects become an optional courtyard configuration. The photograph does not establish a permanent installation.',source:'https://mattfryed.com/266-johnson'}
@@ -537,34 +537,98 @@ function solarium(x,y){
   line(...pt(x+u,y+v,37),...pt(x+u+.16,y+v,36),frame[3]);
  }
 }
-function overlook(x,y){
- const iron=['#732c1f','#ad4226','#e7662b','#ff9d53'];
- const stairRun=1.35,treadRun=stairRun/8,foot=x-stairRun,deckZ=26;
- // The open deck is supported separately from its stair; entry edge stays open.
- for(const u of [.13,1.97])for(const v of [.12,.63])box(x+u,y+v,.065,.065,0,24,charcoal,false);
- box(x,y,2.2,.8,24,2,white,false);
- for(let u=.17;u<2.15;u+=.2)line(...pt(x+u,y+.02,26),...pt(x+u,y+.77,26),white[1]);
- for(const v of [0,.8]){
-  poly([pt(foot,y+v,1),pt(x,y+v,24),pt(x,y+v,21),pt(foot,y+v,0)],iron[v===0?1:2]);
+function voila(x,y,heading=0){
+ if(!voila.painting)return D.cacheDraw('voila:'+heading,x,y,()=>{voila.painting=true;try{voila(x,y,heading)}finally{voila.painting=false}});
+ const angle=heading*Math.PI/2,c=Math.cos(angle),s=Math.sin(angle),faces=[];
+ const world=(u,v,h)=>[x+u*c-v*s,y+u*s+v*c,h];
+ const q=(u,v,h)=>pt(...world(u,v,h));
+ const face=(points,color)=>{const w=points.map(a=>world(...a)),o=pt(0,0);faces.push({p:w.map(a=>[o[0]+(a[0]-a[1])*16,o[1]+(a[0]+a[1])*8-a[2],a[0]+a[1]+a[2]/16]),color});};
+ const segment=(a,b,color)=>{const w=[a,b,b].map(a=>world(...a)),o=pt(0,0);faces.push({p:w.map(a=>[o[0]+(a[0]-a[1])*16,o[1]+(a[0]+a[1])*8-a[2],a[0]+a[1]+a[2]/16]),color,edge:color});};
+ const sideVisible=v=>(v>0?1:-1)*(c-s)>-.001,endVisible=u=>(u>0?1:-1)*(c+s)>-.001;
+ const rear=-1.65,front=1.65,half=.65;
+ poly([q(-1.73,-.61,0),q(1.82,-.61,0),q(1.82,.78,0),q(-1.73,.78,0)],'#6d786d');
+ // Long aluminium step-van shell, slab sides and a short blunt cab.
+ const body=[[rear,6],[rear,28],[-1.53,30],[.52,30],[1.35,28],[front,20],[front,6],[1.38,6],[1.34,8],[1.24,10],[.96,10],[.80,8],[.77,6],[-.83,6],[-.88,8],[-1,10],[-1.28,10],[-1.41,8],[-1.44,6]];
+ for(const v of [-half,half])if(sideVisible(v)){
+  const outward=v+(v>0?.02:-.02),flip=v>0?1:-1;
+  face(body.map(([u,h])=>[u,v,h]),v>0?'#dce1dc':'#bac6c7');
+  const panel=(a,b,l,h,col)=>face([[a,outward,l],[b,outward,l],[b,outward,h],[a,outward,h]],col);
+  panel(rear+.06,.46,11,28,'#f4f3e8');
+  panel(rear+.05,.53,10.6,12.4,'#254477');panel(rear+.05,.53,9.3,10.2,'#d14b46');
+  // A gold croissant reads before the small wordmark. The lettering is redrawn,
+  // not a photograph pasted into a sprite; both flanks read forwards.
+  const local=(px,pz)=>[-.57+flip*px/16,outward+flip*.004,22+pz];
+  face([[-8,1],[-7,5],[-3,7],[2,7],[6,4],[7,0],[5,-2],[3,1],[0,2],[-3,1],[-5,-2]].map(a=>local(...a)),'#9e5827');
+  face([[-7,2],[-5,5],[-2,6],[2,5],[5,3],[5,0],[2,2],[-1,3],[-4,2],[-5,-1]].map(a=>local(...a)),'#e6ad56');
+  for(const a of [[-4,4,-3,2],[0,5,1,3],[3,4,4,2]])segment(local(a[0],a[1]),local(a[2],a[3]),'#fff0ab');
+  const glyphs={V:['101','101','101','101','010'],O:['111','101','101','101','111'],I:['111','010','010','010','111'],L:['100','100','100','100','111'],A:['010','101','111','101','101']};
+  [...'VOILA'].forEach((ch,i)=>glyphs[ch].forEach((row,j)=>[...row].forEach((bit,k)=>{if(bit==='1'){const u=-.57+flip*(-9.5+i*4+k)/16,h=17.7-j;face([[u,outward+flip*.01,h],[u+flip/16,outward+flip*.01,h],[u+flip/16,outward+flip*.01,h+1.1],[u,outward+flip*.01,h+1.1]],'#254477');}})));
+  // Sliding cab door, quarter light, pressed lower step and chrome latch.
+  panel(.56,1.46,12,26,'#edf0e9');
+  face([[.64,outward,19],[.64,outward,26],[1.26,outward,25.6],[1.48,outward,19]],'#334f5e');
+  face([[.69,outward+.005*flip,20],[.69,outward+.005*flip,25],[1.22,outward+.005*flip,24.7],[1.37,outward+.005*flip,20]],'#88a5ac');
+  segment([.59,outward,12],[.59,outward,28],'#89999b');segment([.59,outward,12],[1.47,outward,12],'#89999b');
+  segment([.66,outward,16],[.82,outward,16],'#667b80');segment([.64,outward,16.8],[.80,outward,16.8],'#fafff2');
+  panel(.56,.81,6.4,8.2,'#43575c');segment([.52,outward*1.05,6],[.84,outward*1.05,6],'#b5c4c6');
+  segment([rear+.08,outward,28.7],[.51,outward,28.7],'#ffffff');
+  for(const u of [-1.56,.48])for(const h of [13,20,27])segment([u,outward,h],[u+.025,outward,h],'#93a5a8');
+  // Wheels retain a dark tyre, recessed rim and a single sharp hub highlight.
+  for(const u of [-1.15,1.1])for(const [r,col] of [[4.4,'#202c32'],[3.25,'#48565b'],[2.3,'#bdc8c7'],[1.3,'#596c74']]){
+   const pts=[];for(let i=0;i<16;i++){const t=i*Math.PI/8;pts.push([u+Math.cos(t)*r/16,v+flip*.04,5.1+Math.sin(t)*r]);}face(pts,col);
+  }
+  segment([1.31,outward,23],[1.43,outward*1.34,23],'#66787d');
+  face([[1.36,outward*1.34,20],[1.48,outward*1.34,20],[1.48,outward*1.34,25],[1.36,outward*1.34,25]],'#d1dad7');
  }
- // Far balustrades precede treads and occupant in the painter order.
- for(const i of [0,2,4,6,7]){const xx=foot+i*treadRun,zz=(i+1)*deckZ/8;line(...pt(xx,y,zz),...pt(xx,y,zz+8),iron[1]);}
- lmPath([pt(foot,y,deckZ/8+8),pt(foot+7*treadRun,y,34),pt(x,y,34)],iron[1]);
- for(let u=0;u<=2.2;u+=.275)line(...pt(x+u,y,26),...pt(x+u,y,34),iron[1]);
- line(...pt(x,y,34),...pt(x+2.2,y,34),iron[2]);
- // Rise increases toward x. Tread 8 meets the deck exactly at z=26.
- for(let i=0;i<8;i++){
-  const xx=foot+i*treadRun,top=(i+1)*deckZ/8;
-  box(xx,y,treadRun,.8,top-1.25,1.25,white,false);
-  line(...pt(xx,y+.8,top),...pt(xx+treadRun,y+.8,top),white[3]);
+ // Raised roof seams and curved front cap keep the body out of box-icon territory.
+ face([[-1.53,-.58,30],[.52,-.58,30],[.52,.58,30],[-1.53,.58,30]],'#f8f8ef');
+ face([[.52,-.58,30],[1.35,-half,28],[1.35,half,28],[.52,.58,30]],'#e4e9e4');
+ face([[rear,-half,28],[-1.53,-.58,30],[-1.53,.58,30],[rear,half,28]],'#dee6e2');
+ for(const u of [-1.2,-.5,.2])segment([u,-.52,30],[u,.52,30],'#d0d8d2');
+ segment([-1.5,.60,29.4],[.45,.60,29.4],'#9fadae');
+ if(endVisible(1)){
+  face([[front,-half,6],[front,half,6],[front,half,20],[front,-half,20]],'#c0cdd0');
+  face([[front,-half,20],[front,half,20],[1.35,half,28],[1.35,-half,28]],'#c0cdd0');
+  face([[1.445,-.56,26.5],[1.445,.56,26.5],[1.68,.56,20.2],[1.68,-.56,20.2]],'#304d5d');
+  for(const v of [-.48,.055])face([[1.49,v,25.5],[1.49,v+.43,25.5],[1.66,v+.43,21.1],[1.66,v,21.1]],'#7d9eaa');
+  segment([1.49,0,26],[1.68,0,20.5],'#f6f7ee');
+  for(const v of [-.39,.17])segment([1.68,v,20.8],[1.63,v+.21,22.2],'#354852');
+  face([[1.67,-.36,9],[1.67,.36,9],[1.67,.36,15],[1.67,-.36,15]],'#34484f');
+  for(const h of [10,11.5,13,14.5])segment([1.69,-.34,h],[1.69,.34,h],'#95a9ae');
+  for(const v of [-.51,.51]){const a=[];for(let i=0;i<12;i++){const t=i*Math.PI/6;a.push([1.69,v+Math.cos(t)*.085,13.5+Math.sin(t)*1.7]);}face(a,'#fff4c8');}
+  segment([1.74,-.69,7.2],[1.74,.69,7.2],'#536c77');segment([1.74,-.69,8.3],[1.74,.69,8.3],'#ecf6f3');
+  for(const v of [-.43,0,.43])segment([1.38,v,28],[1.38,v+.05,28],'#ef9d45');
+ }else{
+  face([[rear,-half,7],[rear,half,7],[rear,half,28],[rear,-half,28]],'#becbd0');
+  face([[rear-.02,-.52,10],[rear-.02,.52,10],[rear-.02,.52,27],[rear-.02,-.52,27]],'#e4e8e0');
+  for(let h=11;h<27;h+=2)segment([rear-.03,-.50,h],[rear-.03,.50,h],'#a4b4b8');
+  segment([rear-.04,-.13,12],[rear-.04,.13,12],'#465d65');
+  for(const v of [-.6,.5])face([[rear-.03,v,9],[rear-.03,v+.10,9],[rear-.03,v+.10,13],[rear-.03,v,13]],'#bd4440');
+  segment([rear-.13,-.68,7],[rear-.13,.68,7],'#546c76');segment([rear-.13,-.68,8],[rear-.13,.68,8],'#eff5e8');
  }
- person(x+1.2,y+.4,P.orange,0,false,26);
- for(const i of [0,2,4,6,7]){const xx=foot+i*treadRun,zz=(i+1)*deckZ/8;line(...pt(xx,y+.8,zz),...pt(xx,y+.8,zz+8),iron[2]);}
- lmPath([pt(foot,y+.8,deckZ/8+8),pt(foot+7*treadRun,y+.8,34),pt(x,y+.8,34)],iron[3]);
- for(let u=0;u<=2.2;u+=.275)line(...pt(x+u,y+.8,26),...pt(x+u,y+.8,34),iron[2]);
- line(...pt(x,y+.8,34),...pt(x+2.2,y+.8,34),iron[3]);
- for(const v of [.2,.4,.6])line(...pt(x+2.2,y+v,26),...pt(x+2.2,y+v,34),iron[2]);
- line(...pt(x+2.2,y,34),...pt(x+2.2,y+.8,34),iron[2]);
+ featureRaster(faces);
+}
+// Independent scenic clock. Four-second loading stop, then a 28-second circuit.
+// Arc-length sampling gives consistent road speed; heading uses the 16 exported poses.
+const deliveryPoints=Array.from({length:257},(_,i)=>{const a=Math.PI+i*Math.PI/128;return{x:17.1+1.15*Math.cos(a),y:4.05+2.05*Math.sin(a),a};});
+const deliveryLengths=[0];for(let i=1;i<deliveryPoints.length;i++)deliveryLengths.push(deliveryLengths[i-1]+Math.hypot(deliveryPoints[i].x-deliveryPoints[i-1].x,deliveryPoints[i].y-deliveryPoints[i-1].y));
+function deliveryPose(time=0,run=true){
+ const phase=run?((time%32)+32)%32:0,t=Math.max(0,phase-4);
+ const distance=(t<1?t*t/2:t>27?27-(28-t)*(28-t)/2:t-.5)/27*deliveryLengths.at(-1);
+ let i=1;while(i<256&&deliveryLengths[i]<distance)i++;
+ const f=(distance-deliveryLengths[i-1])/(deliveryLengths[i]-deliveryLengths[i-1]),a=deliveryPoints[i-1].a+(deliveryPoints[i].a-deliveryPoints[i-1].a)*f;
+ return{x:17.1+1.15*Math.cos(a),y:4.05+2.05*Math.sin(a),heading:Math.round(Math.atan2(2.05*Math.cos(a),-1.15*Math.sin(a))/(Math.PI/8))/4,stopped:phase<4,phase};
+}
+function deliveryRoad(){
+ // The apron follows the swept vehicle envelope, including rear overhang in turns.
+ const hull=(length,width)=>{
+  const ps=[];for(let i=0;i<128;i++){const a=i*Math.PI/64,h=Math.round(Math.atan2(2.05*Math.cos(a),-1.15*Math.sin(a))/(Math.PI/8))*Math.PI/8,c=Math.cos(h),s=Math.sin(h);for(const u of [-length,length])for(const v of [-width,width])ps.push([17.1+1.15*Math.cos(a)+u*c-v*s,4.05+2.05*Math.sin(a)+u*s+v*c]);}
+  ps.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);const cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);const half=points=>{const h=[];for(const p of points){while(h.length>1&&cross(h.at(-2),h.at(-1),p)<=0)h.pop();h.push(p);}return h.slice(0,-1)};return half(ps).concat(half([...ps].reverse())).map(p=>pt(...p,.5));
+ };
+ plane(14.25,2,1.65,3.55,.4,'#b4beb1');poly(hull(1.89,.98),'#bdc5b5');poly(hull(1.81,.90),'#758488');
+ const oval=(rx,ry)=>Array.from({length:64},(_,i)=>{const a=i*Math.PI/32;return pt(17.1+rx*Math.cos(a),4.05+ry*Math.sin(a),1)});
+ poly(oval(.24,1.05),'#bec6b5');poly(oval(.17,.98),'#73964f');
+ for(const y of [2.05,5.55])line(...pt(14.45,y,1),...pt(16.6,y,1),'#ebe8cc');
+ for(const y of [2.2,2.7,3.2,3.7,4.2,4.7,5.2])plane(14.65,y,.12,.25,1,'#e6d399');
 }
 function inflatable(x,y){
  if(!inflatable.painting)return D.cacheDraw('inflatable',x,y,()=>{inflatable.painting=true;try{inflatable(x,y)}finally{inflatable.painting=false}});
@@ -677,28 +741,29 @@ function cat(x,y,time=0){
 function court(kind){plane(8.05,6.5,3.3,2.25,1,'#d4c8ae');if(kind==='party'){inflatable(8.2,6.55);}else if(kind==='garden'){for(const [x,y] of [[8.4,6.8],[10.5,7],[8.6,8.2]]){box(x,y,.7,.7,0,5,white);shrub(x+.1,y+.1,.5);}bench(9.35,7.7);tree(10.65,8.25,.65);}else{booth(8.3,6.7);booth(10,6.7);person(9.4,7.9,P.pink,0);}}
 function pennant(x,y,tone){const [a,b]=pt(x,y);line(a,b,a+7,b+3,'#5e7357');rect(a-1,b-30,2,30,'#445654');rect(a,b-30,1,30,'#a8bbb1');rect(a-2,b,5,2,'#72877b');poly([[a+1,b-29],[a+12,b-25],[a+2,b-20]],featureTone(tone,.82));poly([[a+1,b-29],[a+8,b-26],[a+1,b-22]],tone);line(a+1,b-29,a+8,b-27,featureTone(tone,1.14));}
 function fedora(x,y,state){boerumMotion.paint(rect,...pt(x,y),state);}
-function scene(canvas,{roof=true,selected='B-02',time=0,layer=5,landmark=null,court:courtKind='party',circuit:runCircuit=false}={}){
- setup(canvas,canvas.width/2,52);rect(0,0,canvas.width,canvas.height,'#cae0ba');const n=17;box(0,0,n,n,-6,6,P.soil);
- for(let s=0;s<34;s++)for(let x=0;x<n;x++){const y=s-x;if(y<0||y>=n)continue;const paved=x===6||x===7||y===6||y===7||(y===5&&x>0&&x<15)||(y===14&&x>8&&x<16)||(x===12&&y>5&&y<10);tile(x,y,paved?'pave':'grass');if(paved&&((x===6&&y>6)||(y===6&&x<6)))plane(x+.05,y+.05,.12,.9,.2,P.brick[2]);}
+function scene(canvas,{roof=true,selected='B-02',time=0,layer=5,landmark=null,court:courtKind='party',circuit:runCircuit=false,delivery:runDelivery=true,deliveryStart=0}={}){
+ setup(canvas,canvas.width/2-16,52);rect(0,0,canvas.width,canvas.height,'#cae0ba');const n=20;box(0,0,n,17,-6,6,P.soil);
+ for(let s=0;s<37;s++)for(let x=0;x<n;x++){const y=s-x;if(y<0||y>=17)continue;const paved=x===6||x===7||y===6||y===7||(y===5&&x>0&&x<15)||(y===14&&x>8&&x<16)||(x===12&&y>5&&y<10);tile(x,y,paved?'pave':'grass');if(paved&&((x===6&&y>6)||(y===6&&x<6)))plane(x+.05,y+.05,.12,.9,.2,P.brick[2]);}
  // Concrete service yards keep industry distinct from the planted park paths.
  plane(8.3,1.2,6.2,4.8,.3,'#aeb9ae');plane(10.9,10.7,5,4.2,.3,'#bec8ba');plane(1.1,2.3,5.1,3.4,.3,'#b9c5b9');
+ deliveryRoad();const delivery=deliveryPose(time-deliveryStart,runDelivery);
  if(layer===0)return[];let items=[],hits=[];const add=(x,y,fn)=>items.push({key:x+y,fn});
  buildings.forEach(b=>{add(b.x+b.w,b.y+b.d,()=>building(b,b.id===selected?roof:true));hits.push({id:b.id,kind:'building',p:pt(b.x+b.w/2,b.y+b.d/2,b.h/2),polygon:[pt(b.x,b.y,b.h+8),pt(b.x+b.w,b.y,b.h+8),pt(b.x+b.w,b.y+b.d),pt(b.x,b.y+b.d)]});});
- if(layer>=2){let ride=circuit(time,runCircuit);add(ride.x,ride.y,()=>car(ride.x,ride.y,ride.heading,4));add(4,10.35,()=>supernova(1.3,8.1));add(7.1,8.6,()=>stag(7,8.55));add(14.45,7.4,()=>solarium(13.25,6.2));add(9.4,9.8,()=>overlook(8.1,9.35));add(10.4,8.3,()=>court(courtKind));add(10.5,14.45,()=>cat(10.5,14.45,time));add(7.6,16.1,()=>reception(6.2,15.45));if(courtKind==='party')add(10.3,8.4,()=>shark(9.7,7.6,time));
- for(const [x,y,s] of [[.5,1.1,.9],[1.6,.65,.8],[5.8,.8,.95],[15.4,1.5,1.1],[15.5,4.4,.8],[.5,6.5,1.15],[.9,10.3,1],[16.2,8.8,.65],[1,15.2,.8]])add(x,y,()=>tree(x,y,s));
- for(const [x,y] of [[6.05,1.2],[7.7,5.7],[12.25,8.8],[8.2,13.8],[1.3,6.2]])add(x,y,()=>lamp(x,y));for(const [x,y] of [[5.5,10.2],[12.9,14.5],[.9,9.2]])add(x,y,()=>bench(x,y));for(let i=0;i<4;i++){add(15.1,8+i*.5,()=>shrub(15.1,8+i*.5,.6));}add(15.1,4.6,()=>van(15.1,4.6));add(14.5,4.5,()=>crate(14.5,4.5));add(16.1,13.1,()=>crate(16.1,13.1));
+ if(layer>=2){let ride=circuit(time,runCircuit);add(ride.x,ride.y,()=>car(ride.x,ride.y,ride.heading,4));add(4,10.35,()=>supernova(1.3,8.1));add(7.1,8.6,()=>stag(7,8.55));add(14.2,9.2,()=>solarium(13,8));add(delivery.x+1.5,delivery.y,()=>voila(delivery.x,delivery.y,delivery.heading));add(10.4,8.3,()=>court(courtKind));add(10.5,14.45,()=>cat(10.5,14.45,time));add(7.6,16.1,()=>reception(6.2,15.45));if(courtKind==='party')add(10.3,8.4,()=>shark(9.7,7.6,time));
+ for(const [x,y,s] of [[.5,1.1,.9],[1.6,.65,.8],[5.8,.8,.95],[.5,6.5,1.15],[.9,10.3,1],[17.2,10.1,.65],[1,15.2,.8]])add(x,y,()=>tree(x,y,s));
+ for(const [x,y] of [[6.05,1.2],[7.7,5.7],[12.25,8.8],[8.2,13.8],[1.3,6.2]])add(x,y,()=>lamp(x,y));for(const [x,y] of [[5.5,10.2],[12.9,14.5],[.9,9.2]])add(x,y,()=>bench(x,y));for(let i=0;i<4;i++){add(16.4,8+i*.5,()=>shrub(16.4,8+i*.5,.6));}add(14.45,5.15,()=>crate(14.45,5.15));add(16.1,13.1,()=>crate(16.1,13.1));
  for(const [x,y,tone] of [[6.2,15.6,P.pink[2]],[7.7,15.6,P.orange[2]],[7.7,.5,P.pink[2]],[12.2,6.3,P.orange[2]]])add(x,y,()=>pennant(x,y,tone));
- landmarks.filter(l=>l.id!=='L-08'||courtKind==='party').forEach(l=>hits.push({id:l.id,kind:'landmark',p:pt(...l.at),radius:l.id==='L-01'?30:l.id==='L-06'?9:l.id==='L-07'?19:25}));}
+ landmarks.filter(l=>l.id!=='L-08'||courtKind==='party').forEach(l=>hits.push({id:l.id,kind:'landmark',p:pt(...(l.id==='L-05'?[delivery.x,delivery.y,18]:l.at)),radius:l.id==='L-01'?30:l.id==='L-06'?9:l.id==='L-07'?19:25}));}
  if(layer>=3){const walk=[{x:6.5,y:1.5+(time*.52)%13},{x:1.3+(time*.41+2)%13,y:6.5},{x:7.2,y:2+(time*.35+5)%13},{x:10+(time*.22)%3,y:14.4},{x:6.45,y:10+(time*.27)%4},{x:9.5,y:5.5},{x:11.5,y:5.5},{x:2.1,y:13.9}];walk.forEach((p,i)=>add(p.x,p.y,()=>person(p.x,p.y,P[['pink','blue','orange','green'][i%4]],time*4+i,i===5)));const pace=boerumMotion.sample(time);/* Entire pacing path is in front of Boerum's facade. */add(6,5.02,()=>fedora(1.7+pace.u*3.9,5.02,pace));}
  items.sort((a,b)=>a.key-b.key).forEach(i=>i.fn());
  if(layer>=4){sign(1.25,5.65,'BOERUM',P.pink);sign(9.1,5.25,'PORTER',P.orange);sign(11.3,16.05,'JOHNSON',P.green);sign(8.9,16.2,'MAD MONEY',P.pink);}
- if(layer>=5){if(landmark){const l=landmarks.find(l=>l.id===landmark);if(l){const [x,y]=pt(...l.at);line(x-13,y+10,x+13,y+10,P.green[2]);rect(x-15,y-12,2,24,P.green[2]);rect(x+14,y-12,2,24,P.green[2]);}}else selection(buildings.find(b=>b.id===selected)||buildings[1]);}
+ if(layer>=5){if(landmark){const l=landmarks.find(l=>l.id===landmark);if(l){const [x,y]=pt(...(l.id==='L-05'?[delivery.x,delivery.y,18]:l.at));line(x-13,y+10,x+13,y+10,P.green[2]);rect(x-15,y-12,2,24,P.green[2]);rect(x+14,y-12,2,24,P.green[2]);}}else selection(buildings.find(b=>b.id===selected)||buildings[1]);}
  return hits;
 }
-function specimen(canvas,kind){const alias={creative:'boerum',production:'porter',accounts:'johnson'};if(!alias[kind]&&!['cutaway','stage0','stage1','stage2','stage4','car','stag','supernova','solarium','overlook','props','signs','reception','inflatable','cat','shark'].includes(kind)){old.specimen(canvas,kind);return;}
+function specimen(canvas,kind){const alias={creative:'boerum',production:'porter',accounts:'johnson'};if(!alias[kind]&&!['cutaway','stage0','stage1','stage2','stage4','car','stag','supernova','solarium','voila','props','signs','reception','inflatable','cat','shark'].includes(kind)){old.specimen(canvas,kind);return;}
  setup(canvas,canvas.width/2,canvas.height*.66);
- if(kind==='car'){car(0,0,0);return;}if(kind==='stag'){stag(0,0);return;}if(kind==='supernova'){supernova(-1.35,-1);return;}if(kind==='solarium'){solarium(-1.2,-1.2);return;}if(kind==='overlook'){overlook(-.6,-.3);return;}if(kind==='reception'){reception(-1,-.3);return;}if(kind==='inflatable'){inflatable(-1.5,-1);return;}if(kind==='cat'){cat(0,0,0);return;}if(kind==='shark'){shark(0,0,0);return;}if(kind==='props'){whiteDesk(-2,-1,2);booth(.6,-1);crate(-.6,1);return;}if(kind==='signs'){sign(-2,-.5,'BOERUM',P.pink);sign(.8,-.5,'PORTER',P.orange);return;}
+ if(kind==='car'){car(0,0,0);return;}if(kind==='stag'){stag(0,0);return;}if(kind==='supernova'){supernova(-1.35,-1);return;}if(kind==='solarium'){solarium(-1.2,-1.2);return;}if(kind==='voila'){voila(0,0,0);return;}if(kind==='reception'){reception(-1,-.3);return;}if(kind==='inflatable'){inflatable(-1.5,-1);return;}if(kind==='cat'){cat(0,0,0);return;}if(kind==='shark'){shark(0,0,0);return;}if(kind==='props'){whiteDesk(-2,-1,2);booth(.6,-1);crate(-.6,1);return;}if(kind==='signs'){sign(-2,-.5,'BOERUM',P.pink);sign(.8,-.5,'PORTER',P.orange);return;}
  const type=alias[kind]||'porter',b={x:-1.75,y:-1.2,w:3.5,d:2.3,h:type==='boerum'?39:24,type};building(b,kind!=='cutaway'&&!['stage0','stage1','stage2'].includes(kind),kind.startsWith('stage')?Number(kind.at(-1)):4);
 }
-window.MMTArt={...old,scene,specimen,buildings,landmarks,boerumMotion,components:{circuit,building,birch,supernovaSign,whiteDesk,timberPod,booth,skylight,car,stag,supernova,solarium,overlook,inflatable,shark,reception,cat,pennant},sceneSize:{width:640,height:360},version:'0.9'};
+window.MMTArt={...old,scene,specimen,buildings,landmarks,boerumMotion,components:{circuit,building,birch,supernovaSign,whiteDesk,timberPod,booth,skylight,car,stag,supernova,solarium,voila,deliveryPose,deliveryRoad,inflatable,shark,reception,cat,pennant},sceneSize:{width:640,height:360},version:'0.10'};
 })();

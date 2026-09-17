@@ -1,6 +1,6 @@
 {
   "source": "GDD.md#production-sequence",
-  "designRevision": "0.11",
+  "designRevision": "0.13",
   "phases": [
     {
       "id": "P0",
@@ -19,9 +19,9 @@
     {
       "id": "P2",
       "title": "Ordinary-work proof",
-      "status": "Next",
-      "output": "Three-minute job; two viable plans; one capacity conflict and handoff",
-      "gate": "Players can explain the tradeoff and want to try another plan"
+      "status": "Ready for playtest",
+      "output": "Implemented ordinary scenario; two viable plans; capacity and handoff consequences",
+      "gate": "Uncoached players explain the tradeoff and want to try another plan"
     },
     {
       "id": "P3",
@@ -33,9 +33,9 @@
     {
       "id": "P4",
       "title": "Thin playable episode",
-      "status": "Queued after P3",
-      "output": "12–15 minute loop with one conflict, one valid control and the historical comparison",
-      "gate": "State, identity and provenance stay clear; P1 covers the historical content used"
+      "status": "Fictional loop built · validation pending",
+      "output": "Playable exception route, ordinary control, run exports and read-only case comparison",
+      "gate": "P2/P3 findings incorporated; participant timing checked; P1 gates any historical interaction"
     },
     {
       "id": "P5",

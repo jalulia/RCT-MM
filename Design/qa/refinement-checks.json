@@ -1,6 +1,7 @@
 {
-  "revision": "0.9",
-  "priorObjectsRefined": 43,
+  "revision": "0.10",
+  "priorObjectsChanged": 43,
+  "priorObjectsRefined": 42,
   "changedIDs": [
     "B-01",
     "B-02",
@@ -47,13 +48,17 @@
     "U-05"
   ],
   "objects": 44,
-  "framesChecked": 121,
+  "framesChecked": 136,
   "carDirections": 16,
+  "truckDirections": 16,
+  "replacedObjectIDs": [
+    "L-05"
+  ],
   "atlasFramesExact": true,
   "sourceHashesMatch": true,
   "sceneTimingMs": {
-    "median": 40.557166999999936,
-    "max": 54.97974999999997
+    "median": 47.0474999999999,
+    "max": 66.40808400000003
   },
   "scope": "Raster integrity, animation semantics and local render time; source recognition separately inspected visually."
 }

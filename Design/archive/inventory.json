@@ -3,6 +3,11 @@
   "notCurrentSpecification": true,
   "files": [
     {
+      "file": "checks/0.10/interaction-checks.json",
+      "bytes": 3084,
+      "classification": "checks"
+    },
+    {
       "file": "checks/0.10/library-browser-checks.json",
       "bytes": 892,
       "classification": "checks"
@@ -10,6 +15,26 @@
     {
       "file": "checks/0.10/reader-browser-checks.json",
       "bytes": 5510,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.11/README.md",
+      "bytes": 4460,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.11/library-browser-checks.json",
+      "bytes": 1493,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.11/reader-browser-checks.json",
+      "bytes": 5750,
+      "classification": "checks"
+    },
+    {
+      "file": "checks/0.12/interaction-checks.json",
+      "bytes": 755,
       "classification": "checks"
     },
     {
@@ -268,6 +293,36 @@
       "classification": "previews"
     },
     {
+      "file": "previews/0.10/episode-documents.gif",
+      "bytes": 133714,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/episode-documents.png",
+      "bytes": 202203,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/park-explorer-1512.gif",
+      "bytes": 156840,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/park-explorer-1512.png",
+      "bytes": 261136,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/park-explorer-390.gif",
+      "bytes": 56141,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.10/park-explorer-390.png",
+      "bytes": 74056,
+      "classification": "previews"
+    },
+    {
       "file": "previews/0.10/previews-1512.gif",
       "bytes": 91874,
       "classification": "previews"
@@ -455,6 +510,306 @@
     {
       "file": "previews/0.10/reader-research-ux.png",
       "bytes": 254913,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/archive-1512.gif",
+      "bytes": 80945,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/archive-1512.png",
+      "bytes": 136059,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/archive-390.gif",
+      "bytes": 39417,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/archive-390.png",
+      "bytes": 63122,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/catalogue-1512.gif",
+      "bytes": 79712,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/catalogue-1512.png",
+      "bytes": 97650,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/catalogue-390.gif",
+      "bytes": 35794,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/catalogue-390.png",
+      "bytes": 52363,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/information-snapshot-desktop.gif",
+      "bytes": 98708,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/information-snapshot-desktop.png",
+      "bytes": 153121,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/previews-1512.gif",
+      "bytes": 91874,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/previews-1512.png",
+      "bytes": 121919,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/previews-390.gif",
+      "bytes": 37209,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/previews-390.png",
+      "bytes": 62689,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/production-focus-desktop.gif",
+      "bytes": 113973,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/production-focus-desktop.png",
+      "bytes": 173972,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/production-focus-mobile.gif",
+      "bytes": 36094,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/production-focus-mobile.png",
+      "bytes": 51781,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/production-sequence-desktop.gif",
+      "bytes": 104576,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/production-sequence-desktop.png",
+      "bytes": 170753,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/production-sequence-mobile.gif",
+      "bytes": 36742,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/production-sequence-mobile.png",
+      "bytes": 52227,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-art.gif",
+      "bytes": 132301,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-art.png",
+      "bytes": 168238,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-binding-inventory.gif",
+      "bytes": 152237,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-binding-inventory.png",
+      "bytes": 249196,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-binding.gif",
+      "bytes": 170615,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-binding.png",
+      "bytes": 279356,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-contents.gif",
+      "bytes": 79170,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-contents.png",
+      "bytes": 147012,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-episode.gif",
+      "bytes": 126716,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-episode.png",
+      "bytes": 185119,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-evidence.gif",
+      "bytes": 212899,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-evidence.png",
+      "bytes": 357407,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-game.gif",
+      "bytes": 128541,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-game.png",
+      "bytes": 154700,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-interface.gif",
+      "bytes": 98951,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-interface.png",
+      "bytes": 153267,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-narrative.gif",
+      "bytes": 83109,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-narrative.png",
+      "bytes": 134685,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-objects.gif",
+      "bytes": 95249,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-objects.png",
+      "bytes": 142836,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-production.gif",
+      "bytes": 114588,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-production.png",
+      "bytes": 185089,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-discoveries.gif",
+      "bytes": 144229,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-discoveries.png",
+      "bytes": 232857,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-offices.gif",
+      "bytes": 104195,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-offices.png",
+      "bytes": 153256,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-park.gif",
+      "bytes": 122856,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-park.png",
+      "bytes": 192070,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-refinement.gif",
+      "bytes": 114099,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-refinement.png",
+      "bytes": 159628,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-systems.gif",
+      "bytes": 160760,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-systems.png",
+      "bytes": 256503,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-ux.gif",
+      "bytes": 163829,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/reader-research-ux.png",
+      "bytes": 255012,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/references-1512.gif",
+      "bytes": 343450,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/references-1512.png",
+      "bytes": 699650,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/references-390.gif",
+      "bytes": 67442,
+      "classification": "previews"
+    },
+    {
+      "file": "previews/0.11/references-390.png",
+      "bytes": 113855,
       "classification": "previews"
     },
     {
@@ -1430,6 +1785,111 @@
     {
       "file": "versions/0.10/project-README.md",
       "bytes": 4216,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/GDD.md",
+      "bytes": 40342,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/Orange-overlook-L-05/default.gif",
+      "bytes": 1890,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/Orange-overlook-L-05/default.png",
+      "bytes": 2144,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/Orange-overlook-L-05/sprite-sheet.gif",
+      "bytes": 1899,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/Orange-overlook-L-05/sprite-sheet.png",
+      "bytes": 2144,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/README.md",
+      "bytes": 236,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/art-system-overlook.gif",
+      "bytes": 1079,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/design-review.html.txt",
+      "bytes": 626262,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/overlook.png",
+      "bytes": 2023,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/project.json",
+      "bytes": 1318,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/research/campus-discoveries.md",
+      "bytes": 18629,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/research/office-art-research.md",
+      "bytes": 17489,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/research/park-logic-review.md",
+      "bytes": 10494,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/research/sprite-refinement-0.8.md",
+      "bytes": 5552,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/working/art-system.js",
+      "bytes": 9402,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/working/park-kit.js",
+      "bytes": 54992,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.11/working/sprite-registry.cjs",
+      "bytes": 6941,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.12/GDD.md",
+      "bytes": 41522,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.12/README.md",
+      "bytes": 225,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.12/project.json",
+      "bytes": 1319,
+      "classification": "versions"
+    },
+    {
+      "file": "versions/0.12/working/production-plan.json",
+      "bytes": 2325,
       "classification": "versions"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "revision": "0.9",
+  "revision": "0.10",
   "scope": "Original art study; one camera. Not a complete production animation set.",
   "coordinateSystem": "Atlas rectangles use top-left origin; sprite anchors are local pixel coordinates.",
   "sources": [
@@ -9,7 +9,7 @@
     },
     {
       "file": "../../working/park-kit.js",
-      "sha256": "d6af4c26367f0821bf4a71714dc2158bda240fa89a6a80fce47c32c3fe1aa39b"
+      "sha256": "ae9fc21e975c0d83dbaaf0e22263295135200e40156bc928e7123fe076bd773e"
     },
     {
       "file": "../../working/office-pixel-study.js",
@@ -17,12 +17,12 @@
     },
     {
       "file": "../../working/sprite-registry.cjs",
-      "sha256": "1a3f970c0b90fd2bfb7637e7aa49b642ed46d402c06b87741c0fb4c066d1b04b"
+      "sha256": "54beb07465628ff19400f98f383de7f9578cc35cde1ab3a2fe4cb8b064ff568b"
     }
   ],
   "counts": {
     "objects": 44,
-    "frames": 121,
+    "frames": 136,
     "groups": 8
   },
   "objects": [
@@ -1073,6 +1073,645 @@
       ]
     },
     {
+      "id": "L-05",
+      "name": "Voila delivery truck",
+      "group": "Landmarks",
+      "description": "Classic 1980s-style bakery step van. Sixteen orientations; invented service loop beside Porter. Replaces the standalone overlook; Johnson keeps its interior stair.",
+      "variants": [
+        {
+          "key": "heading-0",
+          "label": "0°",
+          "orientationQuarterTurns": 0,
+          "file": "objects/L-05/heading-0.png",
+          "bounds": {
+            "x": 56,
+            "y": 66,
+            "width": 80,
+            "height": 67
+          },
+          "sheetRect": {
+            "x": 0,
+            "y": 0,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-0.gif",
+            "label": "Voila delivery truck / 0° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-0.png"
+            ],
+            "sha256": "ae8708bef71efbbeb729889b35cc18f35515b2df15827b753fcfd10c929ef544"
+          }
+        },
+        {
+          "key": "heading-1",
+          "label": "22.5°",
+          "orientationQuarterTurns": 0.25,
+          "file": "objects/L-05/heading-1.png",
+          "bounds": {
+            "x": 65,
+            "y": 64,
+            "width": 61,
+            "height": 70
+          },
+          "sheetRect": {
+            "x": 192,
+            "y": 0,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-1.gif",
+            "label": "Voila delivery truck / 22.5° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-1.png"
+            ],
+            "sha256": "7a71f06f1e76818b0ca4ae71fbf8dc9d5907f69113f741d42a96f61950f79da4"
+          }
+        },
+        {
+          "key": "heading-2",
+          "label": "45°",
+          "orientationQuarterTurns": 0.5,
+          "file": "objects/L-05/heading-2.png",
+          "bounds": {
+            "x": 76,
+            "y": 65,
+            "width": 41,
+            "height": 68
+          },
+          "sheetRect": {
+            "x": 384,
+            "y": 0,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-2.gif",
+            "label": "Voila delivery truck / 45° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-2.png"
+            ],
+            "sha256": "b7fcb6774646e3f94e9db973bd1f0bae1a014960e7fe7af3546ff2f6e20757d2"
+          }
+        },
+        {
+          "key": "heading-3",
+          "label": "67.5°",
+          "orientationQuarterTurns": 0.75,
+          "file": "objects/L-05/heading-3.png",
+          "bounds": {
+            "x": 64,
+            "y": 64,
+            "width": 61,
+            "height": 70
+          },
+          "sheetRect": {
+            "x": 576,
+            "y": 0,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-3.gif",
+            "label": "Voila delivery truck / 67.5° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-3.png"
+            ],
+            "sha256": "522f98c4441703a43195e2ce8ae3d03ee590cafee8665bf647331a9c27e76832"
+          }
+        },
+        {
+          "key": "heading-4",
+          "label": "90°",
+          "orientationQuarterTurns": 1,
+          "file": "objects/L-05/heading-4.png",
+          "bounds": {
+            "x": 54,
+            "y": 66,
+            "width": 80,
+            "height": 65
+          },
+          "sheetRect": {
+            "x": 768,
+            "y": 0,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-4.gif",
+            "label": "Voila delivery truck / 90° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-4.png"
+            ],
+            "sha256": "50ef1f39f623f2925cd154cbd4dded38f0c37d13bae1294053e1b3e269fed325"
+          }
+        },
+        {
+          "key": "heading-5",
+          "label": "112.5°",
+          "orientationQuarterTurns": 1.25,
+          "file": "objects/L-05/heading-5.png",
+          "bounds": {
+            "x": 51,
+            "y": 70,
+            "width": 87,
+            "height": 56
+          },
+          "sheetRect": {
+            "x": 960,
+            "y": 0,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-5.gif",
+            "label": "Voila delivery truck / 112.5° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-5.png"
+            ],
+            "sha256": "2cc86f9f3c7e61a6970f281c674e87fbbc346ccb1932591d9848597a91482781"
+          }
+        },
+        {
+          "key": "heading-6",
+          "label": "135°",
+          "orientationQuarterTurns": 1.5,
+          "file": "objects/L-05/heading-6.png",
+          "bounds": {
+            "x": 55,
+            "y": 76,
+            "width": 81,
+            "height": 44
+          },
+          "sheetRect": {
+            "x": 1152,
+            "y": 0,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-6.gif",
+            "label": "Voila delivery truck / 135° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-6.png"
+            ],
+            "sha256": "88bab5dd965be59ed807e14a01845e8ce3705d8aed0d643b0b6de42cb0418f89"
+          }
+        },
+        {
+          "key": "heading-7",
+          "label": "157.5°",
+          "orientationQuarterTurns": 1.75,
+          "file": "objects/L-05/heading-7.png",
+          "bounds": {
+            "x": 53,
+            "y": 72,
+            "width": 87,
+            "height": 54
+          },
+          "sheetRect": {
+            "x": 1344,
+            "y": 0,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-7.gif",
+            "label": "Voila delivery truck / 157.5° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-7.png"
+            ],
+            "sha256": "55702a56043915da469763483426ff0fafd76dd6b2a06a60dc0cf814b89ef84a"
+          }
+        },
+        {
+          "key": "heading-8",
+          "label": "180°",
+          "orientationQuarterTurns": 2,
+          "file": "objects/L-05/heading-8.png",
+          "bounds": {
+            "x": 57,
+            "y": 69,
+            "width": 80,
+            "height": 62
+          },
+          "sheetRect": {
+            "x": 0,
+            "y": 160,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-8.gif",
+            "label": "Voila delivery truck / 180° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-8.png"
+            ],
+            "sha256": "735a38408828eaed2445f1ec2ce9c792b9f8d452a6f875d9e3e2aee65b356447"
+          }
+        },
+        {
+          "key": "heading-9",
+          "label": "202.5°",
+          "orientationQuarterTurns": 2.25,
+          "file": "objects/L-05/heading-9.png",
+          "bounds": {
+            "x": 65,
+            "y": 68,
+            "width": 63,
+            "height": 65
+          },
+          "sheetRect": {
+            "x": 192,
+            "y": 160,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-9.gif",
+            "label": "Voila delivery truck / 202.5° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-9.png"
+            ],
+            "sha256": "9a09d034fe6a7a130617c1863321ba2b5cb6a22f183d1dada325d7361fa9c5af"
+          }
+        },
+        {
+          "key": "heading-10",
+          "label": "225°",
+          "orientationQuarterTurns": 2.5,
+          "file": "objects/L-05/heading-10.png",
+          "bounds": {
+            "x": 76,
+            "y": 69,
+            "width": 41,
+            "height": 63
+          },
+          "sheetRect": {
+            "x": 384,
+            "y": 160,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-10.gif",
+            "label": "Voila delivery truck / 225° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-10.png"
+            ],
+            "sha256": "c2573af6de73833ac3892f64465941c8c22612514843f6a70154bff3f0dd834a"
+          }
+        },
+        {
+          "key": "heading-11",
+          "label": "247.5°",
+          "orientationQuarterTurns": 2.75,
+          "file": "objects/L-05/heading-11.png",
+          "bounds": {
+            "x": 66,
+            "y": 68,
+            "width": 63,
+            "height": 65
+          },
+          "sheetRect": {
+            "x": 576,
+            "y": 160,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-11.gif",
+            "label": "Voila delivery truck / 247.5° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-11.png"
+            ],
+            "sha256": "b224a14f980d06b23cb6847bc417728a9d7b3d15db520a72c913ee94a3605536"
+          }
+        },
+        {
+          "key": "heading-12",
+          "label": "270°",
+          "orientationQuarterTurns": 3,
+          "file": "objects/L-05/heading-12.png",
+          "bounds": {
+            "x": 57,
+            "y": 69,
+            "width": 82,
+            "height": 63
+          },
+          "sheetRect": {
+            "x": 768,
+            "y": 160,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-12.gif",
+            "label": "Voila delivery truck / 270° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-12.png"
+            ],
+            "sha256": "5051c675ba009a7a83c43a13a02f3b3ead78d53d0dab06a0517a7ef98ce9d496"
+          }
+        },
+        {
+          "key": "heading-13",
+          "label": "292.5°",
+          "orientationQuarterTurns": 3.25,
+          "file": "objects/L-05/heading-13.png",
+          "bounds": {
+            "x": 53,
+            "y": 72,
+            "width": 89,
+            "height": 56
+          },
+          "sheetRect": {
+            "x": 960,
+            "y": 160,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-13.gif",
+            "label": "Voila delivery truck / 292.5° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-13.png"
+            ],
+            "sha256": "e4ed8a9e524740b8732a4247d93f41c1ba824ad1267b3f89b0fe5e079406a638"
+          }
+        },
+        {
+          "key": "heading-14",
+          "label": "315°",
+          "orientationQuarterTurns": 3.5,
+          "file": "objects/L-05/heading-14.png",
+          "bounds": {
+            "x": 57,
+            "y": 76,
+            "width": 81,
+            "height": 45
+          },
+          "sheetRect": {
+            "x": 1152,
+            "y": 160,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-14.gif",
+            "label": "Voila delivery truck / 315° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-14.png"
+            ],
+            "sha256": "68af700ac2c867bd42bcf9454e54ec4c0f277f6845dc8bc650e368ed639b7be7"
+          }
+        },
+        {
+          "key": "heading-15",
+          "label": "337.5°",
+          "orientationQuarterTurns": 3.75,
+          "file": "objects/L-05/heading-15.png",
+          "bounds": {
+            "x": 53,
+            "y": 70,
+            "width": 87,
+            "height": 58
+          },
+          "sheetRect": {
+            "x": 1344,
+            "y": 160,
+            "w": 192,
+            "h": 160
+          },
+          "gif": {
+            "file": "objects/L-05/heading-15.gif",
+            "label": "Voila delivery truck / 337.5° — still",
+            "kind": "still",
+            "width": 192,
+            "height": 160,
+            "frames": 1,
+            "transparent": true,
+            "paletteReduced": false,
+            "alpha": "original binary alpha",
+            "sourcePngs": [
+              "objects/L-05/heading-15.png"
+            ],
+            "sha256": "6d864396847b9d543270ed26e8a198b81f011f34bd3592c948737534c04ab7b1"
+          }
+        }
+      ],
+      "size": [
+        192,
+        160
+      ],
+      "anchor": [
+        96,
+        112
+      ],
+      "sourceObject": "L-05",
+      "site": "B-02",
+      "sheet": {
+        "file": "objects/L-05/sprite-sheet.png",
+        "width": 1536,
+        "height": 320,
+        "columns": 8,
+        "rows": 2,
+        "gif": {
+          "file": "objects/L-05/sprite-sheet.gif",
+          "label": "Voila delivery truck / all frames — still sheet",
+          "kind": "still",
+          "width": 1536,
+          "height": 320,
+          "frames": 1,
+          "transparent": true,
+          "paletteReduced": false,
+          "alpha": "original binary alpha",
+          "sourcePngs": [
+            "objects/L-05/sprite-sheet.png"
+          ],
+          "sha256": "81025319cfac50f7b0a0cf31200331b3b6036fef20f2b863455c3a44b848a598"
+        }
+      },
+      "gifSequences": [
+        {
+          "file": "objects/L-05/sequences/orientation-study.gif",
+          "label": "Turntable — orientation study",
+          "kind": "orientation-study",
+          "width": 192,
+          "height": 160,
+          "frames": 16,
+          "transparent": true,
+          "paletteReduced": false,
+          "alpha": "original binary alpha",
+          "sourcePngs": [
+            "objects/L-05/heading-0.png",
+            "objects/L-05/heading-1.png",
+            "objects/L-05/heading-2.png",
+            "objects/L-05/heading-3.png",
+            "objects/L-05/heading-4.png",
+            "objects/L-05/heading-5.png",
+            "objects/L-05/heading-6.png",
+            "objects/L-05/heading-7.png",
+            "objects/L-05/heading-8.png",
+            "objects/L-05/heading-9.png",
+            "objects/L-05/heading-10.png",
+            "objects/L-05/heading-11.png",
+            "objects/L-05/heading-12.png",
+            "objects/L-05/heading-13.png",
+            "objects/L-05/heading-14.png",
+            "objects/L-05/heading-15.png"
+          ],
+          "sha256": "143314a9226677de6bf05e2ac9e56c710c8844b509d872750b296679f0b20da5",
+          "durationsMs": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "durationMs": 3200,
+          "loop": 0,
+          "timingBasis": "Presentation timing: 200 ms per registered orientation. Not driving motion.",
+          "variantKeys": [
+            "heading-0",
+            "heading-1",
+            "heading-2",
+            "heading-3",
+            "heading-4",
+            "heading-5",
+            "heading-6",
+            "heading-7",
+            "heading-8",
+            "heading-9",
+            "heading-10",
+            "heading-11",
+            "heading-12",
+            "heading-13",
+            "heading-14",
+            "heading-15"
+          ]
+        }
+      ]
+    },
+    {
       "id": "L-10",
       "name": "Chrysler circuit",
       "group": "Landmarks",
@@ -1360,78 +1999,6 @@
             "objects/L-04/sprite-sheet.png"
           ],
           "sha256": "e6d83b2e7888550a9ad9991c73caa6f5c11d1d87ed29a8650135e43ca7124c58"
-        }
-      },
-      "gifSequences": []
-    },
-    {
-      "id": "L-05",
-      "name": "Orange overlook",
-      "group": "Landmarks",
-      "description": "Stair, platform and occupant are one current assembly.",
-      "variants": [
-        {
-          "key": "default",
-          "label": "Default",
-          "file": "objects/L-05/default.png",
-          "bounds": {
-            "x": 57,
-            "y": 69,
-            "width": 70,
-            "height": 58
-          },
-          "sheetRect": {
-            "x": 0,
-            "y": 0,
-            "w": 192,
-            "h": 160
-          },
-          "gif": {
-            "file": "objects/L-05/default.gif",
-            "label": "Orange overlook / Default — still",
-            "kind": "still",
-            "width": 192,
-            "height": 160,
-            "frames": 1,
-            "transparent": true,
-            "paletteReduced": false,
-            "alpha": "original binary alpha",
-            "sourcePngs": [
-              "objects/L-05/default.png"
-            ],
-            "sha256": "8158207205625de24be35066a590f6a00ed836c5e0e8121ec36d617a21cb0a1d"
-          }
-        }
-      ],
-      "size": [
-        192,
-        160
-      ],
-      "anchor": [
-        96,
-        112
-      ],
-      "sourceObject": "L-05",
-      "sheet": {
-        "file": "objects/L-05/sprite-sheet.png",
-        "width": 192,
-        "height": 160,
-        "columns": 1,
-        "rows": 1,
-        "gif": {
-          "file": "objects/L-05/sprite-sheet.gif",
-          "label": "Orange overlook / all frames — still sheet",
-          "kind": "still",
-          "width": 192,
-          "height": 160,
-          "frames": 1,
-          "transparent": true,
-          "paletteReduced": false,
-          "alpha": "original binary alpha",
-          "sourcePngs": [
-            "objects/L-05/sprite-sheet.png"
-          ],
-          "sha256": "3c39987f1ed1b87e8c87178ca0bdc3835886390135a7fdf2c9aa0ec44a750d5f"
         }
       },
       "gifSequences": []
@@ -6792,7 +7359,7 @@
         "sourcePngs": [
           "sheets/buildings-overview.png"
         ],
-        "sha256": "e944f91b9d7a9e5ad85052487a3cd79454fb6bbb378eade25ba0dc299b533122"
+        "sha256": "7919d30d9b14c508b3f5bac62a0a1cbb777f6aaa8056d49d60b3be21829129c8"
       }
     },
     {
@@ -6800,7 +7367,7 @@
       "file": "sheets/landmarks.png",
       "preview": "sheets/landmarks-overview.png",
       "width": 1536,
-      "height": 800,
+      "height": 1120,
       "cellSize": [
         192,
         160
@@ -6999,8 +7566,8 @@
           ]
         },
         {
-          "object": "L-10",
-          "variant": "default",
+          "object": "L-05",
+          "variant": "heading-0",
           "x": 0,
           "y": 320,
           "width": 192,
@@ -7011,8 +7578,8 @@
           ]
         },
         {
-          "object": "L-02",
-          "variant": "default",
+          "object": "L-05",
+          "variant": "heading-1",
           "x": 192,
           "y": 320,
           "width": 192,
@@ -7023,8 +7590,8 @@
           ]
         },
         {
-          "object": "L-03",
-          "variant": "default",
+          "object": "L-05",
+          "variant": "heading-2",
           "x": 384,
           "y": 320,
           "width": 192,
@@ -7035,8 +7602,8 @@
           ]
         },
         {
-          "object": "L-04",
-          "variant": "default",
+          "object": "L-05",
+          "variant": "heading-3",
           "x": 576,
           "y": 320,
           "width": 192,
@@ -7048,7 +7615,7 @@
         },
         {
           "object": "L-05",
-          "variant": "default",
+          "variant": "heading-4",
           "x": 768,
           "y": 320,
           "width": 192,
@@ -7059,8 +7626,8 @@
           ]
         },
         {
-          "object": "L-07",
-          "variant": "default",
+          "object": "L-05",
+          "variant": "heading-5",
           "x": 960,
           "y": 320,
           "width": 192,
@@ -7071,8 +7638,8 @@
           ]
         },
         {
-          "object": "L-08",
-          "variant": "default",
+          "object": "L-05",
+          "variant": "heading-6",
           "x": 1152,
           "y": 320,
           "width": 192,
@@ -7083,8 +7650,8 @@
           ]
         },
         {
-          "object": "L-06",
-          "variant": "tail-0",
+          "object": "L-05",
+          "variant": "heading-7",
           "x": 1344,
           "y": 320,
           "width": 192,
@@ -7095,8 +7662,8 @@
           ]
         },
         {
-          "object": "L-06",
-          "variant": "tail-1",
+          "object": "L-05",
+          "variant": "heading-8",
           "x": 0,
           "y": 480,
           "width": 192,
@@ -7107,8 +7674,8 @@
           ]
         },
         {
-          "object": "L-06",
-          "variant": "tail-2",
+          "object": "L-05",
+          "variant": "heading-9",
           "x": 192,
           "y": 480,
           "width": 192,
@@ -7119,8 +7686,8 @@
           ]
         },
         {
-          "object": "L-06",
-          "variant": "tail-3",
+          "object": "L-05",
+          "variant": "heading-10",
           "x": 384,
           "y": 480,
           "width": 192,
@@ -7131,8 +7698,8 @@
           ]
         },
         {
-          "object": "L-09",
-          "variant": "float-0",
+          "object": "L-05",
+          "variant": "heading-11",
           "x": 576,
           "y": 480,
           "width": 192,
@@ -7143,8 +7710,8 @@
           ]
         },
         {
-          "object": "L-09",
-          "variant": "float-1",
+          "object": "L-05",
+          "variant": "heading-12",
           "x": 768,
           "y": 480,
           "width": 192,
@@ -7155,8 +7722,8 @@
           ]
         },
         {
-          "object": "L-09",
-          "variant": "float-2",
+          "object": "L-05",
+          "variant": "heading-13",
           "x": 960,
           "y": 480,
           "width": 192,
@@ -7167,8 +7734,8 @@
           ]
         },
         {
-          "object": "L-09",
-          "variant": "float-3",
+          "object": "L-05",
+          "variant": "heading-14",
           "x": 1152,
           "y": 480,
           "width": 192,
@@ -7179,8 +7746,8 @@
           ]
         },
         {
-          "object": "L-09",
-          "variant": "float-4",
+          "object": "L-05",
+          "variant": "heading-15",
           "x": 1344,
           "y": 480,
           "width": 192,
@@ -7191,8 +7758,8 @@
           ]
         },
         {
-          "object": "L-09",
-          "variant": "float-5",
+          "object": "L-10",
+          "variant": "default",
           "x": 0,
           "y": 640,
           "width": 192,
@@ -7203,8 +7770,8 @@
           ]
         },
         {
-          "object": "L-09",
-          "variant": "float-6",
+          "object": "L-02",
+          "variant": "default",
           "x": 192,
           "y": 640,
           "width": 192,
@@ -7215,10 +7782,190 @@
           ]
         },
         {
-          "object": "L-09",
-          "variant": "float-7",
+          "object": "L-03",
+          "variant": "default",
           "x": 384,
           "y": 640,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-04",
+          "variant": "default",
+          "x": 576,
+          "y": 640,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-07",
+          "variant": "default",
+          "x": 768,
+          "y": 640,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-08",
+          "variant": "default",
+          "x": 960,
+          "y": 640,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-06",
+          "variant": "tail-0",
+          "x": 1152,
+          "y": 640,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-06",
+          "variant": "tail-1",
+          "x": 1344,
+          "y": 640,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-06",
+          "variant": "tail-2",
+          "x": 0,
+          "y": 800,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-06",
+          "variant": "tail-3",
+          "x": 192,
+          "y": 800,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-09",
+          "variant": "float-0",
+          "x": 384,
+          "y": 800,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-09",
+          "variant": "float-1",
+          "x": 576,
+          "y": 800,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-09",
+          "variant": "float-2",
+          "x": 768,
+          "y": 800,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-09",
+          "variant": "float-3",
+          "x": 960,
+          "y": 800,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-09",
+          "variant": "float-4",
+          "x": 1152,
+          "y": 800,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-09",
+          "variant": "float-5",
+          "x": 1344,
+          "y": 800,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-09",
+          "variant": "float-6",
+          "x": 0,
+          "y": 960,
+          "width": 192,
+          "height": 160,
+          "anchor": [
+            96,
+            112
+          ]
+        },
+        {
+          "object": "L-09",
+          "variant": "float-7",
+          "x": 192,
+          "y": 960,
           "width": 192,
           "height": 160,
           "anchor": [
@@ -7232,15 +7979,15 @@
         "label": "Landmarks / transparent atlas — still sheet",
         "kind": "still",
         "width": 1536,
-        "height": 800,
+        "height": 1120,
         "frames": 1,
         "transparent": true,
-        "paletteReduced": false,
+        "paletteReduced": true,
         "alpha": "original binary alpha",
         "sourcePngs": [
           "sheets/landmarks.png"
         ],
-        "sha256": "e63521545f3f876b34849595108c07d1dd122a653a245df1e6f978dd181ac1a3"
+        "sha256": "5fe5a018b91ceada1fda00216023e3f04f4c9bb90d603c9ccf15d52f4c6fc5f2"
       },
       "previewGif": {
         "file": "sheets/landmarks-overview.gif",
@@ -7255,7 +8002,7 @@
         "sourcePngs": [
           "sheets/landmarks-overview.png"
         ],
-        "sha256": "ffad56c1ad7919a8335dd282838cc363bb897f9cdaaee758d11a2c68f301b883"
+        "sha256": "2f0db2834c1d2937490002a1ee550f2182695311a5d7fa06fa78ae2f807cb08e"
       }
     },
     {
@@ -7346,7 +8093,7 @@
         "sourcePngs": [
           "sheets/building-parts-overview.png"
         ],
-        "sha256": "59192b8ca9eb5174e878724279e7a6f61815a30be4da6b9900470b772ce728fd"
+        "sha256": "31df80fcc69d75c14355686f312d904f6f4204db362ff2c563b072574b7be612"
       }
     },
     {
@@ -7485,7 +8232,7 @@
         "sourcePngs": [
           "sheets/street-service-overview.png"
         ],
-        "sha256": "4e42d2539f446e31f0514490727f72d2b9a1b82844566cb8eea777913c3a42be"
+        "sha256": "9c4bf0e2a0f743091902a8a2247e440e73dc4e4c0c377ac4ad447fd6bdbe01e5"
       }
     },
     {
@@ -7660,7 +8407,7 @@
         "sourcePngs": [
           "sheets/ground-planting-overview.png"
         ],
-        "sha256": "8a1b905a89bde4f7148c9bd99a9e849d4f5f529ea3c638fd4e68a1031d4991df"
+        "sha256": "8a3a802470e8420dd8271dc46b6059a800e09e91e3d9c8fec605f774eb2f3f4f"
       }
     },
     {
@@ -7775,7 +8522,7 @@
         "sourcePngs": [
           "sheets/signs-overview.png"
         ],
-        "sha256": "5761dc5b8dbd74de6dc02b22cc09c6a1e6834594bfdc19579d892b080f76ce68"
+        "sha256": "19adee6dd52a8e915a9ea638232961b46ec182e607dedf4c46e52d0093317dc1"
       }
     },
     {
@@ -8370,7 +9117,7 @@
         "sourcePngs": [
           "sheets/people-overview.png"
         ],
-        "sha256": "05d8bfdfcb857b3ce2e6f5c8368ac39e3b081354e7039eadd80f685650350dad"
+        "sha256": "ef007b27b9e4304d0b3dc9a2e599596e3a554ccf16909cf84d98c0b24bf797d8"
       }
     },
     {
@@ -8458,7 +9205,7 @@
         "sourcePngs": [
           "sheets/interface-icons-overview.png"
         ],
-        "sha256": "29bb4e59bac89b0eabf10a3049bfcb9b8332599ec118dec3be84788b53af729a"
+        "sha256": "ea0f7ae8a88a0ee168a1dd5e3b5e57b7b2e068aaedd87caadc91ddb6feb2496d"
       }
     }
   ],
@@ -8520,10 +9267,10 @@
     "version": 1,
     "exporter": {
       "file": "../../working/export-catalogue-gifs.py",
-      "sha256": "9331eec840749d900516decd39d42b93b734c1f6d9ecaffb9eab26aca14e1a46"
+      "sha256": "a2848e120de998bd1184f50542f9dd6550ab02a322f22d6e79eb6525b8af05e4"
     },
-    "stillCount": 186,
-    "sequenceCount": 20,
+    "stillCount": 201,
+    "sequenceCount": 21,
     "files": [
       {
         "file": "objects/B-01/roof-on.gif",
@@ -9066,6 +9813,330 @@
         ]
       },
       {
+        "file": "objects/L-05/heading-0.gif",
+        "label": "Voila delivery truck / 0° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-0.png"
+        ],
+        "sha256": "ae8708bef71efbbeb729889b35cc18f35515b2df15827b753fcfd10c929ef544"
+      },
+      {
+        "file": "objects/L-05/heading-1.gif",
+        "label": "Voila delivery truck / 22.5° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-1.png"
+        ],
+        "sha256": "7a71f06f1e76818b0ca4ae71fbf8dc9d5907f69113f741d42a96f61950f79da4"
+      },
+      {
+        "file": "objects/L-05/heading-2.gif",
+        "label": "Voila delivery truck / 45° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-2.png"
+        ],
+        "sha256": "b7fcb6774646e3f94e9db973bd1f0bae1a014960e7fe7af3546ff2f6e20757d2"
+      },
+      {
+        "file": "objects/L-05/heading-3.gif",
+        "label": "Voila delivery truck / 67.5° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-3.png"
+        ],
+        "sha256": "522f98c4441703a43195e2ce8ae3d03ee590cafee8665bf647331a9c27e76832"
+      },
+      {
+        "file": "objects/L-05/heading-4.gif",
+        "label": "Voila delivery truck / 90° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-4.png"
+        ],
+        "sha256": "50ef1f39f623f2925cd154cbd4dded38f0c37d13bae1294053e1b3e269fed325"
+      },
+      {
+        "file": "objects/L-05/heading-5.gif",
+        "label": "Voila delivery truck / 112.5° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-5.png"
+        ],
+        "sha256": "2cc86f9f3c7e61a6970f281c674e87fbbc346ccb1932591d9848597a91482781"
+      },
+      {
+        "file": "objects/L-05/heading-6.gif",
+        "label": "Voila delivery truck / 135° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-6.png"
+        ],
+        "sha256": "88bab5dd965be59ed807e14a01845e8ce3705d8aed0d643b0b6de42cb0418f89"
+      },
+      {
+        "file": "objects/L-05/heading-7.gif",
+        "label": "Voila delivery truck / 157.5° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-7.png"
+        ],
+        "sha256": "55702a56043915da469763483426ff0fafd76dd6b2a06a60dc0cf814b89ef84a"
+      },
+      {
+        "file": "objects/L-05/heading-8.gif",
+        "label": "Voila delivery truck / 180° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-8.png"
+        ],
+        "sha256": "735a38408828eaed2445f1ec2ce9c792b9f8d452a6f875d9e3e2aee65b356447"
+      },
+      {
+        "file": "objects/L-05/heading-9.gif",
+        "label": "Voila delivery truck / 202.5° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-9.png"
+        ],
+        "sha256": "9a09d034fe6a7a130617c1863321ba2b5cb6a22f183d1dada325d7361fa9c5af"
+      },
+      {
+        "file": "objects/L-05/heading-10.gif",
+        "label": "Voila delivery truck / 225° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-10.png"
+        ],
+        "sha256": "c2573af6de73833ac3892f64465941c8c22612514843f6a70154bff3f0dd834a"
+      },
+      {
+        "file": "objects/L-05/heading-11.gif",
+        "label": "Voila delivery truck / 247.5° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-11.png"
+        ],
+        "sha256": "b224a14f980d06b23cb6847bc417728a9d7b3d15db520a72c913ee94a3605536"
+      },
+      {
+        "file": "objects/L-05/heading-12.gif",
+        "label": "Voila delivery truck / 270° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-12.png"
+        ],
+        "sha256": "5051c675ba009a7a83c43a13a02f3b3ead78d53d0dab06a0517a7ef98ce9d496"
+      },
+      {
+        "file": "objects/L-05/heading-13.gif",
+        "label": "Voila delivery truck / 292.5° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-13.png"
+        ],
+        "sha256": "e4ed8a9e524740b8732a4247d93f41c1ba824ad1267b3f89b0fe5e079406a638"
+      },
+      {
+        "file": "objects/L-05/heading-14.gif",
+        "label": "Voila delivery truck / 315° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-14.png"
+        ],
+        "sha256": "68af700ac2c867bd42bcf9454e54ec4c0f277f6845dc8bc650e368ed639b7be7"
+      },
+      {
+        "file": "objects/L-05/heading-15.gif",
+        "label": "Voila delivery truck / 337.5° — still",
+        "kind": "still",
+        "width": 192,
+        "height": 160,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-15.png"
+        ],
+        "sha256": "6d864396847b9d543270ed26e8a198b81f011f34bd3592c948737534c04ab7b1"
+      },
+      {
+        "file": "objects/L-05/sprite-sheet.gif",
+        "label": "Voila delivery truck / all frames — still sheet",
+        "kind": "still",
+        "width": 1536,
+        "height": 320,
+        "frames": 1,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/sprite-sheet.png"
+        ],
+        "sha256": "81025319cfac50f7b0a0cf31200331b3b6036fef20f2b863455c3a44b848a598"
+      },
+      {
+        "file": "objects/L-05/sequences/orientation-study.gif",
+        "label": "Turntable — orientation study",
+        "kind": "orientation-study",
+        "width": 192,
+        "height": 160,
+        "frames": 16,
+        "transparent": true,
+        "paletteReduced": false,
+        "alpha": "original binary alpha",
+        "sourcePngs": [
+          "objects/L-05/heading-0.png",
+          "objects/L-05/heading-1.png",
+          "objects/L-05/heading-2.png",
+          "objects/L-05/heading-3.png",
+          "objects/L-05/heading-4.png",
+          "objects/L-05/heading-5.png",
+          "objects/L-05/heading-6.png",
+          "objects/L-05/heading-7.png",
+          "objects/L-05/heading-8.png",
+          "objects/L-05/heading-9.png",
+          "objects/L-05/heading-10.png",
+          "objects/L-05/heading-11.png",
+          "objects/L-05/heading-12.png",
+          "objects/L-05/heading-13.png",
+          "objects/L-05/heading-14.png",
+          "objects/L-05/heading-15.png"
+        ],
+        "sha256": "143314a9226677de6bf05e2ac9e56c710c8844b509d872750b296679f0b20da5",
+        "durationsMs": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "durationMs": 3200,
+        "loop": 0,
+        "timingBasis": "Presentation timing: 200 ms per registered orientation. Not driving motion.",
+        "variantKeys": [
+          "heading-0",
+          "heading-1",
+          "heading-2",
+          "heading-3",
+          "heading-4",
+          "heading-5",
+          "heading-6",
+          "heading-7",
+          "heading-8",
+          "heading-9",
+          "heading-10",
+          "heading-11",
+          "heading-12",
+          "heading-13",
+          "heading-14",
+          "heading-15"
+        ]
+      },
+      {
         "file": "objects/L-10/default.gif",
         "label": "Chrysler circuit / Complete attraction — still",
         "kind": "still",
@@ -9184,36 +10255,6 @@
           "objects/L-04/sprite-sheet.png"
         ],
         "sha256": "e6d83b2e7888550a9ad9991c73caa6f5c11d1d87ed29a8650135e43ca7124c58"
-      },
-      {
-        "file": "objects/L-05/default.gif",
-        "label": "Orange overlook / Default — still",
-        "kind": "still",
-        "width": 192,
-        "height": 160,
-        "frames": 1,
-        "transparent": true,
-        "paletteReduced": false,
-        "alpha": "original binary alpha",
-        "sourcePngs": [
-          "objects/L-05/default.png"
-        ],
-        "sha256": "8158207205625de24be35066a590f6a00ed836c5e0e8121ec36d617a21cb0a1d"
-      },
-      {
-        "file": "objects/L-05/sprite-sheet.gif",
-        "label": "Orange overlook / all frames — still sheet",
-        "kind": "still",
-        "width": 192,
-        "height": 160,
-        "frames": 1,
-        "transparent": true,
-        "paletteReduced": false,
-        "alpha": "original binary alpha",
-        "sourcePngs": [
-          "objects/L-05/sprite-sheet.png"
-        ],
-        "sha256": "3c39987f1ed1b87e8c87178ca0bdc3835886390135a7fdf2c9aa0ec44a750d5f"
       },
       {
         "file": "objects/L-07/default.gif",
@@ -11752,22 +12793,22 @@
         "sourcePngs": [
           "sheets/buildings-overview.png"
         ],
-        "sha256": "e944f91b9d7a9e5ad85052487a3cd79454fb6bbb378eade25ba0dc299b533122"
+        "sha256": "7919d30d9b14c508b3f5bac62a0a1cbb777f6aaa8056d49d60b3be21829129c8"
       },
       {
         "file": "sheets/landmarks.gif",
         "label": "Landmarks / transparent atlas — still sheet",
         "kind": "still",
         "width": 1536,
-        "height": 800,
+        "height": 1120,
         "frames": 1,
         "transparent": true,
-        "paletteReduced": false,
+        "paletteReduced": true,
         "alpha": "original binary alpha",
         "sourcePngs": [
           "sheets/landmarks.png"
         ],
-        "sha256": "e63521545f3f876b34849595108c07d1dd122a653a245df1e6f978dd181ac1a3"
+        "sha256": "5fe5a018b91ceada1fda00216023e3f04f4c9bb90d603c9ccf15d52f4c6fc5f2"
       },
       {
         "file": "sheets/landmarks-overview.gif",
@@ -11782,7 +12823,7 @@
         "sourcePngs": [
           "sheets/landmarks-overview.png"
         ],
-        "sha256": "ffad56c1ad7919a8335dd282838cc363bb897f9cdaaee758d11a2c68f301b883"
+        "sha256": "2f0db2834c1d2937490002a1ee550f2182695311a5d7fa06fa78ae2f807cb08e"
       },
       {
         "file": "sheets/building-parts.gif",
@@ -11812,7 +12853,7 @@
         "sourcePngs": [
           "sheets/building-parts-overview.png"
         ],
-        "sha256": "59192b8ca9eb5174e878724279e7a6f61815a30be4da6b9900470b772ce728fd"
+        "sha256": "31df80fcc69d75c14355686f312d904f6f4204db362ff2c563b072574b7be612"
       },
       {
         "file": "sheets/street-service.gif",
@@ -11842,7 +12883,7 @@
         "sourcePngs": [
           "sheets/street-service-overview.png"
         ],
-        "sha256": "4e42d2539f446e31f0514490727f72d2b9a1b82844566cb8eea777913c3a42be"
+        "sha256": "9c4bf0e2a0f743091902a8a2247e440e73dc4e4c0c377ac4ad447fd6bdbe01e5"
       },
       {
         "file": "sheets/ground-planting.gif",
@@ -11872,7 +12913,7 @@
         "sourcePngs": [
           "sheets/ground-planting-overview.png"
         ],
-        "sha256": "8a1b905a89bde4f7148c9bd99a9e849d4f5f529ea3c638fd4e68a1031d4991df"
+        "sha256": "8a3a802470e8420dd8271dc46b6059a800e09e91e3d9c8fec605f774eb2f3f4f"
       },
       {
         "file": "sheets/signs.gif",
@@ -11902,7 +12943,7 @@
         "sourcePngs": [
           "sheets/signs-overview.png"
         ],
-        "sha256": "5761dc5b8dbd74de6dc02b22cc09c6a1e6834594bfdc19579d892b080f76ce68"
+        "sha256": "19adee6dd52a8e915a9ea638232961b46ec182e607dedf4c46e52d0093317dc1"
       },
       {
         "file": "sheets/people.gif",
@@ -11932,7 +12973,7 @@
         "sourcePngs": [
           "sheets/people-overview.png"
         ],
-        "sha256": "05d8bfdfcb857b3ce2e6f5c8368ac39e3b081354e7039eadd80f685650350dad"
+        "sha256": "ef007b27b9e4304d0b3dc9a2e599596e3a554ccf16909cf84d98c0b24bf797d8"
       },
       {
         "file": "sheets/interface-icons.gif",
@@ -11962,7 +13003,7 @@
         "sourcePngs": [
           "sheets/interface-icons-overview.png"
         ],
-        "sha256": "29bb4e59bac89b0eabf10a3049bfcb9b8332599ec118dec3be84788b53af729a"
+        "sha256": "ea0f7ae8a88a0ee168a1dd5e3b5e57b7b2e068aaedd87caadc91ddb6feb2496d"
       },
       {
         "file": "previews/boerum-street-poster.gif",
@@ -12007,14 +13048,14 @@
         "sourcePngs": [
           "sheets/catalogue-overview.png"
         ],
-        "sha256": "3f40f25330880f917db02830cb91085b634188e5d302d9f541e17bc11a7dfb77"
+        "sha256": "21a5de296e040f589d9986c7d0c8b8aa8012d73072f9ab874c833d0e8d237088"
       },
       {
         "file": "sheets/refinement-comparison.gif",
         "label": "Before / after — still comparison sheet",
         "kind": "still",
         "width": 880,
-        "height": 3890,
+        "height": 3640,
         "frames": 1,
         "transparent": false,
         "paletteReduced": true,
@@ -12022,7 +13063,7 @@
         "sourcePngs": [
           "sheets/refinement-comparison.png"
         ],
-        "sha256": "c0a965e3460d29bbd47f4bc05a1bf5604d507a2e6be351ebf000831a1385f214"
+        "sha256": "9e474ccef11e8f7129cae4d012d3d2132956b205221eb3135292b07f370d261d"
       },
       {
         "file": "sheets/boerum-animation-labelled.gif",
@@ -12054,14 +13095,14 @@
         "sourcePngs": [
           "sheets/catalogue-overview.png"
         ],
-        "sha256": "3f40f25330880f917db02830cb91085b634188e5d302d9f541e17bc11a7dfb77"
+        "sha256": "21a5de296e040f589d9986c7d0c8b8aa8012d73072f9ab874c833d0e8d237088"
       },
       {
         "file": "sheets/refinement-comparison.gif",
         "label": "Before / after — still comparison sheet",
         "kind": "still",
         "width": 880,
-        "height": 3890,
+        "height": 3640,
         "frames": 1,
         "transparent": false,
         "paletteReduced": true,
@@ -12069,7 +13110,7 @@
         "sourcePngs": [
           "sheets/refinement-comparison.png"
         ],
-        "sha256": "c0a965e3460d29bbd47f4bc05a1bf5604d507a2e6be351ebf000831a1385f214"
+        "sha256": "9e474ccef11e8f7129cae4d012d3d2132956b205221eb3135292b07f370d261d"
       },
       {
         "file": "sheets/boerum-animation-labelled.gif",

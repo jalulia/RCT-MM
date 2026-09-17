@@ -1,0 +1,38 @@
+{
+  "design": "0.12",
+  "art": "0.10",
+  "truckSelection": true,
+  "routeRuns": true,
+  "globalPausePreservesTime": true,
+  "practiceReturnPreservesSelection": true,
+  "routeGifDownloaded": true,
+  "paused": {
+    "selected": "B-03",
+    "roof": false,
+    "motion": false,
+    "time": 7.625,
+    "record": false,
+    "landmark": "L-05",
+    "court": "party",
+    "circuit": false,
+    "delivery": true,
+    "deliveryStart": 0
+  },
+  "returned": {
+    "selected": "B-03",
+    "roof": false,
+    "motion": false,
+    "time": 7.625,
+    "record": false,
+    "landmark": "L-05",
+    "court": "party",
+    "circuit": false,
+    "delivery": true,
+    "deliveryStart": 0,
+    "beforeRead": {
+      "page": 9875.5,
+      "panel": 0,
+      "focus": {}
+    }
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "scope": "Fictional Episode 01; UI captures are actual automated playthroughs; timing condensed where stated",
+  "sources": [
+    {
+      "file": "../../episode-01/model.js",
+      "sha256": "8d1f787d551009c327b200d842e23b32ff9c7cc14bf56a92ee3efda069d7934d"
+    },
+    {
+      "file": "../../episode-01/episode.js",
+      "sha256": "a94e9563acba81b82ac7585e6a39e65c3c8f7449789dbe41433d762c7d6292b4"
+    },
+    {
+      "file": "../../episode-01/episode.css",
+      "sha256": "642f1a30de0a836d7cd002b0e210cb8f16f4b7a2b4888e22fe363f98c3c8ab62"
+    },
+    {
+      "file": "../../episode-01/scene.js",
+      "sha256": "cc584dd93fe598d8f168df41783971843acbc13bce4ca7c64540703a74ed0266"
+    },
+    {
+      "file": "../../episode-01/index.html",
+      "sha256": "43c345d234f887be5653e7ec5bf20d3892afdc46082ff3d88ab26653078fc753"
+    },
+    {
+      "file": "../../working/pixel-kit.js",
+      "sha256": "1ae3568ea8eee349179a35cca91ee413fad2c3d2ef95ba0dc861bbb50712e4a9"
+    },
+    {
+      "file": "../../working/park-kit.js",
+      "sha256": "ae9fc21e975c0d83dbaaf0e22263295135200e40156bc928e7123fe076bd773e"
+    }
+  ],
+  "entries": [
+    {
+      "id": "episode-planning",
+      "title": "Choose the production plan",
+      "png": "episode/planning.png",
+      "gif": "episode/planning.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "C-07 supplier plan before commitment. Budget, posted cash and reservations stay separate.",
+      "size": [
+        1440,
+        1080
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-paid-record",
+      "title": "Saved Paid record",
+      "png": "episode/paid-record.png",
+      "gif": "episode/paid-record.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "Tuesday v2 predates the Wednesday return. The saved record is never rewritten.",
+      "size": [
+        1060,
+        690
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-return",
+      "title": "One attempt, three states",
+      "png": "episode/return.png",
+      "gif": "episode/return.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "Wednesday: returned funding, a Tuesday Paid snapshot and an unresolved obligation.",
+      "size": [
+        1440,
+        1080
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-bank-record",
+      "title": "Bank-event strip",
+      "png": "episode/bank-record.png",
+      "gif": "episode/bank-record.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "The $12,000 debit and return net to zero for P-04; the obligation remains open.",
+      "size": [
+        1060,
+        754
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-authority",
+      "title": "Authority before reissue",
+      "png": "episode/authority.png",
+      "gif": "episode/authority.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "The producer requests; finance authorizes one new attempt against O-19.",
+      "size": [
+        1440,
+        1080
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-outcome",
+      "title": "Supplier run / outcome",
+      "png": "episode/outcome.png",
+      "gif": "episode/outcome.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "The revised promise is kept; the original Thursday promise is missed. The client invoice is still a receivable.",
+      "size": [
+        1384,
+        418
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-fabrication",
+      "title": "Production before handoff",
+      "png": "episode/fabrication.png",
+      "gif": "episode/fabrication.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "The component is fabricated and packed. Physical handoff takes a further interval.",
+      "size": [
+        1440,
+        1080
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-pool-record",
+      "title": "One debit, two allocations",
+      "png": "episode/pool-record.png",
+      "gif": "episode/pool-record.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "Routine batch B-09 includes both recipient receipts. Allocations do not create extra cash movements.",
+      "size": [
+        1060,
+        620
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-substitute-outcome",
+      "title": "Substitute run / open obligation",
+      "png": "episode/substitute-outcome.png",
+      "gif": "episode/substitute-outcome.gif",
+      "kind": "still",
+      "group": "Episode",
+      "route": "#episode/playable-episode",
+      "caption": "Thursday delivery is met, while $12,000 remains reserved for O-19. New production is not a settlement.",
+      "size": [
+        1384,
+        418
+      ],
+      "encodedFrames": 1
+    },
+    {
+      "id": "episode-supplier-run",
+      "title": "Supplier run / return to handoff",
+      "png": "episode/supplier-run.png",
+      "gif": "episode/supplier-run.gif",
+      "kind": "animation",
+      "group": "Episode",
+      "route": "#narrative",
+      "caption": "Actual UI playthrough, condensed. P-04 returns; a trace and approval lead to P-05. Friday handoff is accepted.",
+      "size": [
+        1440,
+        1080
+      ],
+      "durationMs": 18400,
+      "captureFrames": 10,
+      "chapterLabels": [
+        {
+          "label": "Plan S-08",
+          "duration": 1600,
+          "turn": 0
+        },
+        {
+          "label": "Tuesday debit",
+          "duration": 1600,
+          "turn": 2
+        },
+        {
+          "label": "Read Tuesday v2",
+          "duration": 2000,
+          "turn": 2
+        },
+        {
+          "label": "Wednesday return",
+          "duration": 2000,
+          "turn": 4
+        },
+        {
+          "label": "Read bank extract",
+          "duration": 1800,
+          "turn": 4
+        },
+        {
+          "label": "Trace received; Friday agreed",
+          "duration": 1800,
+          "turn": 5
+        },
+        {
+          "label": "Finance permission",
+          "duration": 1800,
+          "turn": 6
+        },
+        {
+          "label": "P-05 debited",
+          "duration": 1600,
+          "turn": 6
+        },
+        {
+          "label": "Recipient confirms; handoff next",
+          "duration": 1800,
+          "turn": 7
+        },
+        {
+          "label": "Outcome",
+          "duration": 2400,
+          "turn": 9
+        }
+      ],
+      "encodedFrames": 10
+    },
+    {
+      "id": "episode-internal-run",
+      "title": "In-house run / staffing and handoff",
+      "png": "episode/internal-run.png",
+      "gif": "episode/internal-run.gif",
+      "kind": "animation",
+      "group": "Episode",
+      "route": "#narrative",
+      "caption": "Actual UI playthrough, condensed. Three shared intervals protect the display job; concentrated staffing then meets Thursday. No supplier attempt is created.",
+      "size": [
+        1440,
+        1080
+      ],
+      "durationMs": 8000,
+      "captureFrames": 4,
+      "chapterLabels": [
+        {
+          "label": "Internal plan",
+          "duration": 1800,
+          "turn": 0
+        },
+        {
+          "label": "Display reservation protected",
+          "duration": 1800,
+          "turn": 3
+        },
+        {
+          "label": "Ready at the near-dock bay",
+          "duration": 2000,
+          "turn": 6
+        },
+        {
+          "label": "Internal outcome",
+          "duration": 2400,
+          "turn": 9
+        }
+      ],
+      "encodedFrames": 4
+    },
+    {
+      "id": "episode-ordinary-run",
+      "title": "Ordinary supplier / valid control",
+      "png": "episode/ordinary-run.png",
+      "gif": "episode/ordinary-run.gif",
+      "kind": "animation",
+      "group": "Episode",
+      "route": "#narrative",
+      "caption": "Actual UI playthrough, condensed. P-04 is received normally. B-09 is one bank payment with two supported allocations.",
+      "size": [
+        1440,
+        1080
+      ],
+      "durationMs": 7800,
+      "captureFrames": 4,
+      "chapterLabels": [
+        {
+          "label": "Ordinary supplier plan",
+          "duration": 1600,
+          "turn": 0
+        },
+        {
+          "label": "Receipt confirms release",
+          "duration": 1800,
+          "turn": 3
+        },
+        {
+          "label": "Read valid batch",
+          "duration": 2200,
+          "turn": 6
+        },
+        {
+          "label": "Ordinary outcome",
+          "duration": 2200,
+          "turn": 9
+        }
+      ],
+      "encodedFrames": 4
+    },
+    {
+      "id": "episode-five-views",
+      "title": "Five views / same project",
+      "png": "episode/five-views.png",
+      "gif": "episode/five-views.gif",
+      "kind": "animation",
+      "group": "Episode",
+      "route": "#narrative",
+      "caption": "Same turn and selected project across Work, Cash, Information, Control and People. Fictional substitute route.",
+      "size": [
+        1440,
+        1080
+      ],
+      "durationMs": 10000,
+      "captureFrames": 5,
+      "chapterLabels": [
+        {
+          "label": "Work",
+          "duration": 2000,
+          "turn": 6
+        },
+        {
+          "label": "Cash",
+          "duration": 2000,
+          "turn": 6
+        },
+        {
+          "label": "Information",
+          "duration": 2000,
+          "turn": 6
+        },
+        {
+          "label": "Control",
+          "duration": 2000,
+          "turn": 6
+        },
+        {
+          "label": "People",
+          "duration": 2000,
+          "turn": 6
+        }
+      ],
+      "encodedFrames": 5
+    },
+    {
+      "id": "episode-map-cycle",
+      "title": "Workshop / scenery cycle",
+      "png": "episode/map-cycle.png",
+      "gif": "episode/map-cycle.gif",
+      "kind": "animation",
+      "group": "Episode",
+      "route": "#narrative",
+      "caption": "36-second scene sample from the running canvas, with production state held at Tuesday AM. Staff, courier and cat use the shared original renderers.",
+      "size": [
+        640,
+        320
+      ],
+      "durationMs": 36000,
+      "captureFrames": 180,
+      "chapterLabels": [],
+      "encodedFrames": 180
+    }
+  ]
+}

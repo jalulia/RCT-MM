@@ -1,6 +1,6 @@
 # Park interactions — current study and next tests
 
-Checked against design 0.11 / art 0.9, 16 September 2026. This separates implemented scenic interactions from proposed operating behavior. The original 0.5 review is archived. These observations concern architecture, objects and interface behavior, not the verification of financial claims.
+Checked against design 0.13 / art 0.10, 17 September 2026. This separates implemented scenic interactions from proposed operating behavior. The original 0.5 review is archived. These observations concern architecture, objects and interface behavior, not the verification of financial claims.
 
 **Make the campus an assembled industrial pleasure ground.** Three distinctive sites, a few improbable furnishings, visible human occupation and one clear circulation system will carry more character than additional lawn, identical trees or miniature signs. The attraction is getting close to the objects and seeing how the place works. Every landmark does not need to mint revenue.
 
@@ -32,15 +32,15 @@ The long white car occupies an invented paved circuit with a planted island and 
 
 **Limit:** a parcel is a physical deliverable. Documents, approval rights and money do not travel at walking speed. Do not label an ambient queue “unpaid suppliers” or turn a booth visit into payment confirmation.
 
-### 3. Orange stair and tree: an overlook that reveals the assembly
+### 3. Johnson interior and the Porter delivery route
 
-The current orange overlook is a separate park landmark derived from Johnson’s stair and mezzanine. Johnson’s cutaway contains a connected orange stair and mezzanine, a central white birch and the office cat. Porter’s Solarium is a different source association and a separate invented glass pavilion. These objects do not establish one historical room or shared floor plan.
+Johnson’s cutaway retains its connected orange stair, mezzanine, central white birch and office cat. Each building has paired **Exterior / Interior** previews. The external stair overlook duplicated that feature and has been retired.
 
-**Implemented:** every building has paired **Exterior / Interior** preview buttons above the scene. Johnson’s interior is exposed initially. The overlook also provides **Open Johnson interior**. Both paths preserve the building footprint and use the same renderer as the catalogue. The assembly demonstration exposes construction stages. **Next steps:** test independent workstation inspection and a durable return bookmark; those controls are not implemented.
+L-05 now contains the Voila delivery truck. Supplied context identifies Porter’s former bakery use; the classic step van and its service loop are inventions. A four-second loading stop gives the vehicle a readable purpose. Its sixteen orientations share the catalogue renderer. It can run or remain parked; the global motion control pauses both vehicles and people.
 
-**Why it earns its space:** the player learns the place by taking it apart and putting it back together. The exaggerated overlook can feel like an observation attraction without pretending to be an actual ride. It also demonstrates the modular art system rather than hiding it under a finished roof.
+**Why it earns its space:** the truck adds a distinct moving silhouette and a trace of the site’s earlier use. The service road stays clear of the guest paths and building footprints. Johnson’s architecture can be understood through its own interior view.
 
-**Limit:** the overlook changes visibility, not authority or historical knowledge. A higher camera grants no access to private records. Tree, rail and meeting room are separate objects; none stands in for a company. Keep essential interactions reachable in the object list even with the roof on.
+**Limit:** neither route changes money, authority, evidence or production state. Independent workstation inspection and a durable return bookmark still belong to the operating prototype. Essential objects remain reachable through the object list.
 
 ## Current arrangement and a layout alternative to test
 
@@ -72,8 +72,8 @@ Selecting Porter should not rename the inspector “Accounts.” Departments can
 
 1. **Building and landmark selection exist.** Six visible exterior/interior choices cover three sites. The landmark list covers all eight selectable scenic objects; selecting the inflatable restores its courtyard layout. Buildings use polygon hit regions and landmarks use proximity regions. Individual workstations, the shark and the interior birch are not separately selectable.
 2. **The inspector keeps one structure.** Every selection shows its sprite, source photograph, observed source features and park interpretation. The financial fixture has a separate, persistent **Practice documents** entry. It is not assigned to a real office.
-3. **Sites and departments are separated.** Building controls and signs identify Boerum, Porter and 266 Johnson. No allocation editor is implemented. Shirt colour does not establish employment status.
-4. **Animation demonstrates occupation and spectacle.** Walking, the circuit and shark motion do not advance work, cash, queues or records. The separate Interface chapter demonstrates the proposed five-view model.
+3. **Sites and departments are separated.** Building controls and signs identify Boerum, Porter and 266 Johnson. The art explorer has no allocation editor. The separate episode allocates two shared staff units, without simulating all five departments. Shirt colour does not establish employment status.
+4. **Animation demonstrates occupation and spectacle.** Walking, the circuit and shark motion do not advance work, cash, queues or records. The Interface chapter demonstrates the relationship model; Episode 01 implements all five views for its narrow operating scenario.
 5. **Reading has a return path.** Opening the practice documents pauses motion and replaces the explorer with the document desk. **Return to park** restores selection, exterior/interior state, courtyard, focus and scroll position. Motion stays paused. Production pins, bookmarks and saved games remain future work.
 
 ## Next steps: acceptance checks
@@ -83,7 +83,7 @@ Use these checks where they support the [P2 ordinary-work proof](#production/cur
 * With labels hidden, can a viewer distinguish the street frontage, long hall and stair/tree volume?
 * Can they select a landmark and its associated site without repeatedly selecting the wrong object? Test workstation selection only after it exists.
 * After switching the courtyard layout, can they state what changed? Test the separate service-frontage proposal only after its two routes are implemented.
-* After using the overlook, do they understand it changed the view rather than their permissions?
+* Can they find Johnson’s interior directly and distinguish the bakery’s invented scenic route from an operating delivery?
 * Can every inspection and route preview be reached with motion disabled and without pixel hunting?
 
 The implemented interactions make the park worth inspecting and show how its component system works. The optional service-frontage study proposes a later operational consequence; the present gathering booth and courtyard controls do not simulate one.

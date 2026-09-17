@@ -187,7 +187,7 @@ for obj in manifest['objects']:
                 meta['registeredFps'] = cycle['fps']
                 meta['travel'] = cycle['travel']
                 meta['facing'] = cycle['facing']
-    elif obj['id'] == 'L-01' and len(variants) > 1:
+    elif obj['id'] in ('L-01', 'L-05') and len(variants) > 1:
         sequence(obj, 'orientation-study', variants, 'Turntable — orientation study',
                  'orientation-study', [200] * len(variants),
                  'Presentation timing: 200 ms per registered orientation. Not driving motion.')

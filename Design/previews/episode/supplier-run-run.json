@@ -1,0 +1,276 @@
+{
+  "scope": "Fictional UI playthrough; capture timing condensed",
+  "state": {
+    "schema": 1,
+    "mode": "episode",
+    "turn": 9,
+    "plan": "supplier",
+    "bay": "dock",
+    "crew": 1,
+    "cash": 2000000,
+    "work": 0,
+    "prep": 0,
+    "handoff": 1,
+    "other": 0,
+    "otherDone": 3,
+    "delivered": 8,
+    "promise": 9,
+    "started": true,
+    "materialsPaid": false,
+    "optionPaid": false,
+    "substitute": false,
+    "supplierSettled": true,
+    "returned": true,
+    "reissue": 6,
+    "receiptAt": 7,
+    "requests": {
+      "processor": {
+        "due": 5,
+        "status": "received"
+      },
+      "delay": {
+        "due": 5,
+        "status": "received"
+      },
+      "approval": {
+        "due": 6,
+        "status": "received"
+      }
+    },
+    "approved": true,
+    "delayApproved": true,
+    "poolAnswer": 200000,
+    "view": "Work",
+    "selection": "C-07",
+    "documents": [
+      "v1",
+      "v2",
+      "return",
+      "processor",
+      "delay",
+      "pool",
+      "approval",
+      "reissue",
+      "reissue-receipt"
+    ],
+    "ledger": [
+      {
+        "id": "P-04-debit",
+        "turn": 2,
+        "amount": -1200000,
+        "label": "P-04 funding debit"
+      },
+      {
+        "id": "P-04-return",
+        "turn": 4,
+        "amount": 1200000,
+        "label": "P-04 funding return"
+      },
+      {
+        "id": "B-09",
+        "turn": 6,
+        "amount": -200000,
+        "label": "Routine batch B-09"
+      },
+      {
+        "id": "P-05-debit",
+        "turn": 6,
+        "amount": -1200000,
+        "label": "Approved reissue P-05"
+      },
+      {
+        "id": "PAY-01",
+        "turn": 8,
+        "amount": -600000,
+        "label": "Scheduled staff payroll"
+      }
+    ],
+    "events": [
+      {
+        "turn": 1,
+        "text": "P-04 scheduled against O-19.",
+        "kind": "record"
+      },
+      {
+        "turn": 2,
+        "text": "P-04 funding debit · -$12,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 2,
+        "text": "Saved v2: Paid, W3 Tue 10:02. This is a snapshot.",
+        "kind": "record"
+      },
+      {
+        "turn": 3,
+        "text": "Competing display job complete.",
+        "kind": "work"
+      },
+      {
+        "turn": 4,
+        "text": "P-04 funding return · $12,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 4,
+        "text": "Component held. O-19 still needs resolution.",
+        "kind": "notice"
+      },
+      {
+        "turn": 4,
+        "text": "Processor trace requested.",
+        "kind": "record"
+      },
+      {
+        "turn": 4,
+        "text": "Client extension requested.",
+        "kind": "record"
+      },
+      {
+        "turn": 5,
+        "text": "Processor trace links the return to P-04. No later attempt is supplied.",
+        "kind": "record"
+      },
+      {
+        "turn": 5,
+        "text": "Client approves Friday PM handoff. Original Thursday promise remains in the log.",
+        "kind": "work"
+      },
+      {
+        "turn": 5,
+        "text": "Finance approval requested.",
+        "kind": "record"
+      },
+      {
+        "turn": 6,
+        "text": "Routine batch B-09 · -$2,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 6,
+        "text": "B-09 allocates $1,200 to O-20 and $800 to O-21. Both receipts supplied.",
+        "kind": "record"
+      },
+      {
+        "turn": 6,
+        "text": "Finance grants one reissue instruction for O-19.",
+        "kind": "control"
+      },
+      {
+        "turn": 6,
+        "text": "Approved reissue P-05 · -$12,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 7,
+        "text": "S-08 confirms receipt of P-05; the component is released.",
+        "kind": "record"
+      },
+      {
+        "turn": 8,
+        "text": "Scheduled staff payroll · -$6,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 8,
+        "text": "C-07 delivered. A $24,000 client invoice is raised; no receipt is modeled.",
+        "kind": "work"
+      }
+    ],
+    "actions": [
+      {
+        "at": 0,
+        "type": "plan",
+        "value": "supplier"
+      },
+      {
+        "at": 1,
+        "type": "advance"
+      },
+      {
+        "at": 2,
+        "type": "advance"
+      },
+      {
+        "at": 3,
+        "type": "advance"
+      },
+      {
+        "at": 4,
+        "type": "advance"
+      },
+      {
+        "at": 4,
+        "type": "view",
+        "value": "Information"
+      },
+      {
+        "at": 4,
+        "type": "request",
+        "value": "processor"
+      },
+      {
+        "at": 4,
+        "type": "request",
+        "value": "delay"
+      },
+      {
+        "at": 5,
+        "type": "advance"
+      },
+      {
+        "at": 5,
+        "type": "request",
+        "value": "approval"
+      },
+      {
+        "at": 6,
+        "type": "advance"
+      },
+      {
+        "at": 6,
+        "type": "view",
+        "value": "Control"
+      },
+      {
+        "at": 6,
+        "type": "reissue"
+      },
+      {
+        "at": 7,
+        "type": "advance"
+      },
+      {
+        "at": 7,
+        "type": "view",
+        "value": "Work"
+      },
+      {
+        "at": 8,
+        "type": "advance"
+      },
+      {
+        "at": 9,
+        "type": "advance"
+      },
+      {
+        "at": 9,
+        "type": "poolAnswer",
+        "value": 200000
+      }
+    ],
+    "finished": true
+  },
+  "outcome": {
+    "delivery": "Fri AM",
+    "metPromise": true,
+    "originalPromiseMet": false,
+    "otherOnTime": true,
+    "posted": 2000000,
+    "committed": 0,
+    "usable": 2000000,
+    "receivable": 2400000,
+    "obligation": "O-19 resolved by recipient-confirmed payment",
+    "batch": "One $2,000 bank debit correctly distinguished from its allocations"
+  }
+}

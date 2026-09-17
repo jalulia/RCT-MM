@@ -1,6 +1,6 @@
 # Office architecture: source study and sprite translation
 
-Research checked against design 0.11 / art 0.9, 16 September 2026. The accepted pixel system now includes office-derived architectural shells, cutaways and furnishings. This brief records their source basis and remaining spatial tests. The companion Porter and Boerum studies are architectural studies; the catalogue and assembled park show the current reusable assets.
+Research checked against design 0.13 / art 0.10, 17 September 2026. The accepted pixel system now includes office-derived architectural shells, cutaways and furnishings. This brief records their source basis and remaining spatial tests. The companion Porter and Boerum studies are architectural studies; the catalogue and assembled park show the current reusable assets.
 
 ## Architectural direction
 
@@ -92,7 +92,7 @@ Use these checks where they support the [P2 ordinary-work proof](#production/cur
 3. **Occupation:** test seated work, circulation and handoff states. The present moving people demonstrate scale and occupation, not task completion or four verified work states.
 4. **Scene layout:** compare the current composite park with a denser street edge and shared service circulation. Preserve the attraction spaces and planted clearings. This is a layout test, not a decision to replace the theme park with an office replica.
 
-A close architectural crop is valuable only if the normal-size sprite carries the same identity. Johnson’s internal mezzanine and the separate orange overlook are implemented. They remain associated with Johnson; Porter’s coral booth and timber insert retain their own sources. The [current building sheet](../assets/sprite-catalogue/sheets/buildings-overview.png) makes the three roof-on forms directly comparable; individual catalogue entries include their cutaways.
+A close architectural crop is valuable only if the normal-size sprite carries the same identity. Johnson’s internal mezzanine and orange stair remain in the cutaway. The former external overlook is retired; L-05 now identifies the Voila delivery truck beside Porter. Porter’s coral booth and timber insert retain their own sources. The [current building sheet](../assets/sprite-catalogue/sheets/buildings-overview.png) makes the three roof-on forms directly comparable; individual catalogue entries include their cutaways.
 
 ## Supporting inspected images and research record
 

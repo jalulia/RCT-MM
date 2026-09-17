@@ -1,136 +1,15 @@
 {
-  "design": "0.10",
-  "art": "0.9",
-  "selections": [
-    {
-      "selected": "B-01",
-      "roof": true,
-      "name": "Boerum frontage",
-      "pressed": 1,
-      "photo": "assets/office-references/boerum-user-street-view.png"
-    },
-    {
-      "selected": "B-01",
-      "roof": false,
-      "name": "Boerum frontage",
-      "pressed": 1,
-      "photo": "assets/office-references/boerum-user-street-view.png"
-    },
-    {
-      "selected": "B-02",
-      "roof": true,
-      "name": "Porter hall",
-      "pressed": 1,
-      "photo": "assets/office-references/porter-hall.jpg"
-    },
-    {
-      "selected": "B-02",
-      "roof": false,
-      "name": "Porter hall",
-      "pressed": 1,
-      "photo": "assets/office-references/porter-hall.jpg"
-    },
-    {
-      "selected": "B-03",
-      "roof": true,
-      "name": "266 Johnson",
-      "pressed": 1,
-      "photo": "assets/office-references/johnson-street-2017.png"
-    },
-    {
-      "selected": "B-03",
-      "roof": false,
-      "name": "266 Johnson",
-      "pressed": 1,
-      "photo": "assets/office-references/johnson-mezzanine.jpg"
-    },
-    {
-      "landmark": "L-01",
-      "sprite": "assets/sprite-catalogue/objects/L-01/heading-0.png",
-      "fields": [
-        "Source",
-        "Park interpretation"
-      ]
-    },
-    {
-      "landmark": "L-02",
-      "sprite": "assets/sprite-catalogue/objects/L-02/default.png",
-      "fields": [
-        "Source",
-        "Park interpretation"
-      ]
-    },
-    {
-      "landmark": "L-03",
-      "sprite": "assets/sprite-catalogue/objects/L-03/default.png",
-      "fields": [
-        "Source",
-        "Park interpretation"
-      ]
-    },
-    {
-      "landmark": "L-04",
-      "sprite": "assets/sprite-catalogue/objects/L-04/default.png",
-      "fields": [
-        "Source",
-        "Park interpretation"
-      ]
-    },
-    {
-      "landmark": "L-05",
-      "sprite": "assets/sprite-catalogue/objects/L-05/default.png",
-      "fields": [
-        "Source",
-        "Park interpretation"
-      ]
-    },
-    {
-      "landmark": "L-06",
-      "sprite": "assets/sprite-catalogue/objects/L-06/tail-0.png",
-      "fields": [
-        "Source",
-        "Park interpretation"
-      ]
-    },
-    {
-      "landmark": "L-07",
-      "sprite": "assets/sprite-catalogue/objects/L-07/default.png",
-      "fields": [
-        "Source",
-        "Park interpretation"
-      ]
-    },
-    {
-      "landmark": "L-08",
-      "sprite": "assets/sprite-catalogue/objects/L-08/default.png",
-      "fields": [
-        "Source",
-        "Park interpretation"
-      ]
-    }
-  ],
-  "garden": {
-    "court": "garden",
-    "landmark": null
-  },
-  "restored": "party",
-  "reading": {
-    "record": true,
-    "motion": false,
-    "explorerHidden": true,
-    "deskVisible": true
-  },
+  "design": "0.13",
+  "art": "0.10",
+  "truckSelection": true,
+  "routeRuns": true,
+  "globalPausePreservesTime": true,
+  "practiceReturnPreservesSelection": true,
+  "routeGifDownloadedAndByteMatched": true,
+  "pausedTime": 0.75,
   "returned": {
-    "selected": "B-03",
-    "roof": false,
-    "motion": false,
-    "record": false,
-    "court": "party",
-    "focus": true
-  },
-  "download": {
-    "file": "objects/B-03/sequences/state-comparison.gif",
-    "sha256": "2af525ac6f03d7616a473ebae0d003f324b74f27ef63bdf31b882641a87864e4",
-    "bytesMatch": true
+    "time": 0.75,
+    "landmark": "L-05",
+    "roof": false
   }
 }

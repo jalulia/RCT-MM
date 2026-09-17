@@ -1,0 +1,201 @@
+{
+  "scope": "Fictional UI playthrough; capture timing condensed",
+  "state": {
+    "schema": 1,
+    "mode": "episode",
+    "turn": 6,
+    "plan": "supplier",
+    "bay": "dock",
+    "crew": 2,
+    "cash": 3250000,
+    "work": 0,
+    "prep": 0,
+    "handoff": 0,
+    "other": 0,
+    "otherDone": 3,
+    "delivered": null,
+    "promise": 7,
+    "started": true,
+    "materialsPaid": true,
+    "optionPaid": true,
+    "substitute": true,
+    "supplierSettled": false,
+    "returned": true,
+    "reissue": false,
+    "receiptAt": null,
+    "requests": {},
+    "approved": false,
+    "delayApproved": false,
+    "poolAnswer": null,
+    "view": "People",
+    "selection": "C-07",
+    "documents": [
+      "v1",
+      "v2",
+      "return",
+      "pool"
+    ],
+    "ledger": [
+      {
+        "id": "P-04-debit",
+        "turn": 2,
+        "amount": -1200000,
+        "label": "P-04 funding debit"
+      },
+      {
+        "id": "P-04-return",
+        "turn": 4,
+        "amount": 1200000,
+        "label": "P-04 funding return"
+      },
+      {
+        "id": "ALT-01",
+        "turn": 4,
+        "amount": -150000,
+        "label": "Substitute capacity option"
+      },
+      {
+        "id": "MAT-02",
+        "turn": 5,
+        "amount": -400000,
+        "label": "Substitute materials"
+      },
+      {
+        "id": "B-09",
+        "turn": 6,
+        "amount": -200000,
+        "label": "Routine batch B-09"
+      }
+    ],
+    "events": [
+      {
+        "turn": 1,
+        "text": "P-04 scheduled against O-19.",
+        "kind": "record"
+      },
+      {
+        "turn": 2,
+        "text": "P-04 funding debit · -$12,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 2,
+        "text": "Saved v2: Paid, W3 Tue 10:02. This is a snapshot.",
+        "kind": "record"
+      },
+      {
+        "turn": 3,
+        "text": "Competing display job complete.",
+        "kind": "work"
+      },
+      {
+        "turn": 4,
+        "text": "P-04 funding return · $12,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 4,
+        "text": "Component held. O-19 still needs resolution.",
+        "kind": "notice"
+      },
+      {
+        "turn": 4,
+        "text": "Substitute capacity option · -$1,500",
+        "kind": "cash"
+      },
+      {
+        "turn": 5,
+        "text": "Substitute materials · -$4,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 6,
+        "text": "Routine batch B-09 · -$2,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 6,
+        "text": "B-09 allocates $1,200 to O-20 and $800 to O-21. Both receipts supplied.",
+        "kind": "record"
+      }
+    ],
+    "actions": [
+      {
+        "at": 0,
+        "type": "plan",
+        "value": "supplier"
+      },
+      {
+        "at": 1,
+        "type": "advance"
+      },
+      {
+        "at": 2,
+        "type": "advance"
+      },
+      {
+        "at": 3,
+        "type": "advance"
+      },
+      {
+        "at": 4,
+        "type": "advance"
+      },
+      {
+        "at": 4,
+        "type": "substitute"
+      },
+      {
+        "at": 4,
+        "type": "crew",
+        "value": 2
+      },
+      {
+        "at": 5,
+        "type": "advance"
+      },
+      {
+        "at": 6,
+        "type": "advance"
+      },
+      {
+        "at": 6,
+        "type": "view",
+        "value": "Work"
+      },
+      {
+        "at": 6,
+        "type": "view",
+        "value": "Cash"
+      },
+      {
+        "at": 6,
+        "type": "view",
+        "value": "Information"
+      },
+      {
+        "at": 6,
+        "type": "view",
+        "value": "Control"
+      },
+      {
+        "at": 6,
+        "type": "view",
+        "value": "People"
+      }
+    ],
+    "finished": false
+  },
+  "outcome": {
+    "delivery": "Not delivered",
+    "metPromise": false,
+    "originalPromiseMet": false,
+    "otherOnTime": true,
+    "posted": 3250000,
+    "committed": 1800000,
+    "usable": 1450000,
+    "receivable": 0,
+    "obligation": "O-19 remains open",
+    "batch": "Routine batch explanation not yet correct"
+  }
+}

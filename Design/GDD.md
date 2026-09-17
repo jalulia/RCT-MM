@@ -1,6 +1,6 @@
 # Mad Money Tycoon — game design document
 
-Revision 0.11 · 16 September 2026 · Design review edition
+Revision 0.13 · 17 September 2026 · Design review edition
 
 ## 01. Game
 
@@ -43,17 +43,45 @@ Every narrative chapter includes a short historical comparison. It identifies wh
 | Preserve selection and period across views | Players need to compare the same object |
 | Keep historical and simulated outcomes distinct | A player's choices cannot create evidence |
 
-These are the current design constraints. Their operating effects still need the [ordinary-work proof](#production/current-focus); the art study alone does not validate them.
+These constraints are implemented at the first episode’s narrow scope. Their clarity and interest still need the [uncoached ordinary-work test](#production/current-focus); automated playthroughs do not validate comprehension.
 
 Open decisions: audience; player authority; real-name representation; final building aesthetics; game distribution. This design review is prepared for public GitHub Pages; publication of the eventual game remains a separate decision.
 
 ## 02. First episode
 
-A $100,000 campaign needs a $12,000 fabricated component. A saved platform record says Paid, but the available bank record shows a debit followed by an equal return. The player must protect delivery while confirmation is pending.
+Campaign C-07 has a $100,000 budget ceiling and a Thursday handoff. Make its component in-house or commission supplier S-08 for $12,000. Staff time, bay placement and payment release affect delivery. The supplier route in the full episode introduces a returned payment; the in-house route avoids that obligation.
 
-All amounts, schedules and choices in this prototype are invented.
+All operating amounts, schedules, replies and permissions are invented. The historical comparison is read-only.
 
-### Fifteen-minute path
+### Playable episode
+
+<!-- figure:episode-playable -->
+
+The complete fictional loop is playable: planning, half-day intervals, shared staffing, material purchases, supplier release, record inspection, trace requests, reissue authority, substitute production, revised handoff, a routine pooled payment and a final run receipt. Five views preserve the selected project and period. Save/reopen restores the current run; export retains its action history.
+
+### Scenario rules
+
+| Input | Implemented rule |
+|---|---|
+| Cash and budget | $40,000 opening cash; $100,000 campaign ceiling; neither is the $24,000 client invoice raised on handoff |
+| Shared staff | Two work units per half-day; the competing display job needs three units by Tuesday PM |
+| Internal plan | $4,000 materials; six fabrication units plus two check-and-pack units |
+| Supplier plan | O-19 commits $12,000; two check-and-pack units in-house; supplier release depends on receipt |
+| Handoff | Near dock: one interval; shared floor: two. Handoff starts after work and release are ready; it consumes no staff units in this simplified model |
+| Fixed commitments | B-09: $2,000 Thursday AM. Payroll: $6,000 Friday AM |
+| Full supplier route | P-04 scheduled Monday; debit and saved Paid v2 Tuesday; funding returns Wednesday |
+| Ordinary supplier route | P-04 received Tuesday PM; no return; handoff can complete Wednesday AM |
+| Requests | Trace and invoice export: one interval; recipient confirmation: two; finance approval after a received trace or recipient response: one |
+| Reissue | Approval permits one P-05 debit; recipient confirms next interval; earliest handoff is the following interval |
+| Substitute | $1,500 option + $4,000 materials; three fabrication units; O-19 stays open and reserved |
+| Revised promise | Client accepts Friday PM after one interval; the original Thursday promise remains in the outcome |
+| Closeout | Earliest Friday PM, once both jobs finish; otherwise closes after interval 12 with unresolved work visible |
+
+The fixed P-04 records never change. P-05 and responsive messages are new simulation events, explicitly labelled as such. The exact executable values and transition rules are maintained in the [scenario model](episode-01/model.js).
+
+<!-- figure:episode-branches -->
+
+### Session path
 
 <!-- figure:first-episode -->
 
@@ -63,7 +91,9 @@ All amounts, schedules and choices in this prototype are invented.
 
 <!-- figure:payment-lifecycle -->
 
-The workbench opens from the affected project or obligation. It separates terms, payment events and platform records. The player can request processor history or recipient confirmation, then reserve substitute capacity, defer a handoff or change the production sequence. Confirmation may remain pending.
+The episode’s **On the desk** tray exposes only records available at the current interval. Reading pauses the schedule and returns to the same selection and view. The player can request a processor trace or recipient confirmation, seek one finance approval, build a substitute or revise the handoff. Reading an invoice export alone does not unlock reissue authority.
+
+The diagram below describes the fixed returned-payment fixture. A successful player-created P-05 is a separate later attempt; it does not fill a missing historical endpoint.
 
 Inspecting and comparing are navigation actions. The consequential choice is the changed commitment or plan they inform.
 
@@ -154,6 +184,12 @@ Allow pause, planning undo, branching and replay. After running an interval, sho
 
 Order the campaign by what the player needs to understand. Keep the full chronology available in the record view.
 
+### The episode in play
+
+<!-- figure:episode-storyboard -->
+
+The implemented episode compresses work, authority and payment into one test. It does not lock the longer campaign order below. Its screenshots and GIFs record the running simulation; the chapter proposals remain unbuilt.
+
 <!-- figure:narrative-sequence -->
 
 ### Chapter sequence
@@ -177,7 +213,7 @@ Each chapter begins with a normal case, allows a plan, introduces pressure, offe
 | A commission exceeds the current workshop | Internal overtime/slack versus external specialist versus phased delivery | Establishes the attraction of growth and the cost of commitments |
 | Client approval arrives after a reserved slot | Hold capacity, swap sequence, or release it | Makes contract time and production time diverge |
 | A real bill enters a pooled payment | Inspect batch membership or let supported routine processing proceed | Teaches a normal state before an exception |
-| A returned attempt remains labelled Paid | Protect delivery while seeking the right confirmation | Changes operations without requiring an accusation |
+| A bank return arrives beside a saved Paid snapshot | Establish which attempt returned, then protect delivery | Distinguishes a saved record from a later status observation |
 | Two transfers share amount and date | Compare native identities and banks | Defeats the tempting but invalid matching shortcut |
 | An off-map affiliate requests liquidity | Compare authorization, return terms and remaining commitments | Distinguishes gross deployment from retained benefit |
 | A report preserves profit but changes scale | Pin operating activity beside two reports | Makes representation consequential and inspectable |
@@ -188,6 +224,12 @@ Each chapter begins with a normal case, allows a plan, introduces pressure, offe
 These are proposed decisions and record interactions. Compare, pin and follow do not count as consequential gameplay by themselves. In an operating scenario they must inform a commitment; in reconstruction they must help discriminate between explanations.
 
 Relief, tax and employee-benefit episodes are deferred modules. Their historical rules, populations and source claims require specialist review before gameplay design.
+
+### Clocks and consequences
+
+<!-- figure:episode-clocks -->
+
+<!-- figure:episode-cash -->
 
 ### Characters and voice
 
@@ -221,11 +263,11 @@ Rights and obligations stay in the inspector across views. Preserve the selected
 
 <!-- figure:desk-layouts -->
 
-Start with one active document, one pinned comparison and the selected object’s context. Reading pauses the world and retains a return target. A full window manager is outside the first prototype.
+The episode implements one active document, its reading context and an exact return to the selected project/view. Its saved v1/v2 records have direct version switches. Side-by-side pinning remains a proposed extension; the separate art material study demonstrates comparison. Reading pauses the schedule. A full window manager is outside this prototype.
 
 ### Document vocabulary
 
-The [interactive material study](#art/interface-materials) develops the invoice, saved record, bank-event strip, form reader, player note and record index as distinct objects. The same components open from the separate **Practice documents** tray beside the park. White invoice stock carries obligations; pink carbon stock carries a version; the narrow strip carries dated events. Shape and printed labels carry the distinction as well as colour.
+The [interactive material study](#art/interface-materials) develops the invoice, saved record, bank-event strip, form reader, player note and record index as distinct objects. The art explorer retains its separate **Practice documents** tray. The playable episode uses an **On the desk** tray with records gated by the simulated date; its bank strips and carbon sheets draw on the same vocabulary. White invoice stock carries obligations; pink carbon stock carries a version; the narrow strip carries dated events. Shape and printed labels carry the distinction as well as colour.
 
 ### Payment workbench
 
@@ -250,6 +292,8 @@ One original pixel system, developed from components into a working scene. RCT s
 ### Visual system
 
 <!-- figure:art-package -->
+
+The animated cover is a separately composed 36-second scene: a foreground Chrysler circuit, exposed Johnson interior, bakery route, pacing pedestrian and flags. Its clock pauses offscreen and respects reduced motion. [Download the hero GIF](previews/art-hero.gif).
 
 ### References
 
@@ -289,7 +333,7 @@ The world is drawn on an integer pixel grid. Text, controls and source documents
 
 The kit separates ground, props, people, signs and building parts. It can be extended without repainting a whole scene. Boerum, Porter and Johnson supply distinct site forms. Their placement together is a fictional park composition; no department, entity or historical chronology is inferred from a building style.
 
-The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registered objects and 121 transparent frames, with labelled overviews, per-object sheets and a frame manifest. The Boerum previews show the full 36-second cycle. Catalogue exports rebuild from the same render functions as the park. The full refinement redrew 43 earlier objects and added the complete Chrysler attraction assembly. The latest pass refines Supernova and corrects Johnson’s frontage and interior. The Chrysler has 16 orientations. [Compare the previous and refined sprites](assets/sprite-catalogue/sheets/refinement-comparison.png).
+The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registered objects and 136 transparent frames, with labelled overviews, per-object sheets and a frame manifest. The Boerum previews show the full 36-second cycle. Catalogue exports rebuild from the same render functions as the park. The full refinement redrew 43 earlier objects and added the complete Chrysler attraction assembly. The latest pass replaces the standalone overlook with the Voila delivery truck; Johnson retains its orange interior stair. Both vehicles have 16 orientations. [Compare the previous and refined sprites](assets/sprite-catalogue/sheets/refinement-comparison.png).
 
 ### Assembly
 
@@ -299,11 +343,19 @@ The [object catalogue](assets/sprite-catalogue/index.html) contains 44 registere
 
 <!-- figure:art-world -->
 
-Sites and scenery can be selected separately. A landmark opens its photograph and identifies the invented park behaviour. Courtyard choices change the visible installation; the Chrysler can remain parked or run a miniature circuit. These are art-study interactions, not a working economy.
+Sites and scenery can be selected separately. A landmark opens its photograph and identifies the invented park behaviour. Courtyard choices change the visible installation. The Chrysler circuit and Voila delivery route each have a run/park control. **Play motion / Pause motion** controls the shared scenic clock. These are art-study interactions, not a working economy.
 
-Each building has visible **Exterior / Interior** previews. The inspector consistently shows the selected sprite, source photograph and park interpretation. The **Practice documents** tray opens C-07 independently of building selection and returns to the same park state. The proposed Work, Cash, Information, Control and People views remain in the [interface study](#interface/five-views); architectural browsing does not use those tabs.
+Each building has visible **Exterior / Interior** previews. The inspector consistently shows the selected sprite, source photograph and park interpretation. The **Practice documents** tray opens C-07 independently of building selection and returns to the same park state. Work, Cash, Information, Control and People views operate in Episode 01 and have a separate [relationship study](#interface/five-views). Architectural browsing does not use those tabs.
 
-The arrangement combines architecture and objects from different sites and photographs. It is not a historical map or a claim that the event objects were permanent. The next play test should make one spatial choice affect an ordinary production handoff before adding more attractions.
+The arrangement combines architecture and objects from different sites and photographs. It is not a historical map or a claim that the event objects were permanent. The playable episode uses a smaller Johnson-derived practice workshop: near-dock placement saves one handoff interval. Test whether that consequence is legible before adding more attractions.
+
+### Voila delivery
+
+<!-- figure:voila-delivery -->
+
+L-05 is a bakery delivery NPC associated with Porter. The 32-second sequence begins with a four-second loading stop, then follows the marked service road. The truck, route and loading behavior are park inventions. They do not imply a historical delivery or a transaction in the case. The separate PR-04 generic van remains an available component, without a duplicate placement on the current map.
+
+The external orange overlook has been retired. Johnson’s internal stair and mezzanine remain part of B-03.
 
 ### Interface materials
 
@@ -328,17 +380,17 @@ The populated specimens use the fictional C-07 / O-19 / P-04 fixture. The versio
 
 ### Production and next proof
 
-| Implemented | Next use in the operating proof |
+| Implemented system | Use in Episode 01 / next test |
 |---|---|
-| Original pixel renderer, three office-derived buildings, removable roofs | Use one existing site; make room for a visible production handoff |
-| 44 registered objects, paths, furnishings, staff and scenery | Reuse the kit for the two production plans; assess recognition at scene scale |
+| Original pixel renderer, three office-derived buildings, removable roofs | Johnson-derived cutaway workshop; test the near-dock and shared-floor handoff |
+| 44 registered objects, paths, furnishings, staff and scenery | Reused by both production plans; assess recognition at scene scale |
 | Six exterior/interior choices and a consistent source inspector | Retain place and selection while inspecting the work assigned there |
 | Separate practice-document desk with version and bank comparison | Introduce the payment exception after ordinary work is understandable |
-| PNG/GIF exports, atlases, anchors and orientation metadata | Export only the states needed by the proof from the same renderer |
+| PNG/GIF exports, atlases, anchors and orientation metadata | Gameplay, map cycle and UI captures published alongside the scenic exports |
 
 The [current focus](#production/current-focus) defines that proof. Model-to-sprite comparisons, new camera angles, extra attractions and a full animation set are later production options. Occlusion and handoff poses become immediate tasks only where the chosen scene needs them.
 
-This pass demonstrates a visual system and its interactions. It does not establish a complete animation set, a running economy or an approved production engine. The current procedural drawings are an editable art proof; modelled source assets can replace them only if they preserve the resulting image.
+The art study demonstrates the visual system. Episode 01 reuses it for a running fictional economy at one-workshop scope. Neither establishes a complete animation set or an approved engine for the full campaign. The current procedural drawings are an editable art proof; modelled source assets can replace them only if they preserve the resulting image.
 
 Sound follows ordinary work: footsteps, fabrication, paper handling and deliveries. Reading pauses ambient motion. A future sound pass should test one handoff, one waiting state and one record opening; the same states must remain clear with sound off.
 
@@ -346,19 +398,21 @@ Source images and third-party game art stay in the reference board. Supplied PZ 
 
 ## 07. Build & test
 
-Next: make one ordinary job playable with the existing kit. Source binding runs in parallel. Choose the campaign and engine after the episode has passed its relevant source and play tests.
+Next: test the ordinary scenario without coaching. The fictional episode is built; participant comprehension and structure comparison remain open. Source binding runs in parallel. Choose the campaign and engine after the relevant source and play tests.
 
 <!-- figure:current-deliverables -->
 
 ### Current focus
 
-**P2 · Ordinary-work proof — next.** One fictional site, campaign C-07, one shared production-capacity conflict and one physical handoff. The player plans, runs an interval and revises the plan. Both in-house production and supplier S-08 must be viable.
+**P2 · Ordinary-work proof — ready for uncoached playtesting.** The [playable episode](episode-01/index.html) includes an ordinary scenario with no returned payment. Both production plans complete; staffing and bay placement change the outcome. Automated engine checks and browser playthroughs cover their transitions. Participant comprehension and interest have not been tested.
 
 <!-- figure:ordinary-work-proof -->
 
-Before implementation, specify the invented starting cash, internal work time and cost, supplier lead time, approvals, due date and competing capacity reservation. C-07’s $100,000 budget is a ceiling, not a cash balance; O-19’s $12,000 fabrication amount already belongs to the external plan. No new historical values are needed.
+Run the ordinary scenario first with six to eight participants of varied game/accounting familiarity. Allow three minutes without coaching. Observe plan selection, bay recognition, staff reassignment and voluntary replay. Ask what changed delivery, what consumed cash, and what remains owed. Then offer the full supplier route and ask them to distinguish the saved Tuesday label from Wednesday’s return.
 
-The output is a three-minute playable or clickable test with a visible consequence for delivery, capacity and cash commitments. Observe whether uncoached players can explain the tradeoff and choose to try the other plan. Revise the management loop if the decisions only change a final explanation. Use the [diagnostic test protocol](#production/acceptance-tests), not a numerical pass rate from a small sample.
+Review the run receipts and observed mistakes before changing the model. If the choices are dull or the distinctions need explanation from the facilitator, revise P2. **Next implementation depends on those findings:** clearer spatial handoff cues, stronger competing-job feedback or a smaller record set. P3’s reconstruction alternative has not been built or compared.
+
+The full fictional loop was implemented early to expose dependencies and produce test material. This does not pass P2/P3 or lock the campaign. A 12–15 minute reading-and-play session remains a target; the automated captures are condensed demonstrations, not measured participant sessions.
 
 **P1 · Source binding — parallel.** Retrieve the original return chain, establish the later observation of the same payment object and bind an ordinary control. Its [release gate](binding/episode-01-draft.md#8-readiness-decision) applies to the historical comparison; it does not block this fictional proof. Additional art studies enter the immediate work only when they solve a demonstrated recognition or interaction problem.
 
@@ -367,7 +421,7 @@ The output is a three-minute playable or clickable test with a visible consequen
 
 <!-- figure:architecture -->
 
-The first prototype can use a small canvas/SVG scene with a DOM interface. Engine selection follows measured scene complexity and art needs.
+The episode uses a canvas scene with a DOM interface and a pure transition model. Cash uses integer cents. Save/reopen replays the action log in a versioned namespace; run export includes configuration, current state and outcome. This narrow prototype does not yet have arbitrary timeline branching, document pinning or a general simulation engine.
 
 An event has an economic identity and a representation identity. Returns reference an attempt; reissues reference an obligation; edits reference prior versions. Use typed, sourced many-to-many links for batch members, partial settlements, repeated attempts and multi-client records. Shared amount/date or journal context does not establish identity. Do not invent fractional client allocations for unsplit objects.
 
@@ -394,15 +448,15 @@ Each historical scene needs source/financial, gameplay-comprehension and interfa
 |---|---|---|---|
 | P0 · Source orientation | Complete at stated scope | Corpus inventory, chapter coverage, technique routing and initial design | Corrections and inspection limits remain visible |
 | P1 · Source binding | Active · parallel | Original return linkage, same-object status observation and an ordinary control | The historical comparison meets the binding packet’s claim-specific gate |
-| P2 · Ordinary-work proof | Next | Three-minute job; two viable plans; one capacity conflict and handoff | Players can explain the tradeoff and want to try another plan |
+| P2 · Ordinary-work proof | Ready for playtest | Implemented ordinary scenario; two viable plans; capacity and handoff consequences | Uncoached players explain the tradeoff and want to try another plan |
 | P3 · Structure comparison | Queued after P2 | Test operating-campus and reconstruction-park versions of the same payment conflict | Players choose and explain consequences without confusing fiction with history |
-| P4 · Thin playable episode | Queued after P3 | 12–15 minute loop with one conflict, one valid control and the historical comparison | State, identity and provenance stay clear; P1 covers the historical content used |
+| P4 · Thin playable episode | Fictional loop built · validation pending | Playable exception route, ordinary control, run exports and read-only case comparison | P2/P3 findings incorporated; participant timing checked; P1 gates any historical interaction |
 | P5 · Campaign outline lock | Queued after P4 | Sequence learning prerequisites, source anchors, permissions and endings | Each chapter adds a distinction and has adequate source coverage |
 | P6 · Game production | Queued after P5 | Episodes, assets, software, saves, access and performance checks | Each scene passes source, semantic and gameplay review |
 | P7 · Game release preparation | Queued after P6 | Audience edit, attribution, rights, packaging and distribution | Review findings resolved; version and source scope explicit |
 <!-- /production:table -->
 
-P1 continues alongside P2–P3. Structure tests can use synthetic records; the historical portion of P4 requires P1’s gate. Publishing this design review is complete and is separate from the eventual game release in P7.
+P1 continues alongside P2–P3. P4’s fictional implementation is available early as test material; the validation sequence remains P2 → P3 → P4. No historical simulation is enabled. Publishing this review and prototype is separate from the eventual game release in P7.
 
 Estimate after the first source-bound slice using verified scenes, unique transitions, assets and review effort. The located validation package is an archival collection; full campaign coverage has not been assessed.
 
@@ -441,9 +495,9 @@ Start with six to eight participants with different management-game and financia
 |---|---|---|
 | Audience and player authority | P2 test setup; P3 structure choice | State the provisional operations role and participant mix before testing |
 | Operating campus or reconstruction park | P3 | Compare the two structures using the same conflict; retain fixed historical outcomes |
-| Ordinary work | P2, immediate | Specify and test C-07’s internal-capacity plan against S-08’s supplier plan |
+| Ordinary work | P2, immediate | Run uncoached sessions with the implemented ordinary scenario; review comprehension and voluntary replay |
 | Historical comparison and legitimate control | P1, alongside P2–P3 | Follow the binding packet; start with the $4,520 pooled-funding lead, subject to its unresolved checks |
-| Art refinements | As required by P2 recognition or interaction | Test the existing kit before adding objects or camera views |
+| Art refinements | As required by P2 recognition or interaction | Observe recognition of work bays, ready components and the physical handoff before adding objects |
 | Real-name treatment, campaign and game distribution | Before P5/P7 respectively | Resolve against audience, source coverage and review findings |
 
 CASE-01 is the narrative reference; the validation package is an archival source collection. Neither overrides conflicting records. The [current focus](#production/current-focus) is the working priority; research-page proposals support it rather than creating separate production queues.
@@ -452,6 +506,8 @@ CASE-01 is the narrative reference; the validation package is an archival source
 
 | Revision | Change | Status |
 |---|---|---|
+| 0.13 | Playable fictional episode, ordinary control, conditional responses, five views, run persistence/export, captured gameplay and Narrative figures; test plan reconciled | P2 ready for uncoached playtest; P4 fictional loop built early; P1 and historical gates remain open |
+| 0.12 | Voila bakery truck replaces L-05 overlook; Porter service route, 16 vehicle orientations and GIF exports; Johnson stair retained; custom animated art hero | Design 0.12 / art 0.10; P2 remains next, P1 remains parallel |
 | 0.11 | Cross-reference and dependency audit; one P0–P7 phase sequence; explicit P2 ordinary-work proof; corrected document entry points, taxonomy, source gates and preview labels | Design 0.11 / art 0.9; source binding remains parallel and historical interaction inactive |
 | 0.10 | Exterior/interior preview choices, consistent source inspector, separate practice desk, compact home navigation; Johnson frontage and interior correction; black-and-silver Supernova | Design 0.10 / art 0.9; historical interaction remains inactive |
 | 0.9 | Full editorial reconciliation; inline visual examples; current preview library; GIF exports and versioned archive; portable Pages package | Design review release; historical interaction remains inactive |

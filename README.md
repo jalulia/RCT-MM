@@ -1,20 +1,21 @@
 # Mad Money Tycoon
 
-Design review **0.11** · original art library **0.9** · 16 September 2026.
+Design review **0.13** · original art library **0.10** · 17 September 2026.
 
 Start with the [design document](Design/design-review.html). It contains the current game proposal, narrative, object model, interface, art studies, source scope and build plan.
 
+- [Play Episode 01](Design/episode-01/index.html): full fictional loop and ordinary control.
 - [Preview library](Design/previews/index.html): current scenes, motion, architecture and document specimens; PNG and GIF downloads.
-- [Sprite catalogue](Design/assets/sprite-catalogue/index.html): 44 objects, 121 frame slots, transparent frames, sheets and labelled sequences.
+- [Sprite catalogue](Design/assets/sprite-catalogue/index.html): 44 objects, 136 frame slots, transparent frames, sheets and labelled sequences.
 - [Complete sprite ZIP](Design/assets/sprite-catalogue/mad-money-sprite-catalogue.zip).
 - [Archive](Design/archive/index.html): superseded versions, studies, review captures and quarantined construction files.
 - [Release review](Design/RELEASE-REVIEW.md): reconciliation, scope and validation.
 
 ## Current status
 
-This is a working design system and interactive art proof. Site selection, cutaways, courtyard changes, landmark inspectors, document comparison and ambient motion are implemented. The proposed production economy and complete fifteen-minute episode are not implemented.
+The fictional first episode is playable: choose a production plan and work bay, allocate shared staff, run half-day intervals, inspect available records and respond to a returned payment. The ordinary scenario provides a successful supplier control. Five views, run persistence, JSON export and separate delivery/cash/obligation outcomes are implemented. The architecture explorer and animated art hero remain separate scenic studies.
 
-**Next: [P2 ordinary-work proof](Design/design-review.html#production/current-focus).** A three-minute fictional job compares internal capacity with supplier S-08, using the existing art kit. The [P0–P7 sequence](Design/design-review.html#production/production-sequence) is maintained in the GDD and generates the reader’s phase diagram.
+**Next: [P2 uncoached ordinary-work playtest](Design/design-review.html#production/current-focus).** Engine and browser checks pass; participant comprehension and session timing have not been measured. P4’s fictional loop is built early for testing. P3’s structure comparison and the full campaign remain open. The [P0–P7 sequence](Design/design-review.html#production/production-sequence) is maintained in the GDD and generates the reader’s phase diagram.
 
 Historical source binding remains at selected-export-field level. Original statements, identity links and recipient settlement remain open. Historical gameplay is disabled. The public design review does not publish or depend on the external validation corpus. Its inventory retains exact source filenames, hashes and locators.
 
@@ -22,6 +23,7 @@ Historical source binding remains at selected-export-field level. Original state
 
 | Area | Current source | Published output |
 |---|---|---|
+| Playable episode | `Design/episode-01/` | Episode runtime, captured playthroughs and run receipts |
 | Game design | `Design/GDD.md` | `Design/design-review.html` |
 | Evidence scope and corrections | `Design/evidence-map.md` | Reader’s Evidence chapter |
 | Exact binding observations | `Design/binding/` | Binding and inventory reference pages |
@@ -51,7 +53,7 @@ npm run build
 npm run check
 ```
 
-The complete art command redraws PNGs and atlases, regenerates the two Boerum loops, exports every catalogue GIF, refreshes its ZIP and renders current scene previews. `npm run build` compiles the reader and library indexes. Browser-rendered document specimens are retained checked previews; refresh those after changing document components, using the capture procedure in `Design/qa/README.md`.
+The complete art command redraws PNGs and atlases, regenerates the two Boerum loops, exports every catalogue GIF, refreshes its ZIP and renders current scene previews. `npm run build` compiles the reader and library indexes. Browser-rendered art specimens are retained checked previews. Episode captures are rebuilt with `npm run capture:episode` while the local server is running on port 8769; install the capture browser with `npx playwright install chromium` first. `MMT_PREVIEW_URL` can select another server; `MMT_CHROMIUM` can select a compatible installed browser. Capture scope and procedures are in `Design/qa/README.md`.
 
 GIFs have a limited palette. Still images, state comparisons, turntables and animated gaits are labelled separately. PNG is the source image. The fedora’s loop is left, right, moonwalk left, right, left, moonwalk right: 36 seconds, including endpoint holds.
 

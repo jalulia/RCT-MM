@@ -14,7 +14,7 @@ def still_gif(file):
  with Image.open(file) as im:im.convert('RGB').quantize(colors=256,method=Image.Quantize.MEDIANCUT).save(dest)
  return dest
 preview=root/'previews';preview.mkdir(exist_ok=True)
-manifest=json.loads((preview/'manifest.json').read_text());entries=[e for e in manifest['entries'] if e['id'] in {'park-party','park-social','park-garden','boerum-cutaway','porter-cutaway','johnson-cutaway','chrysler-circuit'}]
+manifest=json.loads((preview/'manifest.json').read_text());entries=[e for e in manifest['entries'] if e['id'] in {'park-party','park-social','park-garden','boerum-cutaway','porter-cutaway','johnson-cutaway','chrysler-circuit','voila-delivery','art-hero'}]
 # Add all current standalone office and component-board outputs. Sprite objects have their own complete catalogue.
 for directory,group in [('office-study','Architecture'),('art-system','Components')]:
  for f in sorted((root/'assets'/directory).glob('*.png')):
@@ -23,7 +23,7 @@ for directory,group in [('office-study','Architecture'),('art-system','Component
   with Image.open(f) as im:
    im.convert('RGB').quantize(colors=256,method=Image.Quantize.MEDIANCUT).save(target)
    size=list(im.size)
-  names={'creative':'Boerum frontage','production':'Porter hall','accounts':'266 Johnson','sprite-atlas':'Component overview','stage0':'Porter / footprint','stage1':'Porter / shell','stage2':'Porter / contents','stage4':'Porter / roof','cutaway':'Porter / interior','car':'Chrysler / vehicle','stag':'Antler display','supernova':'Supernova pavilion','solarium':'Glass garden pavilion','overlook':'Orange stair overlook','reception':'Sculpted reception','cat':'Office cat','inflatable':'Inflatable castle','shark':'Shark balloon'}
+  names={'creative':'Boerum frontage','production':'Porter hall','accounts':'266 Johnson','sprite-atlas':'Component overview','stage0':'Porter / footprint','stage1':'Porter / shell','stage2':'Porter / contents','stage4':'Porter / roof','cutaway':'Porter / interior','car':'Chrysler / vehicle','stag':'Antler display','supernova':'Supernova pavilion','solarium':'Glass garden pavilion','voila':'Voila delivery truck','reception':'Sculpted reception','cat':'Office cat','inflatable':'Inflatable castle','shark':'Shark balloon'}
   entries.append({'id':directory+'-'+f.stem,'title':names.get(f.stem,f.stem.replace('-',' ').capitalize()),'png':rel(f,preview),'gif':target.name,'kind':'still','group':group,'size':size,'route':'#art/architecture-study' if group=='Architecture' else '#art/component-kit','caption':'Current renderer output. Individual sprites and transparent GIFs are in the object catalogue.'})
 # Browser-rendered document specimens are retained previews; the live DOM reader is canonical.
 for f in sorted((preview/'documents').glob('*.png')):
@@ -31,14 +31,26 @@ for f in sorted((preview/'documents').glob('*.png')):
 cat=json.loads((root/'assets/sprite-catalogue/manifest.json').read_text())
 for e in cat['previews']:
  entries.append({'id':Path(e['file']).stem,'title':e['title'],'png':'../assets/sprite-catalogue/'+e['poster'],'gif':'../assets/sprite-catalogue/'+e['file'],'kind':'animation','group':'Motion','size':[e['width'],e['height']],'route':'#art/boerum-street-study','caption':'36 seconds. Left, right, moonwalk left, right, left, moonwalk right.'})
+# Episode captures and diagrams have their own provenance and exact simulation run receipts.
+episode_manifest=preview/'episode/manifest.json'
+if episode_manifest.exists():
+ entries.extend(json.loads(episode_manifest.read_text())['entries'])
+ for name,title,caption in [('decision-map','Episode paths','Authored schematic of tested production and response branches.'),('three-clocks','Work, bank and saved records','Authored timeline; P-05 is a new simulation attempt, never a rewrite of the fixed P-04 record.'),('cash-boundaries','Cash at substitute closeout','Amounts generated from the executable substitute route.')]:
+  f=preview/'episode'/(name+'.png');gif=still_gif(f)
+  entries.append({'id':'episode-'+name,'title':title,'png':'episode/'+name+'.png','gif':'episode/'+name+'.gif','svg':'episode/'+name+'.svg','kind':'still','group':'Episode','size':list(Image.open(f).size),'route':'#narrative','caption':caption})
 # Each entry is regenerated from source lists; avoid duplicating appended entries on repeated builds.
 entries=list({e['id']:e for e in entries}.values());manifest['entries']=entries;(preview/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 def preview_card(e):
  links=f'<a href="{esc(e["png"])}" download>PNG ↓</a><a href="{esc(e["gif"])}" download>{"Animation" if e["kind"]=="animation" else "Still"} GIF ↓</a><a href="../design-review.html{esc(e["route"])}">Live context →</a>'
+ if e.get('svg'):links+=f'<a href="{esc(e["svg"])}" download>SVG ↓</a>'
+ if e.get('group')=='Episode':
+  links+='<a href="../episode-01/index.html">Play episode ↗</a>'
+  run=preview/'episode'/(e['id'].removeprefix('episode-')+'-run.json')
+  if run.exists():links+=f'<a href="{esc(rel(run,preview))}" download>Run receipt ↓</a>'
  if e['kind']=='animation':links=f'<button data-play="{esc(e["gif"])}" data-poster="{esc(e["png"])}" aria-pressed="false">Play GIF</button>'+links
- return f'<figure class="card {"photo" if e.get("group")=="Documents" else ""}"><div class="image"><img src="{esc(e["png"])}" alt="{esc(e["title"])}" loading="lazy"></div><figcaption class="copy"><span class="meta">{e["size"][0]} × {e["size"][1]} / {esc(e["kind"].upper())}</span><h3>{esc(e["title"])}</h3><p>{esc(e["caption"])}</p><div class="links">{links}</div></figcaption></figure>'
-body='<div class="intro"><div><span class="status">CURRENT / ART '+project['artRevision']+'</span><h1>Preview library</h1><p>Scenes, motion, architecture and document materials. Every preview has a GIF download; static views are labelled as stills.</p></div><aside><b>Need an individual object?</b><p>The sprite catalogue contains all 44 objects, 121 frame slots, transparent sheets and labelled animation sequences.</p><a href="../assets/sprite-catalogue/index.html">Open the object catalogue ↗</a></aside></div><nav class="jump">'+''.join(f'<a href="#{s.lower()}">{s}</a>' for s in ['Scenes','Motion','Architecture','Components','Documents'])+'</nav>'
-for group in ['Scenes','Motion','Architecture','Components','Documents']:
+ return f'<figure class="card {"photo" if e.get("group") in ["Documents","Episode"] else ""}"><div class="image"><img src="{esc(e["png"])}" alt="{esc(e["title"])}" loading="lazy"></div><figcaption class="copy"><span class="meta">{e["size"][0]} × {e["size"][1]} / {esc(e["kind"].upper())}</span><h3>{esc(e["title"])}</h3><p>{esc(e["caption"])}</p><div class="links">{links}</div></figcaption></figure>'
+body='<div class="intro"><div><span class="status">CURRENT / ART '+project['artRevision']+'</span><h1>Preview library</h1><p>Scenes, motion, architecture and document materials. Every preview has a GIF download; static views are labelled as stills.</p></div><aside><b>Need an individual object?</b><p>The sprite catalogue contains all 44 objects, 136 frame slots, transparent sheets and labelled animation sequences.</p><a href="../assets/sprite-catalogue/index.html">Open the object catalogue ↗</a></aside></div><nav class="jump">'+''.join(f'<a href="#{s.lower()}">{s}</a>' for s in ['Episode','Scenes','Motion','Architecture','Components','Documents'])+'</nav>'
+for group in ['Episode','Scenes','Motion','Architecture','Components','Documents']:
  chosen=[e for e in entries if e.get('group', 'Motion' if e['kind']=='animation' else 'Scenes')==group]
  if not chosen:continue
  body+=f'<h2 id="{group.lower()}">{group}</h2><div class="grid {"small-grid" if group=="Components" else ""}">'+''.join(preview_card(e) for e in chosen)+'</div>'

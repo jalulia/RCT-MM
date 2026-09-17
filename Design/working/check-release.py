@@ -19,7 +19,7 @@ class Page(HTMLParser):
   if tag in ['script','style']:self.ignore=max(0,self.ignore-1)
  def handle_data(self,data):
   if not self.ignore:self.text.append(data)
-files=[root/'index.html',root/'Design/design-review.html',root/'Design/previews/index.html',root/'Design/archive/index.html',root/'Design/assets/sprite-catalogue/index.html']
+files=[root/'index.html',root/'Design/design-review.html',root/'Design/previews/index.html',root/'Design/episode-01/index.html',root/'Design/archive/index.html',root/'Design/assets/sprite-catalogue/index.html']
 if (root/'Refs/index.html').exists():files.append(root/'Refs/index.html')
 pages={f:Page(f.read_text()) for f in files};errors=[];checked=0;external=set()
 manifest=json.loads((root/'Design/assets/sprite-catalogue/manifest.json').read_text());object_ids={o['id'] for o in manifest['objects']}
@@ -55,7 +55,7 @@ for file,page in pages.items():
   if 'Five inspector views preserve' in text:errors.append('Architectural explorer incorrectly claims operational views')
   if 'STUDY 02' in text:errors.append('Stale art study numbering')
 # Check authored documents as well as their compiled HTML routes.
-markdown_files=[root/'README.md',root/'ATTRIBUTION.md',root/'Design/RELEASE-REVIEW.md',root/'Design/qa/README.md',root/'Refs/README.md',root/'Design/GDD.md',root/'Design/evidence-map.md',*sorted((root/'Design/research').glob('*.md')),*sorted((root/'Design/binding').glob('*.md'))]
+markdown_files=[root/'README.md',root/'ATTRIBUTION.md',root/'Design/RELEASE-REVIEW.md',root/'Design/qa/README.md',root/'Refs/README.md',root/'Design/GDD.md',root/'Design/episode-01/README.md',root/'Design/evidence-map.md',*sorted((root/'Design/research').glob('*.md')),*sorted((root/'Design/binding').glob('*.md'))]
 markdown_checked=0
 reader=root/'Design/design-review.html'
 reader_map=json.loads((root/'Design/working/reader-map.json').read_text())
@@ -97,7 +97,7 @@ for row in phase_table.strip().splitlines()[2:]:
  source_phases.append(dict(id=id,title=title,status=status,output=output,gate=gate))
 assert plan['phases']==source_phases,'Rebuild the reader after changing the GDD production table'
 assert [p['id'] for p in plan['phases']]==['P'+str(i) for i in range(8)]
-assert next(p for p in plan['phases'] if p['id']==project['focus']['phase'])['status']=='Next'
+assert next(p for p in plan['phases'] if p['id']==project['focus']['phase'])['status']=='Ready for playtest'
 assert 'parallel' in next(p for p in plan['phases'] if p['id']==project['focus']['parallelPhase'])['status']
 assert project['focus']['route'] in reader_ids
 published_text=' '.join(pages[reader].text)
@@ -118,13 +118,26 @@ assert 'binding/8-readiness-decision' in reader_ids
 assert 'S-08' in binding['practiceBoundary']['fixtureIDs']
 case=(root/'Design/binding'/binding['caseSource']['file']).resolve()
 assert hashlib.sha256(case.read_bytes()).hexdigest()==binding['caseSource']['sha256']
-assert len(object_ids)==44 and sum(len(o['variants']) for o in manifest['objects'])==121
+assert len(object_ids)==44 and sum(len(o['variants']) for o in manifest['objects'])==136
 for source in manifest['sources']:
  file=(root/'Design/assets/sprite-catalogue'/source['file']).resolve()
  assert hashlib.sha256(file.read_bytes()).hexdigest()==source['sha256'],source['file']+' stale export'
 for e in json.loads((root/'Design/previews/manifest.json').read_text())['entries']:
  for key in ['png','gif']:
   if not (root/'Design/previews'/e[key]).exists():errors.append('Missing preview '+e[key])
+# Captures must identify the current executable model and shared scene sources.
+capture=json.loads((root/'Design/previews/episode/manifest.json').read_text())
+for directory,data in [(root/'Design/previews/episode',capture),(root/'Design/previews',preview_manifest)]:
+ for source in data['sources']:
+  file=(directory/source['file']).resolve()
+  assert file.is_relative_to(root) and file.is_file(),source['file']
+  assert hashlib.sha256(file.read_bytes()).hexdigest()==source['sha256'],source['file']+' capture source changed; recapture or rebuild'
+assert len(capture['entries'])==14
+assert sum(e['kind']=='animation' for e in capture['entries'])==5
+assert project['current']['episode']=='episode-01/index.html'
+assert 'not implemented' not in project['status']['practiceEpisode']
+for name in ['episode-engine-checks.json','episode-browser-checks.json']:
+ assert json.loads((root/'Design/qa'/name).read_text())['passed'] is True
 with zipfile.ZipFile(root/'Design/assets/sprite-catalogue/mad-money-sprite-catalogue.zip') as z:
  assert z.testzip() is None
  names=z.namelist();assert any(x.endswith('fonts/OFL.txt') for x in names),'Font licence missing in ZIP'
@@ -133,7 +146,7 @@ with zipfile.ZipFile(root/'Design/assets/sprite-catalogue/mad-money-sprite-catal
   assert member.is_relative_to(root/'Design/assets/sprite-catalogue') and member.is_file(),name
   assert z.read(name)==member.read_bytes(),'Stale ZIP member: '+name
 zip_members_checked=len(names)
-report={'designRevision':json.loads((root/'Design/project.json').read_text())['designRevision'],'artRevision':manifest['revision'],'phaseRecordsChecked':len(plan['phases']),'zipMembersByteMatched':zip_members_checked,'htmlPagesChecked':len(pages),'internalReferencesChecked':checked,'authoredReferencesChecked':markdown_checked,'externalReferenceURLs':len(external),'readerPages':len(json.loads((root/'Design/working/reader-map.json').read_text())),'objects':len(object_ids),'frames':sum(len(o['variants']) for o in manifest['objects']),'historicalInteractionEnabled':False,'sourcePdfHashMatches':True,'spriteSourceHashesMatch':True,'errors':errors}
+report={'designRevision':json.loads((root/'Design/project.json').read_text())['designRevision'],'artRevision':manifest['revision'],'phaseRecordsChecked':len(plan['phases']),'zipMembersByteMatched':zip_members_checked,'htmlPagesChecked':len(pages),'internalReferencesChecked':checked,'authoredReferencesChecked':markdown_checked,'externalReferenceURLs':len(external),'readerPages':len(json.loads((root/'Design/working/reader-map.json').read_text())),'objects':len(object_ids),'frames':sum(len(o['variants']) for o in manifest['objects']),'historicalInteractionEnabled':False,'sourcePdfHashMatches':True,'spriteSourceHashesMatch':True,'episodeCaptureSourceHashesMatch':True,'episodeCaptures':len(capture['entries']),'errors':errors}
 (root/'Design/qa').mkdir(exist_ok=True);(root/'Design/qa/release-checks.json').write_text(json.dumps(report,indent=2)+'\n')
 (root/'Design/qa/external-links.json').write_text(json.dumps(sorted(external),indent=2)+'\n')
 print(json.dumps(report,indent=2))

@@ -1,0 +1,12 @@
+{
+  "artRevision": "0.10",
+  "routeSamples": 640,
+  "headings": 16,
+  "loadingStopSeconds": 4,
+  "loopSeconds": 32,
+  "buildingAndSolariumClearance": true,
+  "parkBounds": true,
+  "movingHitTarget": true,
+  "johnsonCutawayPixelIdentical": true,
+  "retiredFramesAbsent": true
+}

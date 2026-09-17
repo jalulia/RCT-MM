@@ -13,3 +13,5 @@ The original sprite study and interface components were developed for Mad Money 
 - **Unused mod files:** retained in `Design/archive/quarantine/third-party-mod/` as supplied reference material. They are not used by the project or offered as an original game asset pack.
 
 The external financial validation collection remains outside this repository. The published inventory identifies inspected exports by relative source locator and hash; it does not pretend those files are present or newly authenticated.
+
+- **Voila Bakeries:** supplied facade and logo references, 16 September 2026. The former bakery association with 65 Porter is supplied project context. The delivery vehicle and road are original invented geometry with reference-derived livery. The name and logo belong to their respective owners; the source images are not included in the sprite ZIP.

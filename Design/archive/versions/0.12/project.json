@@ -1,0 +1,38 @@
+{
+  "name": "Mad Money Tycoon",
+  "designRevision": "0.12",
+  "artRevision": "0.10",
+  "reviewDate": "2026-09-16",
+  "views": [
+    "Work",
+    "Cash",
+    "Information",
+    "Control",
+    "People"
+  ],
+  "current": {
+    "reader": "design-review.html",
+    "specification": "GDD.md",
+    "evidence": "evidence-map.md",
+    "binding": "binding/episode-01.bindings.json",
+    "catalogue": "assets/sprite-catalogue/index.html",
+    "previews": "previews/index.html",
+    "archive": "archive/index.html"
+  },
+  "status": {
+    "designReader": "Review edition",
+    "pixelSystem": "Accepted component system; building aesthetics remain in refinement",
+    "artInteractions": "Architecture explorer and separate practice-document desk; not a production economy",
+    "practiceEpisode": "Document comparison implemented; ordinary-work proof is next; full episode not implemented",
+    "historicalBinding": "Selected export fields inspected; originals and identity links unresolved",
+    "historicalInteractionEnabled": false,
+    "publicReleaseScope": "Design review and original art library; not the external validation corpus"
+  },
+  "focus": {
+    "phase": "P2",
+    "title": "Ordinary-work proof",
+    "route": "production/current-focus",
+    "parallelPhase": "P1",
+    "phaseSource": "GDD.md#production-sequence"
+  }
+}

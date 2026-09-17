@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 Design/working/sprite-render-input.json
 Design/working/*-render-input.json
+Design/working/*-capture-input.json

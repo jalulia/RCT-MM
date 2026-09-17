@@ -1,6 +1,6 @@
 # Campus discoveries — objects with evidence
 
-Research checked against design 0.11 / art 0.9, 16 September 2026. Sources: inspected photographs in Matt Fry’s locally archived public portfolio, checked against the public project pages and PSF Projects’ project page. These are visual references, not facts about the case. Each entry separates the observed object, its current game interpretation and any further proposed interaction.
+Research checked against design 0.13 / art 0.10, 17 September 2026. Sources: inspected photographs in Matt Fry’s locally archived public portfolio, checked against the public project pages and PSF Projects’ project page. These are visual references, not facts about the case. Each entry separates the observed object, its current game interpretation and any further proposed interaction.
 
 The sculpted reception desk, indoor Chrysler and tree under the skylight supply three different silhouettes and spatial conditions: arrival, an obstruction people gather around, and a shared clearing. The park makes the car a circuit attraction and the room name Supernova an orbital pavilion. The inflatable/shark kit changes the courtyard arrangement. Small objects can reward attention through their shape and placement without requiring a dialogue box each.
 
@@ -126,7 +126,7 @@ The sculpted reception desk, indoor Chrysler and tree under the skylight supply 
 
 ## Current park study
 
-The assembled map now uses Boerum, Porter and Johnson-derived building families. It includes original sprites for the counter, Chrysler, stag, Supernova pavilion, Solarium, orange overlook, tabby and inflatable/shark event kit. The inspector shows a source photograph beside the proposed use.
+The assembled map now uses Boerum, Porter and Johnson-derived building families. It includes original sprites for the counter, Chrysler, stag, Supernova pavilion, Solarium, Voila delivery truck, tabby and inflatable/shark event kit. The inspector shows a source photograph beside the proposed use.
 
 The parked car and optional miniature circuit are both available; the circuit is explicitly invented. Booths, garden and inflatable are alternative courtyard layouts, not a historical sequence. The Volleygon cabinet, neon and typewriter remain proposed additions.
 
@@ -148,3 +148,9 @@ Use original sprite interpretation of these observed forms. Photographs and depi
 1. [Matt Fry — 65 Porter](https://mattfryed.com/65porter): creator’s project page; design/fabrication-management account; architecture credited to PSF Projects Architecture DPC, construction to PBS Solutions, fabrication to Millwright. Published [reference manifest](../assets/office-references/manifest.json) retains the selected image mappings and hashes.
 2. [Matt Fry — 266 Johnson](https://mattfryed.com/266-johnson): creator’s design/construction account and office gallery; explicit Volleygon event caption. The same [reference manifest](../assets/office-references/manifest.json) retains selected Johnson image mappings and attribution limits.
 3. [PSF Projects — Madwell Creative Agency](https://www.psfprojects.com/workplace/madwell-creative-agency): architect’s description, project credits and gallery; names Zach Pontz as photographer. This credit is applied only to matching images, not extended to Matt’s entire archive.
+
+## Voila Bakeries / Porter
+
+Supplied facade and logo references show blue and red Voila Bakeries lettering. Supplied context identifies 65 Porter as a former croissant factory. The [bakery study](#art/voila-delivery) translates that earlier use into a boxy 1980s-style step van with a croissant and red/blue livery. Its vehicle model, loading stop and service route are inventions; no historical overlap or delivery is asserted.
+
+L-05 replaces the redundant external orange overlook. Johnson keeps its own interior stair and mezzanine. The truck has [16 turning views](../assets/sprite-catalogue/index.html#L-05) and a [32-second route GIF](../previews/voila-delivery.gif). The generic PR-04 van remains in the library, but is not placed alongside the Voila truck in the current map.

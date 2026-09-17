@@ -1,0 +1,70 @@
+{
+  "viewport": [
+    1440,
+    1080
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    {
+      "name": "Document reading pauses time and preserves selection",
+      "passed": true
+    },
+    {
+      "name": "Full supplier UI route completes with Friday AM delivery and $20,000 posted cash",
+      "passed": true
+    },
+    {
+      "name": "Run receipt downloads the exact current state",
+      "passed": true
+    },
+    {
+      "name": "Reload replays and restores committed state",
+      "passed": true
+    },
+    {
+      "name": "In-house UI route completes on Thursday without creating a supplier obligation",
+      "passed": true
+    },
+    {
+      "name": "Ordinary supplier UI run has a confirmed receipt and no manufactured anomaly",
+      "passed": true
+    },
+    {
+      "name": "Five views preserve time and object identity",
+      "passed": true
+    },
+    {
+      "name": "Substitute UI path protects delivery while preserving the original obligation",
+      "passed": true
+    },
+    {
+      "name": "The competing job has its own context in all five views",
+      "passed": true
+    },
+    {
+      "name": "390px layout has no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "name": "Document dialog closes with Escape",
+      "passed": true
+    },
+    {
+      "name": "Keyboard plan selection retains focus after rendering",
+      "passed": true
+    },
+    {
+      "name": "Standalone file URL starts without a server",
+      "passed": true
+    },
+    {
+      "name": "No browser script errors during playthroughs",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

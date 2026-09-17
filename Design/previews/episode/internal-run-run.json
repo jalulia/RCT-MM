@@ -1,0 +1,164 @@
+{
+  "scope": "Fictional UI playthrough; capture timing condensed",
+  "state": {
+    "schema": 1,
+    "mode": "episode",
+    "turn": 9,
+    "plan": "internal",
+    "bay": "dock",
+    "crew": 1,
+    "cash": 2800000,
+    "work": 0,
+    "prep": 0,
+    "handoff": 1,
+    "other": 0,
+    "otherDone": 3,
+    "delivered": 7,
+    "promise": 7,
+    "started": true,
+    "materialsPaid": true,
+    "optionPaid": false,
+    "substitute": false,
+    "supplierSettled": false,
+    "returned": false,
+    "reissue": false,
+    "receiptAt": null,
+    "requests": {},
+    "approved": false,
+    "delayApproved": false,
+    "poolAnswer": null,
+    "view": "Work",
+    "selection": "C-07",
+    "documents": [
+      "pool"
+    ],
+    "ledger": [
+      {
+        "id": "MAT-01",
+        "turn": 1,
+        "amount": -400000,
+        "label": "Workshop materials"
+      },
+      {
+        "id": "B-09",
+        "turn": 6,
+        "amount": -200000,
+        "label": "Routine batch B-09"
+      },
+      {
+        "id": "PAY-01",
+        "turn": 8,
+        "amount": -600000,
+        "label": "Scheduled staff payroll"
+      }
+    ],
+    "events": [
+      {
+        "turn": 1,
+        "text": "Workshop materials · -$4,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 3,
+        "text": "Competing display job complete.",
+        "kind": "work"
+      },
+      {
+        "turn": 6,
+        "text": "Routine batch B-09 · -$2,000",
+        "kind": "cash"
+      },
+      {
+        "turn": 6,
+        "text": "B-09 allocates $1,200 to O-20 and $800 to O-21. Both receipts supplied.",
+        "kind": "record"
+      },
+      {
+        "turn": 7,
+        "text": "C-07 delivered. A $24,000 client invoice is raised; no receipt is modeled.",
+        "kind": "work"
+      },
+      {
+        "turn": 8,
+        "text": "Scheduled staff payroll · -$6,000",
+        "kind": "cash"
+      }
+    ],
+    "actions": [
+      {
+        "at": 0,
+        "type": "plan",
+        "value": "internal"
+      },
+      {
+        "at": 1,
+        "type": "advance"
+      },
+      {
+        "at": 2,
+        "type": "advance"
+      },
+      {
+        "at": 3,
+        "type": "advance"
+      },
+      {
+        "at": 3,
+        "type": "view",
+        "value": "People"
+      },
+      {
+        "at": 3,
+        "type": "crew",
+        "value": 2
+      },
+      {
+        "at": 4,
+        "type": "advance"
+      },
+      {
+        "at": 5,
+        "type": "advance"
+      },
+      {
+        "at": 6,
+        "type": "advance"
+      },
+      {
+        "at": 6,
+        "type": "view",
+        "value": "Work"
+      },
+      {
+        "at": 6,
+        "type": "crew",
+        "value": 1
+      },
+      {
+        "at": 7,
+        "type": "advance"
+      },
+      {
+        "at": 8,
+        "type": "advance"
+      },
+      {
+        "at": 9,
+        "type": "advance"
+      }
+    ],
+    "finished": true
+  },
+  "outcome": {
+    "delivery": "Thu PM",
+    "metPromise": true,
+    "originalPromiseMet": true,
+    "otherOnTime": true,
+    "posted": 2800000,
+    "committed": 0,
+    "usable": 2800000,
+    "receivable": 2400000,
+    "obligation": "O-19 was not created",
+    "batch": "Routine batch explanation not yet correct"
+  }
+}

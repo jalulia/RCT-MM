@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "scope": "Fictional deterministic simulation; automated checks do not validate learning or historical binding",
+  "checks": [
+    {
+      "name": "Internal and supplier plans both work in the ordinary control",
+      "passed": true
+    },
+    {
+      "name": "Bay placement changes physical handoff, concentrated staffing can miss a reservation",
+      "passed": true
+    },
+    {
+      "name": "Returned funding restores cash but not settlement; saved Tuesday label remains",
+      "passed": true
+    },
+    {
+      "name": "New payment requires authority, debits only once, and closes on recipient confirmation",
+      "passed": true
+    },
+    {
+      "name": "Substitute can protect delivery while the original obligation remains reserved",
+      "passed": true
+    },
+    {
+      "name": "Routine batch is one debit; its allocations are not additional cash movements",
+      "passed": true
+    },
+    {
+      "name": "Rejected transitions do not mutate state; action replay recreates the complete run",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
