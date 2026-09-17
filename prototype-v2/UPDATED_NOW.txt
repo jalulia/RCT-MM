@@ -1,0 +1,5 @@
+This marker was created after the clean app.js rebuild.
+Expected current sizes reported by the mounted folder:
+- app.js: 20.3 KB
+- style.css: 11.1 KB
+- QA.md: 2.1 KB
