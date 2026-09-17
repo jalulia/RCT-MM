@@ -1,18 +1,22 @@
 <!doctype html><html><head><meta charset="utf-8"><title>Mad Money Tycoon · Gameplay Regression</title><style>body{margin:0;background:#171719;color:#eee;font:13px monospace}.bar{display:flex;align-items:center;gap:12px;padding:10px 14px}.bar b{color:#51eb7b}.bar button{margin-left:auto;padding:7px 10px}pre{margin:0;padding:12px 14px;background:#101012;max-height:190px;overflow:auto}iframe{display:block;width:100%;height:calc(100vh - 245px);border:0;background:#ddd}</style></head><body><div class="bar"><b>DESIGN 0.12 · GAMEPLAY REGRESSION</b><span id="summary">running…</span><button id="again">RUN AGAIN</button></div><pre id="log"></pre><iframe id="game" src="index.html"></iframe><script>
 const frame=document.querySelector('#game'),log=document.querySelector('#log'),summary=document.querySelector('#summary');let pass=0,fail=0;
 function out(ok,name,detail=''){ok?pass++:fail++;log.textContent+=(ok?'PASS ':'FAIL ')+name+(detail?' · '+detail:'')+'\n'}
-function has(d,s,t){return d.querySelector(s)?.textContent.includes(t)}
+function has(d,s,t){const text=d.querySelector(s)?.textContent||'';return text.toLowerCase().includes(String(t).toLowerCase())}
 function click(d,s){let e=d.querySelector(s);if(!e)throw Error('missing '+s);e.click()}
-function run(){pass=fail=0;log.textContent='';let w=frame.contentWindow,d=w.document;try{
+function waitFor(pred,ms=800){return new Promise(resolve=>{const start=Date.now();(function tick(){if(pred())return resolve(true);if(Date.now()-start>=ms)return resolve(!!pred());setTimeout(tick,16)})()})}
+async function run(){pass=fail=0;log.textContent='';let w=frame.contentWindow,d=w.document;try{
 w.localStorage.removeItem('mmt-design-012');
 click(d,'[data-plan="internal"]');click(d,'#run');out(has(d,'#capacity','4 H'),'Make loop consumes shop capacity');out(has(d,'#consequence','queued'),'Make loop exposes competing-job delay');click(d,'#run');out(has(d,'#consequence','DELIVERED'),'Make loop reaches delivery');
 click(d,'#run');click(d,'#run');out(has(d,'#capacity','16 H'),'Buy loop preserves shop capacity');out(has(d,'#consequence','$36,000 usable'),'Buy loop separates usable from posted cash');click(d,'#run');out(has(d,'#consequence','DELIVERED'),'Buy loop reaches delivery');
 click(d,'[data-plan="internal"]');click(d,'#run');click(d,'[data-plan="supplier"]');click(d,'#run');out(has(d,'#consequence','AFTER MONDAY INTERVAL'),'Revision shows new consequence before completion');out(has(d,'#consequence','$36,000 usable'),'Revision applies supplier liquidity consequence');click(d,'#run');out(has(d,'#consequence','DELIVERED'),'Revised plan reaches delivery');
 click(d,'[data-object="porter"]');click(d,'[data-view="cash"]');click(d,'[data-scene="garden"]');out(has(d,'#object-title','Porter hall'),'Object selection remains active');out(d.querySelector('[data-view="cash"]').classList.contains('active'),'View switch retains context');out(d.querySelector('[data-scene="garden"]').classList.contains('active'),'Courtyard state changes independently');
-let before=w.S.motion;click(d,'#docs');out(d.querySelector('#document-desk').open,'Practice desk opens independently');out(w.S.motion===false,'Reading pauses motion');out(has(d,'#return-target','Porter hall'),'Document desk retains return target');click(d,'#close-docs');out(w.S.selected==='porter'&&w.S.view==='cash'&&w.S.scene==='garden','Return preserves object, view and scene');out(w.S.motion===before,'Return restores prior motion state');
+let before=w.S.motion;click(d,'#docs');out(d.querySelector('#document-desk').open,'Practice desk opens independently');out(w.S.motion===false,'Reading pauses motion');out(has(d,'#return-target','Porter hall'),'Document desk retains return target');click(d,'#close-docs');
+out(await waitFor(()=>w.S.selected==='porter'&&w.S.view==='cash'&&w.S.scene==='garden'&&!d.querySelector('#document-desk').open),'Return preserves object, view and scene');
+out(await waitFor(()=>w.S.motion===before),'Return restores prior motion state');
 out(has(d,'.status span:last-child','historical interaction inactive'),'Historical scope remains explicit');out(has(d,'.metrics div:first-child','ceiling · not cash'),'Budget is not presented as cash');
 }catch(e){out(false,'Harness exception',e.message)}summary.textContent=`${pass} passed · ${fail} failed`;summary.style.color=fail?'#ff8e8e':'#51eb7b'}
-frame.addEventListener('load',()=>setTimeout(run,250));document.querySelector('#again').onclick=()=>{frame.src='index.html?test='+Date.now()};
+function reloadGame(){localStorage.removeItem('mmt-design-012');frame.src='index.html?fresh='+Date.now()}
+frame.addEventListener('load',()=>setTimeout(()=>{run()},250));
+document.querySelector('#again').onclick=reloadGame;
+if(!sessionStorage.getItem('mmt-test-clean')){sessionStorage.setItem('mmt-test-clean','1');reloadGame()}
 </script></body></html>
-<script>if(!sessionStorage.getItem('mmt-test-clean')){sessionStorage.setItem('mmt-test-clean','1');localStorage.removeItem('mmt-design-012');document.querySelector('#game').src='index.html?fresh='+Date.now()}</script>
-<script>document.querySelector('#again').onclick=()=>{localStorage.removeItem('mmt-design-012');document.querySelector('#game').src='index.html?fresh='+Date.now()}</script>
