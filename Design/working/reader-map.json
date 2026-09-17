@@ -192,6 +192,11 @@
         "level": 2
       },
       {
+        "id": "interface/design-whiteboard",
+        "title": "Design whiteboard",
+        "level": 2
+      },
+      {
         "id": "interface/accessibility",
         "title": "Accessibility",
         "level": 2

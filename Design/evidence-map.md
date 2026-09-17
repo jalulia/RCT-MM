@@ -1,6 +1,6 @@
 # Story and evidence map
 
-Reviewed for edition 0.15 · 17 September 2026 · source scope below
+Reviewed for edition 0.16 · 17 September 2026 · source scope below
 
 This edition revises copy and layout. The source findings below come from the existing binding review; no additional financial records were authenticated.
 

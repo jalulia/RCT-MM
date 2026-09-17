@@ -1,9 +1,10 @@
 # Current verification
 
-Design 0.15 / art 0.10. The reader, playable episode, art hero, truck route, catalogue and download libraries are checked together. Prior specifications and review captures are retained in the archive.
+Design 0.16 / art 0.10. The reader, playable episode, art hero, truck route, catalogue and download libraries are checked together. Prior specifications and review captures are retained in the archive.
 
 | Record | Scope |
 |---|---|
+| `whiteboard-browser-checks.json` | Three board views, local persistence, rule replay, drag placement, JSON transfer, mobile controls and two-session collaboration against an intercepted HTTP service |
 | `release-checks.json` | Authored/published links, shared phase records, versions, source hashes, catalogue counts, episode capture provenance and every sprite ZIP member |
 | `episode-engine-checks.json` | Both ordinary plans, placement timing, staffing conflict, returned cash, permission, one reissue, substitute obligations, valid pooling and exact replay |
 | `episode-browser-checks.json` | Visible-control playthroughs, available documents, pause/return, five views for both selections, export/reload, file URL, mobile width and keyboard focus |
@@ -31,3 +32,11 @@ Run `npm run capture:reading` after changing the small inline-scene renderer. It
 Run `npm run check:browser` against the same server for reader/library checks. `MMT_SITE_URL` can point to another Design directory URL. Browser screenshots live here; published, captioned previews live in the preview library.
 
 These are implementation checks, not participant research. No claim is made about uncoached comprehension, enjoyment or measured session duration. P2’s next gate is the uncoached ordinary-work test. P1 source binding remains parallel and historical interaction remains disabled.
+
+## Whiteboard checks
+
+`npm run check:whiteboard` runs the 19 model checks, 13 persistence checks, reference collaboration transport and 14 browser checks. Serve the repository on port 8769 for the browser checks. The latter include two isolated sessions; no request reaches an external Supabase project.
+
+To execute the database functions locally as well, install `@electric-sql/pglite` in a temporary tool directory and set `MMT_PGLITE_MODULE` to that package directory when running `Design/working/check-whiteboard-collaboration.cjs`. This adds PostgreSQL permission, row-lock, rollback and retry tests for 24 collaboration checks in total. The harness substitutes a structural check for Supabase's `pg_jsonschema`; it does not verify that extension or the hosted deployment.
+
+Shared-room hosting remains pending until the project URL, public key and migration are configured. Local operation and export remain available. Database setup is in [the CMS and storage notes](../whiteboard/CMS.md).

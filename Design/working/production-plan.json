@@ -1,6 +1,6 @@
 {
   "source": "GDD.md#production-sequence",
-  "designRevision": "0.15",
+  "designRevision": "0.16",
   "phases": [
     {
       "id": "P0",

@@ -1,0 +1,429 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jalulia.github.io/RCT-MM/Design/whiteboard/board.schema.json",
+  "title": "Mad Money Tycoon design board",
+  "description": "An editable scenario and diagram. Source references remain references; simulation results are derived from scenario settings and replayed actions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "nodes",
+    "edges",
+    "ink",
+    "scenario",
+    "runtime",
+    "viewport"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "nodes": {
+      "type": "array",
+      "maxItems": 300,
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "maxItems": 800,
+      "items": {
+        "$ref": "#/$defs/edge"
+      }
+    },
+    "ink": {
+      "type": "array",
+      "maxItems": 300,
+      "items": {
+        "$ref": "#/$defs/stroke"
+      }
+    },
+    "scenario": {
+      "$ref": "#/$defs/scenario"
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actions"
+      ],
+      "properties": {
+        "actions": {
+          "type": "array",
+          "maxItems": 500,
+          "items": {
+            "$ref": "#/$defs/action"
+          }
+        }
+      }
+    },
+    "viewport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y",
+        "zoom"
+      ],
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": -1000000,
+          "maximum": 1000000
+        },
+        "y": {
+          "type": "number",
+          "minimum": -1000000,
+          "maximum": 1000000
+        },
+        "zoom": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 8
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,95}$"
+    },
+    "coordinate": {
+      "type": "number",
+      "minimum": -100000,
+      "maximum": 100000
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "title",
+        "x",
+        "y",
+        "params"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "project",
+            "staff",
+            "supplier",
+            "site",
+            "zone",
+            "obligation",
+            "payment",
+            "record",
+            "approval",
+            "artifact",
+            "archetype",
+            "trigger",
+            "effect",
+            "note",
+            "beat",
+            "anchor"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "x": {
+          "$ref": "#/$defs/coordinate"
+        },
+        "y": {
+          "$ref": "#/$defs/coordinate"
+        },
+        "params": {
+          "type": "object",
+          "maxProperties": 80,
+          "propertyNames": {
+            "not": {
+              "enum": [
+                "__proto__",
+                "prototype",
+                "constructor"
+              ]
+            }
+          }
+        },
+        "ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "from",
+        "to",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "from": {
+          "$ref": "#/$defs/id"
+        },
+        "to": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "flow",
+            "requires",
+            "informs"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "maxLength": 240
+        }
+      }
+    },
+    "point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "$ref": "#/$defs/coordinate"
+        },
+        "y": {
+          "$ref": "#/$defs/coordinate"
+        }
+      }
+    },
+    "stroke": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "color",
+        "width",
+        "points"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "width": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 24
+        },
+        "points": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5000,
+          "items": {
+            "$ref": "#/$defs/point"
+          }
+        }
+      }
+    },
+    "dollars": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10000000,
+      "multipleOf": 0.01
+    },
+    "scenario": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "plan",
+        "placement",
+        "mode",
+        "crew"
+      ],
+      "properties": {
+        "plan": {
+          "enum": [
+            "supplier",
+            "internal"
+          ]
+        },
+        "placement": {
+          "enum": [
+            "near",
+            "shared"
+          ]
+        },
+        "mode": {
+          "enum": [
+            "full",
+            "ordinary"
+          ]
+        },
+        "crew": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "assumptions": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Editable simulation amounts, in USD. These do not change source records.",
+          "properties": {
+            "startingCash": {
+              "$ref": "#/$defs/dollars"
+            },
+            "supplierCost": {
+              "$ref": "#/$defs/dollars"
+            },
+            "materialsCost": {
+              "$ref": "#/$defs/dollars"
+            },
+            "payroll": {
+              "$ref": "#/$defs/dollars"
+            }
+          }
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "advance",
+            "request",
+            "reissue",
+            "substitute",
+            "crew",
+            "fire",
+            "poolAnswer"
+          ]
+        },
+        "value": {
+          "type": [
+            "string",
+            "number"
+          ]
+        },
+        "nodeId": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "request"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "value"
+            ],
+            "properties": {
+              "value": {
+                "enum": [
+                  "processor",
+                  "recipient",
+                  "invoice",
+                  "approval",
+                  "delay"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "crew"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "value"
+            ],
+            "properties": {
+              "value": {
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "fire"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "nodeId"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "poolAnswer"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "value"
+            ],
+            "properties": {
+              "value": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

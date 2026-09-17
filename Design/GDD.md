@@ -1,6 +1,6 @@
 # Mad Money Tycoon — game design document
 
-Revision 0.15 · 17 September 2026 · Design review edition
+Revision 0.16 · 17 September 2026 · Design review edition
 
 ## 01. Game
 
@@ -312,6 +312,20 @@ Every quantitative display includes measure, unit, population, period and basis.
 
 A transfer animation ends at the last supported endpoint. Bank movement, information transfer and permission edges use different marks. A named account, job title or access grant cannot stand in for a person's action.
 
+### Design whiteboard
+
+[Open the whiteboard](whiteboard/index.html). This workshop tool uses the fictional Episode 01 model. It has three views of the same objects:
+
+- **Systems:** staff, work, obligations, payment attempts and explicit trigger rules. Step the clock, change costs or move the work bay between placement zones to inspect consequences.
+- **Story:** ordered beats, reveals and linked objects. Beat states follow the episode run; changing a beat's copy does not rewrite an event.
+- **Structure:** episode anchors and their child objects. Reparenting a card changes its design grouping.
+
+Cards, arrows and pen strokes save locally. Named checkpoints and JSON exports preserve alternate boards. Supabase shared rooms support concurrent edits and cursor presence once the project connection and database setup are installed. Different-field edits merge; edits to the same field require a choice. Shared rooms are not connected to a hosted project yet.
+
+Episode references retain their existing rules. Workshop trigger/effect chains update separate proposal counters. A drawn arrow cannot settle an invoice. Custom costs are labelled assumptions and do not alter the episode source or historical evidence.
+
+The [board schema and CMS plan](whiteboard/CMS.md) separate source records, object definitions, scenarios, narrative beats, board layouts and run inputs. The five in-game views remain Work, Cash, Information, Control and People; the three board views organise design discussions.
+
 ### Accessibility
 
 Keyboard equivalents; visible focus; a nonspatial object list; independent text scaling; labels and patterns for status; reading pause; reduced motion; adjustable audio; no hover-only evidence; reliable back history. At small widths, switch between world and inspector with an explicit return. Mobile reading is an initial target; full mobile management controls are not yet scoped.
@@ -433,6 +447,8 @@ Test the ordinary scenario with six to eight participants, without coaching. Epi
 
 ### Current focus
 
+**Workshop tool · Supabase setup pending.** The [design whiteboard](whiteboard/index.html) is built and tested locally, including concurrent edits and conflicts. Install its database schema, connect the selected Supabase project and check a shared session with two participants. The workshop supports design discussion; it does not satisfy the uncoached playtest below.
+
 **P2 · Ordinary-work proof — ready for uncoached playtesting.** The [playable episode](episode-01/index.html) includes an ordinary scenario with no returned payment. Both production plans complete; staffing and bay placement change the outcome. Automated engine checks and browser playthroughs cover their transitions. Participant comprehension and interest have not been tested.
 
 <!-- figure:ordinary-work-proof -->
@@ -447,6 +463,8 @@ The full fictional loop is available for testing, but P2 and P3 have not passed 
 
 
 ### Architecture
+
+The [whiteboard](whiteboard/index.html) supports facilitated walkthroughs and rule experiments. It reuses the episode reducer and shared art register. Discussion sessions do not substitute for the uncoached P2 playtest. Shared-room deployment still needs the Supabase project connection.
 
 <!-- figure:architecture -->
 
@@ -537,6 +555,7 @@ Use CASE-01 for narrative references and the validation package for source retri
 
 | Revision | Change | Status |
 |---|---|---|
+| 0.16 | Added a design whiteboard with Systems, Story and Structure views, scenario replay, proposal rules, checkpoints and a Supabase collaboration adapter | Shared-room project setup pending; P2 and P1 gates unchanged |
 | 0.15 | Copy revised across chapters and references; inline scenes, record extracts and illustrated narrative sequences replace large preview grids; saved-record timing corrected | P2 remains ready for playtest; P1 verification scope unchanged |
 | 0.14 | Catalogue-driven component kit, isolated motion previews, unified asset libraries and source links; redundant truck section and speculative art task lists removed | P2 remains the next test; P1 runs in parallel; no new gameplay or historical claims |
 | 0.13 | Playable fictional episode, ordinary control, conditional responses, five views, run persistence/export, captured gameplay and Narrative figures; test plan reconciled | P2 ready for uncoached playtest; P4 fictional loop built early; P1 and historical gates remain open |

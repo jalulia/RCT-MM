@@ -19,7 +19,7 @@ class Page(HTMLParser):
   if tag in ['script','style']:self.ignore=max(0,self.ignore-1)
  def handle_data(self,data):
   if not self.ignore:self.text.append(data)
-files=[root/'index.html',root/'Design/design-review.html',root/'Design/previews/index.html',root/'Design/episode-01/index.html',root/'Design/archive/index.html',root/'Design/assets/sprite-catalogue/index.html']
+files=[root/'index.html',root/'Design/design-review.html',root/'Design/previews/index.html',root/'Design/episode-01/index.html',root/'Design/whiteboard/index.html',root/'Design/archive/index.html',root/'Design/assets/sprite-catalogue/index.html']
 if (root/'Refs/index.html').exists():files.append(root/'Refs/index.html')
 pages={f:Page(f.read_text()) for f in files};errors=[];checked=0;external=set()
 manifest=json.loads((root/'Design/assets/sprite-catalogue/manifest.json').read_text());object_ids={o['id'] for o in manifest['objects']}

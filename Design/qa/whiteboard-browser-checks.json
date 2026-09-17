@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "Four UI steps reach the funding return, preserve saved Paid and fire the proposed review counter.",
+    "Title, discussion notes and run actions survive autosave and reload.",
+    "New trigger and effect connect through the UI; firing changes only the separate proposal counter.",
+    "Assumption edits replay the run, display the exact cash delta and leave canonical model constants unchanged.",
+    "Story and hierarchy project the same gameplay IDs; an inline story object opens its actual system card.",
+    "Dragging the work bay into the shared-floor zone updates physical handoff rules.",
+    "Downloaded JSON validates and imports through the file picker with stable IDs, rules and run history.",
+    "Systems, Story and Structure fit a 390px viewport; the mobile card library adds editable cards.",
+    "Two separate browser sessions create and join a shared room through a copied edit link using mocked Supabase HTTP.",
+    "Different notes from independent sessions merge and appear on both boards.",
+    "Remote additions during an active text edit survive alongside the text when it is committed.",
+    "Conflicting edits to one field show a review banner; Load saved board adopts the shared value.",
+    "Each participant keeps their viewport and view; presence sends cursor coordinates, view and name.",
+    "No JavaScript console errors, failed responses or broken image assets."
+  ],
+  "errors": [],
+  "failed": []
+}

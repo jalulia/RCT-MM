@@ -1,6 +1,6 @@
 {
   "name": "Mad Money Tycoon",
-  "designRevision": "0.15",
+  "designRevision": "0.16",
   "artRevision": "0.10",
   "reviewDate": "2026-09-17",
   "views": [
@@ -20,7 +20,8 @@
     "archive": "archive/index.html",
     "episode": "episode-01/index.html",
     "componentKit": "design-review.html#art/component-kit",
-    "parkBuilder": "../test/index.html"
+    "parkBuilder": "../test/index.html",
+    "whiteboard": "whiteboard/index.html"
   },
   "status": {
     "designReader": "Copy and layout revised across chapters, research and binding notes; inline figures and compact record extracts",
@@ -30,7 +31,8 @@
     "historicalBinding": "Selected export fields inspected; originals and identity links unresolved",
     "historicalInteractionEnabled": false,
     "publicReleaseScope": "Design review, original art library and fictional playable prototype; external validation corpus excluded",
-    "assetLibraries": "Component kit, object catalogue and preview library share object IDs and display metadata"
+    "assetLibraries": "Component kit, object catalogue and preview library share object IDs and display metadata",
+    "whiteboard": "Systems, Story and Structure views; canonical episode replay; local saves and checkpoints; Supabase shared-room client and schema implemented, project connection pending"
   },
   "focus": {
     "phase": "P2",
