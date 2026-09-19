@@ -35,3 +35,8 @@ table{font-size:12px;line-height:1.6}th{color:var(--ink);padding:12px 14px}td{pa
 
 /* Workshop entry shares the reader navigation. */
 .masthead-actions .header-whiteboard{display:flex;gap:6px;align-items:center}.header-whiteboard svg{width:17px;height:17px;flex:none}@media(max-width:720px){.masthead-actions .header-whiteboard{padding:0 10px}.header-whiteboard span{display:none}}
+
+/* Basecamp is a separate concept catalogue. */
+.masthead-actions .header-basecamp{display:flex;gap:5px}.header-basecamp svg{width:16px;height:16px;flex:none}.header-basecamp small{font:7px var(--mono);background:var(--pink);padding:2px 3px}
+@media(max-width:1100px){.header-basecamp>span{display:none}}
+@media(max-width:740px){.masthead{grid-template-columns:1fr}.masthead>.brand{border-bottom:1px solid var(--rule)}.masthead-actions{overflow-x:auto;min-width:0}.masthead-actions>.header-basecamp{display:flex}.masthead-actions>.header-basecamp>span{display:inline}.masthead-actions>*{flex:none}.masthead-actions .header-contents{display:flex}}

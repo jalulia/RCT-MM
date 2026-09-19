@@ -2,6 +2,8 @@
 
 Reviewed 17 September 2026. [Design document](design-review.html) · [Whiteboard](whiteboard/index.html) · [Playable episode](episode-01/index.html) · [Park builder](../test/index.html).
 
+Basecamp (WIP), reviewed 18 September 2026, is available from the reader and whiteboard headers. It separates presentation studies, game concepts, playable scenarios, design tools and agency models. Typed relationships connect concepts to their partial implementations. Purpose, audience, format and player agency remain open. Source extracts and portable exports contain design content only. All 15 records have labelled previews; five include GIFs with pause controls and reduced-motion support.
+
 The design whiteboard is a separate workshop tool linked from the reader header. It uses the current episode reducer and sprite catalogue. Episode rules, historical bindings and art source files are unchanged.
 
 ## Changes

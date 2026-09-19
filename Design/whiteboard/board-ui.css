@@ -7,3 +7,6 @@
 .dialog-actions{flex-wrap:wrap;justify-content:flex-start}.board-heading #board-title{max-width:430px;width:min(430px,42vw)}
 
 .reference-picker{border:1px solid #d0d2d6;padding:8px 10px;max-height:200px;overflow:auto;margin:14px 0}.reference-picker legend{font-size:11px;padding:0 5px}.reference-picker label{display:flex;align-items:center;gap:7px;font-size:11px;line-height:1.3;margin:9px 0}.reference-picker input{width:14px;height:14px;flex:none;accent-color:#39d66b}
+
+.board-tabs .basecamp-tab{gap:5px}.basecamp-tab small{font:8px var(--mono,monospace);background:#f0bdd1;color:#18191c;padding:2px 4px}
+@media(max-width:640px){.board-topbar .board-tabs{display:flex;margin-left:auto}.board-topbar .board-tabs>*:not(.basecamp-tab){display:none}.board-topbar .basecamp-tab{padding:0 13px;font-size:11px}}

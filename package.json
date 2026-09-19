@@ -7,7 +7,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "node Design/working/build-whiteboard-assets.mjs && node Design/working/build-review.mjs && python3 Design/working/build-libraries.py",
+    "build": "python3 Design/basecamp/refresh.py && node Design/working/build-whiteboard-assets.mjs && node Design/working/build-review.mjs && python3 Design/working/build-libraries.py",
     "build:art": "node Design/working/export-art-local.cjs && sh Design/working/rebuild-sprite-catalogue.sh && node Design/working/export-scene-previews.cjs && python3 Design/working/export-scene-gifs.py",
     "check": "node Design/working/boerum-motion-check.cjs && node Design/working/check-refinement.cjs && node Design/working/check-voila.cjs && node Design/working/check-episode.cjs && python3 Design/working/check-release.py",
     "serve": "python3 -m http.server 8000",
@@ -15,7 +15,8 @@
     "check:browser": "node Design/working/check-reader-browser.cjs && node Design/working/check-component-libraries.cjs",
     "build:park": "node Design/working/build-park-builder.cjs",
     "capture:reading": "node Design/working/export-reading-scenes.cjs && npm run build",
-    "check:whiteboard": "node Design/working/check-whiteboard-model.cjs && node Design/working/check-whiteboard-store.cjs && node Design/working/check-whiteboard-collaboration.cjs && node Design/working/check-whiteboard-browser.cjs"
+    "check:whiteboard": "node Design/working/check-whiteboard-model.cjs && node Design/working/check-whiteboard-store.cjs && node Design/working/check-whiteboard-collaboration.cjs && node Design/working/check-whiteboard-browser.cjs",
+    "check:basecamp": "python3 Design/working/check-basecamp.py"
   },
   "dependencies": {
     "@napi-rs/canvas": "0.1.100",

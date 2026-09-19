@@ -4,6 +4,7 @@ Design review **0.16** · original art library **0.10** · 17 September 2026.
 
 Start with the [design document](Design/design-review.html). It contains the current game proposal, narrative, object model, interface, art studies, source scope and build plan.
 
+- [Basecamp (WIP)](Design/basecamp/index.html): game concepts, playable scenarios, agency models, design tools and their relationships.
 - [Design whiteboard](Design/whiteboard/index.html): Systems, Story and Structure views; step the episode, sketch rules, save checkpoints and share through Supabase rooms after project setup.
 - [Component kit](Design/design-review.html#art/component-kit): all eight categories, paired building states and isolated motion.
 - [Standalone park builder](test/index.html): place objects, people and looping events; save locally and download a GIF.
@@ -33,6 +34,7 @@ Historical source binding remains at selected-export-field level. Original state
 | Supporting research | `Design/research/*.md` | Reader’s research pages |
 | Drawing functions and interactions | `Design/working/` | Reader, current previews, sprite exports |
 | Object registration | `Design/working/sprite-registry.cjs` | Catalogue, sheets and frame manifest |
+| Basecamp | `Design/basecamp/catalogue.json` | Concept catalogue, relationships and design extracts |
 | Whiteboard | `Design/whiteboard/` | Workshop views, scenario adapter, persistence and collaboration schema |
 | Current version/status | `Design/project.json` | Release metadata and documentation |
 | Previous work | `Design/archive/` | Archive index; never imported as current content |
